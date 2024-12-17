@@ -12,10 +12,11 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 </style>
 <style>
     #mySidebar {
-        height: 100%;
-        overflow-y: scroll;
-        padding-bottom: 50px;
-        box-sizing: border-box;
+        position: fixed;
+        height: calc(100vh - 43px); /* 100% viewport height minus the top container */
+        width: 300px; /* Sidebar width */
+        overflow-y: auto; /* Enable vertical scrolling */
+        box-sizing: border-box; /* Include padding in total width/height */
     }
 </style>
 </head>
