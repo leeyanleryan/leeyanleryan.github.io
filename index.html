@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>W3.CSS Template</title>
+<title>Lee Yan Le Ryan</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -24,14 +24,21 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 <!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
-    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <!-- Combined Hamburger Menu -->
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="toggleMobileMenu()">
+      <i class="fa fa-bars"></i>
+    </a>
+    <!-- Logo -->
     <a href="#" class="w3-bar-item w3-button w3-theme-l1">Logo</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Values</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">News</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Clients</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Partners</a>
+    <!-- Navbar Links -->
+    <div id="navLinks" class="w3-hide-small w3-hide-medium">
+      <a href="#" class="w3-bar-item w3-button w3-hover-white">About</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-white">Values</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-white">News</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-white">Clients</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-white">Partners</a>
+    </div>
   </div>
 </div>
 
@@ -136,6 +143,16 @@ function w3_open() {
 function w3_close() {
   mySidebar.style.display = "none";
   overlayBg.style.display = "none";
+}
+
+function toggleMobileMenu() {
+  var x = document.getElementById("navLinks");
+  if (x.classList.contains("w3-hide")) {
+    x.classList.remove("w3-hide");
+  } else {
+    x.classList.add("w3-hide");
+  }
+  w3_open(); // Open the sidebar too
 }
 </script>
 
