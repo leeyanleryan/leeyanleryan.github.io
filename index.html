@@ -11,11 +11,21 @@
 html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 </style>
 <style>
-    /* Sidebar Fix */
-    #mySidebar {
+    html, body {
+        margin: 0;
+        padding: 0;
         height: 100%;
-        overflow-y: auto; /* Enable scrolling */
-        padding-bottom: 50px; /* Adds space at the bottom */
+        overflow: hidden;
+    }
+
+    #mySidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh; /* Full viewport height */
+        width: 300px;
+        overflow-y: auto;
+        padding-bottom: 10px; /* Minor padding for spacing */
         box-sizing: border-box;
     }
 </style>
@@ -74,23 +84,23 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
     <!-- Section 3 -->
     <h4 class="w3-text-grey"><strong>Programming</strong></h4>
     <div class="w3-bar-block">
-      <a href="#" class="w3-bar-item w3-button w3-padding"></i> Overview</a>
-      <a href="#" class="w3-bar-item w3-button w3-padding"></i> Variables</a>
-      <a href="#" class="w3-bar-item w3-button w3-padding"></i> Expressions</a>
-      <a href="#" class="w3-bar-item w3-button w3-padding"></i> Selection Statements</a>
-      <a href="#" class="w3-bar-item w3-button w3-padding"></i> Functions</a>
-      <a href="#" class="w3-bar-item w3-button w3-padding"></i> Iteration</a>
-      <a href="#" class="w3-bar-item w3-button w3-padding"></i> Recursion</a>
-      <a href="#" class="w3-bar-item w3-button w3-padding"></i> Sequences</a>
-      <a href="#" class="w3-bar-item w3-button w3-padding"></i> Higher Order Functions</a>
-      <a href="#" class="w3-bar-item w3-button w3-padding"></i> File IO</a>
-      <a href="#" class="w3-bar-item w3-button w3-padding"></i> Multi-Dimensional Arrays</a>
-      <a href="#" class="w3-bar-item w3-button w3-padding"></i> Object-Oriented Programming</a>
-      <a href="#" class="w3-bar-item w3-button w3-padding"></i> Searching</a>
-      <a href="#" class="w3-bar-item w3-button w3-padding"></i> Sorting</a>
-      <a href="#" class="w3-bar-item w3-button w3-padding"></i> Time Complexity</a>
-      <a href="#" class="w3-bar-item w3-button w3-padding"></i> Space Complexity</a>
-      <a href="#" class="w3-bar-item w3-button w3-padding"></i> Exceptions</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding"> Overview</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding"> Variables</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding"> Expressions</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding"> Selection Statements</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding"> Functions</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding"> Iteration</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding"> Recursion</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding"> Sequences</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding"> Higher Order Functions</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding"> File IO</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding"> Multi-Dimensional Arrays</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding"> Object-Oriented Programming</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding"> Searching</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding"> Sorting</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding"> Time Complexity</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding"> Space Complexity</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding"> Exceptions</a>
     </div>
   </div>
 </nav>
