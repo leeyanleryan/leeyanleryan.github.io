@@ -24,14 +24,14 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 <!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
-    <!-- Combined Hamburger Menu -->
-    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="toggleMobileMenu()">
+    <!-- Hamburger Menu -->
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="toggleMenu()">
       <i class="fa fa-bars"></i>
     </a>
     <!-- Logo -->
     <a href="#" class="w3-bar-item w3-button w3-theme-l1">Logo</a>
     <!-- Navbar Links -->
-    <div id="navLinks" class="w3-hide-small w3-hide-medium">
+    <div class="w3-hide-small w3-hide-medium" id="navbarLinks">
       <a href="#" class="w3-bar-item w3-button w3-hover-white">About</a>
       <a href="#" class="w3-bar-item w3-button w3-hover-white">Values</a>
       <a href="#" class="w3-bar-item w3-button w3-hover-white">News</a>
@@ -42,20 +42,22 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
   </div>
 </div>
 
-<!-- Sidebar -->
-<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+<!-- Sidebar (Mobile) -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="sidebarMenu">
+  <a href="javascript:void(0)" onclick="toggleMenu()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
     <i class="fa fa-remove"></i>
   </a>
   <h4 class="w3-bar-item"><b>Menu</b></h4>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
+  <a href="#" class="w3-bar-item w3-button w3-hover-black">About</a>
+  <a href="#" class="w3-bar-item w3-button w3-hover-black">Values</a>
+  <a href="#" class="w3-bar-item w3-button w3-hover-black">News</a>
+  <a href="#" class="w3-bar-item w3-button w3-hover-black">Contact</a>
+  <a href="#" class="w3-bar-item w3-button w3-hover-black">Clients</a>
+  <a href="#" class="w3-bar-item w3-button w3-hover-black">Partners</a>
 </nav>
 
 <!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<div class="w3-overlay w3-hide-large" onclick="toggleMenu()" style="cursor:pointer" title="close side menu" id="overlayEffect"></div>
 
 <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
 <div class="w3-main" style="margin-left:250px">
@@ -145,15 +147,42 @@ function w3_close() {
   overlayBg.style.display = "none";
 }
 
-function toggleMobileMenu() {
-  var x = document.getElementById("navLinks");
-  if (x.classList.contains("w3-hide")) {
-    x.classList.remove("w3-hide");
+function toggleMenu() {
+  var sidebar = document.getElementById("sidebarMenu");
+  var overlay = document.getElementById("overlayEffect");
+  var navbarLinks = document.getElementById("navbarLinks");
+
+  // Sidebar toggle
+  if (sidebar.style.display === 'block') {
+    sidebar.style.display = 'none';
+    overlay.style.display = 'none';
   } else {
-    x.classList.add("w3-hide");
+    sidebar.style.display = 'block';
+    overlay.style.display = 'block';
   }
-  w3_open(); // Open the sidebar too
+
+  // Ensure navbar links toggle back to visible on zooming out
+  if (window.innerWidth > 992) {
+    navbarLinks.classList.remove("w3-hide");
+  } else {
+    navbarLinks.classList.add("w3-hide");
+  }
 }
+
+// Reset menu when zooming back out
+window.addEventListener("resize", function() {
+  var sidebar = document.getElementById("sidebarMenu");
+  var overlay = document.getElementById("overlayEffect");
+  var navbarLinks = document.getElementById("navbarLinks");
+
+  if (window.innerWidth > 992) {
+    sidebar.style.display = 'none';
+    overlay.style.display = 'none';
+    navbarLinks.classList.remove("w3-hide");
+  } else {
+    navbarLinks.classList.add("w3-hide");
+  }
+});
 </script>
 
 </body>
