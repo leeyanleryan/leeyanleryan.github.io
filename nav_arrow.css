@@ -3,8 +3,8 @@
   position: fixed;
   top: 50%;                /* Centers vertically */
   transform: translateY(-50%);
-  z-index: 999;            /* On top of main content */
-  width: 60px;             /* Enough space for the label + arrow */
+  z-index: 998;            /* On top of main content */
+  width: 100px;             /* Enough space for the label + arrow */
   text-align: center;      /* Center the label + arrow horizontally */
   font-family: "Raleway", sans-serif;
 }
@@ -25,6 +25,10 @@
 .nav-label {
   font-size: 14px;
   margin-bottom: 5px;      /* Spacing between label and arrow */
+
+  display: block;
+  text-align: center;
+  white-space: nowrap;
 }
 
 /* Arrow symbol styling */
@@ -32,8 +36,11 @@
   font-size: 2rem;         /* Large arrow icon */
   text-decoration: none;   /* Remove underline */
   color: black;            /* Arrow color */
-  display: inline-block;
+  /* display: inline-block; */
   cursor: pointer;
+  
+  display: block;
+  text-align: center;
 }
 
 /* Bottom nav for small screens */
