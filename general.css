@@ -1,0 +1,5 @@
+@media (min-width: 1250px) {
+  .hr-hide-1250 {
+    display: none !important;
+  }
+}
