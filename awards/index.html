@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="nav_arrow.css">
 <style>
   html,body,h1,h2,h3,h4,h5,h6 {
     font-family: "Raleway", sans-serif;
@@ -31,7 +32,7 @@
 <!-- Top container -->
 <div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
   <button class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
-  <span class="w3-bar-item w3-right">About</span>
+  <span class="w3-bar-item w3-right">Awards</span>
 </div>
 
 <!-- Sidebar/menu -->
@@ -151,6 +152,25 @@
       </h5></li>
     </h5></ul>
   </section>
+</div>
+
+<!-- Navigation Arrows -->
+<div class="nav-arrow nav-arrow-left w3-hide-small">
+  <!-- Label above the arrow -->
+  <div class="nav-label">Experiences</div>
+  <a href="../experiences/" class="arrow-symbol">&#10094;</a>
+</div>
+
+<div class="nav-arrow nav-arrow-right w3-hide-small">
+  <!-- Label above the arrow -->
+  <div class="nav-label">Hobbies</div>
+  <a href="../hobbies/" class="arrow-symbol">&#10095;</a>
+</div>
+
+<!-- NAVIGATION BOTTOM BAR (Small screens) -->
+<div class="nav-bottom">
+  <a href="../experiences/">&#10094; Experiences</a>
+  <a href="../hobbies/">Hobbies &#10095;</a>
 </div>
 
 <script>

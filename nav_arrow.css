@@ -59,7 +59,7 @@
 }
 
 /* Show/hide for different screen sizes */
-@media (max-width: 768px) {
+@media (max-width: 1250px) {
   /* Hide the side arrows on small screens */
   .nav-arrow-left,
   .nav-arrow-right {
