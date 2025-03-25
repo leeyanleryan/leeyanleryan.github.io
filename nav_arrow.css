@@ -1,12 +1,17 @@
+html {
+  overflow-y: scroll;
+}
+
 /* Common arrow container styles for large screens */
 .nav-arrow {
   position: fixed;
   top: 50%;                /* Centers vertically */
   transform: translateY(-50%);
   z-index: 998;            /* On top of main content */
-  width: 100px;             /* Enough space for the label + arrow */
+  width: 80px;             /* Enough space for the label + arrow */
   text-align: center;      /* Center the label + arrow horizontally */
   font-family: "Raleway", sans-serif;
+  white-space: nowrap;
 }
 
 /* Left arrow pinned to the left side */
@@ -26,9 +31,9 @@
   font-size: 14px;
   margin-bottom: 5px;      /* Spacing between label and arrow */
 
-  display: block;
+  /* display: block;
   text-align: center;
-  white-space: nowrap;
+  white-space: nowrap; */
 }
 
 /* Arrow symbol styling */
@@ -40,7 +45,7 @@
   cursor: pointer;
   
   display: block;
-  text-align: center;
+  /* text-align: center; */
 }
 
 /* Bottom nav for small screens */
