@@ -47,7 +47,7 @@
   padding: 10px 20px;       /* Add some spacing */
   font-size: 1.2rem;
   font-family: "Raleway", sans-serif;
-  z-index: 999;            /* Ensure it's on top */
+  z-index: 998;            /* Ensure it's on top */
   background-color: white; /* White backdrop to prevent overlap */
   box-shadow: 0 -2px 5px rgba(0,0,0,0.1); /* Optional subtle shadow */
 }
