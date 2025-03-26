@@ -1,3 +1,9 @@
+/* 
+Used for extra padding at the bottom.
+Hidden for screens bigger than or equal to 1251px.
+Shown for screens smaller than or equal to 1250px.
+Works in conjunction with .nav-bottom .
+*/
 @media (min-width: 1251px) {
   .hr-hide-1250 {
     display: none !important;
