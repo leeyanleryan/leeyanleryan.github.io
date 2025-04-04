@@ -3,9 +3,11 @@
 <head>
   <script>
     (function() {
+      document.documentElement.style.visibility = 'hidden';
       if (localStorage.getItem('theme') === 'light') {
         document.documentElement.classList.remove('dark-mode');
       }
+      document.documentElement.style.visibility = 'visible';
     })();
   </script>
 
