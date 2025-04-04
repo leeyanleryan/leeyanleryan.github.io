@@ -1,37 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>leeyanleryan's hobbies</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="../nav_arrow.css">
-<link rel="stylesheet" href="../sidebar.css">
-<link rel="stylesheet" href="../general.css">
-<style>
-  html,body,h1,h2,h3,h4,h5,h6 {
-    font-family: "Raleway", sans-serif;
-    scroll-behavior: smooth;
-    scroll-padding-top: 43px;
-  }
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-</style>
+  <title>leeyanleryan's hobbies</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../nav_arrow.css">
+  <link rel="stylesheet" href="../sidebar.css">
+  <link rel="stylesheet" href="../darkmode.css">
+  <style>
+    html,h1,h2,h3,h4,h5,h6 {
+      font-family: "Raleway", sans-serif;
+      scroll-behavior: smooth;
+      scroll-padding-top: 43px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
 </head>
-<body class="w3-light-grey">
+<body class="dark-mode">
 
 <!-- Top container -->
 <div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
   <button class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
-  <span class="w3-bar-item w3-right">Hobbies</span>
+  <span class="w3-bar-item w3-right">
+    <i class="fa fa-moon-o" style="margin-right:10px"></i>
+    <label class="switch">
+      <input type="checkbox" id="toggleDarkMode">
+      <span class="slider"></span>
+    </label>
+  </span>
 </div>
 
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-white w3-animate-left" style="z-index:3;width:300px;display:none;" id="mySidebar"><br>
+<nav class="w3-sidebar w3-animate-left" style="z-index:3;width:300px;display:none;" id="mySidebar"><br>
   <div class="w3-container w3-row">
     <div class="w3-col s4">
       <img src="https://i.imgur.com/J6a7t0I.png" class="w3-circle w3-margin-right" style="width:46px">
@@ -47,7 +53,7 @@
   <hr>
   
   <div class="w3-container">
-    <h4 class="w3-text-grey"><strong>About</strong></h4>
+    <h4><strong>About</strong></h4>
     <div class="w3-bar-block">
       <a href="../#profile" class="w3-bar-item w3-button w3-padding"> Profile</a>
       <a href="../#resume" class="w3-bar-item w3-button w3-padding"> Resume</a>
@@ -58,7 +64,7 @@
   <hr>
   
   <div class="w3-container">
-    <h4 class="w3-text-grey"><strong>Projects</strong></h4>
+    <h4><strong>Projects</strong></h4>
     <div class="w3-bar-block">
       <a href="../projects/#orbital_nuquest" class="w3-bar-item w3-button w3-padding"> Orbital NUqueSt</a>
       <a href="../projects/#data_analysis" class="w3-bar-item w3-button w3-padding"> Data Analysis</a>
@@ -70,7 +76,7 @@
   <hr>
   
   <div class="w3-container">
-    <h4 class="w3-text-grey"><strong>Experiences</strong></h4>
+    <h4><strong>Experiences</strong></h4>
     <div class="w3-bar-block">
       <a href="../experiences/#digital_production_assistant" class="w3-bar-item w3-button w3-padding"> Digital Production Assistant</a>
       <a href="../experiences/#teaching_assistant" class="w3-bar-item w3-button w3-padding"> Teaching Assistant</a>
@@ -80,7 +86,7 @@
   <hr>
   
   <div class="w3-container">
-    <h4 class="w3-text-grey"><strong>Awards</strong></h4>
+    <h4><strong>Awards</strong></h4>
     <div class="w3-bar-block">
       <a href="../awards/#achievements" class="w3-bar-item w3-button w3-padding"> Achievements</a>
       <a href="../awards/#certifications" class="w3-bar-item w3-button w3-padding"> Certifications</a>
@@ -90,7 +96,7 @@
   <hr>
   
   <div class="w3-container">
-    <h4 class="w3-text-grey"><strong>Hobbies</strong></h4>
+    <h4><strong>Hobbies</strong></h4>
     <div class="w3-bar-block">
       <a href="#reading" class="w3-bar-item w3-button w3-padding"> Reading</a>
       <a href="#gaming" class="w3-bar-item w3-button w3-padding"> Gaming</a>
@@ -98,7 +104,7 @@
     </div>
   </div>
 
-  <hr>
+  <hr style="opacity:0">
 </nav>
 
 <!-- Overlay effect when opening sidebar on small screens -->
@@ -259,6 +265,8 @@ function w3_close() {
   overlayBg.style.display = "none";
 }
 </script>
+
+<script src="../darkmode.js"></script>
 
 </body>
 </html>

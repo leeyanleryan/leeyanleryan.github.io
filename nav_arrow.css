@@ -46,6 +46,11 @@ html {
   
   display: block;
   /* text-align: center; */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode .arrow-symbol {
+  color: white;
 }
 
 /* Bottom nav for small screens */
@@ -62,12 +67,23 @@ html {
   z-index: 998;            /* Ensure it's on top */
   background-color: white; /* White backdrop to prevent overlap */
   box-shadow: 0 -2px 5px rgba(0,0,0,0.1); /* Optional subtle shadow */
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Style the links in bottom nav */
 .nav-bottom a {
   text-decoration: none;
   color: black;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode overrides for bottom nav */
+body.dark-mode .nav-bottom {
+  background-color: black;
+  color: white;
+}
+body.dark-mode .nav-bottom a {
+  color: white;
 }
 
 /* Show/hide for different screen sizes */
@@ -80,5 +96,17 @@ html {
   /* Show the bottom nav on small screens */
   .nav-bottom {
       display: flex;
+  }
+}
+
+/* 
+Used for extra padding at the bottom.
+Hidden for screens bigger than or equal to 1251px.
+Shown for screens smaller than or equal to 1250px.
+Works in conjunction with .nav-bottom .
+*/
+@media (min-width: 1251px) {
+  .hr-hide-1250 {
+    display: none !important;
   }
 }
