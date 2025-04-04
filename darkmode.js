@@ -1,14 +1,3 @@
-// // Get the toggle element
-// const toggleSwitch = document.getElementById('toggleDarkMode');
-
-// // Set the toggle to match the default mode (dark-mode is set by default)
-// toggleSwitch.checked = document.body.classList.contains('dark-mode');
-
-// // Listen for toggle changes
-// toggleSwitch.addEventListener('change', function() {
-//   document.body.classList.toggle('dark-mode');
-// });
-
 // Function to apply the stored theme on page load
 function applyStoredTheme() {
   // Get the saved theme; default to "dark" if none found
