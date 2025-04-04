@@ -1,10 +1,41 @@
-// Get the toggle element
-const toggleSwitch = document.getElementById('toggleDarkMode');
+// // Get the toggle element
+// const toggleSwitch = document.getElementById('toggleDarkMode');
 
-// Set the toggle to match the default mode (dark-mode is set by default)
-toggleSwitch.checked = document.body.classList.contains('dark-mode');
+// // Set the toggle to match the default mode (dark-mode is set by default)
+// toggleSwitch.checked = document.body.classList.contains('dark-mode');
 
-// Listen for toggle changes
-toggleSwitch.addEventListener('change', function() {
-  document.body.classList.toggle('dark-mode');
+// // Listen for toggle changes
+// toggleSwitch.addEventListener('change', function() {
+//   document.body.classList.toggle('dark-mode');
+// });
+
+// Function to apply the stored theme on page load
+function applyStoredTheme() {
+  // Get the saved theme; default to "dark" if none found
+  const theme = localStorage.getItem('theme') || 'dark';
+  if (theme === 'light') {
+    document.body.classList.remove('dark-mode');
+  } else {
+    document.body.classList.add('dark-mode');
+  }
+  
+  // Set the toggle switch state accordingly
+  const toggleSwitch = document.getElementById('toggleDarkMode');
+  if (toggleSwitch) {
+    toggleSwitch.checked = (theme === 'dark');
+  }
+}
+
+// Apply the stored theme when the page loads
+applyStoredTheme();
+
+// Listen for changes on the toggle switch to update theme and store preference
+document.getElementById('toggleDarkMode').addEventListener('change', function() {
+  if (this.checked) {
+    document.body.classList.add('dark-mode');
+    localStorage.setItem('theme', 'dark');
+  } else {
+    document.body.classList.remove('dark-mode');
+    localStorage.setItem('theme', 'light');
+  }
 });
