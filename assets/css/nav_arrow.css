@@ -14,6 +14,11 @@ html {
   white-space: nowrap;
 }
 
+.nav-arrow:hover .arrow-symbol,
+.nav-arrow:hover .nav-label {
+  color: #757575 !important;
+}
+
 /* Left arrow pinned to the left side */
 .nav-arrow-left {
   /* Example: keep 50px from left edge for a gap */
@@ -34,6 +39,7 @@ html {
   /* display: block;
   text-align: center;
   white-space: nowrap; */
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Arrow symbol styling */
@@ -75,6 +81,10 @@ body.dark-mode .arrow-symbol {
   text-decoration: none;
   color: black;
   transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-bottom a:hover {
+  color: #757575 !important;
 }
 
 /* Dark Mode overrides for bottom nav */
