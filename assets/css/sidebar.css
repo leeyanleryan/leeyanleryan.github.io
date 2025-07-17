@@ -72,3 +72,25 @@ body.dark-mode #mySidebar::-webkit-scrollbar-thumb {
   border-radius: 4px;
   border: 2px solid #f1f1f1;
 } */
+
+/* “Pill” style for each link */
+#mySidebar .w3-bar-item {
+  display: block;
+  padding: 8px 12px;                    /* inner space */
+  border-radius: 10px;                  /* rounded ends */
+  /*transition: background-color .15s ease, color .15s ease;*/
+}
+
+/* ---------------- LIGHT THEME ---------------- */
+#mySidebar .w3-bar-item:hover,
+#mySidebar .w3-bar-item:focus {
+  background-color: rgba(0,0,0,0.07) !important;   /* subtle, like YouTube */
+  color: inherit !important;                       /* keep the same text colour */
+}
+
+/* ---------------- DARK THEME ----------------- */
+body.dark-mode #mySidebar .w3-bar-item:hover,
+body.dark-mode #mySidebar .w3-bar-item:focus {
+  background-color: rgba(255,255,255,0.10) !important;  /* 10 % white tint */
+  color: inherit !important;
+}
