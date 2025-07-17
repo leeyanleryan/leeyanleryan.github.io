@@ -8,8 +8,9 @@
   width: 300px; /* Sidebar width */
   overflow-y: auto; /* Enable vertical scrolling */
   box-sizing: border-box; /* Include padding in total width/height */
-  z-index: 1001 !important;
+  z-index: 1002 !important;
   transition: background-color 0.3s ease, color 0.3s ease;
+  display: none;
   
   background-color: white;
   color: black;
@@ -17,7 +18,7 @@
 
 /* Dark Mode overrides for sidebar */
 body.dark-mode #mySidebar {
-  background-color: #121212; /* or any dark color of your choice */
+  background-color: #181818; /* or any dark color of your choice */
   color: white;
 }
 

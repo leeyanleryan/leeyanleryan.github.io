@@ -70,7 +70,7 @@ body.dark-mode .arrow-symbol {
   padding: 10px 20px;       /* Add some spacing */
   font-size: 1.2rem;
   font-family: "Raleway", sans-serif;
-  z-index: 998;            /* Ensure it's on top */
+  z-index: 1004;            /* Ensure it's on top */
   background-color: white; /* White backdrop to prevent overlap */
   box-shadow: 0 -2px 5px rgba(0,0,0,0.1); /* Optional subtle shadow */
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -89,7 +89,7 @@ body.dark-mode .arrow-symbol {
 
 /* Dark Mode overrides for bottom nav */
 body.dark-mode .nav-bottom {
-  background-color: black;
+  background-color: #0B0B0B;
   color: white;
 }
 body.dark-mode .nav-bottom a {
