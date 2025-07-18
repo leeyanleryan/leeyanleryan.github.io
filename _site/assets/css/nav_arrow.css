@@ -169,6 +169,18 @@ body.sidebar-open .w3-main {
   .nav-bottom {
     display: flex !important;
   }
+
+  /* 1) bottom‐nav normal (sidebar closed) → center content */
+  .w3-main {
+    margin: 43px auto 20px !important;
+  }
+
+  /* 2) bottom‐nav + sidebar‐open → push content right */
+  body.sidebar-open .w3-main {
+    /* shorthand: top right bottom left */
+    margin: 43px auto 20px 
+      calc(var(--sidebar-w)) !important;
+  }
 }
 
 /* 
