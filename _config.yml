@@ -4,3 +4,6 @@ description: >-
 baseurl: ""
 url: "https://leeyanleryan.github.io"
 theme: null
+
+plugins:
+  - jekyll-redirect-from
