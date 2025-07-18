@@ -1,139 +1,22 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <!-- flicker fix -->
-  <style>
-    .no-transition, .no-transition * {
-      transition: none !important;
-    }
-  </style>
-  <script src="../../assets/js/flicker_fix.js"> </script>
+---
+layout: default
+title: leeyanleryan's projects
+permalink: /about/projects/
 
-  <title>leeyanleryan's projects</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- favicon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicons/favicon.png">
-  <link rel="shortcut icon" href="../../assets/favicons/favicon.ico">
-  <link rel="icon" type="image/png" sizes="192x192" href="../../assets/favicons/android-chrome-192x192.png">
-  <link rel="icon" type="image/png" sizes="512x512" href="../../assets/favicons/android-chrome-512x512.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicons/apple-touch-icon.png">
-  <!-- css -->
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="../../assets/css/darkmode.css">
-  <link rel="stylesheet" href="../../assets/css/topbar.css">
-  <link rel="stylesheet" href="../../assets/css/sidebar.css">
-  <link rel="stylesheet" href="../../assets/css/nav_arrow.css">
-  <style>
-    html,h1,h2,h3,h4,h5,h6 {
-      font-family: "Raleway", sans-serif;
-      scroll-behavior: smooth;
-      scroll-padding-top: 43px;
-    }
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-  </style>
-</head>
-<body class="dark-mode">
-
-<!-- Top container -->
-<div class="w3-bar w3-top w3-black w3-large" id="myTopbar">
-  <button class="w3-bar-item w3-button w3-hover-none w3-hover-text-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
-  <span class="w3-bar-item w3-right">
-    <i class="fa fa-moon-o" style="margin-right:10px"></i>
-    <label class="switch">
-      <input type="checkbox" id="toggleDarkMode">
-      <span class="slider"></span>
-    </label>
-  </span>
-</div>
-
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-animate-left" id="mySidebar"><br>
-  <div class="w3-container w3-row">
-    <div class="w3-col s4">
-      <img src="https://i.imgur.com/J6a7t0I.png" class="w3-circle w3-margin-right" style="width:46px">
-    </div>
-    <div class="w3-col s8 w3-bar">
-      <span>   Lee Yan Le, <strong>Ryan</strong></span><br>
-      <a href="https://github.com/leeyanleryan" class="w3-bar-item w3-button"><i class="fa fa-github"></i></a>
-      <a href="https://linkedin.com/in/leeyanleryan" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
-      <a href="https://www.youtube.com/@Leehai" class="w3-bar-item w3-button"><i class="fa fa-youtube-play"></i></a>
-    </div>
-  </div>
-
-  <hr>
-  
-  <div class="w3-container">
-    <h4><strong>About</strong></h4>
-    <div class="w3-bar-block">
-      <a href="../#profile" class="w3-bar-item w3-button w3-padding"> Profile</a>
-      <a href="../#resume" class="w3-bar-item w3-button w3-padding"> Resume</a>
-      <a href="../#contact" class="w3-bar-item w3-button w3-padding"> Contact</a>
-    </div>
-  </div>
-
-  <hr>
-  
-  <div class="w3-container">
-    <h4><strong>Projects</strong></h4>
-    <div class="w3-bar-block">
-      <a href="#orbital_nuquest" class="w3-bar-item w3-button w3-padding"> Orbital NUqueSt</a>
-      <a href="#data_analysis" class="w3-bar-item w3-button w3-padding"> Data Analysis</a>
-      <a href="#board_games" class="w3-bar-item w3-button w3-padding"> Board Games</a>
-      <a href="#puzzle_solvers" class="w3-bar-item w3-button w3-padding"> Puzzle Solvers</a>
-    </div>
-  </div>
-
-  <hr>
-  
-  <div class="w3-container">
-    <h4><strong>Experiences</strong></h4>
-    <div class="w3-bar-block">
-      <a href="../experiences/#digital_production_assistant" class="w3-bar-item w3-button w3-padding"> Digital Production Assistant</a>
-      <a href="../experiences/#teaching_assistant" class="w3-bar-item w3-button w3-padding"> Teaching Assistant</a>
-    </div>
-  </div>
-
-  <hr>
-  
-  <div class="w3-container">
-    <h4><strong>Awards</strong></h4>
-    <div class="w3-bar-block">
-      <a href="../awards/#achievements" class="w3-bar-item w3-button w3-padding"> Achievements</a>
-      <a href="../awards/#certifications" class="w3-bar-item w3-button w3-padding"> Certifications</a>
-    </div>
-  </div>
-
-  <hr>
-  
-  <div class="w3-container">
-    <h4><strong>Hobbies</strong></h4>
-    <div class="w3-bar-block">
-      <a href="../hobbies/#reading" class="w3-bar-item w3-button w3-padding"> Reading</a>
-      <a href="../hobbies/#gaming" class="w3-bar-item w3-button w3-padding"> Gaming</a>
-      <a href="../hobbies/#piano" class="w3-bar-item w3-button w3-padding"> Piano</a>
-    </div>
-  </div>
-
-  <hr style="opacity:0">
-</nav>
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+left_label: About
+left_url: /about/
+right_label: Experiences
+right_url: /about/experiences/
+---
 
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin:auto; margin-top:43px; max-width:900px; padding-bottom:20px;" id="pageAbout">
   <section id="orbital_nuquest" class="w3-container">
     <h2><b>Orbital NUqueSt</b> (<a href="https://github.com/leeyanleryan/Orbital-NUqueSt" target="_blank">Link</a>)</h2>
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <img src="../../assets/gif/nuquest_gameplay2.gif" alt="NUqueSt Gameplay 1" style="width:33%;">
-      <img src="../../assets/gif/nuquest_gameplay1.gif" alt="NUqueSt Gameplay 2" style="width:33%;">
-      <img src="../../assets/gif/nuquest_gameplay3.gif" alt="NUqueSt Gameplay 3" style="width:33%;">
+      <img src="/assets/gif/nuquest_gameplay2.gif" alt="NUqueSt Gameplay 1" style="width:33%;">
+      <img src="/assets/gif/nuquest_gameplay1.gif" alt="NUqueSt Gameplay 2" style="width:33%;">
+      <img src="/assets/gif/nuquest_gameplay3.gif" alt="NUqueSt Gameplay 3" style="width:33%;">
     </div>
     <h5>
         NUqueSt is a 2D Top-Down Action-Adventure Singleplayer Questing game. It was heavily inspired by Stardew Valley, incorporating core gameplay elements
@@ -143,8 +26,8 @@
     <br>
 
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <img src="../../assets/gif/nuquest_quest1.gif" alt="NUqueSt Quest 1" style="width:50%;">
-      <img src="../../assets/gif/nuquest_quest2.gif" alt="NUqueSt Quest 2" style="width:50%;">
+      <img src="/assets/gif/nuquest_quest1.gif" alt="NUqueSt Quest 1" style="width:50%;">
+      <img src="/assets/gif/nuquest_quest2.gif" alt="NUqueSt Quest 2" style="width:50%;">
     </div>
     <h5>
       The main purpose of creating NUqueSt was to help familiarise incoming undergraduates with the challenges of various courses in a fun and interactive way.
@@ -155,10 +38,10 @@
     <br>
 
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <img src="../../assets/img/nuquest_poster1.png" alt="NUqueSt Poster 1" style="width:25%;">
-      <img src="../../assets/img/nuquest_poster2.png" alt="NUqueSt Poster 2" style="width:25%;">
-      <img src="../../assets/img/nuquest_poster3.png" alt="NUqueSt Poster 3" style="width:25%;">
-      <img src="../../assets/img/nuquest_poster4.png" alt="NUqueSt Poster 4" style="width:25%;">
+      <img src="/assets/img/nuquest_poster1.png" alt="NUqueSt Poster 1" style="width:25%;">
+      <img src="/assets/img/nuquest_poster2.png" alt="NUqueSt Poster 2" style="width:25%;">
+      <img src="/assets/img/nuquest_poster3.png" alt="NUqueSt Poster 3" style="width:25%;">
+      <img src="/assets/img/nuquest_poster4.png" alt="NUqueSt Poster 4" style="width:25%;">
     </div>
     <h5>
         My friend
@@ -171,8 +54,8 @@
     <br>
 
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <img src="../../assets/img/nuquest_certificate1.png" alt="NUqueSt Certificate 1" style="width:40%;">
-      <img src="../../assets/img/nuquest_certificate2.png" alt="NUqueSt Certificate 2" style="width:47%;">
+      <img src="/assets/img/nuquest_certificate1.png" alt="NUqueSt Certificate 1" style="width:40%;">
+      <img src="/assets/img/nuquest_certificate2.png" alt="NUqueSt Certificate 2" style="width:47%;">
     </div>
     <h5>
       For our project, we were awarded Artemis (Extreme), the highest level of achievement, placing us roughly in the top 5% of the cohort. The link to the
@@ -191,9 +74,9 @@
 
     <h3><u>Breast Cancer Analysis (<a href="https://github.com/leeyanleryan/Data-Analysis/tree/main/Breast%20Cancer%20Analysis%20(IT1244)" target="_blank">Link</a>)</u></h3>
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <img src="../../assets/img/dataanalysis_bca_heatmap1.png" alt="Data Analysis BCA Heatmap 1" style="width:33%;">
-      <img src="../../assets/img/dataanalysis_bca_heatmap2.png" alt="Data Analysis BCA Heatmap 2" style="width:33%;">
-      <img src="../../assets/img/dataanalysis_bca_heatmap3.png" alt="Data Analysis BCA Heatmap 3" style="width:33%;">
+      <img src="/assets/img/dataanalysis_bca_heatmap1.png" alt="Data Analysis BCA Heatmap 1" style="width:33%;">
+      <img src="/assets/img/dataanalysis_bca_heatmap2.png" alt="Data Analysis BCA Heatmap 2" style="width:33%;">
+      <img src="/assets/img/dataanalysis_bca_heatmap3.png" alt="Data Analysis BCA Heatmap 3" style="width:33%;">
     </div>
     <h5 style="margin-bottom:20px">
       The project aimed to classify breast cancer samples (benign vs. malignant) by analyzing imaging attributes from a fine needle aspirate (FNA). It also explored mislabelled
@@ -215,8 +98,8 @@
     <br>
 
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <img src="../../assets/img/dataanalysis_bca_fe1.png" alt="Data Analysis BCA Feature Engineering 1" style="width:50%;">
-      <img src="../../assets/img/dataanalysis_bca_fe2.png" alt="Data Analysis BCA Feature Engineering 2" style="width:50%;">
+      <img src="/assets/img/dataanalysis_bca_fe1.png" alt="Data Analysis BCA Feature Engineering 1" style="width:50%;">
+      <img src="/assets/img/dataanalysis_bca_fe2.png" alt="Data Analysis BCA Feature Engineering 2" style="width:50%;">
     </div>
     <h5 style="margin-bottom:20px">
       The problem was split into two tasks. For the first task, we are told that some labels have been mislabelled, and we are required to detect them. We utilised several
@@ -239,10 +122,10 @@
     <br>
 
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <img src="../../assets/img/dataanalysis_bca_rocauc1.png" alt="Data Analysis BCA ROC-AUC 1" style="width:25%;">
-      <img src="../../assets/img/dataanalysis_bca_rocauc2.png" alt="Data Analysis BCA ROC-AUC 2" style="width:25%;">
-      <img src="../../assets/img/dataanalysis_bca_rocauc3.png" alt="Data Analysis BCA ROC-AUC 3" style="width:25%;">
-      <img src="../../assets/img/dataanalysis_bca_rocauc4.png" alt="Data Analysis BCA ROC-AUC 4" style="width:25%;">
+      <img src="/assets/img/dataanalysis_bca_rocauc1.png" alt="Data Analysis BCA ROC-AUC 1" style="width:25%;">
+      <img src="/assets/img/dataanalysis_bca_rocauc2.png" alt="Data Analysis BCA ROC-AUC 2" style="width:25%;">
+      <img src="/assets/img/dataanalysis_bca_rocauc3.png" alt="Data Analysis BCA ROC-AUC 3" style="width:25%;">
+      <img src="/assets/img/dataanalysis_bca_rocauc4.png" alt="Data Analysis BCA ROC-AUC 4" style="width:25%;">
     </div>
     <h5 style="margin-bottom:20px">
       For the second task, we are required to classify the type of breast cancer ('B' vs 'M') given the diagnosis. To do this, we employed the use of several Machine
@@ -265,7 +148,7 @@
     <br>
 
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <img src="../../assets/img/dataanalysis_bca_keyfindings1.png" alt="Data Analysis BCA Key Findings 1" style="width:80%;">
+      <img src="/assets/img/dataanalysis_bca_keyfindings1.png" alt="Data Analysis BCA Key Findings 1" style="width:80%;">
     </div>
     <h5 style="margin-bottom:20px">
       Key Results:
@@ -279,7 +162,7 @@
 
     <h3><u>Enhancing Guest Experience (<a href="https://github.com/leeyanleryan/Data-Analysis/tree/main/Enhancing%20Guest%20Experience%20(DSA3101)" target="_blank">Link</a>)</u></h3>
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <img src="../../assets/img/dataanalysis_ege_waittime1.png" alt="Data Analysis EGE Wait Time 1" style="width:100%;">
+      <img src="/assets/img/dataanalysis_ege_waittime1.png" alt="Data Analysis EGE Wait Time 1" style="width:100%;">
     </div>
     <h5 style="margin-bottom:20px">
       The project aimed to enhance overall guest experience at Universal Studios Singapore (USS). This project was completed by me and 7 others for DSA3101, a course in NUS on
@@ -293,7 +176,7 @@
     <br>
 
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <img src="../../assets/img/dataanalysis_ege_models1.png" alt="Data Analysis EGE Models 1" style="width:80%;">
+      <img src="/assets/img/dataanalysis_ege_models1.png" alt="Data Analysis EGE Models 1" style="width:80%;">
     </div>
     <h5 style="margin-bottom:20px">
       Model 1 - Linear Optimization:
@@ -332,7 +215,7 @@
     <br>
 
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <img src="../../assets/img/dataanalysis_ege_comparison1.png" alt="Data Analysis EGE Comparison 1" style="width:60%;">
+      <img src="/assets/img/dataanalysis_ege_comparison1.png" alt="Data Analysis EGE Comparison 1" style="width:60%;">
     </div>
     <h5>
       Comparing Both Models:
@@ -361,7 +244,7 @@
     <br>
 
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <img src="../../assets/img/dataanalysis_ege_usage1.png" alt="Data Analysis EGE Usage 1" style="width:60%;">
+      <img src="/assets/img/dataanalysis_ege_usage1.png" alt="Data Analysis EGE Usage 1" style="width:60%;">
     </div>
     <h5 style="margin-bottom:20px">
       Usage and Implementation:
@@ -408,8 +291,8 @@
 
     <h3><u>Chess (<a href="https://github.com/leeyanleryan/Board-Games/tree/main/Chess%20(C%2B%2B)/Chess" target="_blank">Link</a>)</u></h3>
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <img src="../../assets/gif/boardgames_chess1.gif" alt="Board Games Chess 1" style="width:50%;">
-      <img src="../../assets/gif/boardgames_chess2.gif" alt="Board Games Chess 2" style="width:50%;">
+      <img src="/assets/gif/boardgames_chess1.gif" alt="Board Games Chess 1" style="width:50%;">
+      <img src="/assets/gif/boardgames_chess2.gif" alt="Board Games Chess 2" style="width:50%;">
     </div>
     <h5 style="margin-bottom:20px;">
       I developed the game logic and user interface for Chess using Qt Creator, an IDE for creating and deploying applications. The code is done in C++ 
@@ -425,8 +308,8 @@
 
     <h3><u>Connect Four (<a href="https://github.com/leeyanleryan/Board-Games/tree/main/Connect%204%20(Java)" target="_blank">Java Link</a> | <a href="https://github.com/leeyanleryan/Board-Games/tree/main/Connect%204%20(Python)" target="_blank">Python Link</a>)</u></h3>
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <img src="../../assets/gif/boardgames_connectfour1.gif" alt="Board Games Connect Four 1" style="width:53%;">
-      <img src="../../assets/gif/boardgames_connectfour2.gif" alt="Board Games Connect Four 2" style="width:45.4%;">
+      <img src="/assets/gif/boardgames_connectfour1.gif" alt="Board Games Connect Four 1" style="width:53%;">
+      <img src="/assets/gif/boardgames_connectfour2.gif" alt="Board Games Connect Four 2" style="width:45.4%;">
     </div>
     <h5 style="margin-bottom:20px">
       I developed the game logic and user interface for Connect Four in two languages: Java (using Swing and AWT) and Python (using Qt5).
@@ -451,7 +334,7 @@
 
     <h3><u>Sudoku (<a href="https://github.com/leeyanleryan/Puzzle-Solvers/tree/main/Sudoku%20(Classic)" target="_blank">Link</a>)</u></h3>
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <img src="../../assets/gif/puzzlesolvers_sudoku1.gif" alt="Puzzle Solvers Sudoku 1" style="width:90%;">
+      <img src="/assets/gif/puzzlesolvers_sudoku1.gif" alt="Puzzle Solvers Sudoku 1" style="width:90%;">
     </div>
     <h5 style="margin-bottom:20px">
       I developed the solver logic in Python. Currently, it is able to take a screenshot of a sudoku puzzle from <a href="https://sudoku.com" target="_blank">https://sudoku.com</a>,
@@ -466,52 +349,3 @@
 
   <hr class="hr-hide-1250" style="border:1px solid gray; opacity:0">
 </div>
-
-<!-- Navigation Arrows -->
-<div class="nav-arrow nav-arrow-left w3-hide-small">
-  <!-- Label above the arrow -->
-  <div class="nav-label">About</div>
-  <a href="../" class="arrow-symbol">&#10094;</a>
-</div>
-
-<div class="nav-arrow nav-arrow-right w3-hide-small">
-  <!-- Label above the arrow -->
-  <div class="nav-label">Experiences</div>
-  <a href="../experiences/" class="arrow-symbol">&#10095;</a>
-</div>
-
-<!-- NAVIGATION BOTTOM BAR (Small screens) -->
-<div class="nav-bottom">
-  <a href="../">&#10094; About</a>
-  <a href="../experiences/">Experiences &#10095;</a>
-</div>
-
-<script>
-// Get the Sidebar
-var mySidebar = document.getElementById("mySidebar");
-
-// Get the DIV with overlay effect
-var overlayBg = document.getElementById("myOverlay");
-
-// Toggle between showing and hiding the sidebar, and add overlay effect
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-    overlayBg.style.display = "none";
-  } else {
-    mySidebar.style.display = 'block';
-    overlayBg.style.display = "block";
-  }
-}
-
-// Close the sidebar with the close button
-function w3_close() {
-  mySidebar.style.display = "none";
-  overlayBg.style.display = "none";
-}
-</script>
-
-<script src="../../assets/js/darkmode.js"></script>
-
-</body>
-</html>
