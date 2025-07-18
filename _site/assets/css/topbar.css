@@ -12,3 +12,28 @@ body.dark-mode #myTopbar {
   background-color: #0B0B0B !important;    /* same as w3-black */
   color: #fff !important;
 }
+
+/* --------------------------------------------------
+   Remove the grey press‐state background on the Menu button
+   but still allow text/icon to go grey
+-------------------------------------------------- */
+#myTopbar .w3-button {
+  /* get rid of the mobile tap highlight entirely */
+  -webkit-tap-highlight-color: transparent;
+}
+
+#myTopbar .w3-button:focus,
+#myTopbar .w3-button:active {
+  /* no grey box */
+  background-color: transparent !important;
+  box-shadow:        none        !important;
+  outline:           none        !important;
+
+  /* still allow you to tint the text/icon */
+  color:             #757575     !important;
+}
+
+#myTopbar .w3-button:focus i.fa,
+#myTopbar .w3-button:active  i.fa {
+  color: #757575 !important;
+}
