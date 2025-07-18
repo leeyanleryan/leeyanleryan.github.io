@@ -1,0 +1,26 @@
+.no-zoom {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  -ms-touch-action: manipulation;
+}
+
+button.no-bg {
+  background: transparent;
+  box-shadow: none;
+  outline: none;
+}
+
+button.no-bg:focus,
+button.no-bg:active {
+  background: transparent !important;
+  box-shadow: none     !important;
+  outline: none        !important;
+}
+
+button.no-bg:active {
+  color: #757575 !important;
+}
+
+button.no-bg:active i.fa {
+  color: #757575 !important;
+}
