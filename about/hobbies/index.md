@@ -10,7 +10,7 @@ right_url: /about/awards/
 ---
 
 <!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin:auto; margin-top:43px; max-width:900px; padding-bottom:20px;" id="pageAbout">
+<div class="w3-main" id="pageAbout">
   <section id="reading" class="w3-container">
     <h2><b>Reading</b></h2>
     <h5 style="margin-bottom:20px">

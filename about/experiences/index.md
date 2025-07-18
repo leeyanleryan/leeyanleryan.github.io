@@ -10,7 +10,7 @@ right_url: /about/hobbies/
 ---
 
 <!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin:auto; margin-top:43px; max-width:900px; padding-bottom:20px;" id="pageAbout">
+<div class="w3-main" id="pageAbout">
   <section id="digital_production_assistant" class="w3-container">
     <h2><b>Digital Production Assistant</b></h2>
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">

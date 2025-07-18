@@ -10,7 +10,7 @@ right_url: /about/experiences/
 ---
 
 <!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin:auto; margin-top:43px; max-width:900px; padding-bottom:20px;" id="pageAbout">
+<div class="w3-main" id="pageAbout">
   <section id="orbital_nuquest" class="w3-container">
     <h2><b>Orbital NUqueSt</b> (<a href="https://github.com/leeyanleryan/Orbital-NUqueSt" target="_blank">Link</a>)</h2>
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
