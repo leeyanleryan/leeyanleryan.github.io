@@ -96,31 +96,6 @@ body.dark-mode .nav-bottom a {
   color: white;
 }
 
-/* Show/hide for different screen sizes */
-@media (max-width: 1250px) {
-  /* Hide the side arrows on small screens */
-  .nav-arrow-left,
-  .nav-arrow-right {
-      display: none;
-  }
-  /* Show the bottom nav on small screens */
-  .nav-bottom {
-      display: flex;
-  }
-}
-
-/* 
-Used for extra padding at the bottom.
-Hidden for screens bigger than or equal to 1251px.
-Shown for screens smaller than or equal to 1250px.
-Works in conjunction with .nav-bottom .
-*/
-@media (min-width: 1251px) {
-  .hr-hide-1250 {
-    display: none !important;
-  }
-}
-
 :root {
   /* fixed sizes */
   --sidebar-w:          300px;  /* your sidebar width */
@@ -186,12 +161,24 @@ body.sidebar-open .w3-main {
 }
 
 /* 4) hide side arrows & show bottom nav below threshold (1280px) */
-@media (max-width: 1280px) {
+@media (max-width: 1180px) {
   .nav-arrow-left,
   .nav-arrow-right {
     display: none !important;
   }
   .nav-bottom {
     display: flex !important;
+  }
+}
+
+/* 
+Used for extra padding at the bottom.
+Hidden for screens bigger than or equal to 1251px.
+Shown for screens smaller than or equal to 1250px.
+Works in conjunction with .nav-bottom .
+*/
+@media (min-width: 1181px) {
+  .hr-hide-1250 {
+    display: none !important;
   }
 }
