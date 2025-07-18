@@ -40,8 +40,8 @@ right_url: /about/awards/
     <h2><b>Gaming</b></h2>
     <h3><u>Rocket League</u></h3>
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <img src="../../assets/img/achievements_rocketleague1.jpg" alt="Achievements Rocket League 1" style="width:74%;">
-      <img src="../../assets/img/achievements_rocketleague2.png" alt="Achievements Rocket League 2" style="width:25%;">
+      <img src="/assets/img/achievements_rocketleague1.jpg" alt="Achievements Rocket League 1" style="width:74%;">
+      <img src="/assets/img/achievements_rocketleague2.png" alt="Achievements Rocket League 2" style="width:25%;">
     </div>
     <ul><h5 style="margin-bottom:20px;">
       <li><a href="https://rocketleague.tracker.network/rocket-league/profile/steam/76561198148988256/overview" target="_blank">
@@ -52,7 +52,7 @@ right_url: /about/awards/
     </h5></ul>
     <h3><u>Brawlhalla</u></h3>
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <img src="../../assets/img/achievements_brawlhalla1.png" alt="Achievements Brawlhalla 1" style="width:90%;">
+      <img src="/assets/img/achievements_brawlhalla1.png" alt="Achievements Brawlhalla 1" style="width:90%;">
     </div>
     <ul><h5 style="margin-bottom:20px;">
       <li><a href="https://corehalla.com/stats/player/8868631" target="_blank">
@@ -63,8 +63,8 @@ right_url: /about/awards/
     </h5></ul>
     <h3><u>osu!</u></h3>
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <img src="../../assets/img/achievements_osu1.png" alt="Achievements osu 1" style="width:40%;">
-      <img src="../../assets/img/achievements_osu2.png" alt="Achievements osu 2" style="width:60%;">
+      <img src="/assets/img/achievements_osu1.png" alt="Achievements osu 1" style="width:40%;">
+      <img src="/assets/img/achievements_osu2.png" alt="Achievements osu 2" style="width:60%;">
     </div>
     <ul><h5 style="margin-bottom:20px;">
       <li><a href="https://osu.ppy.sh/u/9317883" target="_blank">
@@ -75,7 +75,7 @@ right_url: /about/awards/
     </h5></ul>
     <h3><u>Marvel Rivals</u></h3>
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <img src="../../assets/img/achievements_marvelrivals1.png" alt="Achievements Marvel Rivals 1" style="width:90%;">
+      <img src="/assets/img/achievements_marvelrivals1.png" alt="Achievements Marvel Rivals 1" style="width:90%;">
     </div>
     <ul><h5 style="margin-bottom:20px;">
       <li><a href="https://tracker.gg/marvel-rivals/profile/ign/Leehai/overview" target="_blank">
@@ -85,7 +85,7 @@ right_url: /about/awards/
     </h5></ul>
     <h3><u>Valorant</u></h3>
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <img src="../../assets/img/achievements_valorant1.png" alt="Achievements Valorant 1" style="width:90%;">
+      <img src="/assets/img/achievements_valorant1.png" alt="Achievements Valorant 1" style="width:90%;">
     </div>
     <ul><h5>
       <li><a href="https://tracker.gg/valorant/profile/riot/lee%239975/overview?season=all" target="_blank">

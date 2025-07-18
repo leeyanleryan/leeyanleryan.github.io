@@ -14,9 +14,9 @@ right_url: /about/hobbies/
   <section id="digital_production_assistant" class="w3-container">
     <h2><b>Digital Production Assistant</b></h2>
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <img src="../../assets/gif/dpa_intro1.gif" alt="DPA Intro 1" style="width:32%;">
-      <img src="../../assets/gif/dpa_intro2.gif" alt="DPA Intro 2" style="width:32%;">
-      <img src="../../assets/gif/dpa_intro3.gif" alt="DPA Intro 3" style="width:32%;">
+      <img src="/assets/gif/dpa_intro1.gif" alt="DPA Intro 1" style="width:32%;">
+      <img src="/assets/gif/dpa_intro2.gif" alt="DPA Intro 2" style="width:32%;">
+      <img src="/assets/gif/dpa_intro3.gif" alt="DPA Intro 3" style="width:32%;">
     </div>
     <h5 style="margin-bottom:20px">
       I collaborated with 3 professors and 2 other digital production assistants on producing engaging
@@ -49,8 +49,8 @@ right_url: /about/hobbies/
   <section id="teaching_assistant" class="w3-container">
     <h2><b>Teaching Assistant</b></h2>
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <img src="../../assets/gif/ta_animation1.gif" alt="TA Animation 1" style="width:49%;">
-      <img src="../../assets/gif/ta_animation2.gif" alt="TA Animation 2" style="width:49%;">
+      <img src="/assets/gif/ta_animation1.gif" alt="TA Animation 1" style="width:49%;">
+      <img src="/assets/gif/ta_animation2.gif" alt="TA Animation 2" style="width:49%;">
     </div>
     <h5 style="margin-bottom:20px">
       I taught 25 NUS undergraduates CS1010E, a course on programming methodology in Python. The course
@@ -64,10 +64,10 @@ right_url: /about/hobbies/
     </h5>
     <!-- <br> -->
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <img src="pictures/ta_icebreaker1.jpg" alt="TA Icebreaker Photo 1" style="width:23%;">
-      <img src="pictures/ta_icebreaker2.jpg" alt="TA Icebreaker Photo 2" style="width:23%;">
-      <img src="pictures/ta_icebreaker3.jpg" alt="TA Icebreaker Photo 3" style="width:23%;">
-      <img src="pictures/ta_icebreaker4.jpg" alt="TA Icebreaker Photo 4" style="width:23%;">
+      <img src="/assets/img/ta_icebreaker1.jpg" alt="TA Icebreaker Photo 1" style="width:23%;">
+      <img src="/assets/img/ta_icebreaker2.jpg" alt="TA Icebreaker Photo 2" style="width:23%;">
+      <img src="/assets/img/ta_icebreaker3.jpg" alt="TA Icebreaker Photo 3" style="width:23%;">
+      <img src="/assets/img/ta_icebreaker4.jpg" alt="TA Icebreaker Photo 4" style="width:23%;">
     </div>
     <h5>
     For their first lesson, I conducted the 'Spaghetti Tower' icebreaker challenge as a way to convey the analogy 
@@ -77,13 +77,13 @@ right_url: /about/hobbies/
     </h5>
     <br>
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <img src="../../assets/img/ta_reviews1.png" alt="TA Reviews 1" style="width:46%;">
-      <img src="../../assets/img/ta_reviews2.png" alt="TA Reviews 2" style="width:53%;">
+      <img src="/assets/img/ta_reviews1.png" alt="TA Reviews 1" style="width:46%;">
+      <img src="/assets/img/ta_reviews2.png" alt="TA Reviews 2" style="width:53%;">
     </div>
     <h5 style="margin-bottom:20px">
     I received 9 nominations for teaching excellence, as well as better reviews on average compared to several
     departments, showing the efficiency of my teaching. The feedback report can be found 
-    <a href="../../assets/pdf/cs1010e_feedback.pdf" target="_blank">here</a>.
+    <a href="/assets/pdf/cs1010e_feedback.pdf" target="_blank">here</a>.
     </h5>
     <h5>
     Topics taught:
