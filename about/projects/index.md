@@ -22,9 +22,7 @@ right_url: /about/experiences/
         NUqueSt is a 2D Top-Down Action-Adventure Singleplayer Questing game. It was heavily inspired by Stardew Valley, incorporating core gameplay elements
       such as fighting, farming and mining. It features 3 different biomes, 8 Non-Playable-Characters (NPCs), 6 ores, 3 enemies, 1 boss and 40 quests.
     </h5>
-
     <br>
-
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
       <img src="/assets/gif/nuquest_quest1.gif" alt="NUqueSt Quest 1" style="width:50%;">
       <img src="/assets/gif/nuquest_quest2.gif" alt="NUqueSt Quest 2" style="width:50%;">
@@ -34,9 +32,7 @@ right_url: /about/experiences/
       We achieved this by gamifying each course into a quest. For example, the computing course “CS1010” became an N-Queens puzzle, where players had to provide 
       two valid configurations for placing 6 queens on a 6x6 board. These quests are given by the NPCs, and reward the player with GPA upon completion.
     </h5>
-
     <br>
-
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
       <img src="/assets/img/nuquest_poster1.png" alt="NUqueSt Poster 1" style="width:25%;">
       <img src="/assets/img/nuquest_poster2.png" alt="NUqueSt Poster 2" style="width:25%;">
@@ -50,9 +46,7 @@ right_url: /about/experiences/
         an agile methodology with monthly sprints. Each sprint began with planning feasible features and ended with peer reviews, alongside the creation of a 
         poster and video to showcase the project. We then incorporated feedback in subsequent sprints, guiding us toward the right direction.
     </h5>
-
     <br>
-
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
       <img src="/assets/img/nuquest_certificate1.png" alt="NUqueSt Certificate 1" style="width:40%;">
       <img src="/assets/img/nuquest_certificate2.png" alt="NUqueSt Certificate 2" style="width:47%;">
@@ -71,7 +65,6 @@ right_url: /about/experiences/
     <h5 style="margin-bottom:20px">
       This project is a compilation of multiple data analysis projects, most of which incorporate the use of various Machine Learning algorithms for predictions.
     </h5>
-
     <h3><u>Breast Cancer Analysis (<a href="https://github.com/leeyanleryan/Data-Analysis/tree/main/Breast%20Cancer%20Analysis%20(IT1244)" target="_blank">Link</a>)</u></h3>
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
       <img src="/assets/img/dataanalysis_bca_heatmap1.png" alt="Data Analysis BCA Heatmap 1" style="width:33%;">
@@ -94,9 +87,7 @@ right_url: /about/experiences/
         <li>Correlation analysis identified the most influential features (i.e., radius, concavity, concave points)</li>
       </ul>
     </h5>
-
     <br>
-
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
       <img src="/assets/img/dataanalysis_bca_fe1.png" alt="Data Analysis BCA Feature Engineering 1" style="width:50%;">
       <img src="/assets/img/dataanalysis_bca_fe2.png" alt="Data Analysis BCA Feature Engineering 2" style="width:50%;">
@@ -118,9 +109,7 @@ right_url: /about/experiences/
         <li>Logistic Regression: Tested whether flagged points consistently mismatched the known labels</li>
       </ul>
     </h5>
-
     <br>
-
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
       <img src="/assets/img/dataanalysis_bca_rocauc1.png" alt="Data Analysis BCA ROC-AUC 1" style="width:25%;">
       <img src="/assets/img/dataanalysis_bca_rocauc2.png" alt="Data Analysis BCA ROC-AUC 2" style="width:25%;">
@@ -144,9 +133,7 @@ right_url: /about/experiences/
         <li>Support Vector Machines (SVM)</li>
       </ul>
     </h5>
-
     <br>
-
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
       <img src="/assets/img/dataanalysis_bca_keyfindings1.png" alt="Data Analysis BCA Key Findings 1" style="width:80%;">
     </div>
@@ -159,7 +146,6 @@ right_url: /about/experiences/
         <li>RF showed signs of overfitting and noise sensitivity with certain irrelevant features</li>
       </ul>
     </h5>
-
     <h3><u>Enhancing Guest Experience (<a href="https://github.com/leeyanleryan/Data-Analysis/tree/main/Enhancing%20Guest%20Experience%20(DSA3101)" target="_blank">Link</a>)</u></h3>
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
       <img src="/assets/img/dataanalysis_ege_waittime1.png" alt="Data Analysis EGE Wait Time 1" style="width:100%;">
@@ -172,9 +158,7 @@ right_url: /about/experiences/
       My objective is to optimally allocate staff to different attractions at an amusement park (e.g., Universal Studios Singapore) in order to reduce wait times and improve guest 
       satisfaction. Two models: Linear Optimization and Greedy Heuristic, are compared.
     </h5>
-
     <br>
-
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
       <img src="/assets/img/dataanalysis_ege_models1.png" alt="Data Analysis EGE Models 1" style="width:80%;">
     </div>
@@ -211,9 +195,7 @@ right_url: /about/experiences/
         </li>
       </ul>
     </h5>
-
     <br>
-
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
       <img src="/assets/img/dataanalysis_ege_comparison1.png" alt="Data Analysis EGE Comparison 1" style="width:60%;">
     </div>
@@ -240,9 +222,7 @@ right_url: /about/experiences/
         </li>
       </ol>
     </h5>
-
     <br>
-
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
       <img src="/assets/img/dataanalysis_ege_usage1.png" alt="Data Analysis EGE Usage 1" style="width:60%;">
     </div>
@@ -288,7 +268,6 @@ right_url: /about/experiences/
       This project was created out of an interest in exploring how artificial intelligence (AI) can be applied to board games, which require varying levels 
       of strategic thinking and logic.
     </h5>
-
     <h3><u>Chess (<a href="https://github.com/leeyanleryan/Board-Games/tree/main/Chess%20(C%2B%2B)/Chess" target="_blank">Link</a>)</u></h3>
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
       <img src="/assets/gif/boardgames_chess1.gif" alt="Board Games Chess 1" style="width:50%;">
@@ -305,7 +284,6 @@ right_url: /about/experiences/
     <h5 style="margin-bottom:20px">
       Current level of AI: Incomplete
     </h5>
-
     <h3><u>Connect Four (<a href="https://github.com/leeyanleryan/Board-Games/tree/main/Connect%204%20(Java)" target="_blank">Java Link</a> | <a href="https://github.com/leeyanleryan/Board-Games/tree/main/Connect%204%20(Python)" target="_blank">Python Link</a>)</u></h3>
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
       <img src="/assets/gif/boardgames_connectfour1.gif" alt="Board Games Connect Four 1" style="width:53%;">
@@ -331,7 +309,6 @@ right_url: /about/experiences/
       This project was created out of an interest in applying computer vision and AI to puzzle-solving. The end goal of this project is to make a phone application, capable of reading 
       pictures taken from the phone. Its main functionality would be to solve puzzles, but I may choose to expand into a more general direction.
     </h5>
-
     <h3><u>Sudoku (<a href="https://github.com/leeyanleryan/Puzzle-Solvers/tree/main/Sudoku%20(Classic)" target="_blank">Link</a>)</u></h3>
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
       <img src="/assets/gif/puzzlesolvers_sudoku1.gif" alt="Puzzle Solvers Sudoku 1" style="width:90%;">

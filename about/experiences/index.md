@@ -62,9 +62,7 @@ right_url: /about/hobbies/
       slides. This allowed me to better visualise the flow of the code to bridge learning gaps. The animations also
       helped in keeping the students engaged in looking at the slides, as it would capture their attention.
     </h5>
-
-    <!-- <br>
-
+    <!-- <br> -->
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
       <img src="pictures/ta_icebreaker1.jpg" alt="TA Icebreaker Photo 1" style="width:23%;">
       <img src="pictures/ta_icebreaker2.jpg" alt="TA Icebreaker Photo 2" style="width:23%;">
@@ -76,10 +74,8 @@ right_url: /about/hobbies/
     that coding is an iterative process. The goal of the challenge was to make the tallest tower using spaghetti
     sticks and marshmallow. The students were split into 4 different groups, each building unique structures. The
     tallest tower was around 50cm.
-    </h5> -->
-
+    </h5>
     <br>
-
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
       <img src="../../assets/img/ta_reviews1.png" alt="TA Reviews 1" style="width:46%;">
       <img src="../../assets/img/ta_reviews2.png" alt="TA Reviews 2" style="width:53%;">

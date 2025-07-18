@@ -50,7 +50,6 @@ right_url: /about/awards/
       <li>Peak Rating: Grand Champion III Division I (1723 Rating), 28/01/2023</li>
       <li>Peak Ranking: Singapore Rank #1, 23/09/2018</li>
     </h5></ul>
-
     <h3><u>Brawlhalla</u></h3>
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
       <img src="../../assets/img/achievements_brawlhalla1.png" alt="Achievements Brawlhalla 1" style="width:90%;">
@@ -62,7 +61,6 @@ right_url: /about/awards/
       <li>Peak ELO: Valhallan (2302 ELO), 02/11/2024</li>
       <li>Peak Ranking: South-East Asia Rank #24, 02/11/2024</li>
     </h5></ul>
-
     <h3><u>osu!</u></h3>
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
       <img src="../../assets/img/achievements_osu1.png" alt="Achievements osu 1" style="width:40%;">
@@ -75,7 +73,6 @@ right_url: /about/awards/
       <li>Peak PP Play: Epitaph (705pp), 25/06/2024</li>
       <li>Peak Ranking: Global Rank #2067, 30/09/2024</li>
     </h5></ul>
-
     <h3><u>Marvel Rivals</u></h3>
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
       <img src="../../assets/img/achievements_marvelrivals1.png" alt="Achievements Marvel Rivals 1" style="width:90%;">
@@ -86,7 +83,6 @@ right_url: /about/awards/
       </a></li>
       <li>Peak RS: Grandmaster III (4504 RS), 13/03/2025</li>
     </h5></ul>
-
     <h3><u>Valorant</u></h3>
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
       <img src="../../assets/img/achievements_valorant1.png" alt="Achievements Valorant 1" style="width:90%;">
