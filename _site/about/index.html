@@ -119,7 +119,7 @@
 
 <!-- Page content goes here -->
 <!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin:auto; margin-top:43px; max-width:900px; padding-bottom:20px;" id="pageAbout">
+<div class="w3-main" id="pageAbout">
   <section id="profile" class="w3-container">
     <h2><b>Profile</b></h2>
     <img src="/assets/img/mt_fuji.jpg" alt="Mt Fuji" />
@@ -194,10 +194,12 @@ var overlayBg = document.getElementById("myOverlay");
 function w3_open() {
   if (mySidebar.style.display === 'block') {
     mySidebar.style.display = 'none';
-    overlayBg.style.display = "none";
+    overlayBg.style.display = 'none';
+    document.body.classList.remove('sidebar-open');
   } else {
     mySidebar.style.display = 'block';
-    overlayBg.style.display = "block";
+    overlayBg.style.display = 'block';
+    document.body.classList.add('sidebar-open');
   }
 }
 
@@ -205,6 +207,7 @@ function w3_open() {
 function w3_close() {
   mySidebar.style.display = "none";
   overlayBg.style.display = "none";
+  document.body.classList.remove('sidebar-open');
 }
 </script>
 

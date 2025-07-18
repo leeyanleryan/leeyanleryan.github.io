@@ -22,13 +22,13 @@ html {
 /* Left arrow pinned to the left side */
 .nav-arrow-left {
   /* Example: keep 50px from left edge for a gap */
-  left: calc((100vw - 900px)/2 - 140px);
+  left: calc((100vw - 900px)/2 - 110px);
 }
 
 /* Right arrow pinned to the right side */
 .nav-arrow-right {
   /* Example: keep 50px from right edge for a gap */
-  right: calc((100vw - 900px)/2 - 140px);
+  right: calc((100vw - 900px)/2 - 110px);
 }
 
 /* Label above the arrow */
@@ -118,5 +118,80 @@ Works in conjunction with .nav-bottom .
 @media (min-width: 1251px) {
   .hr-hide-1250 {
     display: none !important;
+  }
+}
+
+:root {
+  /* fixed sizes */
+  --sidebar-w:          300px;  /* your sidebar width */
+  --content-w:          900px;  /* your .w3-main max-width */
+  --arrow-off:          110px;  /* the “-110px” centering offset */
+
+  /* how far the left arrow sits from the sidebar */
+  --arrow-sidebar-gap:  30px;   /* ← increase this to move the left arrow farther right */
+
+  /* how far the right arrow sits from the window edge */
+  --arrow-window-gap:   0px;   /* ← decrease this to move the right arrow closer left */
+
+  /* how much space between each arrow and the main body */
+  --body-gap-left:      100px;  /* ← increase this for a bigger gap between left arrow & body */
+  --body-gap-right:     30px;   /* ← decrease this for a smaller gap between body & right arrow */
+}
+
+.w3-main {
+  margin: 43px auto 20px;
+  max-width: 900px;
+  padding-bottom: 20px;
+  transition: none;
+}
+
+/* 1) clamp LEFT arrow so it never goes under the sidebar + arrow-sidebar-gap */
+body.sidebar-open .nav-arrow-left {
+  left: max(
+    calc((100vw - var(--content-w)) / 2 - var(--arrow-off)),
+    calc(var(--sidebar-w) + var(--arrow-sidebar-gap))
+  );
+}
+
+/* 2) clamp RIGHT arrow so it never goes under the window edge + arrow-window-gap */
+body.sidebar-open .nav-arrow-right {
+  right: max(
+    calc((100vw - var(--content-w)) / 2 - var(--arrow-off)),
+    var(--arrow-window-gap)
+  );
+}
+
+/* 3) clamp BOTH sides of the main content so it never crosses:
+      • left  = sidebar + arrow-sidebar-gap + body-gap-left
+      • right = arrow-window-gap + body-gap-right */
+body.sidebar-open .w3-main {
+  margin: 43px auto 20px;
+
+  margin-left: max(
+    calc((100vw - var(--content-w)) / 2),
+    calc(
+      var(--sidebar-w)
+      + var(--arrow-sidebar-gap)
+      + var(--body-gap-left)
+    )
+  );
+
+  margin-right: max(
+    calc((100vw - var(--content-w)) / 2),
+    calc(
+      var(--arrow-window-gap)
+      + var(--body-gap-right)
+    )
+  );
+}
+
+/* 4) hide side arrows & show bottom nav below threshold (1280px) */
+@media (max-width: 1280px) {
+  .nav-arrow-left,
+  .nav-arrow-right {
+    display: none !important;
+  }
+  .nav-bottom {
+    display: flex !important;
   }
 }

@@ -134,10 +134,12 @@ var overlayBg = document.getElementById("myOverlay");
 function w3_open() {
   if (mySidebar.style.display === 'block') {
     mySidebar.style.display = 'none';
-    overlayBg.style.display = "none";
+    overlayBg.style.display = 'none';
+    document.body.classList.remove('sidebar-open');
   } else {
     mySidebar.style.display = 'block';
-    overlayBg.style.display = "block";
+    overlayBg.style.display = 'block';
+    document.body.classList.add('sidebar-open');
   }
 }
 
@@ -145,6 +147,7 @@ function w3_open() {
 function w3_close() {
   mySidebar.style.display = "none";
   overlayBg.style.display = "none";
+  document.body.classList.remove('sidebar-open');
 }
 </script>
 

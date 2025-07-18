@@ -10,7 +10,7 @@ right_url: /about/projects/
 ---
 
 <!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin:auto; margin-top:43px; max-width:900px; padding-bottom:20px;" id="pageAbout">
+<div class="w3-main" id="pageAbout">
   <section id="profile" class="w3-container">
     <h2><b>Profile</b></h2>
     <img src="/assets/img/mt_fuji.jpg" alt="Mt Fuji">
