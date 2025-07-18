@@ -1,0 +1,122 @@
+html {
+  overflow-y: scroll;
+}
+
+/* Common arrow container styles for large screens */
+.nav-arrow {
+  position: fixed;
+  top: 50%;                /* Centers vertically */
+  transform: translateY(-50%);
+  z-index: 998;            /* On top of main content */
+  width: 80px;             /* Enough space for the label + arrow */
+  text-align: center;      /* Center the label + arrow horizontally */
+  font-family: "Raleway", sans-serif;
+  white-space: nowrap;
+}
+
+.nav-arrow:hover .arrow-symbol,
+.nav-arrow:hover .nav-label {
+  color: #757575 !important;
+}
+
+/* Left arrow pinned to the left side */
+.nav-arrow-left {
+  /* Example: keep 50px from left edge for a gap */
+  left: calc((100vw - 900px)/2 - 140px);
+}
+
+/* Right arrow pinned to the right side */
+.nav-arrow-right {
+  /* Example: keep 50px from right edge for a gap */
+  right: calc((100vw - 900px)/2 - 140px);
+}
+
+/* Label above the arrow */
+.nav-label {
+  font-size: 14px;
+  margin-bottom: 5px;      /* Spacing between label and arrow */
+
+  /* display: block;
+  text-align: center;
+  white-space: nowrap; */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Arrow symbol styling */
+.arrow-symbol {
+  font-size: 2rem;         /* Large arrow icon */
+  text-decoration: none;   /* Remove underline */
+  color: black;            /* Arrow color */
+  /* display: inline-block; */
+  cursor: pointer;
+  
+  display: block;
+  /* text-align: center; */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode .arrow-symbol {
+  color: white;
+}
+
+/* Bottom nav for small screens */
+.nav-bottom {
+  display: none;
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+  padding: 10px 20px;       /* Add some spacing */
+  font-size: 1.2rem;
+  font-family: "Raleway", sans-serif;
+  z-index: 1004;            /* Ensure it's on top */
+  background-color: white; /* White backdrop to prevent overlap */
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.1); /* Optional subtle shadow */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Style the links in bottom nav */
+.nav-bottom a {
+  text-decoration: none;
+  color: black;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-bottom a:hover {
+  color: #757575 !important;
+}
+
+/* Dark Mode overrides for bottom nav */
+body.dark-mode .nav-bottom {
+  background-color: #0B0B0B;
+  color: white;
+}
+body.dark-mode .nav-bottom a {
+  color: white;
+}
+
+/* Show/hide for different screen sizes */
+@media (max-width: 1250px) {
+  /* Hide the side arrows on small screens */
+  .nav-arrow-left,
+  .nav-arrow-right {
+      display: none;
+  }
+  /* Show the bottom nav on small screens */
+  .nav-bottom {
+      display: flex;
+  }
+}
+
+/* 
+Used for extra padding at the bottom.
+Hidden for screens bigger than or equal to 1251px.
+Shown for screens smaller than or equal to 1250px.
+Works in conjunction with .nav-bottom .
+*/
+@media (min-width: 1251px) {
+  .hr-hide-1250 {
+    display: none !important;
+  }
+}

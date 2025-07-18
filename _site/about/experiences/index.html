@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- flicker fix -->
+  <style>
+    .no-transition, .no-transition * {
+      transition: none !important;
+    }
+  </style>
+  <script src="/assets/js/flicker_fix.js"> </script>
+  <!-- take title from front matter of md files -->
+  <title>leeyanleryan's experiences</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon.png">
+  <link rel="shortcut icon" href="/assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon/android-chrome-512x512.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+  <!-- css -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/assets/css/darkmode.css">
+  <link rel="stylesheet" href="/assets/css/topbar.css">
+  <link rel="stylesheet" href="/assets/css/sidebar.css">
+  <link rel="stylesheet" href="/assets/css/nav_arrow.css">
+  <style>
+    html,h1,h2,h3,h4,h5,h6 {
+      font-family: "Raleway", sans-serif;
+      scroll-behavior: smooth;
+      scroll-padding-top: 43px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+
+<body class="dark-mode">
+    
+<!-- Top container -->
+<div class="w3-bar w3-top w3-black w3-large" id="myTopbar">
+  <button class="w3-bar-item w3-button w3-hover-none w3-hover-text-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
+  <span class="w3-bar-item w3-right">
+    <i class="fa fa-moon-o" style="margin-right:10px"></i>
+    <label class="switch">
+      <input type="checkbox" id="toggleDarkMode">
+      <span class="slider"></span>
+    </label>
+  </span>
+</div>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-animate-left" id="mySidebar"><br>
+  <div class="w3-container w3-row">
+    <div class="w3-col s4">
+      <img src="https://i.imgur.com/J6a7t0I.png" class="w3-circle w3-margin-right" style="width:46px">
+    </div>
+    <div class="w3-col s8 w3-bar">
+      <span>   Lee Yan Le, <strong>Ryan</strong></span><br>
+      <a href="https://github.com/leeyanleryan" class="w3-bar-item w3-button"><i class="fa fa-github"></i></a>
+      <a href="https://linkedin.com/in/leeyanleryan" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
+      <a href="https://www.youtube.com/@Leehai" class="w3-bar-item w3-button"><i class="fa fa-youtube-play"></i></a>
+    </div>
+  </div>
+  <hr>
+  <div class="w3-container">
+    <h4><strong>About</strong></h4>
+    <div class="w3-bar-block">
+      <a href="/about/#profile" class="w3-bar-item w3-button w3-padding"> Profile</a>
+      <a href="/about/#resume" class="w3-bar-item w3-button w3-padding"> Resume</a>
+      <a href="/about/#contact" class="w3-bar-item w3-button w3-padding"> Contact</a>
+    </div>
+  </div>
+  <hr>
+  <div class="w3-container">
+    <h4><strong>Projects</strong></h4>
+    <div class="w3-bar-block">
+      <a href="/about/projects/#orbital_nuquest" class="w3-bar-item w3-button w3-padding"> Orbital NUqueSt</a>
+      <a href="/about/projects/#data_analysis" class="w3-bar-item w3-button w3-padding"> Data Analysis</a>
+      <a href="/about/projects/#board_games" class="w3-bar-item w3-button w3-padding"> Board Games</a>
+      <a href="/about/projects/#puzzle_solvers" class="w3-bar-item w3-button w3-padding"> Puzzle Solvers</a>
+    </div>
+  </div>
+  <hr>
+  <div class="w3-container">
+    <h4><strong>Experiences</strong></h4>
+    <div class="w3-bar-block">
+      <a href="/about/experiences/#digital_production_assistant" class="w3-bar-item w3-button w3-padding"> Digital Production Assistant</a>
+      <a href="/about/experiences/#teaching_assistant" class="w3-bar-item w3-button w3-padding"> Teaching Assistant</a>
+    </div>
+  </div>
+  <hr>
+  <div class="w3-container">
+    <h4><strong>Awards</strong></h4>
+    <div class="w3-bar-block">
+      <a href="/about/awards/#achievements" class="w3-bar-item w3-button w3-padding"> Achievements</a>
+      <a href="/about/awards/#certifications" class="w3-bar-item w3-button w3-padding"> Certifications</a>
+    </div>
+  </div>
+  <hr>
+  <div class="w3-container">
+    <h4><strong>Hobbies</strong></h4>
+    <div class="w3-bar-block">
+      <a href="/about/hobbies/#reading" class="w3-bar-item w3-button w3-padding"> Reading</a>
+      <a href="/about/hobbies/#gaming" class="w3-bar-item w3-button w3-padding"> Gaming</a>
+      <a href="/about/hobbies/#piano" class="w3-bar-item w3-button w3-padding"> Piano</a>
+    </div>
+  </div>
+  <hr style="opacity:0">
+  <hr style="opacity:0">
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Page content goes here -->
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin:auto; margin-top:43px; max-width:900px; padding-bottom:20px;" id="pageAbout">
+  <section id="digital_production_assistant" class="w3-container">
+    <h2><b>Digital Production Assistant</b></h2>
+    <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
+      <img src="/assets/gif/dpa_intro1.gif" alt="DPA Intro 1" style="width:32%;" />
+      <img src="/assets/gif/dpa_intro2.gif" alt="DPA Intro 2" style="width:32%;" />
+      <img src="/assets/gif/dpa_intro3.gif" alt="DPA Intro 3" style="width:32%;" />
+    </div>
+    <h5 style="margin-bottom:20px">
+      I collaborated with 3 professors and 2 other digital production assistants on producing engaging
+      educational videos on Generative AI and Machine Learning. These videos are made for courses published
+      under NUS Blended Learning 2.0, to be used by NUS professors and staff to gain relevant knowledge on 
+      recent AI/ML advancements.
+    </h5>
+    <h5 style="margin-bottom:20px">
+      The general workflow starts from understanding lecture slides made by the professors, converting them 
+      into slides that are simple to understand, as well as integrating PowerPoint animations and transitions 
+      to convey information better. Afterwards, we used Camtasia to mix the voice recordings and slides together,
+      ensuring that volume levels stay consistent throughout the video. Lastly, we added captions using Descript,
+      which are stored in .srt files so that the viewer can disable and enable captions whenever needed.
+    </h5>
+    <h5>
+      Topics contributed:
+      <ul style="margin-top:0;">
+        <li>Prompt Engineering for Large Language Models</li>
+        <li>Introduction to Generative AI</li>
+        <li>k-Nearest Neighbors</li>
+        <li>Decision Tree</li>
+        <li>Convolutional Neural Networks</li>
+        <li>Recurrent Neural Networks</li>
+      </ul>
+    </h5>
+  </section>
+  
+  <hr style="border:1px solid gray; opacity:0.2" />
+
+  <section id="teaching_assistant" class="w3-container">
+    <h2><b>Teaching Assistant</b></h2>
+    <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
+      <img src="/assets/gif/ta_animation1.gif" alt="TA Animation 1" style="width:49%;" />
+      <img src="/assets/gif/ta_animation2.gif" alt="TA Animation 2" style="width:49%;" />
+    </div>
+    <h5 style="margin-bottom:20px">
+      I taught 25 NUS undergraduates CS1010E, a course on programming methodology in Python. The course
+      educates students from the ground up, allowing those with no programming background to acquire computational
+      skills at a moderate pace while having fun. 
+    </h5>
+    <h5>
+      I incorporated animations and transitions learnt from my digital production assistant role into the PowerPoint
+      slides. This allowed me to better visualise the flow of the code to bridge learning gaps. The animations also
+      helped in keeping the students engaged in looking at the slides, as it would capture their attention.
+    </h5>
+    <!-- <br> -->
+    <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
+      <img src="/assets/img/ta_icebreaker1.jpg" alt="TA Icebreaker Photo 1" style="width:23%;" />
+      <img src="/assets/img/ta_icebreaker2.jpg" alt="TA Icebreaker Photo 2" style="width:23%;" />
+      <img src="/assets/img/ta_icebreaker3.jpg" alt="TA Icebreaker Photo 3" style="width:23%;" />
+      <img src="/assets/img/ta_icebreaker4.jpg" alt="TA Icebreaker Photo 4" style="width:23%;" />
+    </div>
+    <h5>
+    For their first lesson, I conducted the 'Spaghetti Tower' icebreaker challenge as a way to convey the analogy 
+    that coding is an iterative process. The goal of the challenge was to make the tallest tower using spaghetti
+    sticks and marshmallow. The students were split into 4 different groups, each building unique structures. The
+    tallest tower was around 50cm.
+    </h5>
+    <br />
+    <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
+      <img src="/assets/img/ta_reviews1.png" alt="TA Reviews 1" style="width:46%;" />
+      <img src="/assets/img/ta_reviews2.png" alt="TA Reviews 2" style="width:53%;" />
+    </div>
+    <h5 style="margin-bottom:20px">
+    I received 9 nominations for teaching excellence, as well as better reviews on average compared to several
+    departments, showing the efficiency of my teaching. The feedback report can be found 
+    <a href="/assets/pdf/cs1010e_feedback.pdf" target="_blank">here</a>.
+    </h5>
+    <h5>
+    Topics taught:
+    <ul style="margin-top:0;">
+      <li>Variables</li>
+      <li>Expressions</li>
+      <li>Functions</li>
+      <li>Iteration</li>
+      <li>Recursion</li>
+      <li>Sequences</li>
+      <li>Higher Order Functions</li>
+      <li>File I/O</li>
+      <li>Multi-Dimensional Arrays</li>
+      <li>Object-Oriented Programming</li>
+      <li>Searching</li>
+      <li>Sorting</li>
+      <li>Time/Space Complexity</li>
+      <li>Exceptions</li>
+    </ul>
+    </h5>
+  </section>
+
+  <hr class="hr-hide-1250" style="border:1px solid gray; opacity:0" />
+</div>
+
+
+<!-- Navigation Arrows -->
+<!-- Navigation Arrows -->
+<div class="nav-arrow nav-arrow-left w3-hide-small">
+  <!-- Label above the arrow -->
+  <div class="nav-label">Projects</div>
+  <a href="/about/projects/" class="arrow-symbol">&#10094;</a>
+</div>
+
+<div class="nav-arrow nav-arrow-right w3-hide-small">
+  <!-- Label above the arrow -->
+  <div class="nav-label">Hobbies</div>
+  <a href="/about/hobbies/" class="arrow-symbol">&#10095;</a>
+</div>
+
+<!-- NAVIGATION BOTTOM BAR (Small screens) -->
+<div class="nav-bottom">
+  <a href="/about/projects/">&#10094; Projects</a>
+  <a href="/about/hobbies/">Hobbies &#10095;</a>
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+<script src="/assets/js/darkmode.js"></script>
+
+</body>
+</html>
