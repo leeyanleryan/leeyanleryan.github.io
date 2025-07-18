@@ -37,6 +37,11 @@
       max-width: 100%;
       height: auto;
     }
+    .no-zoom {
+      -webkit-tap-highlight-color: transparent;
+      touch-action: manipulation;
+      -ms-touch-action: manipulation;
+    }
   </style>
 </head>
 
@@ -44,7 +49,7 @@
     
 <!-- Top container -->
 <div class="w3-bar w3-top w3-black w3-large" id="myTopbar">
-  <button type="button" class="w3-bar-item w3-button w3-hover-text-grey no-zoom no-bg" onclick="w3_open(); this.blur();"><i class="fa fa-bars"></i>  Menu</button>
+  <button class="w3-bar-item w3-button w3-hover-none w3-hover-text-grey no-zoom" onclick="w3_open(); this.blur();"><i class="fa fa-bars"></i>  Menu</button>
   <span class="w3-bar-item w3-right">
     <i class="fa fa-moon-o" style="margin-right:10px"></i>
     <label class="switch">
