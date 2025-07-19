@@ -130,34 +130,7 @@
 
 <hr class="hr-hide-1180" style="border:1px solid gray; opacity:0">
 
-<script>
-// Get the Sidebar
-var mySidebar = document.getElementById("mySidebar");
-
-// Get the DIV with overlay effect
-var overlayBg = document.getElementById("myOverlay");
-
-// Toggle between showing and hiding the sidebar, and add overlay effect
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-    overlayBg.style.display = 'none';
-    document.body.classList.remove('sidebar-open');
-  } else {
-    mySidebar.style.display = 'block';
-    overlayBg.style.display = 'block';
-    document.body.classList.add('sidebar-open');
-  }
-}
-
-// Close the sidebar with the close button
-function w3_close() {
-  mySidebar.style.display = "none";
-  overlayBg.style.display = "none";
-  document.body.classList.remove('sidebar-open');
-}
-</script>
-
+<script src="/assets/js/side_bar.js"></script>
 <script src="/assets/js/dark_mode.js"></script>
 
 </body>
