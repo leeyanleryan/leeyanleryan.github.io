@@ -2,7 +2,7 @@
 #left-side-bar {
   position: fixed;
   height: calc(100vh - 43px); /* 100% viewport height minus the top container */
-  width: 280px; /* Sidebar width */
+  width: var(--sidebar-w); /* Sidebar width */
   overflow-y: scroll; /* Enable vertical scrolling */
   box-sizing: border-box; /* Include padding in total width/height */
   padding-left: 10px;
@@ -77,20 +77,6 @@ body.dark-mode #left-side-bar {
 
 body.dark-mode #left-side-bar h4 {
   color: white;
-}
-
-hr.hr-side-bar {
-  height: 1px;
-  color: var(--light-mode-border-color);
-  background: var(--light-mode-border-color);
-  font-size: 0;
-  border: 0;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-body.dark-mode hr.hr-side-bar {
-  color: var(--dark-mode-border-color);
-  background: var(--dark-mode-border-color);
 }
 
 /* “Pill” style for each link */

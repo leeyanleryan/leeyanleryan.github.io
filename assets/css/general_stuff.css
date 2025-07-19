@@ -1,0 +1,13 @@
+hr.hr-side-bar {
+  height: 1px;
+  color: var(--light-mode-border-color);
+  background: var(--light-mode-border-color);
+  font-size: 0;
+  border: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode hr.hr-side-bar {
+  color: var(--dark-mode-border-color);
+  background: var(--dark-mode-border-color);
+}
