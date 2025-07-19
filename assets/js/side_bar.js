@@ -1,5 +1,5 @@
 // Get the Sidebar
-var mySidebar = document.getElementById("mySidebar");
+var mySidebar = document.getElementById("left-side-bar");
 
 // Get the DIV with overlay effect
 var overlayBg = document.getElementById("side-bar-overlay");

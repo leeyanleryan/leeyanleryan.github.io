@@ -1,4 +1,5 @@
-#mySidebar {
+
+#left-side-bar {
   position: fixed;
   height: calc(100vh - 43px); /* 100% viewport height minus the top container */
   width: 280px; /* Sidebar width */
@@ -23,8 +24,8 @@
 }
 
 /* Only truncate the “list” links, not the icon buttons */
-#mySidebar .w3-container:not(.w3-row) a,
-#mySidebar .w3-ul a {
+#left-side-bar .w3-container:not(.w3-row) a,
+#left-side-bar .w3-ul a {
   display: block;
   width: 100%;
   white-space: nowrap;
@@ -33,62 +34,67 @@
 }
 
 /* WebKit: always 8px but transparent */
-#mySidebar::-webkit-scrollbar {
+#left-side-bar::-webkit-scrollbar {
   width: 8px;
 }
-#mySidebar::-webkit-scrollbar-thumb {
+#left-side-bar::-webkit-scrollbar-thumb {
   background-color: transparent;
 }
-#mySidebar::-webkit-scrollbar-track {
+#left-side-bar::-webkit-scrollbar-track {
   background: transparent;
 }
 
 /* On hover, color it in exactly those same 8px */
 /* -------------------------------------------------- */
-#mySidebar:hover {
+#left-side-bar:hover {
   scrollbar-color: #888 #f1f1f1;            /* FF: thumb/track colors */
 }
-body.dark-mode #mySidebar:hover {
+body.dark-mode #left-side-bar:hover {
   scrollbar-color: #888 #252525;
 }
 
-#mySidebar:hover::-webkit-scrollbar-thumb {
+#left-side-bar:hover::-webkit-scrollbar-thumb {
   background-color: #888;                   /* WebKit thumb */
 }
-#mySidebar:hover::-webkit-scrollbar-track {
+#left-side-bar:hover::-webkit-scrollbar-track {
   background-color: #f1f1f1;                /* WebKit track */
 }
-body.dark-mode #mySidebar:hover::-webkit-scrollbar-track {
+body.dark-mode #left-side-bar:hover::-webkit-scrollbar-track {
   background-color: #252525;
 }
 
 /* Dark Mode overrides for sidebar */
-body.dark-mode #mySidebar {
+body.dark-mode #left-side-bar {
   background-color: #252525; /* or any dark color of your choice */
   color: white;
   border-right: var(--dark-mode-border);
 }
 
-#mySidebar h4 {
+#left-side-bar h4 {
   transition: color 0.3s ease;
   color: #757575; /* or your preferred light-mode color */
 }
 
-body.dark-mode #mySidebar h4 {
+body.dark-mode #left-side-bar h4 {
   color: white;
 }
 
-#mySidebar hr {
-  transition: opacity 0.3s ease;
-  opacity: 1;
+hr.hr-side-bar {
+  height: 1px;
+  color: var(--light-mode-border-color);
+  background: var(--light-mode-border-color);
+  font-size: 0;
+  border: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-body.dark-mode #mySidebar hr {
-  opacity: 0.2;
+body.dark-mode hr.hr-side-bar {
+  color: var(--dark-mode-border-color);
+  background: var(--dark-mode-border-color);
 }
 
 /* “Pill” style for each link */
-#mySidebar .w3-bar-item {
+#left-side-bar .w3-bar-item {
   display: block;
   padding: 8px 12px;                    /* inner space */
   border-radius: 10px;                  /* rounded ends */
@@ -96,15 +102,15 @@ body.dark-mode #mySidebar hr {
 }
 
 /* ---------------- LIGHT THEME ---------------- */
-#mySidebar .w3-bar-item:hover,
-#mySidebar .w3-bar-item:focus {
+#left-side-bar .w3-bar-item:hover,
+#left-side-bar .w3-bar-item:focus {
   background-color: rgba(0,0,0,0.07) !important;   /* subtle, like YouTube */
   color: inherit !important;                       /* keep the same text colour */
 }
 
 /* ---------------- DARK THEME ----------------- */
-body.dark-mode #mySidebar .w3-bar-item:hover,
-body.dark-mode #mySidebar .w3-bar-item:focus {
+body.dark-mode #left-side-bar .w3-bar-item:hover,
+body.dark-mode #left-side-bar .w3-bar-item:focus {
   background-color: rgba(255,255,255,0.10) !important;  /* 10 % white tint */
   color: inherit !important;
 }

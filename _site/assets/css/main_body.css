@@ -57,3 +57,17 @@
       calc(var(--sidebar-w)) !important;
   }
 }
+
+hr.hr-main-body {
+  height: 1px;
+  color: var(--light-mode-border-color);
+  background: var(--light-mode-border-color);
+  font-size: 0;
+  border: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode hr.hr-main-body {
+  color: var(--dark-mode-border-color);
+  background: var(--dark-mode-border-color);
+}
