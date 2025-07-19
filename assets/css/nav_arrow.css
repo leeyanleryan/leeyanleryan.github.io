@@ -3,7 +3,7 @@ html {
 }
 
 /* Common arrow container styles for large screens */
-.lylr-nav-arrow {
+.nav-arrow {
   position: fixed;
   top: 50%;                /* Centers vertically */
   transform: translateY(-50%);
@@ -14,29 +14,29 @@ html {
   white-space: nowrap;
 }
 
-.lylr-nav-arrow:hover .arrow-symbol,
-.lylr-nav-arrow:hover .nav-label {
+.nav-arrow:hover .arrow-symbol,
+.nav-arrow:hover .nav-label {
   color: #757575 !important;
 }
 
 /* remove the default underline */
-a.lylr-nav-arrow {
+a.nav-arrow {
   text-decoration: none;
 }
 
 /* make sure it stays off on hover, too */
-a.lylr-nav-arrow:hover {
+a.nav-arrow:hover {
   text-decoration: none;
 }
 
 /* Left arrow pinned to the left side */
-.lylr-nav-arrow-left {
+.nav-arrow-left {
   /* Example: keep 50px from left edge for a gap */
   left: calc((100vw - 900px)/2 - 110px);
 }
 
 /* Right arrow pinned to the right side */
-.lylr-nav-arrow-right {
+.nav-arrow-right {
   /* Example: keep 50px from right edge for a gap */
   right: calc((100vw - 900px)/2 - 110px);
 }
@@ -109,7 +109,7 @@ body.dark-mode .nav-bottom a {
 
 /* CLAMPING!!! */
 /* 1) clamp LEFT arrow so it never goes under the sidebar + arrow-sidebar-gap */
-body.sidebar-open .lylr-nav-arrow-left {
+body.sidebar-open .nav-arrow-left {
   left: max(
     calc((100vw - var(--content-w)) / 2 - var(--arrow-off)),
     calc(var(--sidebar-w) + var(--arrow-sidebar-gap))
@@ -117,7 +117,7 @@ body.sidebar-open .lylr-nav-arrow-left {
 }
 
 /* 2) clamp RIGHT arrow so it never goes under the window edge + arrow-window-gap */
-body.sidebar-open .lylr-nav-arrow-right {
+body.sidebar-open .nav-arrow-right {
   right: max(
     calc((100vw - var(--content-w)) / 2 - var(--arrow-off)),
     var(--arrow-window-gap)
@@ -128,8 +128,8 @@ body.sidebar-open .lylr-nav-arrow-right {
 
 /* 4) hide side arrows & show bottom nav below threshold (1180px) */
 @media (max-width: 1180px) {
-  .lylr-nav-arrow-left,
-  .lylr-nav-arrow-right {
+  .nav-arrow-left,
+  .nav-arrow-right {
     display: none !important;
   }
   .nav-bottom {
