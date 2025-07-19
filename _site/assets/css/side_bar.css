@@ -16,7 +16,7 @@
   
   background-color: #f1f1f1;
   color: black;
-  border-right: 1px solid rgba(0,0,0,0.1);
+  border-right: var(--light-mode-border);
 
   scrollbar-width: thin;
   scrollbar-color: transparent transparent;
@@ -66,7 +66,7 @@ body.dark-mode #mySidebar:hover::-webkit-scrollbar-track {
 body.dark-mode #mySidebar {
   background-color: #252525; /* or any dark color of your choice */
   color: white;
-  border-right: 1px solid rgba(255,255,255,0.1);
+  border-right: var(--dark-mode-border);
 }
 
 #mySidebar h4 {

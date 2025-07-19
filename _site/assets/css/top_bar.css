@@ -2,7 +2,7 @@
 #myTopbar {
   background-color: #f1f1f1 !important;
   transition: background-color 0.3s ease, color 0.3s ease;
-  border-bottom: 1px solid rgba(0,0,0,0.1);
+  border-bottom: var(--light-mode-border);
   color: black !important;
   z-index: 1004 !important;
 }
@@ -11,5 +11,5 @@
 body.dark-mode #myTopbar {
   background-color: #252525 !important;    /* same as w3-black */
   color: #fff !important;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  border-bottom: var(--dark-mode-border);
 }

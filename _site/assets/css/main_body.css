@@ -1,0 +1,73 @@
+.w3-main {
+  margin: 43px auto 20px;
+  max-width: 900px;
+  padding-bottom: 20px;
+  transition: none;
+}
+
+/* See steps 1, 2, and 4 in nav_arrow.css */
+/* 3) clamp BOTH sides of the main content so it never crosses:
+      • left  = sidebar + arrow-sidebar-gap + body-gap-left
+      • right = arrow-window-gap + body-gap-right */
+/* ————————————————
+   ONLY CLAMP WHEN vw ≤ 1760px
+   ———————————————— */
+@media (max-width: 1760px) {
+  body.sidebar-open .w3-main {
+    margin: 43px auto 20px;
+
+    margin-left: max(
+      calc((100vw - var(--content-w)) / 2),
+      calc(
+        var(--sidebar-w)
+        + var(--arrow-sidebar-gap)
+        + var(--body-gap-left)
+      )
+    );
+
+    margin-right: max(
+      calc((100vw - var(--content-w)) / 2),
+      calc(
+        var(--arrow-window-gap)
+        + var(--body-gap-right)
+      )
+    );
+  }
+}
+/* ————————————————
+   OTHERWISE (vw > 1760px) ALWAYS CENTER
+   ———————————————— */
+@media (min-width: 1761px) {
+  body.sidebar-open .w3-main {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+/* 4) hide side arrows & show bottom nav below threshold (1180px) */
+@media (max-width: 1180px) {
+  /* 1) bottom‐nav normal (sidebar closed) → center content */
+  .w3-main {
+    margin: 43px auto 20px !important;
+  }
+  /* 2) bottom‐nav + sidebar‐open → push content right */
+  body.sidebar-open .w3-main {
+    /* shorthand: top right bottom left */
+    margin: 43px auto 20px 
+      calc(var(--sidebar-w)) !important;
+  }
+}
+
+hr {
+  height: 1px;
+  color: rgba(0,0,0,0.1);
+  background: rgba(0,0,0,0.1);
+  font-size: 0;
+  border: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode hr {
+  color: rgba(255,255,255,0.5);
+  background: rgba(255,255,255,0.5);
+}
