@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- flicker fix -->
+  <style>
+    .no-transition, .no-transition * {
+      transition: none !important;
+    }
+  </style>
+  <script src="/assets/js/flicker_fix.js"> </script>
+  <!-- take title from front matter of md files -->
+  <title>leeyanleryan's awards</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon.png">
+  <link rel="shortcut icon" href="/assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon/android-chrome-512x512.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+  <!-- css -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/assets/css/dark_mode.css">
+  <link rel="stylesheet" href="/assets/css/general_stuff.css">
+  <link rel="stylesheet" href="/assets/css/main_body.css">
+  <link rel="stylesheet" href="/assets/css/nav_arrow.css">
+  <link rel="stylesheet" href="/assets/css/side_bar.css">
+  <link rel="stylesheet" href="/assets/css/top_bar.css">
+  <link rel="stylesheet" href="/assets/css/variables.css">
+  <style>
+    html,h1,h2,h3,h4,h5,h6 {
+      font-family: "Raleway", sans-serif;
+      scroll-behavior: smooth;
+      scroll-padding-top: 43px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    .no-zoom {
+      -webkit-tap-highlight-color: transparent;
+      touch-action: manipulation;
+      -ms-touch-action: manipulation;
+    }
+  </style>
+</head>
+
+<body class="dark-mode">
+    
+<!-- Top container -->
+<div class="w3-bar w3-top w3-black w3-large" id="myTopbar">
+  <button class="w3-bar-item w3-button w3-hover-none w3-hover-text-grey no-zoom" onclick="w3_open(); this.blur();"><i class="fa fa-bars"></i>  Menu</button>
+  <span class="w3-bar-item w3-right">
+    <i class="fa fa-moon-o" style="margin-right:10px"></i>
+    <label class="switch">
+      <input type="checkbox" id="toggleDarkMode">
+      <span class="slider"></span>
+    </label>
+  </span>
+</div>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar" id="mySidebar"><br>
+  <div class="w3-container w3-row">
+    <div class="w3-col s4">
+      <img src="https://i.imgur.com/J6a7t0I.png" class="w3-circle w3-margin-right" style="width:46px">
+    </div>
+    <div class="w3-col s8 w3-bar">
+      <span>   Lee Yan Le, <strong>Ryan</strong></span><br>
+      <a href="https://github.com/leeyanleryan" class="w3-bar-item w3-button"><i class="fa fa-github"></i></a>
+      <a href="https://linkedin.com/in/leeyanleryan" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
+      <a href="https://www.youtube.com/@Leehai" class="w3-bar-item w3-button"><i class="fa fa-youtube-play"></i></a>
+    </div>
+  </div>
+  <hr class="hr-side-bar">
+  <div class="w3-container">
+    <h4><strong>About</strong></h4>
+    <div class="w3-bar-block">
+      <a href="/about/#profile" class="w3-bar-item w3-button w3-padding"> Profile</a>
+      <a href="/about/#resume" class="w3-bar-item w3-button w3-padding"> Resume</a>
+      <a href="/about/#contact" class="w3-bar-item w3-button w3-padding"> Contact</a>
+    </div>
+  </div>
+  <hr class="hr-side-bar">
+  <div class="w3-container">
+    <h4><strong>Projects</strong></h4>
+    <div class="w3-bar-block">
+      <a href="/about/projects/#orbital_nuquest" class="w3-bar-item w3-button w3-padding"> Orbital NUqueSt</a>
+      <a href="/about/projects/#data_analysis" class="w3-bar-item w3-button w3-padding"> Data Analysis</a>
+      <a href="/about/projects/#board_games" class="w3-bar-item w3-button w3-padding"> Board Games</a>
+      <a href="/about/projects/#puzzle_solvers" class="w3-bar-item w3-button w3-padding"> Puzzle Solvers</a>
+    </div>
+  </div>
+  <hr class="hr-side-bar">
+  <div class="w3-container">
+    <h4><strong>Experiences</strong></h4>
+    <div class="w3-bar-block">
+      <a href="/about/experiences/#digital_production_assistant" class="w3-bar-item w3-button w3-padding"> Digital Production Assistant</a>
+      <a href="/about/experiences/#teaching_assistant" class="w3-bar-item w3-button w3-padding"> Teaching Assistant</a>
+    </div>
+  </div>
+  <hr class="hr-side-bar">
+  <div class="w3-container">
+    <h4><strong>Awards</strong></h4>
+    <div class="w3-bar-block">
+      <a href="/about/awards/#achievements" class="w3-bar-item w3-button w3-padding"> Achievements</a>
+      <a href="/about/awards/#certifications" class="w3-bar-item w3-button w3-padding"> Certifications</a>
+    </div>
+  </div>
+  <hr class="hr-side-bar">
+  <div class="w3-container">
+    <h4><strong>Hobbies</strong></h4>
+    <div class="w3-bar-block">
+      <a href="/about/hobbies/#reading" class="w3-bar-item w3-button w3-padding"> Reading</a>
+      <a href="/about/hobbies/#gaming" class="w3-bar-item w3-button w3-padding"> Gaming</a>
+      <a href="/about/hobbies/#piano" class="w3-bar-item w3-button w3-padding"> Piano</a>
+    </div>
+  </div>
+  <hr style="opacity:0">
+  <hr style="opacity:0">
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Page content goes here -->
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" id="pageAbout">
+  <section id="achievements" class="w3-container">
+    <h2><b>Achievements</b></h2>
+    <ul><h5>
+      <li>
+        NUS Sudoku Competition 2023: Awarded second runner-up
+      </li>
+      <li>
+        JPJC Inter-House Games 2018: Awarded 3rd place for Brawlhalla (Mixed)
+      </li>
+      <li>
+        Edusave Awards 2013, 2014, 2017, 2018: Awarded over $2000 SGD
+      </li>
+      <li>
+        CCPS Sports Carnival 2012: Awarded 1st place
+      </li>
+      <li>
+        CCPS Lower Primary Games 2010: Awarded 2nd place
+      </li>
+      <li>
+        CCPS Lower Primary Games 2008: Awarded 1st place
+      </li>
+    </h5></ul>
+  </section>
+  
+  <hr class="hr-main-body" />
+
+  <section id="certifications" class="w3-container">
+    <h2><b>Certifications</b></h2>
+    <ul><h5>
+      <li><h5><a href="https://credentials.nus.edu.sg/1fcad03a-4d76-43b8-9544-702f537b3d6e#acc.eo5gw2x1" target="_blank" rel="noopener noreferrer">
+        Orbital - Artemis (Extreme)</a>: Awarded for achieving the highest level of achievement in CP2106, a 
+        self-directed software engineering project course at NUS. For more information on the SWE project I
+        completed, check the Orbital NUqueSt page under the 'Projects' section in the menu.
+      </h5></li>
+      <li><h5><a href="https://credentials.nus.edu.sg/eeac580c-7ad5-438a-8635-3a3b6d85bf65#acc.VOjqr1Xs" target="_blank" rel="noopener noreferrer">
+        Teach Singapore</a>: Awarded for the completion of GEN2050Y, an integrated service-learning course hosted
+        by NUS for the education sector to help uplift primary and secondary school students from less-privileged 
+        family circumstances.
+      </h5></li>
+    </h5></ul>
+  </section>
+</div>
+
+
+<!-- Navigation Arrows -->
+<!-- Navigation Arrows -->
+<a href="/about/hobbies/" class="nav-arrow nav-arrow-left w3-hide-small">
+  <!-- Label above the arrow -->
+  <div class="nav-label">Hobbies</div>
+  <div class="arrow-symbol">&#10094;</div>
+</a>
+
+<a href="/about/" class="nav-arrow nav-arrow-right w3-hide-small">
+  <!-- Label above the arrow -->
+  <div class="nav-label">About</div>
+  <div class="arrow-symbol">&#10095;</div>
+</a>
+
+<!-- NAVIGATION BOTTOM BAR (Small screens) -->
+<div class="nav-bottom">
+  <a href="/about/hobbies/">&#10094; Hobbies</a>
+  <a href="/about/">About &#10095;</a>
+</div>
+
+<hr class="hr-hide-1180" style="border:1px solid gray; opacity:0">
+
+<script src="/assets/js/side_bar.js"></script>
+<script src="/assets/js/dark_mode.js"></script>
+
+</body>
+</html>

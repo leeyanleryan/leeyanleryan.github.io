@@ -1,0 +1,110 @@
+#myOverlay {
+  z-index: 1000 !important;
+}
+
+#mySidebar {
+  position: fixed;
+  height: calc(100vh - 43px); /* 100% viewport height minus the top container */
+  width: 280px; /* Sidebar width */
+  overflow-y: scroll; /* Enable vertical scrolling */
+  box-sizing: border-box; /* Include padding in total width/height */
+  padding-left: 10px;
+  padding-right: 10px;
+  z-index: 1002 !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: none;
+  
+  background-color: #f1f1f1;
+  color: black;
+  border-right: var(--light-mode-border);
+
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+/* Only truncate the “list” links, not the icon buttons */
+#mySidebar .w3-container:not(.w3-row) a,
+#mySidebar .w3-ul a {
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* WebKit: always 8px but transparent */
+#mySidebar::-webkit-scrollbar {
+  width: 8px;
+}
+#mySidebar::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+#mySidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* On hover, color it in exactly those same 8px */
+/* -------------------------------------------------- */
+#mySidebar:hover {
+  scrollbar-color: #888 #f1f1f1;            /* FF: thumb/track colors */
+}
+body.dark-mode #mySidebar:hover {
+  scrollbar-color: #888 #252525;
+}
+
+#mySidebar:hover::-webkit-scrollbar-thumb {
+  background-color: #888;                   /* WebKit thumb */
+}
+#mySidebar:hover::-webkit-scrollbar-track {
+  background-color: #f1f1f1;                /* WebKit track */
+}
+body.dark-mode #mySidebar:hover::-webkit-scrollbar-track {
+  background-color: #252525;
+}
+
+/* Dark Mode overrides for sidebar */
+body.dark-mode #mySidebar {
+  background-color: #252525; /* or any dark color of your choice */
+  color: white;
+  border-right: var(--dark-mode-border);
+}
+
+#mySidebar h4 {
+  transition: color 0.3s ease;
+  color: #757575; /* or your preferred light-mode color */
+}
+
+body.dark-mode #mySidebar h4 {
+  color: white;
+}
+
+#mySidebar hr {
+  transition: opacity 0.3s ease;
+  opacity: 1;
+}
+
+body.dark-mode #mySidebar hr {
+  opacity: 0.2;
+}
+
+/* “Pill” style for each link */
+#mySidebar .w3-bar-item {
+  display: block;
+  padding: 8px 12px;                    /* inner space */
+  border-radius: 10px;                  /* rounded ends */
+  /*transition: background-color .15s ease, color .15s ease;*/
+}
+
+/* ---------------- LIGHT THEME ---------------- */
+#mySidebar .w3-bar-item:hover,
+#mySidebar .w3-bar-item:focus {
+  background-color: rgba(0,0,0,0.07) !important;   /* subtle, like YouTube */
+  color: inherit !important;                       /* keep the same text colour */
+}
+
+/* ---------------- DARK THEME ----------------- */
+body.dark-mode #mySidebar .w3-bar-item:hover,
+body.dark-mode #mySidebar .w3-bar-item:focus {
+  background-color: rgba(255,255,255,0.10) !important;  /* 10 % white tint */
+  color: inherit !important;
+}

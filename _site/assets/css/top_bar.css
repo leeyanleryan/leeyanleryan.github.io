@@ -1,0 +1,15 @@
+/* Default: light mode top bar */
+#myTopbar {
+  background-color: #f1f1f1 !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-bottom: var(--light-mode-border);
+  color: black !important;
+  z-index: 1004 !important;
+}
+
+/* Dark mode top bar */
+body.dark-mode #myTopbar {
+  background-color: #252525 !important;    /* same as w3-black */
+  color: #fff !important;
+  border-bottom: var(--dark-mode-border);
+}

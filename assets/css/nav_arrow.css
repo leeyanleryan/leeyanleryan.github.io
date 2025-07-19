@@ -19,16 +19,26 @@ html {
   color: #757575 !important;
 }
 
+/* remove the default underline */
+a.nav-arrow {
+  text-decoration: none;
+}
+
+/* make sure it stays off on hover, too */
+a.nav-arrow:hover {
+  text-decoration: none;
+}
+
 /* Left arrow pinned to the left side */
 .nav-arrow-left {
   /* Example: keep 50px from left edge for a gap */
-  left: calc((100vw - 900px)/2 - 140px);
+  left: calc((100vw - 900px)/2 - 110px);
 }
 
 /* Right arrow pinned to the right side */
 .nav-arrow-right {
   /* Example: keep 50px from right edge for a gap */
-  right: calc((100vw - 900px)/2 - 140px);
+  right: calc((100vw - 900px)/2 - 110px);
 }
 
 /* Label above the arrow */
@@ -71,8 +81,8 @@ body.dark-mode .arrow-symbol {
   font-size: 1.2rem;
   font-family: "Raleway", sans-serif;
   z-index: 1004;            /* Ensure it's on top */
-  background-color: white; /* White backdrop to prevent overlap */
-  box-shadow: 0 -2px 5px rgba(0,0,0,0.1); /* Optional subtle shadow */
+  background-color: #f1f1f1; /* White backdrop to prevent overlap */
+  border-top: var(--light-mode-border);
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -89,34 +99,54 @@ body.dark-mode .arrow-symbol {
 
 /* Dark Mode overrides for bottom nav */
 body.dark-mode .nav-bottom {
-  background-color: #0B0B0B;
+  background-color: #252525;
   color: white;
+  border-top: var(--dark-mode-border);
 }
 body.dark-mode .nav-bottom a {
   color: white;
 }
 
-/* Show/hide for different screen sizes */
-@media (max-width: 1250px) {
-  /* Hide the side arrows on small screens */
+/* CLAMPING!!! */
+/* 1) clamp LEFT arrow so it never goes under the sidebar + arrow-sidebar-gap */
+body.sidebar-open .nav-arrow-left {
+  left: max(
+    calc((100vw - var(--content-w)) / 2 - var(--arrow-off)),
+    calc(var(--sidebar-w) + var(--arrow-sidebar-gap))
+  );
+}
+
+/* 2) clamp RIGHT arrow so it never goes under the window edge + arrow-window-gap */
+body.sidebar-open .nav-arrow-right {
+  right: max(
+    calc((100vw - var(--content-w)) / 2 - var(--arrow-off)),
+    var(--arrow-window-gap)
+  );
+}
+
+/* 3) see main_body.css */
+
+/* 4) hide side arrows & show bottom nav below threshold (1180px) */
+@media (max-width: 1180px) {
   .nav-arrow-left,
   .nav-arrow-right {
-      display: none;
+    display: none !important;
   }
-  /* Show the bottom nav on small screens */
   .nav-bottom {
-      display: flex;
+    display: flex !important;
   }
+
+  /* see main_body.css */
 }
 
 /* 
 Used for extra padding at the bottom.
-Hidden for screens bigger than or equal to 1251px.
-Shown for screens smaller than or equal to 1250px.
+Hidden for screens bigger than or equal to 1181px.
+Shown for screens smaller than or equal to 1180px.
 Works in conjunction with .nav-bottom .
 */
-@media (min-width: 1251px) {
-  .hr-hide-1250 {
+@media (min-width: 1181px) {
+  .hr-hide-1180 {
     display: none !important;
   }
 }

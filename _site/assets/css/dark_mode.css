@@ -1,0 +1,58 @@
+/* Default light mode */
+body {
+    background-color: #f1f1f1;
+    color: #000000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: "Raleway", sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding-top: 43px;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #252525;
+  color: #ffffff;
+}
+
+/* Toggle Switch Styling */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 15px;
+  overflow: visible; /* allow the scaled slider to extend beyond container */
+}
+.switch input {
+  display: none;
+}
+.slider {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* Move the slider to center within container, then scale */
+  transform: translate(-50%, -50%) scale(1.5); 
+  transform-origin: center; 
+  width: 30px;
+  height: 17px;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 17px;
+  cursor: pointer;
+}
+.slider:before {
+  content: "";
+  position: absolute;
+  height: 13px;
+  width: 13px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+input:checked + .slider {
+  background-color: #2196F3;
+}
+input:checked + .slider:before {
+  transform: translateX(13px);
+}
