@@ -14,8 +14,8 @@ html {
   white-space: nowrap;
 }
 
-.lylr-nav-arrow:hover .arrow-symbol,
-.lylr-nav-arrow:hover .nav-label {
+.lylr-nav-arrow:hover .lylr-arrow-symbol,
+.lylr-nav-arrow:hover .lylr-nav-arrow {
   color: #757575 !important;
 }
 
@@ -42,7 +42,7 @@ a.lylr-nav-arrow:hover {
 }
 
 /* Label above the arrow */
-.nav-label {
+.lylr-nav-arrow {
   font-size: 14px;
   margin-bottom: 5px;      /* Spacing between label and arrow */
 
@@ -53,7 +53,7 @@ a.lylr-nav-arrow:hover {
 }
 
 /* Arrow symbol styling */
-.arrow-symbol {
+.lylr-arrow-symbol {
   font-size: 2rem;         /* Large arrow icon */
   text-decoration: none;   /* Remove underline */
   color: black;            /* Arrow color */
@@ -65,12 +65,12 @@ a.lylr-nav-arrow:hover {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-body.dark-mode .arrow-symbol {
+body.dark-mode .lylr-arrow-symbol {
   color: white;
 }
 
 /* Bottom nav for small screens */
-.nav-bottom {
+.lylr-nav-bottom {
   display: none;
   position: fixed;
   bottom: 0px;
@@ -87,23 +87,23 @@ body.dark-mode .arrow-symbol {
 }
 
 /* Style the links in bottom nav */
-.nav-bottom a {
+.lylr-nav-bottom a {
   text-decoration: none;
   color: black;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.nav-bottom a:hover {
+.lylr-nav-bottom a:hover {
   color: #757575 !important;
 }
 
 /* Dark Mode overrides for bottom nav */
-body.dark-mode .nav-bottom {
+body.dark-mode .lylr-nav-bottom {
   background-color: #252525;
   color: white;
   border-top: var(--dark-mode-border);
 }
-body.dark-mode .nav-bottom a {
+body.dark-mode .lylr-nav-bottom a {
   color: white;
 }
 
@@ -132,7 +132,7 @@ body.sidebar-open .lylr-nav-arrow-right {
   .lylr-nav-arrow-right {
     display: none !important;
   }
-  .nav-bottom {
+  .lylr-nav-bottom {
     display: flex !important;
   }
 
@@ -143,7 +143,7 @@ body.sidebar-open .lylr-nav-arrow-right {
 Used for extra padding at the bottom.
 Hidden for screens bigger than or equal to 1181px.
 Shown for screens smaller than or equal to 1180px.
-Works in conjunction with .nav-bottom .
+Works in conjunction with .lylr-nav-bottom .
 */
 @media (min-width: 1181px) {
   .hr-hide-1180 {
