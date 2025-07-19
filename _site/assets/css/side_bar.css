@@ -8,6 +8,8 @@
   width: 280px; /* Sidebar width */
   overflow-y: scroll; /* Enable vertical scrolling */
   box-sizing: border-box; /* Include padding in total width/height */
+  padding-left: 10px;
+  padding-right: 10px;
   z-index: 1002 !important;
   transition: background-color 0.3s ease, color 0.3s ease;
   display: none;
@@ -18,6 +20,16 @@
 
   scrollbar-width: thin;
   scrollbar-color: transparent transparent;
+}
+
+/* Only truncate the “list” links, not the icon buttons */
+#mySidebar .w3-container:not(.w3-row) a,
+#mySidebar .w3-ul a {
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* WebKit: always 8px but transparent */
