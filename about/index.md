@@ -30,7 +30,7 @@ right_url: /about/projects/
     </h5>
   </section>
   
-  <hr style="border:1px solid gray; opacity:0.2">
+  <hr class="hr-main-body">
 
   <section id="resume" class="w3-container">
     <h2><b>Resume</b></h2>
@@ -40,7 +40,7 @@ right_url: /about/projects/
     </h5></p>
   </section>
 
-  <hr style="border:1px solid gray; opacity:0.2">
+  <hr class="hr-main-body">
 
   <section id="contact" class="w3-container">
     <h2><b>Contact</b></h2>

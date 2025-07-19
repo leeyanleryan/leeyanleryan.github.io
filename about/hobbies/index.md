@@ -34,7 +34,7 @@ right_url: /about/awards/
     </h5>
   </section>
 
-  <hr style="border:1px solid gray; opacity:0.2">
+  <hr class="hr-main-body">
 
   <section id="gaming" class="w3-container">
     <h2><b>Gaming</b></h2>
@@ -95,7 +95,7 @@ right_url: /about/awards/
     </h5></ul>
   </section>
   
-  <hr style="border:1px solid gray; opacity:0.2">
+  <hr class="hr-main-body">
 
   <section id="piano" class="w3-container">
     <h2><b>Piano</b></h2>

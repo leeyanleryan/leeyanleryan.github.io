@@ -44,7 +44,7 @@ right_url: /about/hobbies/
     </h5>
   </section>
   
-  <hr style="border:1px solid gray; opacity:0.2">
+  <hr class="hr-main-body">
 
   <section id="teaching_assistant" class="w3-container">
     <h2><b>Teaching Assistant</b></h2>

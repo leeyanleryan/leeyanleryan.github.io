@@ -58,7 +58,7 @@ right_url: /about/experiences/
     </h5>
   </section>
 
-  <hr style="border:1px solid gray; opacity:0.2">
+  <hr class="hr-main-body">
 
   <section id="data_analysis" class="w3-container">
     <h2><b>Data Analysis</b> (<a href="https://github.com/leeyanleryan/Data-Analysis" target="_blank">Link</a>)</h2>
@@ -260,7 +260,7 @@ right_url: /about/experiences/
     </h5>
   </section>
 
-  <hr style="border:1px solid gray; opacity:0.2">
+  <hr class="hr-main-body">
 
   <section id="board_games" class="w3-container">
     <h2><b>Board Games</b> (<a href="https://github.com/leeyanleryan/Board-Games" target="_blank">Link</a>)</h2>
@@ -301,7 +301,7 @@ right_url: /about/experiences/
     </h5>
   </section>
 
-  <hr style="border:1px solid gray; opacity:0.2">
+  <hr class="hr-main-body">
 
   <section id="puzzle_solvers" class="w3-container">
     <h2><b>Puzzle Solvers</b> (<a href="https://github.com/leeyanleryan/Puzzle-Solvers" target="_blank">Link</a>)</h2>

@@ -35,7 +35,7 @@ right_url: /about/
     </h5></ul>
   </section>
   
-  <hr style="border:1px solid gray; opacity:0.2">
+  <hr class="hr-main-body">
 
   <section id="certifications" class="w3-container">
     <h2><b>Certifications</b></h2>
