@@ -49,6 +49,4 @@ right_url: /about/projects/
       <li>Discord: leeyanleryan</li>
     </h5></ul>
   </section>
-
-  <hr class="hr-hide-1250" style="border:1px solid gray; opacity:0">
 </div>

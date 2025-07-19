@@ -52,6 +52,4 @@ right_url: /about/
       </h5></li>
     </h5></ul>
   </section>
-
-  <hr class="hr-hide-1250" style="border:1px solid gray; opacity:0">
 </div>

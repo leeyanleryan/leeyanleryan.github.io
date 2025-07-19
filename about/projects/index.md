@@ -323,6 +323,4 @@ right_url: /about/experiences/
       algorithm. Both solver and reader are using inefficient methods, so it takes approximately 5-10 seconds to solve the sudoku, depending on the complexity.
     </h5>
   </section>
-
-  <hr class="hr-hide-1250" style="border:1px solid gray; opacity:0">
 </div>

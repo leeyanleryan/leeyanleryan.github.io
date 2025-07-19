@@ -186,7 +186,7 @@ body.sidebar-open .nav-arrow-right {
   }
 }
 
-/* 4) hide side arrows & show bottom nav below threshold (1280px) */
+/* 4) hide side arrows & show bottom nav below threshold (1180px) */
 @media (max-width: 1180px) {
   .nav-arrow-left,
   .nav-arrow-right {
@@ -211,12 +211,12 @@ body.sidebar-open .nav-arrow-right {
 
 /* 
 Used for extra padding at the bottom.
-Hidden for screens bigger than or equal to 1251px.
-Shown for screens smaller than or equal to 1250px.
+Hidden for screens bigger than or equal to 1181px.
+Shown for screens smaller than or equal to 1180px.
 Works in conjunction with .nav-bottom .
 */
 @media (min-width: 1181px) {
-  .hr-hide-1250 {
+  .hr-hide-1180 {
     display: none !important;
   }
 }

@@ -113,6 +113,4 @@ right_url: /about/awards/
       </ul>
     </h5>
   </section>
-
-  <hr class="hr-hide-1250" style="border:1px solid gray; opacity:0">
 </div>
