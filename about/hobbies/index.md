@@ -10,7 +10,7 @@ right_url: /about/awards/
 ---
 
 <!-- !PAGE CONTENT! -->
-<div class="w3-main" id="pageAbout">
+<div id="page-about-hobbies" class="w3-main">
   <section id="reading" class="w3-container">
     <h2><b>Reading</b></h2>
     <h5 style="margin-bottom:20px">

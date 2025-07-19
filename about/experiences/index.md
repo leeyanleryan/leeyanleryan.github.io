@@ -10,8 +10,8 @@ right_url: /about/hobbies/
 ---
 
 <!-- !PAGE CONTENT! -->
-<div class="w3-main" id="pageAbout">
-  <section id="digital_production_assistant" class="w3-container">
+<div id="page-about-experiences" class="w3-main">
+  <section id="digital-production-assistant" class="w3-container">
     <h2><b>Digital Production Assistant</b></h2>
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
       <img src="/assets/gif/dpa_intro1.gif" alt="DPA Intro 1" style="width:32%;">
@@ -46,7 +46,7 @@ right_url: /about/hobbies/
   
   <hr class="hr-main-body">
 
-  <section id="teaching_assistant" class="w3-container">
+  <section id="teaching-assistant" class="w3-container">
     <h2><b>Teaching Assistant</b></h2>
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
       <img src="/assets/gif/ta_animation1.gif" alt="TA Animation 1" style="width:49%;">

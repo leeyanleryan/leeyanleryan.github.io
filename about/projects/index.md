@@ -10,8 +10,8 @@ right_url: /about/experiences/
 ---
 
 <!-- !PAGE CONTENT! -->
-<div class="w3-main" id="pageAbout">
-  <section id="orbital_nuquest" class="w3-container">
+<div id="page-about-projects" class="w3-main">
+  <section id="orbital-nuquest" class="w3-container">
     <h2><b>Orbital NUqueSt</b> (<a href="https://github.com/leeyanleryan/Orbital-NUqueSt" target="_blank">Link</a>)</h2>
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
       <img src="/assets/gif/nuquest_gameplay2.gif" alt="NUqueSt Gameplay 1" style="width:33%;">
@@ -60,7 +60,7 @@ right_url: /about/experiences/
 
   <hr class="hr-main-body">
 
-  <section id="data_analysis" class="w3-container">
+  <section id="data-analysis" class="w3-container">
     <h2><b>Data Analysis</b> (<a href="https://github.com/leeyanleryan/Data-Analysis" target="_blank">Link</a>)</h2>
     <h5 style="margin-bottom:20px">
       This project is a compilation of multiple data analysis projects, most of which incorporate the use of various Machine Learning algorithms for predictions.
@@ -262,7 +262,7 @@ right_url: /about/experiences/
 
   <hr class="hr-main-body">
 
-  <section id="board_games" class="w3-container">
+  <section id="board-games" class="w3-container">
     <h2><b>Board Games</b> (<a href="https://github.com/leeyanleryan/Board-Games" target="_blank">Link</a>)</h2>
     <h5 style="margin-bottom:20px;">
       This project was created out of an interest in exploring how artificial intelligence (AI) can be applied to board games, which require varying levels 
@@ -303,7 +303,7 @@ right_url: /about/experiences/
 
   <hr class="hr-main-body">
 
-  <section id="puzzle_solvers" class="w3-container">
+  <section id="puzzle-solvers" class="w3-container">
     <h2><b>Puzzle Solvers</b> (<a href="https://github.com/leeyanleryan/Puzzle-Solvers" target="_blank">Link</a>)</h2>
     <h5 style="margin-bottom:20px">
       This project was created out of an interest in applying computer vision and AI to puzzle-solving. The end goal of this project is to make a phone application, capable of reading 

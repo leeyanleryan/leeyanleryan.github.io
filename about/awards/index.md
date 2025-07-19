@@ -10,7 +10,7 @@ right_url: /about/
 ---
 
 <!-- !PAGE CONTENT! -->
-<div class="w3-main" id="pageAbout">
+<div id="page-about-awards" class="w3-main">
   <section id="achievements" class="w3-container">
     <h2><b>Achievements</b></h2>
     <ul><h5>
