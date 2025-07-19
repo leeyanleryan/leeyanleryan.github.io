@@ -12,13 +12,13 @@
   transition: background-color 0.3s ease, color 0.3s ease;
   display: none;
   
-  background-color: white;
+  background-color: #f1f1f1;
   color: black;
 }
 
 /* Dark Mode overrides for sidebar */
 body.dark-mode #mySidebar {
-  background-color: #181818; /* or any dark color of your choice */
+  background-color: #252525; /* or any dark color of your choice */
   color: white;
 }
 

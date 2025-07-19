@@ -19,6 +19,16 @@ html {
   color: #757575 !important;
 }
 
+/* remove the default underline */
+a.nav-arrow {
+  text-decoration: none;
+}
+
+/* make sure it stays off on hover, too */
+a.nav-arrow:hover {
+  text-decoration: none;
+}
+
 /* Left arrow pinned to the left side */
 .nav-arrow-left {
   /* Example: keep 50px from left edge for a gap */
@@ -71,8 +81,8 @@ body.dark-mode .arrow-symbol {
   font-size: 1.2rem;
   font-family: "Raleway", sans-serif;
   z-index: 1004;            /* Ensure it's on top */
-  background-color: white; /* White backdrop to prevent overlap */
-  box-shadow: 0 -2px 5px rgba(0,0,0,0.1); /* Optional subtle shadow */
+  background-color: #f1f1f1; /* White backdrop to prevent overlap */
+  border-top: 1px solid rgba(0,0,0,0.1);
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -89,8 +99,9 @@ body.dark-mode .arrow-symbol {
 
 /* Dark Mode overrides for bottom nav */
 body.dark-mode .nav-bottom {
-  background-color: #0B0B0B;
+  background-color: #252525;
   color: white;
+  border-top: 1px solid rgba(255,255,255,0.1);
 }
 body.dark-mode .nav-bottom a {
   color: white;

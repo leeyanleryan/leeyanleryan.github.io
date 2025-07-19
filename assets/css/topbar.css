@@ -1,14 +1,15 @@
 /* Default: light mode top bar */
 #myTopbar {
-  background-color: white !important;
+  background-color: #f1f1f1 !important;
   transition: background-color 0.3s ease, color 0.3s ease;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional subtle shadow */
+  border-bottom: 1px solid rgba(0,0,0,0.1);
   color: black !important;
   z-index: 1004 !important;
 }
 
 /* Dark mode top bar */
 body.dark-mode #myTopbar {
-  background-color: #0B0B0B !important;    /* same as w3-black */
+  background-color: #252525 !important;    /* same as w3-black */
   color: #fff !important;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
 }
