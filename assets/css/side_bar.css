@@ -5,8 +5,8 @@
 #mySidebar {
   position: fixed;
   height: calc(100vh - 43px); /* 100% viewport height minus the top container */
-  width: 300px; /* Sidebar width */
-  overflow-y: auto; /* Enable vertical scrolling */
+  width: 280px; /* Sidebar width */
+  overflow-y: scroll; /* Enable vertical scrolling */
   box-sizing: border-box; /* Include padding in total width/height */
   z-index: 1002 !important;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -16,37 +16,38 @@
   color: black;
   border-right: 1px solid rgba(0,0,0,0.1);
 
-  scrollbar-width: none;
-  scrollbar-gutter: stable;
-}
-
-/* WebKit “hide” */
-#mySidebar::-webkit-scrollbar {
-  width: 0;
-}
-
-/* On hover: show in Firefox + WebKit */
-#mySidebar:hover {
   scrollbar-width: thin;
-  scrollbar-color: #888 #f1f1f1;  /* FF thumb/track */
+  scrollbar-color: transparent transparent;
+}
+
+/* WebKit: always 8px but transparent */
+#mySidebar::-webkit-scrollbar {
+  width: 8px;
+}
+#mySidebar::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+#mySidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* On hover, color it in exactly those same 8px */
+/* -------------------------------------------------- */
+#mySidebar:hover {
+  scrollbar-color: #888 #f1f1f1;            /* FF: thumb/track colors */
 }
 body.dark-mode #mySidebar:hover {
   scrollbar-color: #888 #252525;
 }
 
-#mySidebar:hover::-webkit-scrollbar {
-  width: 8px;
+#mySidebar:hover::-webkit-scrollbar-thumb {
+  background-color: #888;                   /* WebKit thumb */
 }
 #mySidebar:hover::-webkit-scrollbar-track {
-  background-color: #f1f1f1;      /* light mode track */
+  background-color: #f1f1f1;                /* WebKit track */
 }
 body.dark-mode #mySidebar:hover::-webkit-scrollbar-track {
-  background-color: #252525;      /* dark mode track */
-}
-#mySidebar:hover::-webkit-scrollbar-thumb {
-  background-color: #888;
-  border-radius: 4px;
-  border: 2px solid transparent;
+  background-color: #252525;
 }
 
 /* Dark Mode overrides for sidebar */

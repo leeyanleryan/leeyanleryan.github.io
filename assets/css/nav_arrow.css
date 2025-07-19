@@ -109,7 +109,7 @@ body.dark-mode .nav-bottom a {
 
 :root {
   /* fixed sizes */
-  --sidebar-w:          300px;  /* your sidebar width */
+  --sidebar-w:          280px;  /* your sidebar width */
   --content-w:          900px;  /* your .w3-main max-width */
   --arrow-off:          110px;  /* the “-110px” centering offset */
 
