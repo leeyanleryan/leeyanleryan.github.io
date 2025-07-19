@@ -9,7 +9,7 @@ function applyStoredTheme() {
   }
   
   // Set the toggle switch state accordingly
-  const toggleSwitch = document.getElementById('toggleDarkMode');
+  const toggleSwitch = document.getElementById('toggle-dark-mode');
   if (toggleSwitch) {
     toggleSwitch.checked = (theme === 'dark');
   }
@@ -19,7 +19,7 @@ function applyStoredTheme() {
 applyStoredTheme();
 
 // Listen for changes on the toggle switch to update theme and store preference
-document.getElementById('toggleDarkMode').addEventListener('change', function() {
+document.getElementById('toggle-dark-mode').addEventListener('change', function() {
   if (this.checked) {
     document.body.classList.add('dark-mode');
     localStorage.setItem('theme', 'dark');

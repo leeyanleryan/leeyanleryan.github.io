@@ -1,7 +1,3 @@
-#myOverlay {
-  z-index: 1000 !important;
-}
-
 #mySidebar {
   position: fixed;
   height: calc(100vh - 43px); /* 100% viewport height minus the top container */
@@ -20,6 +16,10 @@
 
   scrollbar-width: thin;
   scrollbar-color: transparent transparent;
+}
+
+#side-bar-overlay {
+  z-index: 1000 !important;
 }
 
 /* Only truncate the “list” links, not the icon buttons */

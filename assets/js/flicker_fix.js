@@ -13,7 +13,7 @@
   window.addEventListener('DOMContentLoaded', () => {
   document.body.classList.toggle('dark-mode', isDark);
   /* keep your toggle switch in sync */
-  const chk = document.getElementById('toggleDarkMode');
+  const chk = document.getElementById('toggle-dark-mode');
   if (chk) chk.checked = isDark;
 
   /* 4) re-enable transitions AFTER first paint */

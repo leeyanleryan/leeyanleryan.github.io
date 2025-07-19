@@ -2,7 +2,7 @@
 var mySidebar = document.getElementById("mySidebar");
 
 // Get the DIV with overlay effect
-var overlayBg = document.getElementById("myOverlay");
+var overlayBg = document.getElementById("side-bar-overlay");
 
 // Toggle between showing and hiding the sidebar, and add overlay effect
 function w3_open() {

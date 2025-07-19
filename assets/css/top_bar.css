@@ -1,5 +1,5 @@
 /* Default: light mode top bar */
-#myTopbar {
+#top-bar {
   background-color: #f1f1f1 !important;
   transition: background-color 0.3s ease, color 0.3s ease;
   border-bottom: var(--light-mode-border);
@@ -8,7 +8,7 @@
 }
 
 /* Dark mode top bar */
-body.dark-mode #myTopbar {
+body.dark-mode #top-bar {
   background-color: #252525 !important;    /* same as w3-black */
   color: #fff !important;
   border-bottom: var(--dark-mode-border);
