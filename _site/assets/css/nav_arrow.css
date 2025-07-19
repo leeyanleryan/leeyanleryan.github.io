@@ -109,7 +109,7 @@ body.dark-mode .nav-bottom a {
 
 /* CLAMPING!!! */
 /* 1) clamp LEFT arrow so it never goes under the sidebar + arrow-sidebar-gap */
-body.sidebar-open .nav-arrow-left {
+body.left-side-bar-open .nav-arrow-left {
   left: max(
     calc((100vw - var(--content-w)) / 2 - var(--arrow-off)),
     calc(var(--sidebar-w) + var(--arrow-sidebar-gap))
@@ -117,7 +117,7 @@ body.sidebar-open .nav-arrow-left {
 }
 
 /* 2) clamp RIGHT arrow so it never goes under the window edge + arrow-window-gap */
-body.sidebar-open .nav-arrow-right {
+body.left-side-bar-open .nav-arrow-right {
   right: max(
     calc((100vw - var(--content-w)) / 2 - var(--arrow-off)),
     var(--arrow-window-gap)

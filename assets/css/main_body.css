@@ -13,7 +13,7 @@
    ONLY CLAMP WHEN vw ≤ 1760px
    ———————————————— */
 @media (max-width: 1760px) {
-  body.sidebar-open .w3-main {
+  body.left-side-bar-open .w3-main {
     margin: 43px auto 20px;
 
     margin-left: max(
@@ -38,7 +38,7 @@
    OTHERWISE (vw > 1760px) ALWAYS CENTER
    ———————————————— */
 @media (min-width: 1761px) {
-  body.sidebar-open .w3-main {
+  body.left-side-bar-open .w3-main {
     margin-left: auto !important;
     margin-right: auto !important;
   }
@@ -51,7 +51,7 @@
     margin: 43px auto 20px !important;
   }
   /* 2) bottom‐nav + sidebar‐open → push content right */
-  body.sidebar-open .w3-main {
+  body.left-side-bar-open .w3-main {
     /* shorthand: top right bottom left */
     margin: 43px auto 20px 
       calc(var(--sidebar-w)) !important;

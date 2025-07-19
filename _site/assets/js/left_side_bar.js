@@ -9,12 +9,12 @@ function w3_open() {
   if (mySidebar.style.display === 'block') {
     mySidebar.style.display = 'none';
     overlayBg.style.display = 'none';
-    document.body.classList.remove('sidebar-open');
+    document.body.classList.remove('left-side-bar-open');
     localStorage.setItem('sidebarOpen','false');
   } else {
     mySidebar.style.display = 'block';
     overlayBg.style.display = 'block';
-    document.body.classList.add('sidebar-open');
+    document.body.classList.add('left-side-bar-open');
     localStorage.setItem('sidebarOpen','true');
   }
 }
@@ -23,7 +23,7 @@ function w3_open() {
 function w3_close() {
   mySidebar.style.display = "none";
   overlayBg.style.display = "none";
-  document.body.classList.remove('sidebar-open');
+  document.body.classList.remove('left-side-bar-open');
   localStorage.setItem('sidebarOpen','false');
 }
 
@@ -36,11 +36,11 @@ window.addEventListener('DOMContentLoaded', function(){
     // restore open
     mySidebar.style.display    = 'block';
     overlayBg.style.display    = 'block';
-    document.body.classList.add('sidebar-open');
+    document.body.classList.add('left-side-bar-open');
   } else {
     // ensure closed
     mySidebar.style.display    = 'none';
     overlayBg.style.display    = 'none';
-    document.body.classList.remove('sidebar-open');
+    document.body.classList.remove('left-side-bar-open');
   }
 });
