@@ -1,102 +1,18 @@
-
+/* default hidden & right-border in light-mode */
 #left-sidebar {
-  position: fixed;
-  height: calc(100vh - 43px); /* 100% viewport height minus the top container */
-  width: var(--sidebar-w); /* Sidebar width */
-  overflow-y: scroll; /* Enable vertical scrolling */
-  box-sizing: border-box; /* Include padding in total width/height */
-  padding-left: 10px;
-  padding-right: 10px;
-  z-index: 1002 !important;
-  transition: background-color 0.3s ease, color 0.3s ease;
   display: none;
-  
-  background-color: #f1f1f1;
-  color: black;
   border-right: var(--light-mode-border);
-
-  scrollbar-width: thin;
-  scrollbar-color: transparent transparent;
 }
 
-#sidebar-overlay {
-  z-index: 1000 !important;
-}
-
-/* Only truncate the “list” links, not the icon buttons */
-#left-sidebar .w3-container:not(.w3-row) a,
-#left-sidebar .w3-ul a {
-  display: block;
-  width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-/* WebKit: always 8px but transparent */
-#left-sidebar::-webkit-scrollbar {
-  width: 8px;
-}
-#left-sidebar::-webkit-scrollbar-thumb {
-  background-color: transparent;
-}
-#left-sidebar::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-/* On hover, color it in exactly those same 8px */
-/* -------------------------------------------------- */
-#left-sidebar:hover {
-  scrollbar-color: #888 #f1f1f1;            /* FF: thumb/track colors */
-}
-body.dark-mode #left-sidebar:hover {
-  scrollbar-color: #888 #252525;
-}
-
-#left-sidebar:hover::-webkit-scrollbar-thumb {
-  background-color: #888;                   /* WebKit thumb */
-}
-#left-sidebar:hover::-webkit-scrollbar-track {
-  background-color: #f1f1f1;                /* WebKit track */
-}
-body.dark-mode #left-sidebar:hover::-webkit-scrollbar-track {
-  background-color: #252525;
-}
-
-/* Dark Mode overrides for sidebar */
+/* dark-mode border flips */
 body.dark-mode #left-sidebar {
-  background-color: #252525; /* or any dark color of your choice */
-  color: white;
   border-right: var(--dark-mode-border);
 }
 
-#left-sidebar h4 {
-  transition: color 0.3s ease;
-  color: #757575; /* or your preferred light-mode color */
-}
-
-body.dark-mode #left-sidebar h4 {
-  color: white;
-}
-
-/* “Pill” style for each link */
-#left-sidebar .w3-bar-item {
-  display: block;
-  padding: 8px 12px;                    /* inner space */
-  border-radius: 10px;                  /* rounded ends */
-  /*transition: background-color .15s ease, color .15s ease;*/
-}
-
-/* ---------------- LIGHT THEME ---------------- */
-#left-sidebar .w3-bar-item:hover,
-#left-sidebar .w3-bar-item:focus {
-  background-color: rgba(0,0,0,0.07) !important;   /* subtle, like YouTube */
-  color: inherit !important;                       /* keep the same text colour */
-}
-
-/* ---------------- DARK THEME ----------------- */
-body.dark-mode #left-sidebar .w3-bar-item:hover,
-body.dark-mode #left-sidebar .w3-bar-item:focus {
-  background-color: rgba(255,255,255,0.10) !important;  /* 10 % white tint */
-  color: inherit !important;
+/* show on desktop */
+@media (min-width: 1181px) {
+  #left-sidebar {
+    display: block;
+    left: 0;
+  }
 }

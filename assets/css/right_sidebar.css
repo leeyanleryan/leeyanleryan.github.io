@@ -1,29 +1,18 @@
-/* start hidden on all screen sizes */
+/* default hidden & left-border in light-mode */
 #right-sidebar {
   display: none;
+  border-left: var(--light-mode-border);
 }
 
-/* only on ultra-wide screens… */
+/* dark-mode border flips */
+body.dark-mode #right-sidebar {
+  border-left: var(--dark-mode-border);
+}
+
+/* show on ultra-wide screens */
 @media (min-width: 1761px) {
   #right-sidebar {
     display: block;
-    position: fixed;
-    top: 43px;                              /* same offset as #mySidebar */
     right: 0;
-    width: var(--sidebar-w);
-    height: calc(100vh - 43px);
-    overflow-y: auto;
-    box-sizing: border-box;
-    padding: 0 10px;                        /* optional gutter */
-    background-color: var(--light-mode-body);
-    border-left: var(--light-mode-border);
-    transition: background-color 0.3s ease, color 0.3s ease;
-    z-index: 1002;
-  }
-  /* dark-mode flip */
-  body.dark-mode #right-sidebar {
-    background-color: var(--dark-mode-body);
-    border-left: var(--dark-mode-border);
-    color: white;
   }
 }

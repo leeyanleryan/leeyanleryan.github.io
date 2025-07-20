@@ -1,0 +1,86 @@
+/* Base sidebar container (shared) */
+.sidebar {
+  position: fixed;
+  top: 43px;                         /* beneath your top bar */
+  height: calc(100vh - 43px);        /* fill remaining viewport */
+  width: var(--sidebar-w);
+  overflow-y: scroll;                /* always reserve gutter */
+  box-sizing: border-box;            /* padding is inside width */
+  padding: 0 10px;                   /* 10px on left & right */
+  z-index: 1002;
+  display: none;                     /* shown via ID + media query */
+  background-color: var(--light-mode-body);
+  color: black;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  /* hide scrollbar by making it transparent */
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+.sidebar::-webkit-scrollbar {
+  width: 8px;
+}
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+.sidebar::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* on hover, paint the reserved gutter */
+.sidebar:hover {
+  scrollbar-color: #888 var(--light-mode-body);
+}
+.sidebar:hover::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+.sidebar:hover::-webkit-scrollbar-track {
+  background-color: var(--light-mode-body);
+}
+
+/* dark-mode color flip */
+body.dark-mode .sidebar {
+  background-color: var(--dark-mode-body);
+  color: white;
+  scrollbar-color: #888 var(--dark-mode-body);
+}
+body.dark-mode .sidebar:hover::-webkit-scrollbar-track {
+  background-color: var(--dark-mode-body);
+}
+
+/* truncate any w3-container or w3-ul links so text never wraps */
+.sidebar .w3-container:not(.w3-row) a,
+.sidebar .w3-ul a {
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* section headers (<h4>) subtly fade in/out */
+.sidebar h4 {
+  transition: color 0.3s ease;
+  color: #757575;
+}
+body.dark-mode .sidebar h4 {
+  color: white;
+}
+
+/* “pill” style menu items */
+.sidebar .w3-bar-item {
+  display: block;
+  padding: 8px 12px;
+  border-radius: 10px;
+}
+.sidebar .w3-bar-item:hover,
+.sidebar .w3-bar-item:focus {
+  background-color: rgba(0,0,0,0.07) !important;
+  color: inherit !important;
+}
+/* dark‐mode hover pill */
+body.dark-mode .sidebar .w3-bar-item:hover,
+body.dark-mode .sidebar .w3-bar-item:focus {
+  background-color: rgba(255,255,255,0.10) !important;
+  color: inherit !important;
+}
