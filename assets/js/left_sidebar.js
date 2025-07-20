@@ -1,20 +1,20 @@
 // Get the Sidebar
-var mySidebar = document.getElementById("left-side-bar");
+var mySidebar = document.getElementById("left-sidebar");
 
 // Get the DIV with overlay effect
-var overlayBg = document.getElementById("side-bar-overlay");
+var overlayBg = document.getElementById("sidebar-overlay");
 
 // Toggle between showing and hiding the sidebar, and add overlay effect
 function w3_open() {
   if (mySidebar.style.display === 'block') {
     mySidebar.style.display = 'none';
     overlayBg.style.display = 'none';
-    document.body.classList.remove('left-side-bar-open');
+    document.body.classList.remove('left-sidebar-open');
     localStorage.setItem('sidebarOpen','false');
   } else {
     mySidebar.style.display = 'block';
     overlayBg.style.display = 'block';
-    document.body.classList.add('left-side-bar-open');
+    document.body.classList.add('left-sidebar-open');
     localStorage.setItem('sidebarOpen','true');
   }
 }
@@ -23,7 +23,7 @@ function w3_open() {
 function w3_close() {
   mySidebar.style.display = "none";
   overlayBg.style.display = "none";
-  document.body.classList.remove('left-side-bar-open');
+  document.body.classList.remove('left-sidebar-open');
   localStorage.setItem('sidebarOpen','false');
 }
 
@@ -36,11 +36,11 @@ window.addEventListener('DOMContentLoaded', function(){
     // restore open
     mySidebar.style.display    = 'block';
     overlayBg.style.display    = 'block';
-    document.body.classList.add('left-side-bar-open');
+    document.body.classList.add('left-sidebar-open');
   } else {
     // ensure closed
     mySidebar.style.display    = 'none';
     overlayBg.style.display    = 'none';
-    document.body.classList.remove('left-side-bar-open');
+    document.body.classList.remove('left-sidebar-open');
   }
 });

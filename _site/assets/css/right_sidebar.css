@@ -1,11 +1,11 @@
 /* start hidden on all screen sizes */
-#right-side-bar {
+#right-sidebar {
   display: none;
 }
 
 /* only on ultra-wide screens… */
 @media (min-width: 1761px) {
-  #right-side-bar {
+  #right-sidebar {
     display: block;
     position: fixed;
     top: 43px;                              /* same offset as #mySidebar */
@@ -21,7 +21,7 @@
     z-index: 1002;
   }
   /* dark-mode flip */
-  body.dark-mode #right-side-bar {
+  body.dark-mode #right-sidebar {
     background-color: var(--dark-mode-body);
     border-left: var(--dark-mode-border);
     color: white;

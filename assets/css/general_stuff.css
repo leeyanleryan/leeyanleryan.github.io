@@ -1,6 +1,6 @@
 /* CLAMPING!!! */
 /* 1) clamp LEFT arrow so it never goes under the sidebar + arrow-sidebar-gap */
-body.left-side-bar-open .nav-arrow-left {
+body.left-sidebar-open .nav-arrow-left {
   left: max(
     calc((100vw - var(--content-w)) / 2 - var(--arrow-off)),
     calc(var(--sidebar-w) + var(--arrow-sidebar-gap))
@@ -8,7 +8,7 @@ body.left-side-bar-open .nav-arrow-left {
 }
 
 /* 2) clamp RIGHT arrow so it never goes under the window edge + arrow-window-gap */
-body.left-side-bar-open .nav-arrow-right {
+body.left-sidebar-open .nav-arrow-right {
   right: max(
     calc((100vw - var(--content-w)) / 2 - var(--arrow-off)),
     var(--arrow-window-gap)
@@ -22,7 +22,7 @@ body.left-side-bar-open .nav-arrow-right {
    ONLY CLAMP WHEN vw ≤ 1760px
    ———————————————— */
 @media (max-width: 1760px) {
-  body.left-side-bar-open .w3-main {
+  body.left-sidebar-open .w3-main {
     margin: 43px auto 20px;
 
     margin-left: max(
@@ -47,7 +47,7 @@ body.left-side-bar-open .nav-arrow-right {
    OTHERWISE (vw > 1760px) ALWAYS CENTER
    ———————————————— */
 @media (min-width: 1761px) {
-  body.left-side-bar-open .w3-main {
+  body.left-sidebar-open .w3-main {
     margin-left: auto !important;
     margin-right: auto !important;
   }
@@ -68,14 +68,14 @@ body.left-side-bar-open .nav-arrow-right {
     margin: 43px auto 20px !important;
   }
   /* 2) bottom‐nav + sidebar‐open → push content right */
-  body.left-side-bar-open .w3-main {
+  body.left-sidebar-open .w3-main {
     /* shorthand: top right bottom left */
     margin: 43px auto 20px 
       calc(var(--sidebar-w)) !important;
   }
 }
 
-hr.hr-side-bar {
+hr.hr-sidebar {
   height: 1px;
   color: var(--light-mode-border-color);
   background: var(--light-mode-border-color);
@@ -84,7 +84,7 @@ hr.hr-side-bar {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-body.dark-mode hr.hr-side-bar {
+body.dark-mode hr.hr-sidebar {
   color: var(--dark-mode-border-color);
   background: var(--dark-mode-border-color);
 }

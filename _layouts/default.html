@@ -29,11 +29,11 @@
   <link rel="stylesheet" href="/assets/css/vendor/w3.css">
   <link rel="stylesheet" href="/assets/css/dark_mode.css">
   <link rel="stylesheet" href="/assets/css/general_stuff.css">
-  <link rel="stylesheet" href="/assets/css/left_side_bar.css">
+  <link rel="stylesheet" href="/assets/css/left_sidebar.css">
   <link rel="stylesheet" href="/assets/css/main_body.css">
   <link rel="stylesheet" href="/assets/css/nav_arrow.css">
-  <link rel="stylesheet" href="/assets/css/right_side_bar.css">
-  <link rel="stylesheet" href="/assets/css/top_bar.css">
+  <link rel="stylesheet" href="/assets/css/right_sidebar.css">
+  <link rel="stylesheet" href="/assets/css/topbar.css">
   <link rel="stylesheet" href="/assets/css/variables.css">
   <style>
     html,h1,h2,h3,h4,h5,h6 {
@@ -56,7 +56,7 @@
 <body class="dark-mode">
     
 <!-- Top container -->
-<div id="top-bar" class="w3-bar w3-top w3-black w3-large">
+<div id="topbar" class="w3-bar w3-top w3-black w3-large">
   <button class="w3-bar-item w3-button w3-hover-none w3-hover-text-grey no-zoom" onclick="w3_open(); this.blur();"><i class="fa fa-bars"></i>  Menu</button>
   <span class="w3-bar-item w3-right">
     <i class="fa fa-moon-o" style="margin-right:10px"></i>
@@ -68,7 +68,7 @@
 </div>
 
 <!-- Left sidebar/menu -->
-<nav id="left-side-bar" class="w3-sidebar"><br>
+<nav id="left-sidebar" class="w3-sidebar"><br>
   <div class="w3-container w3-row">
     <div class="w3-col s4">
       <img src="https://i.imgur.com/J6a7t0I.png" class="w3-circle w3-margin-right" style="width:46px">
@@ -80,7 +80,7 @@
       <a href="https://www.youtube.com/@Leehai" class="w3-bar-item w3-button"><i class="fa fa-youtube-play"></i></a>
     </div>
   </div>
-  <hr class="hr-side-bar">
+  <hr class="hr-sidebar">
   <div class="w3-container">
     <h4><strong>About</strong></h4>
     <div class="w3-bar-block">
@@ -89,7 +89,7 @@
       <a href="/about/#contact" class="w3-bar-item w3-button w3-padding"> Contact</a>
     </div>
   </div>
-  <hr class="hr-side-bar">
+  <hr class="hr-sidebar">
   <div class="w3-container">
     <h4><strong>Projects</strong></h4>
     <div class="w3-bar-block">
@@ -99,7 +99,7 @@
       <a href="/about/projects/#puzzle-solvers" class="w3-bar-item w3-button w3-padding"> Puzzle Solvers</a>
     </div>
   </div>
-  <hr class="hr-side-bar">
+  <hr class="hr-sidebar">
   <div class="w3-container">
     <h4><strong>Experiences</strong></h4>
     <div class="w3-bar-block">
@@ -107,7 +107,7 @@
       <a href="/about/experiences/#teaching-assistant" class="w3-bar-item w3-button w3-padding"> Teaching Assistant</a>
     </div>
   </div>
-  <hr class="hr-side-bar">
+  <hr class="hr-sidebar">
   <div class="w3-container">
     <h4><strong>Awards</strong></h4>
     <div class="w3-bar-block">
@@ -115,7 +115,7 @@
       <a href="/about/awards/#certifications" class="w3-bar-item w3-button w3-padding"> Certifications</a>
     </div>
   </div>
-  <hr class="hr-side-bar">
+  <hr class="hr-sidebar">
   <div class="w3-container">
     <h4><strong>Hobbies</strong></h4>
     <div class="w3-bar-block">
@@ -129,14 +129,14 @@
 </nav>
 
 <!-- Overlay effect when opening left sidebar on small screens -->
-<div id="side-bar-overlay" 
+<div id="sidebar-overlay" 
      class="w3-overlay w3-hide-large w3-animate-opacity" 
      onclick="w3_close()" 
      style="cursor:pointer" 
      title="close side menu"></div>
 
 <!-- Right sidebar -->
-<aside id="right-side-bar">
+<aside id="right-sidebar">
   <!-- put whatever you like in here: -->
   <div class="w3-container">
     <h4><strong>Extras</strong></h4>
@@ -146,7 +146,7 @@
       <!-- …etc… -->
     </div>
   </div>
-  <hr class="hr-side-bar">
+  <hr class="hr-sidebar">
 </aside>
 
 <!-- Page content goes here -->
@@ -157,7 +157,7 @@
 
 <hr class="hr-hide-1180" style="border:1px solid gray; opacity:0">
 
-<script src="/assets/js/left_side_bar.js"></script>
+<script src="/assets/js/left_sidebar.js"></script>
 <script src="/assets/js/dark_mode.js"></script>
 
 </body>
