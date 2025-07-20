@@ -107,38 +107,6 @@ body.dark-mode .nav-bottom a {
   color: white;
 }
 
-/* CLAMPING!!! */
-/* 1) clamp LEFT arrow so it never goes under the sidebar + arrow-sidebar-gap */
-body.left-side-bar-open .nav-arrow-left {
-  left: max(
-    calc((100vw - var(--content-w)) / 2 - var(--arrow-off)),
-    calc(var(--sidebar-w) + var(--arrow-sidebar-gap))
-  );
-}
-
-/* 2) clamp RIGHT arrow so it never goes under the window edge + arrow-window-gap */
-body.left-side-bar-open .nav-arrow-right {
-  right: max(
-    calc((100vw - var(--content-w)) / 2 - var(--arrow-off)),
-    var(--arrow-window-gap)
-  );
-}
-
-/* 3) see main_body.css */
-
-/* 4) hide side arrows & show bottom nav below threshold (1180px) */
-@media (max-width: 1180px) {
-  .nav-arrow-left,
-  .nav-arrow-right {
-    display: none !important;
-  }
-  .nav-bottom {
-    display: flex !important;
-  }
-
-  /* see main_body.css */
-}
-
 /* 
 Used for extra padding at the bottom.
 Hidden for screens bigger than or equal to 1181px.
