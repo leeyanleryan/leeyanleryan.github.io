@@ -38,11 +38,20 @@
   background-color: var(--light-mode-body);
 }
 
-/* dark-mode color flip */
+/* keep everything else the same… */
 body.dark-mode .sidebar {
   background-color: var(--dark-mode-body);
   color: white;
+
+  /* hide scrollbar by default */
+  scrollbar-color: transparent transparent;
+}
+/* only show on hover */
+body.dark-mode .sidebar:hover {
   scrollbar-color: #888 var(--dark-mode-body);
+}
+body.dark-mode .sidebar:hover::-webkit-scrollbar-thumb {
+  background-color: #888;
 }
 body.dark-mode .sidebar:hover::-webkit-scrollbar-track {
   background-color: var(--dark-mode-body);
