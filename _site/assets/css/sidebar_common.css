@@ -24,7 +24,7 @@
   background-color: transparent;
 }
 .sidebar::-webkit-scrollbar-track {
-  background-color: transparent;
+  background-color: var(--light-mode-body);
 }
 
 /* on hover, paint the reserved gutter */
@@ -46,6 +46,10 @@ body.dark-mode .sidebar {
   /* hide scrollbar by default */
   scrollbar-color: transparent transparent;
 }
+body.dark-mode .sidebar::-webkit-scrollbar-track {
+  background-color: var(--dark-mode-body);
+}
+
 /* only show on hover */
 body.dark-mode .sidebar:hover {
   scrollbar-color: #888 var(--dark-mode-body);
