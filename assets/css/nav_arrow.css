@@ -43,6 +43,7 @@ a.nav-arrow:hover {
 
 /* Label above the arrow */
 .nav-label {
+  color: black;
   font-size: 14px;
   margin-bottom: 5px;      /* Spacing between label and arrow */
 
@@ -50,6 +51,10 @@ a.nav-arrow:hover {
   text-align: center;
   white-space: nowrap; */
   transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode .nav-label {
+  color: white;
 }
 
 /* Arrow symbol styling */
