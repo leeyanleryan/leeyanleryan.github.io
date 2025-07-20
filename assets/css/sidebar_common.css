@@ -16,6 +16,9 @@
   /* hide scrollbar by making it transparent */
   scrollbar-width: thin;
   scrollbar-color: transparent transparent;
+
+  /* prevent scroll “escape” into the page when user hits the ends */
+  overscroll-behavior: contain;
 }
 .sidebar::-webkit-scrollbar {
   width: 8px;
