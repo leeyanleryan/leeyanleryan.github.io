@@ -3,8 +3,8 @@ layout: default
 title: leeyanleryan
 permalink: /about/
 
-left_label: Awards
-left_url: /about/awards/
+left_label: Translations
+left_url: /resources/lyrics-translations/
 right_label: Projects
 right_url: /about/projects/
 ---

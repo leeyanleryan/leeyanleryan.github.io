@@ -1,6 +1,6 @@
 ---
 layout: default
-title: leeyanleryan's projects
+title: leeyanleryan's Projects
 permalink: /about/projects/
 
 left_label: About

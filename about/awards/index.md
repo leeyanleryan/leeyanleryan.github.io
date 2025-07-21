@@ -1,12 +1,12 @@
 ---
 layout: default
-title: leeyanleryan's awards
+title: leeyanleryan's Awards
 permalink: /about/awards/
 
-left_label: Hobbies
-left_url: /about/hobbies/
-right_label: About
-right_url: /about/
+left_label: Experiences
+left_url: /about/experiences/
+right_label: Hobbies
+right_url: /about/hobbies/
 ---
 
 <!-- !PAGE CONTENT! -->

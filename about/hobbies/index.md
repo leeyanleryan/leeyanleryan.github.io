@@ -1,12 +1,12 @@
 ---
 layout: default
-title: leeyanleryan's hobbies
+title: leeyanleryan's Hobbies
 permalink: /about/hobbies/
 
 left_label: Experiences
 left_url: /about/experiences/
-right_label: Awards
-right_url: /about/awards/
+right_label: Python
+right_url: /resources/python/
 ---
 
 <!-- !PAGE CONTENT! -->
