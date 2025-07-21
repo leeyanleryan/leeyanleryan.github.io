@@ -13,3 +13,106 @@ body.dark-mode #topbar {
   color: #fff !important;
   border-bottom: var(--dark-mode-border);
 }
+
+/* 1) Let the top bar show overflowed children */
+#topbar,
+#topbar .w3-bar {
+  overflow: visible !important;
+}
+
+/* 2) Make the search form the positioning context */
+#topbar-search {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  width: clamp(300px, 50%, 600px);
+}
+
+/* Style the input itself */
+#topbar-search input {
+  /* fill the form’s full width */
+  width: 100%;
+  max-width: 100%;
+
+  /* shorter height: roughly ⅔ of a normal 2.25rem bar */
+  height: 1.5rem;
+  line-height: 1.5rem;
+
+  /* a little inner padding */
+  padding: 0.9rem 0.75rem;
+
+  /* white background + light border in light mode */
+  background-color: #fff;
+  border: var(--light-mode-border);
+  border-radius: 0.7rem;
+
+  /* text uses the bar’s color (black in light) */
+  color: black;
+  font-size: 1rem;
+
+  /* keep transitions in sync */
+  transition: background-color 0.3s ease,
+              color            0.3s ease,
+              border-color     0.3s ease;
+
+  box-sizing: border-box;
+}
+
+/* Dark-mode switch */
+body.dark-mode #topbar-search input {
+  background-color: #2D2D2D;           /* pitch-black */
+  color: #fff;                      /* white text */
+  border: var(--dark-mode-border);  /* matching your dark borders */
+}
+
+/* 3) Style & position the results dropdown */
+#search-results {
+  position: absolute;
+  top: 100%;            /* immediately below the input */
+  left: 0;
+  right: 0;
+  background: var(--light-mode-body);
+  border: var(--light-mode-border);
+  max-height: 300px;
+  overflow-y: auto;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 1005;
+  list-style: none;
+  margin: 4px 0 0;
+  padding: 0;
+}
+
+/* show each item */
+#search-results li {
+  display: block;
+}
+
+/* link styling */
+#search-results li a {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: black;
+  transition: background-color 0.3s ease;
+}
+
+/* hover/focus */
+#search-results li a:hover,
+#search-results li a:focus {
+  background: rgba(0,0,0,0.07);
+}
+
+/* dark-mode overrides */
+body.dark-mode #search-results {
+  background: var(--dark-mode-body);
+  border: var(--dark-mode-border);
+}
+body.dark-mode #search-results li a {
+  color: white;
+}
+body.dark-mode #search-results li a:hover,
+body.dark-mode #search-results li a:focus {
+  background: rgba(255,255,255,0.10);
+}

@@ -3,5 +3,10 @@
   // from file /assets/css/vendor/font-awesome.min.css
   "css.lint.vendorPrefix": "ignore",
   "less.lint.vendorPrefix": "ignore",
-  "scss.lint.vendorPrefix": "ignore"
+  "scss.lint.vendorPrefix": "ignore",
+
+  // Treat just search.json as Liquid/Jekyll, not JSON
+  "files.associations": {
+    "search.json": "liquid"
+  }
 }
