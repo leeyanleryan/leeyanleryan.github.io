@@ -59,9 +59,9 @@
 <!-- Top container -->
 <div id="topbar" class="w3-bar w3-top w3-black w3-large">
   <button class="w3-bar-item w3-button w3-hover-none w3-hover-text-grey no-zoom" onclick="w3_open(); this.blur();"><i class="fa fa-bars"></i>  Menu</button>
-  <form id="topbar-search" class="w3-bar-item" onsubmit="return false;">
+  <form id="topbar-search" onsubmit="return false;">
     <input id="search-input" type="text" placeholder="Search…">
-    <ul id="search-results" style="left:0; right:auto; max-height:300px; overflow:auto;"></ul>
+    <ul id="search-results"></ul>
   </form>
   <span class="w3-bar-item w3-right">
     <i class="fa fa-moon-o" style="margin-right:10px"></i>
@@ -490,8 +490,8 @@
     searchInput:    document.getElementById('search-input'),
     resultsContainer: document.getElementById('search-results'),
     json:           '/search.json',            // our step-1 index
-    searchResultTemplate: '<li><a href="{url}" class="w3-bar-item w3-button">{title}</a></li>',
-    noResultsText:  'No results found',
+    searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+    noResultsText:  '&nbsp;No results found',
     limit:          5,                         // show up to 5 matches
     fuzzy:          false                      // turn on if you want typosuggestions
   });
@@ -512,6 +512,17 @@
         // Option B: or just change location
         // window.location.href = firstLink.href;
       }
+    }
+  });
+</script>
+<script>
+  document.addEventListener('click', function(e) {
+    const form    = document.getElementById('topbar-search');
+    const results = document.getElementById('search-results');
+
+    // if click is *not* inside the form or the results box
+    if (!form.contains(e.target) && !results.contains(e.target)) {
+      results.innerHTML = '';   // clear out the list
     }
   });
 </script>
