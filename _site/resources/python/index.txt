@@ -9,7 +9,7 @@
   </style>
   <script src="/assets/js/flicker_fix.js"> </script>
   <!-- take title from front matter of md files -->
-  <title>Lyrics Translations</title>
+  <title>Python</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- favicon -->
@@ -96,9 +96,9 @@
   <div class="w3-container">
     <h4><strong>Resources</strong></h4>
     <div class="w3-bar-block">
-      <a href="/resources/python/" class="w3-bar-item w3-button w3-padding "> Python</a>
+      <a href="/resources/python/" class="w3-bar-item w3-button w3-padding  active"> Python</a>
       <a href="/resources/machine-learning/" class="w3-bar-item w3-button w3-padding "> Machine Learning</a>
-      <a href="/resources/lyrics-translations/" class="w3-bar-item w3-button w3-padding  active"> Lyrics Translations</a>
+      <a href="/resources/lyrics-translations/" class="w3-bar-item w3-button w3-padding "> Lyrics Translations</a>
     </div>
   </div>
   <hr class="hr-sidebar">
@@ -136,7 +136,7 @@
 
 <!-- Page content goes here -->
 <!-- !PAGE CONTENT! -->
-<div id="page-pets-pome" class="w3-main">
+<div id="page-pets-pome" class="w3-main" >
   <section id="profile" class="w3-container">
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
       <h5><i class="fa fa-gear"></i>
@@ -146,29 +146,28 @@
   </section>
 </div>
 
-
 <!-- Navigation Arrows -->
 <!-- Navigation Arrows -->
-<a href="/resources/machine-learning/" class="nav-arrow nav-arrow-left w3-hide-small">
+<a href="/about/hobbies/" class="nav-arrow nav-arrow-left w3-hide-small">
   <!-- Label above the arrow -->
-  <div class="nav-label">ML</div>
+  <div class="nav-label">Hobbies</div>
   <i class="arrow-symbol fa fa-angle-double-left"></i>
 </a>
 
-<a href="/pets/ares/" class="nav-arrow nav-arrow-right w3-hide-small">
+<a href="/resources/machine-learning" class="nav-arrow nav-arrow-right w3-hide-small">
   <!-- Label above the arrow -->
-  <div class="nav-label">Ares</div>
+  <div class="nav-label">Machine Learning</div>
   <i class="arrow-symbol fa fa-angle-double-right"></i>
 </a>
 
 <!-- NAVIGATION BOTTOM BAR (Small screens) -->
 <div class="nav-bottom">
-  <a href="/resources/machine-learning/">
+  <a href="/about/hobbies/">
     <i class="fa fa-angle-double-left"></i>
-    &nbsp;ML
+    &nbsp;Hobbies
   </a>
-  <a href="/pets/ares/">
-    Ares&nbsp;
+  <a href="/resources/machine-learning">
+    Machine Learning&nbsp;
     <i class="fa fa-angle-double-right"></i>
   </a>
 </div>
