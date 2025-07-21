@@ -3,8 +3,8 @@ layout: default
 title: leeyanleryan's Projects
 permalink: /about/projects/
 
-left_label: About
-left_url: /about/
+left_label: Profile
+left_url: /about/profile/
 right_label: Experiences
 right_url: /about/experiences/
 ---

@@ -5,8 +5,8 @@ permalink: /pets/pome/
 
 left_label: Ares
 left_url: /pets/ares/
-right_label: About
-right_url: /about/
+right_label: Profile
+right_url: /about/profile/
 ---
 
 <!-- !PAGE CONTENT! -->

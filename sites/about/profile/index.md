@@ -1,7 +1,7 @@
 ---
 layout: default
-title: leeyanleryan
-permalink: /about/
+title: leeyanleryan's Profile
+permalink: /about/profile/
 
 left_label: Pome
 left_url: /pets/pome/
