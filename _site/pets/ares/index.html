@@ -9,7 +9,7 @@
   </style>
   <script src="/assets/js/flicker_fix.js"> </script>
   <!-- take title from front matter of md files -->
-  <title>{{ page.title }}</title>
+  <title>Ares</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- favicon -->
@@ -85,28 +85,28 @@
   <div class="w3-container">
     <div class="w3-bar-block">
       <h4><strong>Home</strong></h4>
-      <a href="/about/" class="w3-bar-item w3-button w3-padding {% if page.url == '/about/' %} active{% endif %}"> About</a>
-      <a href="/about/projects/" class="w3-bar-item w3-button w3-padding {% if page.url == '/about/projects/' %} active{% endif %}"> Projects</a>
-      <a href="/about/experiences/" class="w3-bar-item w3-button w3-padding {% if page.url == '/about/experiences/' %} active{% endif %}"> Experiences</a>
-      <a href="/about/awards/" class="w3-bar-item w3-button w3-padding {% if page.url == '/about/awards/' %} active{% endif %}"> Awards</a>
-      <a href="/about/hobbies/" class="w3-bar-item w3-button w3-padding {% if page.url == '/about/hobbies/' %} active{% endif %}"> Hobbies</a>
+      <a href="/about/" class="w3-bar-item w3-button w3-padding "> About</a>
+      <a href="/about/projects/" class="w3-bar-item w3-button w3-padding "> Projects</a>
+      <a href="/about/experiences/" class="w3-bar-item w3-button w3-padding "> Experiences</a>
+      <a href="/about/awards/" class="w3-bar-item w3-button w3-padding "> Awards</a>
+      <a href="/about/hobbies/" class="w3-bar-item w3-button w3-padding "> Hobbies</a>
     </div>
   </div>
   <hr class="hr-sidebar">
   <div class="w3-container">
     <h4><strong>Resources</strong></h4>
     <div class="w3-bar-block">
-      <a href="/resources/python/" class="w3-bar-item w3-button w3-padding {% if page.url == '/resources/python/' %} active{% endif %}"> Python</a>
-      <a href="/resources/machine-learning/" class="w3-bar-item w3-button w3-padding {% if page.url == '/resources/machine-learning/' %} active{% endif %}"> Machine Learning</a>
-      <a href="/resources/lyrics-translations/" class="w3-bar-item w3-button w3-padding {% if page.url == '/resources/lyrics-translations/' %} active{% endif %}"> Lyrics Translations</a>
+      <a href="/resources/python/" class="w3-bar-item w3-button w3-padding "> Python</a>
+      <a href="/resources/machine-learning/" class="w3-bar-item w3-button w3-padding "> Machine Learning</a>
+      <a href="/resources/lyrics-translations/" class="w3-bar-item w3-button w3-padding "> Lyrics Translations</a>
     </div>
   </div>
   <hr class="hr-sidebar">
   <div class="w3-container">
     <h4><strong>Pets</strong></h4>
     <div class="w3-bar-block">
-      <a href="/pets/ares/" class="w3-bar-item w3-button w3-padding {% if page.url == '/pets/ares/' %} active{% endif %}"> Ares</a>
-      <a href="/pets/pome/" class="w3-bar-item w3-button w3-padding {% if page.url == '/pets/pome/' %} active{% endif %}"> Pome</a>
+      <a href="/pets/ares/" class="w3-bar-item w3-button w3-padding  active"> Ares</a>
+      <a href="/pets/pome/" class="w3-bar-item w3-button w3-padding "> Pome</a>
     </div>
   </div>
   <hr style="opacity:0">
@@ -135,10 +135,39 @@
 </aside>
 
 <!-- Page content goes here -->
-{{ content }}
+<!-- !PAGE CONTENT! -->
+<div id="page-pets-pome" class="w3-main">
+  <section id="profile" class="w3-container">
+
+  </section>
+</div>
+
 
 <!-- Navigation Arrows -->
-{% include nav_arrow.html %}
+<!-- Navigation Arrows -->
+<a href="/resources/lyrics-translations/" class="nav-arrow nav-arrow-left w3-hide-small">
+  <!-- Label above the arrow -->
+  <div class="nav-label">Translations</div>
+  <i class="arrow-symbol fa fa-angle-double-left"></i>
+</a>
+
+<a href="/pets/pome/" class="nav-arrow nav-arrow-right w3-hide-small">
+  <!-- Label above the arrow -->
+  <div class="nav-label">Pome</div>
+  <i class="arrow-symbol fa fa-angle-double-right"></i>
+</a>
+
+<!-- NAVIGATION BOTTOM BAR (Small screens) -->
+<div class="nav-bottom">
+  <a href="/resources/lyrics-translations/">
+    <i class="fa fa-angle-double-left"></i>
+    &nbsp;Translations
+  </a>
+  <a href="/pets/pome/">
+    Pome&nbsp;
+    <i class="fa fa-angle-double-right"></i>
+  </a>
+</div>
 
 <hr class="hr-hide-1180" style="border:1px solid gray; opacity:0">
 

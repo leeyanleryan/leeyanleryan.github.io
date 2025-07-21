@@ -5,7 +5,7 @@ permalink: /resources/machine-learning/
 
 left_label: Python
 left_url: /resources/python/
-right_label: Lyrics Translations
+right_label: Translations
 right_url: /resources/lyrics-translations/
 ---
 

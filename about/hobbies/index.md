@@ -3,8 +3,8 @@ layout: default
 title: leeyanleryan's Hobbies
 permalink: /about/hobbies/
 
-left_label: Experiences
-left_url: /about/experiences/
+left_label: Awards
+left_url: /about/awards/
 right_label: Python
 right_url: /resources/python/
 ---

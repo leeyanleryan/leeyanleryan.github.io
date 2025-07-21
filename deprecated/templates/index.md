@@ -5,7 +5,7 @@ permalink: /resources/python/
 
 left_label: Hobbies
 left_url: /about/hobbies/
-right_label: ML
+right_label: Machine Learning
 right_url: /resources/machine-learning
 ---
 
