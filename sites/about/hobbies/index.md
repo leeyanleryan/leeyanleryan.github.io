@@ -1,6 +1,6 @@
 ---
 layout: default
-title: leeyanleryan's Hobbies
+title: My Hobbies
 permalink: /about/hobbies/
 
 left_label: Awards

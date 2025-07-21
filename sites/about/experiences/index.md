@@ -1,6 +1,6 @@
 ---
 layout: default
-title: leeyanleryan's Experiences
+title: My Experiences
 permalink: /about/experiences/
 
 left_label: Projects

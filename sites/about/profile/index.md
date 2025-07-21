@@ -1,6 +1,6 @@
 ---
 layout: default
-title: leeyanleryan's Profile
+title: My Profile
 permalink: /about/profile/
 
 left_label: Pome

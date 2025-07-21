@@ -1,6 +1,6 @@
 ---
 layout: default
-title: leeyanleryan's Awards
+title: My Awards
 permalink: /about/awards/
 
 left_label: Experiences
