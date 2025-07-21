@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
-permalink: /
+title: About
+permalink: /about/
 redirect_to: /about/profile/
 ---

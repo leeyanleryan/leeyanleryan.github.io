@@ -1,1 +1,1 @@
-{"/":"http://localhost:4000/about/profile/"}
+{"/about/":"http://localhost:4000/about/profile/","/":"http://localhost:4000/about/profile/","/pets/":"http://localhost:4000/pets/ares","/resources/":"http://localhost:4000/resources/python"}
