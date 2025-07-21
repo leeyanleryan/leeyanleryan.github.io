@@ -1,0 +1,27 @@
+/* 
+Used for extra padding at the bottom.
+Hidden for screens bigger than or equal to 1251px.
+Shown for screens smaller than or equal to 1250px.
+Works in conjunction with .nav-bottom .
+*/
+@media (min-width: 1251px) {
+  .hr-hide-1250 {
+    display: none !important;
+  }
+}
+
+.interactive-link {
+  text-decoration: none;
+  color: inherit; /* preserve text color on hover */
+}
+
+.interactive-card {
+  transition: background-color 0.2s, box-shadow 0.2s;
+  padding: 15px; /* optional padding */
+}
+
+/* Hover effect: change background or add a shadow */
+.interactive-card:hover {
+  background-color: #fff; /* or any color you prefer */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}

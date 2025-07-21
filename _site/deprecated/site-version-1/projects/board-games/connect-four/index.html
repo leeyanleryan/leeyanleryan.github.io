@@ -1,185 +1,142 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!-- flicker fix -->
-  <style>
-    .no-transition, .no-transition * {
-      transition: none !important;
-    }
-  </style>
-  <script src="/assets/js/flicker_fix.js"> </script>
-  <!-- take title from front matter of md files -->
-  <title>leeyanleryan's projects</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- favicon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon.png">
-  <link rel="shortcut icon" href="/assets/favicon/favicon.ico">
-  <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon/android-chrome-192x192.png">
-  <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon/android-chrome-512x512.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
-  <!-- css -->
-  <!-- 
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  -->
-  <link rel="stylesheet" href="/assets/css/vendor/font-awesome.min.css">
-  <link rel="stylesheet" href="/assets/css/vendor/raleway.css">
-  <link rel="stylesheet" href="/assets/css/vendor/w3.css">
-  <link rel="stylesheet" href="/assets/css/dark_mode.css">
-  <link rel="stylesheet" href="/assets/css/general_stuff.css">
-  <link rel="stylesheet" href="/assets/css/left_sidebar.css">
-  <link rel="stylesheet" href="/assets/css/main_body.css">
-  <link rel="stylesheet" href="/assets/css/nav_arrow.css">
-  <link rel="stylesheet" href="/assets/css/right_sidebar.css">
-  <link rel="stylesheet" href="/assets/css/sidebar_common.css">
-  <link rel="stylesheet" href="/assets/css/topbar.css">
-  <link rel="stylesheet" href="/assets/css/variables.css">
-  <style>
-    html,h1,h2,h3,h4,h5,h6 {
-      font-family: "Raleway", sans-serif;
-      scroll-behavior: smooth;
-      scroll-padding-top: 43px;
-    }
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-    .no-zoom {
-      -webkit-tap-highlight-color: transparent;
-      touch-action: manipulation;
-      -ms-touch-action: manipulation;
-    }
-  </style>
+<title>leeyanleryan's projects</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../nav_arrow.css">
+<link rel="stylesheet" href="../sidebar.css">
+<link rel="stylesheet" href="../general.css">
+<style>
+  html,body,h1,h2,h3,h4,h5,h6 {
+    font-family: "Raleway", sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding-top: 43px;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+</style>
 </head>
+<body class="w3-light-grey">
 
-<body class="dark-mode">
-    
 <!-- Top container -->
-<div id="topbar" class="w3-bar w3-top w3-black w3-large">
-  <button class="w3-bar-item w3-button w3-hover-none w3-hover-text-grey no-zoom" onclick="w3_open(); this.blur();"><i class="fa fa-bars"></i>  Menu</button>
-  <span class="w3-bar-item w3-right">
-    <i class="fa fa-moon-o" style="margin-right:10px"></i>
-    <label class="switch">
-      <input id="toggle-dark-mode" type="checkbox">
-      <span class="slider"></span>
-    </label>
-  </span>
+<div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
+  <button class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
+  <span class="w3-bar-item w3-right">Projects</span>
 </div>
 
-<!-- Left sidebar/menu -->
-<nav id="left-sidebar" class="sidebar"><br>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-white w3-animate-left" style="z-index:3;width:300px;display:none;" id="mySidebar"><br>
   <div class="w3-container w3-row">
     <div class="w3-col s4">
       <img src="https://i.imgur.com/J6a7t0I.png" class="w3-circle w3-margin-right" style="width:46px">
     </div>
     <div class="w3-col s8 w3-bar">
-      <span>Lee Yan Le, <strong>Ryan</strong></span><br>
+      <span>   Lee Yan Le, <strong>Ryan</strong></span><br>
       <a href="https://github.com/leeyanleryan" class="w3-bar-item w3-button"><i class="fa fa-github"></i></a>
       <a href="https://linkedin.com/in/leeyanleryan" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
       <a href="https://www.youtube.com/@Leehai" class="w3-bar-item w3-button"><i class="fa fa-youtube-play"></i></a>
     </div>
   </div>
-  <hr class="hr-sidebar">
+
+  <hr>
+  
   <div class="w3-container">
-    <h4><strong>About</strong></h4>
+    <h4 class="w3-text-grey"><strong>About</strong></h4>
     <div class="w3-bar-block">
-      <a href="/about/#profile" class="w3-bar-item w3-button w3-padding"> Profile</a>
-      <a href="/about/#resume" class="w3-bar-item w3-button w3-padding"> Resume</a>
-      <a href="/about/#contact" class="w3-bar-item w3-button w3-padding"> Contact</a>
+      <a href="../#profile" class="w3-bar-item w3-button w3-padding"> Profile</a>
+      <a href="../#resume" class="w3-bar-item w3-button w3-padding"> Resume</a>
+      <a href="../#contact" class="w3-bar-item w3-button w3-padding"> Contact</a>
     </div>
   </div>
-  <hr class="hr-sidebar">
+
+  <hr>
+  
   <div class="w3-container">
-    <h4><strong>Projects</strong></h4>
+    <h4 class="w3-text-grey"><strong>Projects</strong></h4>
     <div class="w3-bar-block">
-      <a href="/about/projects/#orbital-nuquest" class="w3-bar-item w3-button w3-padding"> Orbital NUqueSt</a>
-      <a href="/about/projects/#data-analysis" class="w3-bar-item w3-button w3-padding"> Data Analysis</a>
-      <a href="/about/projects/#board-games" class="w3-bar-item w3-button w3-padding"> Board Games</a>
-      <a href="/about/projects/#puzzle-solvers" class="w3-bar-item w3-button w3-padding"> Puzzle Solvers</a>
+      <a href="#orbital_nuquest" class="w3-bar-item w3-button w3-padding"> Orbital NUqueSt</a>
+      <a href="#data_analysis" class="w3-bar-item w3-button w3-padding"> Data Analysis</a>
+      <a href="#board_games" class="w3-bar-item w3-button w3-padding"> Board Games</a>
+      <a href="#puzzle_solvers" class="w3-bar-item w3-button w3-padding"> Puzzle Solvers</a>
     </div>
   </div>
-  <hr class="hr-sidebar">
+
+  <hr>
+  
   <div class="w3-container">
-    <h4><strong>Experiences</strong></h4>
+    <h4 class="w3-text-grey"><strong>Experiences</strong></h4>
     <div class="w3-bar-block">
-      <a href="/about/experiences/#digital-production-assistant" class="w3-bar-item w3-button w3-padding"> Digital Production Assistant</a>
-      <a href="/about/experiences/#teaching-assistant" class="w3-bar-item w3-button w3-padding"> Teaching Assistant</a>
+      <a href="../experiences/#digital_production_assistant" class="w3-bar-item w3-button w3-padding"> Digital Production Assistant</a>
+      <a href="../experiences/#teaching_assistant" class="w3-bar-item w3-button w3-padding"> Teaching Assistant</a>
     </div>
   </div>
-  <hr class="hr-sidebar">
+
+  <hr>
+  
   <div class="w3-container">
-    <h4><strong>Awards</strong></h4>
+    <h4 class="w3-text-grey"><strong>Awards</strong></h4>
     <div class="w3-bar-block">
-      <a href="/about/awards/#achievements" class="w3-bar-item w3-button w3-padding"> Achievements</a>
-      <a href="/about/awards/#certifications" class="w3-bar-item w3-button w3-padding"> Certifications</a>
+      <a href="../awards/#achievements" class="w3-bar-item w3-button w3-padding"> Achievements</a>
+      <a href="../awards/#certifications" class="w3-bar-item w3-button w3-padding"> Certifications</a>
     </div>
   </div>
-  <hr class="hr-sidebar">
+
+  <hr>
+  
   <div class="w3-container">
-    <h4><strong>Hobbies</strong></h4>
+    <h4 class="w3-text-grey"><strong>Hobbies</strong></h4>
     <div class="w3-bar-block">
-      <a href="/about/hobbies/#reading" class="w3-bar-item w3-button w3-padding"> Reading</a>
-      <a href="/about/hobbies/#gaming" class="w3-bar-item w3-button w3-padding"> Gaming</a>
-      <a href="/about/hobbies/#piano" class="w3-bar-item w3-button w3-padding"> Piano</a>
+      <a href="../hobbies/#reading" class="w3-bar-item w3-button w3-padding"> Reading</a>
+      <a href="../hobbies/#gaming" class="w3-bar-item w3-button w3-padding"> Gaming</a>
+      <a href="../hobbies/#piano" class="w3-bar-item w3-button w3-padding"> Piano</a>
     </div>
   </div>
-  <hr style="opacity:0">
-  <hr style="opacity:0">
+
+  <hr>
 </nav>
 
-<!-- Overlay effect when opening left sidebar on small screens -->
-<div id="sidebar-overlay" 
-     class="w3-overlay w3-hide-large w3-animate-opacity" 
-     onclick="w3_close()" 
-     style="cursor:pointer" 
-     title="close side menu"></div>
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-<!-- Right sidebar -->
-<aside id="right-sidebar" class="sidebar">
-  <!-- put whatever you like in here: -->
-  <div class="w3-container">
-    <h4><strong>Extras</strong></h4>
-    <div class="w3-bar-block">
-      <a href="/link1" class="w3-bar-item w3-button">Link 1</a>
-      <a href="/link2" class="w3-bar-item w3-button">Link 2</a>
-      <!-- …etc… -->
-    </div>
-  </div>
-  <hr class="hr-sidebar">
-</aside>
-
-<!-- Page content goes here -->
 <!-- !PAGE CONTENT! -->
-<div id="page-about-projects" class="w3-main">
-  <section id="orbital-nuquest" class="w3-container">
+<div class="w3-main" style="margin:auto; margin-top:43px; max-width:900px; padding-bottom:20px;" id="pageAbout">
+  <section id="orbital_nuquest" class="w3-container">
     <h2><b>Orbital NUqueSt</b> (<a href="https://github.com/leeyanleryan/Orbital-NUqueSt" target="_blank">Link</a>)</h2>
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <img src="/assets/gif/nuquest_gameplay2.gif" alt="NUqueSt Gameplay 1" style="width:33%;" />
-      <img src="/assets/gif/nuquest_gameplay1.gif" alt="NUqueSt Gameplay 2" style="width:33%;" />
-      <img src="/assets/gif/nuquest_gameplay3.gif" alt="NUqueSt Gameplay 3" style="width:33%;" />
+      <img src="../pictures/nuquest_gameplay2.gif" alt="NUqueSt Gameplay 1" style="width:33%;">
+      <img src="../pictures/nuquest_gameplay1.gif" alt="NUqueSt Gameplay 2" style="width:33%;">
+      <img src="../pictures/nuquest_gameplay3.gif" alt="NUqueSt Gameplay 3" style="width:33%;">
     </div>
     <h5>
         NUqueSt is a 2D Top-Down Action-Adventure Singleplayer Questing game. It was heavily inspired by Stardew Valley, incorporating core gameplay elements
       such as fighting, farming and mining. It features 3 different biomes, 8 Non-Playable-Characters (NPCs), 6 ores, 3 enemies, 1 boss and 40 quests.
     </h5>
-    <br />
+
+    <br>
+
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <img src="/assets/gif/nuquest_quest1.gif" alt="NUqueSt Quest 1" style="width:50%;" />
-      <img src="/assets/gif/nuquest_quest2.gif" alt="NUqueSt Quest 2" style="width:50%;" />
+      <img src="../pictures/nuquest_quest1.gif" alt="NUqueSt Quest 1" style="width:50%;">
+      <img src="../pictures/nuquest_quest2.gif" alt="NUqueSt Quest 2" style="width:50%;">
     </div>
     <h5>
       The main purpose of creating NUqueSt was to help familiarise incoming undergraduates with the challenges of various courses in a fun and interactive way.
       We achieved this by gamifying each course into a quest. For example, the computing course “CS1010” became an N-Queens puzzle, where players had to provide 
       two valid configurations for placing 6 queens on a 6x6 board. These quests are given by the NPCs, and reward the player with GPA upon completion.
     </h5>
-    <br />
+
+    <br>
+
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <img src="/assets/img/nuquest_poster1.png" alt="NUqueSt Poster 1" style="width:25%;" />
-      <img src="/assets/img/nuquest_poster2.png" alt="NUqueSt Poster 2" style="width:25%;" />
-      <img src="/assets/img/nuquest_poster3.png" alt="NUqueSt Poster 3" style="width:25%;" />
-      <img src="/assets/img/nuquest_poster4.png" alt="NUqueSt Poster 4" style="width:25%;" />
+      <img src="../pictures/nuquest_poster1.png" alt="NUqueSt Poster 1" style="width:25%;">
+      <img src="../pictures/nuquest_poster2.png" alt="NUqueSt Poster 2" style="width:25%;">
+      <img src="../pictures/nuquest_poster3.png" alt="NUqueSt Poster 3" style="width:25%;">
+      <img src="../pictures/nuquest_poster4.png" alt="NUqueSt Poster 4" style="width:25%;">
     </div>
     <h5>
         My friend
@@ -188,10 +145,12 @@
         an agile methodology with monthly sprints. Each sprint began with planning feasible features and ended with peer reviews, alongside the creation of a 
         poster and video to showcase the project. We then incorporated feedback in subsequent sprints, guiding us toward the right direction.
     </h5>
-    <br />
+
+    <br>
+
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <img src="/assets/img/nuquest_certificate1.png" alt="NUqueSt Certificate 1" style="width:40%;" />
-      <img src="/assets/img/nuquest_certificate2.png" alt="NUqueSt Certificate 2" style="width:47%;" />
+      <img src="../pictures/nuquest_certificate1.png" alt="NUqueSt Certificate 1" style="width:40%;">
+      <img src="../pictures/nuquest_certificate2.png" alt="NUqueSt Certificate 2" style="width:47%;">
     </div>
     <h5>
       For our project, we were awarded Artemis (Extreme), the highest level of achievement, placing us roughly in the top 5% of the cohort. The link to the
@@ -200,18 +159,19 @@
     </h5>
   </section>
 
-  <hr class="hr-main-body" />
+  <hr style="border:1px solid gray; opacity:0.2">
 
-  <section id="data-analysis" class="w3-container">
+  <section id="data_analysis" class="w3-container">
     <h2><b>Data Analysis</b> (<a href="https://github.com/leeyanleryan/Data-Analysis" target="_blank">Link</a>)</h2>
     <h5 style="margin-bottom:20px">
       This project is a compilation of multiple data analysis projects, most of which incorporate the use of various Machine Learning algorithms for predictions.
     </h5>
+
     <h3><u>Breast Cancer Analysis (<a href="https://github.com/leeyanleryan/Data-Analysis/tree/main/Breast%20Cancer%20Analysis%20(IT1244)" target="_blank">Link</a>)</u></h3>
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <img src="/assets/img/dataanalysis_bca_heatmap1.png" alt="Data Analysis BCA Heatmap 1" style="width:33%;" />
-      <img src="/assets/img/dataanalysis_bca_heatmap2.png" alt="Data Analysis BCA Heatmap 2" style="width:33%;" />
-      <img src="/assets/img/dataanalysis_bca_heatmap3.png" alt="Data Analysis BCA Heatmap 3" style="width:33%;" />
+      <img src="../pictures/dataanalysis_bca_heatmap1.png" alt="Data Analysis BCA Heatmap 1" style="width:33%;">
+      <img src="../pictures/dataanalysis_bca_heatmap2.png" alt="Data Analysis BCA Heatmap 2" style="width:33%;">
+      <img src="../pictures/dataanalysis_bca_heatmap3.png" alt="Data Analysis BCA Heatmap 3" style="width:33%;">
     </div>
     <h5 style="margin-bottom:20px">
       The project aimed to classify breast cancer samples (benign vs. malignant) by analyzing imaging attributes from a fine needle aspirate (FNA). It also explored mislabelled
@@ -229,10 +189,12 @@
         <li>Correlation analysis identified the most influential features (i.e., radius, concavity, concave points)</li>
       </ul>
     </h5>
-    <br />
+
+    <br>
+
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <img src="/assets/img/dataanalysis_bca_fe1.png" alt="Data Analysis BCA Feature Engineering 1" style="width:50%;" />
-      <img src="/assets/img/dataanalysis_bca_fe2.png" alt="Data Analysis BCA Feature Engineering 2" style="width:50%;" />
+      <img src="../pictures/dataanalysis_bca_fe1.png" alt="Data Analysis BCA Feature Engineering 1" style="width:50%;">
+      <img src="../pictures/dataanalysis_bca_fe2.png" alt="Data Analysis BCA Feature Engineering 2" style="width:50%;">
     </div>
     <h5 style="margin-bottom:20px">
       The problem was split into two tasks. For the first task, we are told that some labels have been mislabelled, and we are required to detect them. We utilised several
@@ -251,12 +213,14 @@
         <li>Logistic Regression: Tested whether flagged points consistently mismatched the known labels</li>
       </ul>
     </h5>
-    <br />
+
+    <br>
+
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <img src="/assets/img/dataanalysis_bca_rocauc1.png" alt="Data Analysis BCA ROC-AUC 1" style="width:25%;" />
-      <img src="/assets/img/dataanalysis_bca_rocauc2.png" alt="Data Analysis BCA ROC-AUC 2" style="width:25%;" />
-      <img src="/assets/img/dataanalysis_bca_rocauc3.png" alt="Data Analysis BCA ROC-AUC 3" style="width:25%;" />
-      <img src="/assets/img/dataanalysis_bca_rocauc4.png" alt="Data Analysis BCA ROC-AUC 4" style="width:25%;" />
+      <img src="../pictures/dataanalysis_bca_rocauc1.png" alt="Data Analysis BCA ROC-AUC 1" style="width:25%;">
+      <img src="../pictures/dataanalysis_bca_rocauc2.png" alt="Data Analysis BCA ROC-AUC 2" style="width:25%;">
+      <img src="../pictures/dataanalysis_bca_rocauc3.png" alt="Data Analysis BCA ROC-AUC 3" style="width:25%;">
+      <img src="../pictures/dataanalysis_bca_rocauc4.png" alt="Data Analysis BCA ROC-AUC 4" style="width:25%;">
     </div>
     <h5 style="margin-bottom:20px">
       For the second task, we are required to classify the type of breast cancer ('B' vs 'M') given the diagnosis. To do this, we employed the use of several Machine
@@ -275,9 +239,11 @@
         <li>Support Vector Machines (SVM)</li>
       </ul>
     </h5>
-    <br />
+
+    <br>
+
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <img src="/assets/img/dataanalysis_bca_keyfindings1.png" alt="Data Analysis BCA Key Findings 1" style="width:80%;" />
+      <img src="../pictures/dataanalysis_bca_keyfindings1.png" alt="Data Analysis BCA Key Findings 1" style="width:80%;">
     </div>
     <h5 style="margin-bottom:20px">
       Key Results:
@@ -288,9 +254,10 @@
         <li>RF showed signs of overfitting and noise sensitivity with certain irrelevant features</li>
       </ul>
     </h5>
+
     <h3><u>Enhancing Guest Experience (<a href="https://github.com/leeyanleryan/Data-Analysis/tree/main/Enhancing%20Guest%20Experience%20(DSA3101)" target="_blank">Link</a>)</u></h3>
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <img src="/assets/img/dataanalysis_ege_waittime1.png" alt="Data Analysis EGE Wait Time 1" style="width:100%;" />
+      <img src="../pictures/dataanalysis_ege_waittime1.png" alt="Data Analysis EGE Wait Time 1" style="width:100%;">
     </div>
     <h5 style="margin-bottom:20px">
       The project aimed to enhance overall guest experience at Universal Studios Singapore (USS). This project was completed by me and 7 others for DSA3101, a course in NUS on
@@ -300,9 +267,11 @@
       My objective is to optimally allocate staff to different attractions at an amusement park (e.g., Universal Studios Singapore) in order to reduce wait times and improve guest 
       satisfaction. Two models: Linear Optimization and Greedy Heuristic, are compared.
     </h5>
-    <br />
+
+    <br>
+
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <img src="/assets/img/dataanalysis_ege_models1.png" alt="Data Analysis EGE Models 1" style="width:80%;" />
+      <img src="../pictures/dataanalysis_ege_models1.png" alt="Data Analysis EGE Models 1" style="width:80%;">
     </div>
     <h5 style="margin-bottom:20px">
       Model 1 - Linear Optimization:
@@ -337,9 +306,11 @@
         </li>
       </ul>
     </h5>
-    <br />
+
+    <br>
+
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <img src="/assets/img/dataanalysis_ege_comparison1.png" alt="Data Analysis EGE Comparison 1" style="width:60%;" />
+      <img src="../pictures/dataanalysis_ege_comparison1.png" alt="Data Analysis EGE Comparison 1" style="width:60%;">
     </div>
     <h5>
       Comparing Both Models:
@@ -364,9 +335,11 @@
         </li>
       </ol>
     </h5>
-    <br />
+
+    <br>
+
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <img src="/assets/img/dataanalysis_ege_usage1.png" alt="Data Analysis EGE Usage 1" style="width:60%;" />
+      <img src="../pictures/dataanalysis_ege_usage1.png" alt="Data Analysis EGE Usage 1" style="width:60%;">
     </div>
     <h5 style="margin-bottom:20px">
       Usage and Implementation:
@@ -402,18 +375,19 @@
     </h5>
   </section>
 
-  <hr class="hr-main-body" />
+  <hr style="border:1px solid gray; opacity:0.2">
 
-  <section id="board-games" class="w3-container">
+  <section id="board_games" class="w3-container">
     <h2><b>Board Games</b> (<a href="https://github.com/leeyanleryan/Board-Games" target="_blank">Link</a>)</h2>
     <h5 style="margin-bottom:20px;">
       This project was created out of an interest in exploring how artificial intelligence (AI) can be applied to board games, which require varying levels 
       of strategic thinking and logic.
     </h5>
+
     <h3><u>Chess (<a href="https://github.com/leeyanleryan/Board-Games/tree/main/Chess%20(C%2B%2B)/Chess" target="_blank">Link</a>)</u></h3>
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <img src="/assets/gif/boardgames_chess1.gif" alt="Board Games Chess 1" style="width:50%;" />
-      <img src="/assets/gif/boardgames_chess2.gif" alt="Board Games Chess 2" style="width:50%;" />
+      <img src="../pictures/boardgames_chess1.gif" alt="Board Games Chess 1" style="width:50%;">
+      <img src="../pictures/boardgames_chess2.gif" alt="Board Games Chess 2" style="width:50%;">
     </div>
     <h5 style="margin-bottom:20px;">
       I developed the game logic and user interface for Chess using Qt Creator, an IDE for creating and deploying applications. The code is done in C++ 
@@ -426,10 +400,11 @@
     <h5 style="margin-bottom:20px">
       Current level of AI: Incomplete
     </h5>
+
     <h3><u>Connect Four (<a href="https://github.com/leeyanleryan/Board-Games/tree/main/Connect%204%20(Java)" target="_blank">Java Link</a> | <a href="https://github.com/leeyanleryan/Board-Games/tree/main/Connect%204%20(Python)" target="_blank">Python Link</a>)</u></h3>
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <img src="/assets/gif/boardgames_connectfour1.gif" alt="Board Games Connect Four 1" style="width:53%;" />
-      <img src="/assets/gif/boardgames_connectfour2.gif" alt="Board Games Connect Four 2" style="width:45.4%;" />
+      <img src="../pictures/boardgames_connectfour1.gif" alt="Board Games Connect Four 1" style="width:53%;">
+      <img src="../pictures/boardgames_connectfour2.gif" alt="Board Games Connect Four 2" style="width:45.4%;">
     </div>
     <h5 style="margin-bottom:20px">
       I developed the game logic and user interface for Connect Four in two languages: Java (using Swing and AWT) and Python (using Qt5).
@@ -443,17 +418,18 @@
     </h5>
   </section>
 
-  <hr class="hr-main-body" />
+  <hr style="border:1px solid gray; opacity:0.2">
 
-  <section id="puzzle-solvers" class="w3-container">
+  <section id="puzzle_solvers" class="w3-container">
     <h2><b>Puzzle Solvers</b> (<a href="https://github.com/leeyanleryan/Puzzle-Solvers" target="_blank">Link</a>)</h2>
     <h5 style="margin-bottom:20px">
       This project was created out of an interest in applying computer vision and AI to puzzle-solving. The end goal of this project is to make a phone application, capable of reading 
       pictures taken from the phone. Its main functionality would be to solve puzzles, but I may choose to expand into a more general direction.
     </h5>
+
     <h3><u>Sudoku (<a href="https://github.com/leeyanleryan/Puzzle-Solvers/tree/main/Sudoku%20(Classic)" target="_blank">Link</a>)</u></h3>
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <img src="/assets/gif/puzzlesolvers_sudoku1.gif" alt="Puzzle Solvers Sudoku 1" style="width:90%;" />
+      <img src="../pictures/puzzlesolvers_sudoku1.gif" alt="Puzzle Solvers Sudoku 1" style="width:90%;">
     </div>
     <h5 style="margin-bottom:20px">
       I developed the solver logic in Python. Currently, it is able to take a screenshot of a sudoku puzzle from <a href="https://sudoku.com" target="_blank">https://sudoku.com</a>,
@@ -465,40 +441,53 @@
       algorithm. Both solver and reader are using inefficient methods, so it takes approximately 5-10 seconds to solve the sudoku, depending on the complexity.
     </h5>
   </section>
+
+  <hr class="hr-hide-1250" style="border:1px solid gray; opacity:0">
 </div>
 
-
 <!-- Navigation Arrows -->
-<!-- Navigation Arrows -->
-<a href="/about/" class="nav-arrow nav-arrow-left w3-hide-small">
+<div class="nav-arrow nav-arrow-left w3-hide-small">
   <!-- Label above the arrow -->
   <div class="nav-label">About</div>
-  <i class="arrow-symbol fa fa-angle-double-left"></i>
-</a>
+  <a href="../" class="arrow-symbol">&#10094;</a>
+</div>
 
-<a href="/about/experiences/" class="nav-arrow nav-arrow-right w3-hide-small">
+<div class="nav-arrow nav-arrow-right w3-hide-small">
   <!-- Label above the arrow -->
   <div class="nav-label">Experiences</div>
-  <i class="arrow-symbol fa fa-angle-double-right"></i>
-</a>
+  <a href="../experiences/" class="arrow-symbol">&#10095;</a>
+</div>
 
 <!-- NAVIGATION BOTTOM BAR (Small screens) -->
 <div class="nav-bottom">
-  <a href="/about/">
-    <i class="fa fa-angle-double-left"></i>
-    &nbsp;About
-  </a>
-  <a href="/about/experiences/">
-    Experiences&nbsp;
-    <i class="fa fa-angle-double-right"></i>
-  </a>
+  <a href="../">&#10094; About</a>
+  <a href="../experiences/">Experiences &#10095;</a>
 </div>
 
-<hr class="hr-hide-1180" style="border:1px solid gray; opacity:0">
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
 
-<script src="/assets/js/left_sidebar.js"></script>
-<script src="/assets/js/dark_mode.js"></script>
-<script src="/assets/js/sidebar_common.js"></script>
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
 
 </body>
 </html>

@@ -2,17 +2,23 @@
 <a href="{{ page.left_url }}" class="nav-arrow nav-arrow-left w3-hide-small">
   <!-- Label above the arrow -->
   <div class="nav-label">{{ page.left_label }}</div>
-  <div class="arrow-symbol">&#10094;</div>
+  <i class="arrow-symbol fa fa-angle-double-left"></i>
 </a>
 
 <a href="{{ page.right_url }}" class="nav-arrow nav-arrow-right w3-hide-small">
   <!-- Label above the arrow -->
   <div class="nav-label">{{ page.right_label }}</div>
-  <div class="arrow-symbol">&#10095;</div>
+  <i class="arrow-symbol fa fa-angle-double-right"></i>
 </a>
 
 <!-- NAVIGATION BOTTOM BAR (Small screens) -->
 <div class="nav-bottom">
-  <a href="{{ page.left_url }}">&#10094; {{ page.left_label }}</a>
-  <a href="{{ page.right_url }}">{{ page.right_label }} &#10095;</a>
+  <a href="{{ page.left_url }}">
+    <i class="fa fa-angle-double-left"></i>
+    &nbsp;{{ page.left_label }}
+  </a>
+  <a href="{{ page.right_url }}">
+    {{ page.right_label }}&nbsp;
+    <i class="fa fa-angle-double-right"></i>
+  </a>
 </div>

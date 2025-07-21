@@ -1,0 +1,12 @@
+#myOverlay {
+  z-index: 1000 !important;
+}
+
+#mySidebar {
+  position: fixed;
+  height: calc(100vh - 43px); /* 100% viewport height minus the top container */
+  width: 300px; /* Sidebar width */
+  overflow-y: auto; /* Enable vertical scrolling */
+  box-sizing: border-box; /* Include padding in total width/height */
+  z-index: 1001 !important;
+}
