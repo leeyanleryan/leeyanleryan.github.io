@@ -10,7 +10,7 @@ right_url: /pets/ares/
 ---
 
 <!-- !PAGE CONTENT! -->
-<div id="page-pets-pome" class="w3-main" >
+<div id="page-resources-lyrics-translations" class="w3-main" >
   <section id="profile" class="w3-container">
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
       <h5><i class="fa fa-gear"></i>
