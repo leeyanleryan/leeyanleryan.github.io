@@ -235,7 +235,7 @@
     searchInput:    document.getElementById('search-input'),
     resultsContainer: document.getElementById('search-results'),
     json:           '/search.json',            // our step-1 index
-    searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
+    searchResultTemplate: '<li><a href="{url}">{section}: {title}</a></li>',
     noResultsText:  '&nbsp;No results found',
     limit:          5,                         // show up to 5 matches
     fuzzy:          false,                     // turn on if you want typosuggestions

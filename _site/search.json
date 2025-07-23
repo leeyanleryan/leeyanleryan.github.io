@@ -4,103 +4,205 @@
   {
     "title": "Amy",
     "url":   "/lyrics-translations/the-oral-cigarettes/amy/",
-    "content": "                  This page is still under construction, please visit at a later time!            "
+    "content": "                  This page is still under construction, please visit at a later time!            ",
+    
+    
+      
+    
+    
+    "section": "The\n      \n        Oral\n      \n        Cigarettes"
   },
 
   {
     "title": "Board Games",
     "url":   "/about/projects/board-games/",
-    "content": "      Board Games (Link)          This project was created out of an interest in exploring how artificial intelligence (AI) can be applie..."
+    "content": "      Board Games (Link)          This project was created out of an interest in exploring how artificial intelligence (AI) can be applie...",
+    
+    
+      
+    
+    
+    "section": "Projects"
   },
 
   {
     "title": "Data Analysis",
     "url":   "/about/projects/data-analysis/",
-    "content": "      Data Analysis (Link)          This project is a compilation of multiple data analysis projects, most of which incorporate the use o..."
+    "content": "      Data Analysis (Link)          This project is a compilation of multiple data analysis projects, most of which incorporate the use o...",
+    
+    
+      
+    
+    
+    "section": "Projects"
   },
 
   {
     "title": "Digital Production Assistant",
     "url":   "/about/experiences/digital-production-assistant/",
-    "content": "      Digital Production Assistant                                    I collaborated with 3 professors and 2 other digital production ass..."
+    "content": "      Digital Production Assistant                                    I collaborated with 3 professors and 2 other digital production ass...",
+    
+    
+      
+    
+    
+    "section": "Experiences"
   },
 
   {
     "title": "Flower",
     "url":   "/lyrics-translations/the-oral-cigarettes/flower/",
-    "content": "                  This page is still under construction, please visit at a later time!            "
+    "content": "                  This page is still under construction, please visit at a later time!            ",
+    
+    
+      
+    
+    
+    "section": "The\n      \n        Oral\n      \n        Cigarettes"
   },
 
   {
     "title": "My Profile",
     "url":   "/about/profile/",
-    "content": "      Profile              Hi! Welcome to my website. My name is Ryan Lee, and I am currently an undergraduate at National University of ..."
+    "content": "      Profile              Hi! Welcome to my website. My name is Ryan Lee, and I am currently an undergraduate at National University of ...",
+    
+    
+      
+    
+    
+    "section": "About"
   },
 
   {
     "title": "My Awards",
     "url":   "/about/awards/",
-    "content": "      Achievements                  NUS Sudoku Competition 2023: Awarded second runner-up                    JPJC Inter-House Games 2018:..."
+    "content": "      Achievements                  NUS Sudoku Competition 2023: Awarded second runner-up                    JPJC Inter-House Games 2018:...",
+    
+    
+      
+    
+    
+    "section": "About"
   },
 
   {
     "title": "My Projects",
     "url":   "/about/projects/",
-    "content": "      Orbital NUqueSt (Link)                                      NUqueSt is a 2D Top-Down Action-Adventure Singleplayer Questing game. I..."
+    "content": "      Orbital NUqueSt (Link)                                      NUqueSt is a 2D Top-Down Action-Adventure Singleplayer Questing game. I...",
+    
+    
+      
+    
+    
+    "section": "About"
   },
 
   {
     "title": "My Hobbies",
     "url":   "/about/hobbies/",
-    "content": "      Reading          I like reading both fiction and non-fiction. Recommend me some books to read!              Books read:            ..."
+    "content": "      Reading          I like reading both fiction and non-fiction. Recommend me some books to read!              Books read:            ...",
+    
+    
+      
+    
+    
+    "section": "About"
   },
 
   {
     "title": "Home",
     "url":   "/",
-    "content": ""
+    "content": "",
+    
+    
+      
+    
+    
+    "section": ""
   },
 
   {
     "title": "Lyrics Translations",
     "url":   "/lyrics-translations/",
-    "content": ""
+    "content": "",
+    
+    
+      
+    
+    
+    "section": ""
   },
 
   {
     "title": "About",
     "url":   "/about/",
-    "content": ""
+    "content": "",
+    
+    
+      
+    
+    
+    "section": ""
   },
 
   {
     "title": "My Experiences",
     "url":   "/about/experiences/",
-    "content": "      Digital Production Assistant                                    I collaborated with 3 professors and 2 other digital production ass..."
+    "content": "      Digital Production Assistant                                    I collaborated with 3 professors and 2 other digital production ass...",
+    
+    
+      
+    
+    
+    "section": "About"
   },
 
   {
     "title": "The Oral Cigarettes",
     "url":   "/lyrics-translations/the-oral-cigarettes/",
-    "content": "                  This page is still under construction, please visit at a later time!            "
+    "content": "                  This page is still under construction, please visit at a later time!            ",
+    
+    
+      
+    
+    
+    "section": "Lyrics\n      \n        Translations"
   },
 
   {
     "title": "Orbital NUqueSt",
     "url":   "/about/projects/orbital-nuquest/",
-    "content": "      Orbital NUqueSt (Link)                                      NUqueSt is a 2D Top-Down Action-Adventure Singleplayer Questing game. I..."
+    "content": "      Orbital NUqueSt (Link)                                      NUqueSt is a 2D Top-Down Action-Adventure Singleplayer Questing game. I...",
+    
+    
+      
+    
+    
+    "section": "Projects"
   },
 
   {
     "title": "Puzzle Solvers",
     "url":   "/about/projects/puzzle-solvers/",
-    "content": "      Puzzle Solvers (Link)          This project was created out of an interest in applying computer vision and AI to puzzle-solving. Th..."
+    "content": "      Puzzle Solvers (Link)          This project was created out of an interest in applying computer vision and AI to puzzle-solving. Th...",
+    
+    
+      
+    
+    
+    "section": "Projects"
   },
 
   {
     "title": "Teaching Assistant",
     "url":   "/about/experiences/teaching-assistant/",
-    "content": "      Teaching Assistant                              I taught 25 NUS undergraduates CS1010E, a course on programming methodology in Pyth..."
+    "content": "      Teaching Assistant                              I taught 25 NUS undergraduates CS1010E, a course on programming methodology in Pyth...",
+    
+    
+      
+    
+    
+    "section": "Experiences"
   }
 
 ]

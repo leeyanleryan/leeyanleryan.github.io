@@ -12,7 +12,17 @@ permalink: /search.json
                    | strip_html 
                    | strip_newlines 
                    | truncate: 140 
-                   | jsonify }}
+                   | jsonify }},
+    {% assign parts = page.url | split:'/' %}
+    {% assign length    = parts | size %}
+    {% assign section_index = length | minus: 2 %}  
+    {% assign words     = parts[section_index] | replace: '-', ' ' | raw_label | split: ' ' %}
+    {% capture section %}
+      {% for w in words %}
+        {{ w | capitalize }}{% unless forloop.last %} {% endunless %}
+      {% endfor %}
+    {% endcapture %}
+    "section": {{ section | strip | jsonify }}
   }{% unless forloop.last %},{% endunless %}
 {% endfor %}
 ]
