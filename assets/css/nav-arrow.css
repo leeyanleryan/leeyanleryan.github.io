@@ -12,6 +12,29 @@ html {
   text-align: center;      /* Center the label + arrow horizontally */
   font-family: "Raleway", sans-serif;
   white-space: nowrap;
+
+  height: 2.5rem;
+  overflow: visible;
+}
+
+.nav-arrow .arrow-symbol {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+}
+
+.nav-arrow .nav-label {
+  position: absolute;
+  bottom: 100%;      /* sit directly on top of the arrow */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  white-space: normal;
+  word-break: break-word;
+  text-align: center;
+  margin-bottom: 0.25rem;  /* gap between last line and arrow */
+  line-height: 1.2;        /* tweak to taste */
 }
 
 .nav-arrow:hover .arrow-symbol,
