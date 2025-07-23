@@ -10,12 +10,13 @@ right_url: /lyrics-translations/the-oral-cigarettes/amy/
 ---
 
 <!-- !PAGE CONTENT! -->
-<div id="page-lyrics-translations-toc" class="w3-main" >
-  <section id="profile" class="w3-container">
-    <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <h5><i class="fa fa-gear"></i>
-      This page is still under construction, please visit at a later time!
-      <i class="fa fa-gear"></i></h5>
-    </div>
+<div id="page-lyrics-translations-toc" class="w3-main">
+  <section id="overview" class="w3-container">
+    {% assign the-oral-cigarettes = site.data.the-oral-cigarettes
+      | where_exp:"p","p.url contains '/lyrics-translations/the-oral-cigarettes/'"
+      | sort:"title" %}
+
+    <h1>{{ page.title }}</h1>
+    {% include media-list.html items=the-oral-cigarettes exclude=page.url %}
   </section>
 </div>

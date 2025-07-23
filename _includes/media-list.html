@@ -1,0 +1,21 @@
+<ul class="media-list">
+  {% for item in include.items %}
+    {% unless item.url == include.exclude %}
+      <li class="media-item">
+      <a href="{{ item.url }}" class="media-link">
+          {% if item.image %}
+          <img src="{{ item.image }}" alt="{{ item.title }}" class="media-thumb">
+          {% endif %}
+          <div class="media-body">
+          <h3 class="media-title">{{ item.title }}</h3>
+          <p class="media-excerpt">
+              {{ item.excerpt | default: item.content 
+                          | strip_html 
+                          | truncatewords: 30 }}
+          </p>
+          </div>
+      </a>
+      </li>
+    {% endunless %}
+  {% endfor %}
+</ul>

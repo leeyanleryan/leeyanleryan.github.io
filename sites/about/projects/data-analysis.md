@@ -6,7 +6,7 @@ permalink: /about/projects/data-analysis/
 left_label: Orbital NUqueSt
 left_url: /about/projects/orbital-nuquest/
 right_label: Board Games
-right_url: /about/projects/board-games
+right_url: /about/projects/board-games/
 ---
 
 <!-- !PAGE CONTENT! -->
