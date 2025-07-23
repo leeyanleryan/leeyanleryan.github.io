@@ -1,12 +1,16 @@
 - title: Orbital NUqueSt
   url:   /about/projects/orbital-nuquest/
+  image: /assets/gif/nuquest_gameplay3.gif/
   order: 1
 - title: Data Analysis
   url:   /about/projects/data-analysis/
+  image: /assets/img/dataanalysis_bca_heatmap1.png/
   order: 2
 - title: Board Games
   url:   /about/projects/board-games/
+  image: /assets/gif/boardgames_chess2.gif/
   order: 3
 - title: Puzzle Solvers
   url:   /about/projects/puzzle-solvers/
+  image: /assets/gif/puzzlesolvers_sudoku1.gif/
   order: 4

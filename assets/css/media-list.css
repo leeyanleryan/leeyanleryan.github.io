@@ -1,0 +1,12 @@
+/* Remove default bullets & spacing from your media list */
+.media-list {
+  list-style: none;    /* no bullets */
+  margin: 0;           /* reset default ul margin */
+  padding: 0;          /* reset default ul padding */
+}
+
+/* Optional: remove any indent on the <li> itself */
+.media-list li {
+  margin: 0;
+  padding: 0;
+}

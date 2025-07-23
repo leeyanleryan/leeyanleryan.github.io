@@ -1,7 +1,9 @@
 # append experience, order negative to sort reversed
 - title: Teaching Assistant
   url:   /about/experiences/teaching-assistant/
+  image: /assets/gif/ta_animation1.gif/
   order: -1
 - title: Digital Production Assistant
   url:   /about/experiences/digital-production-assistant/
+  image: /assets/gif/dpa_animation1.gif/
   order: -2
