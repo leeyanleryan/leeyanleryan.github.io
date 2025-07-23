@@ -1,16 +1,16 @@
 ---
 layout: default
-title: Ares
-permalink: /pets/ares/
+title: The Oral Cigarettes
+permalink: /lyrics-translations/the-oral-cigarettes/
 
-left_label: Translations
-left_url: /resources/lyrics-translations/
-right_label: Pome
-right_url: /pets/pome/
+left_label: Hobbies
+left_url: /about/hobbies/
+right_label: Profile
+right_url: /about/profile/
 ---
 
 <!-- !PAGE CONTENT! -->
-<div id="page-pets-ares" class="w3-main" >
+<div id="page-lyrics-translations-toc" class="w3-main" >
   <section id="profile" class="w3-container">
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
       <h5><i class="fa fa-gear"></i>

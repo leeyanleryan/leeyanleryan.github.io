@@ -9,7 +9,7 @@
   </style>
   <script src="/assets/js/flicker-fix.js"> </script>
   <!-- take title from front matter of md files -->
-  <title>Ares</title>
+  <title>The Oral Cigarettes</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- favicon -->
@@ -94,23 +94,39 @@
       <a href="/about/experiences/" class="w3-bar-item w3-button w3-padding "> Experiences</a>
       <a href="/about/awards/" class="w3-bar-item w3-button w3-padding "> Awards</a>
       <a href="/about/hobbies/" class="w3-bar-item w3-button w3-padding "> Hobbies</a>
+      <!--
+      <a href="/about/pets/" class="w3-bar-item w3-button w3-padding "> Pets</a>
+      -->
+    </div>
+  </div>
+  <!--
+  <hr class="hr-sidebar">
+  <div class="w3-container">
+    <h4><strong>Data Science</strong></h4>
+    <div class="w3-bar-block">
+      <a href="/data-science/python/" class="w3-bar-item w3-button w3-padding "> Python</a>
+      <a href="/data-science/numpy/" class="w3-bar-item w3-button w3-padding "> NumPy</a>
+      <a href="/data-science/pandas/" class="w3-bar-item w3-button w3-padding "> pandas</a>
+      <a href="/data-science/machine-learning/" class="w3-bar-item w3-button w3-padding "> Machine Learning</a>
+      <a href="/data-science/machine-learning/" class="w3-bar-item w3-button w3-padding "> Deep Learning</a>
+    </div>
+  </div>
+  -->
+  <hr class="hr-sidebar">
+  <div class="w3-container">
+    <h4><strong>Lyrics Translations</strong></h4>
+    <div class="w3-bar-block">
+      <a href="/lyrics-translations/the-oral-cigarettes/" class="w3-bar-item w3-button w3-padding  active"> The Oral Cigarettes</a>
+      <!--
+      <a href="/lyrics-translations/imperial-circus-dead-decadence/" class="w3-bar-item w3-button w3-padding "> Imperial Circus Dead Decadence</a>
+      -->
     </div>
   </div>
   <hr class="hr-sidebar">
   <div class="w3-container">
-    <h4><strong>Resources</strong></h4>
     <div class="w3-bar-block">
-      <a href="/resources/python/" class="w3-bar-item w3-button w3-padding "> Python</a>
-      <a href="/resources/machine-learning/" class="w3-bar-item w3-button w3-padding "> Machine Learning</a>
-      <a href="/resources/lyrics-translations/" class="w3-bar-item w3-button w3-padding "> Lyrics Translations</a>
-    </div>
-  </div>
-  <hr class="hr-sidebar">
-  <div class="w3-container">
-    <h4><strong>Pets</strong></h4>
-    <div class="w3-bar-block">
-      <a href="/pets/ares/" class="w3-bar-item w3-button w3-padding  active"> Ares</a>
-      <a href="/pets/pome/" class="w3-bar-item w3-button w3-padding "> Pome</a>
+      <h4><strong>Fun</strong></h4>
+      <a id="random-page-button" class="w3-bar-item w3-button w3-padding"> Go to a random page</a>
     </div>
   </div>
   <hr style="opacity:0">
@@ -126,17 +142,12 @@
 
 <!-- Right sidebar -->
 <nav id="right-sidebar" class="sidebar">
-  <div class="w3-container" style="padding-top:10px;">
-    <div class="w3-bar-block">
-      <h4><strong>Fun</strong></h4>
-      <a id="random-page-button" class="w3-bar-item w3-button w3-padding"> Go to a random page</a>
-    </div>
-  </div>
+  
 </nav>
 
 <!-- Page content goes here -->
 <!-- !PAGE CONTENT! -->
-<div id="page-pets-pome" class="w3-main">
+<div id="page-lyrics-translations-toc" class="w3-main">
   <section id="profile" class="w3-container">
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
       <h5><i class="fa fa-gear"></i>
@@ -149,26 +160,26 @@
 
 <!-- Navigation Arrows -->
 <!-- Navigation Arrows -->
-<a href="/resources/lyrics-translations/" class="nav-arrow nav-arrow-left w3-hide-small">
+<a href="/about/hobbies/" class="nav-arrow nav-arrow-left w3-hide-small">
   <!-- Label above the arrow -->
-  <div class="nav-label">Translations</div>
+  <div class="nav-label">Hobbies</div>
   <i class="arrow-symbol fa fa-angle-double-left"></i>
 </a>
 
-<a href="/pets/pome/" class="nav-arrow nav-arrow-right w3-hide-small">
+<a href="/about/profile/" class="nav-arrow nav-arrow-right w3-hide-small">
   <!-- Label above the arrow -->
-  <div class="nav-label">Pome</div>
+  <div class="nav-label">Profile</div>
   <i class="arrow-symbol fa fa-angle-double-right"></i>
 </a>
 
 <!-- NAVIGATION BOTTOM BAR (Small screens) -->
 <div class="nav-bottom">
-  <a href="/resources/lyrics-translations/">
+  <a href="/about/hobbies/">
     <i class="fa fa-angle-double-left"></i>
-    &nbsp;Translations
+    &nbsp;Hobbies
   </a>
-  <a href="/pets/pome/">
-    Pome&nbsp;
+  <a href="/about/profile/">
+    Profile&nbsp;
     <i class="fa fa-angle-double-right"></i>
   </a>
 </div>

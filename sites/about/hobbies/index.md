@@ -5,8 +5,8 @@ permalink: /about/hobbies/
 
 left_label: Awards
 left_url: /about/awards/
-right_label: Python
-right_url: /resources/python/
+right_label: TOC
+right_url: /lyrics-translations/the-oral-cigarettes/
 ---
 
 <!-- !PAGE CONTENT! -->

@@ -2,12 +2,6 @@
 
 
   {
-    "title": "Pome",
-    "url":   "/pets/pome/",
-    "content": "                  This page is still under construction, please visit at a later time!            "
-  },
-
-  {
     "title": "My Awards",
     "url":   "/about/awards/",
     "content": "      Achievements                  NUS Sudoku Competition 2023: Awarded second runner-up                    JPJC Inter-House Games 2018:..."
@@ -44,51 +38,21 @@
   },
 
   {
-    "title": "Ares",
-    "url":   "/pets/ares/",
+    "title": "The Oral Cigarettes",
+    "url":   "/lyrics-translations/the-oral-cigarettes/",
     "content": "                  This page is still under construction, please visit at a later time!            "
-  },
-
-  {
-    "title": "Resources",
-    "url":   "/resources/",
-    "content": ""
-  },
-
-  {
-    "title": "Pets",
-    "url":   "/pets/",
-    "content": ""
   },
 
   {
     "title": "Lyrics Translations",
-    "url":   "/resources/lyrics-translations/",
-    "content": "                  This page is still under construction, please visit at a later time!            "
-  },
-
-  {
-    "title": "Machine Learning",
-    "url":   "/resources/machine-learning/",
-    "content": "                  This page is still under construction, please visit at a later time!            "
-  },
-
-  {
-    "title": "Python",
-    "url":   "/resources/python/",
-    "content": "                  This page is still under construction, please visit at a later time!            "
+    "url":   "/lyrics-translations/",
+    "content": ""
   },
 
   {
     "title": "Home",
     "url":   "/",
     "content": ""
-  },
-
-  {
-    "title": "Python",
-    "url":   "/resources/python/",
-    "content": "                  This page is still under construction, please visit at a later time!            "
   }
 
 ]
