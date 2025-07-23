@@ -51,6 +51,14 @@ a.nav-arrow:hover {
   text-align: center;
   white-space: nowrap; */
   transition: background-color 0.3s ease, color 0.3s ease;
+
+  display: block;             /* or inline-block */
+  width: 80px;                /* same as your .nav-arrow width */
+  white-space: nowrap;        /* no wrapping */
+  overflow: hidden;           /* clip the excess text */
+  text-overflow: ellipsis;    /* show “…” at the cut-off */
+  margin: 0 auto 5px;         /* center & preserve your bottom gap */
+  transition: color 0.3s ease;
 }
 
 body.dark-mode .nav-label {

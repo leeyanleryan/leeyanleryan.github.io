@@ -3,8 +3,8 @@ layout: default
 title: My Profile
 permalink: /about/profile/
 
-left_label: Translations
-left_url: /lyrics-translations/the-oral-cigarettes/
+left_label: Flower
+left_url: /lyrics-translations/the-oral-cigarettes/flower/
 right_label: Projects
 right_url: /about/projects/
 ---
