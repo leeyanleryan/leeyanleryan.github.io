@@ -5,8 +5,8 @@ permalink: /about/projects/
 
 left_label: Profile
 left_url: /about/profile/
-right_label: Experiences
-right_url: /about/experiences/
+right_label: Orbital NUqueSt
+right_url: /about/projects/orbital-nuquest
 ---
 
 <!-- !PAGE CONTENT! -->

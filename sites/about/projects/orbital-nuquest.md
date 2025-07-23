@@ -1,12 +1,12 @@
 ---
 layout: default
-title: NUqueSt
-permalink: /about/projects/nuquest/
+title: Orbital NUqueSt
+permalink: /about/projects/orbital-nuquest/
 
-left_label: Profile
-left_url: /about/profile/
-right_label: Experiences
-right_url: /about/experiences/
+left_label: Projects
+left_url: /about/projects/
+right_label: Data Analysis
+right_url: /about/projects/data-analysis
 ---
 
 <!-- !PAGE CONTENT! -->

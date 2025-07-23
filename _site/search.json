@@ -2,6 +2,12 @@
 
 
   {
+    "title": "Amy",
+    "url":   "/lyrics-translations/the-oral-cigarettes/amy/",
+    "content": "                  This page is still under construction, please visit at a later time!            "
+  },
+
+  {
     "title": "Board Games",
     "url":   "/about/projects/board-games/",
     "content": "      Board Games (Link)          This project was created out of an interest in exploring how artificial intelligence (AI) can be applie..."
@@ -20,27 +26,15 @@
   },
 
   {
-    "title": "My Hobbies",
-    "url":   "/about/hobbies/",
-    "content": "      Reading          I like reading both fiction and non-fiction. Recommend me some books to read!              Books read:            ..."
+    "title": "Flower",
+    "url":   "/lyrics-translations/the-oral-cigarettes/flower/",
+    "content": "                  This page is still under construction, please visit at a later time!            "
   },
 
   {
     "title": "My Profile",
     "url":   "/about/profile/",
     "content": "      Profile              Hi! Welcome to my website. My name is Ryan Lee, and I am currently an undergraduate at National University of ..."
-  },
-
-  {
-    "title": "Home",
-    "url":   "/",
-    "content": ""
-  },
-
-  {
-    "title": "My Experiences",
-    "url":   "/about/experiences/",
-    "content": "      Digital Production Assistant                                    I collaborated with 3 professors and 2 other digital production ass..."
   },
 
   {
@@ -56,15 +50,21 @@
   },
 
   {
-    "title": "Lyrics Translations",
-    "url":   "/lyrics-translations/",
+    "title": "My Hobbies",
+    "url":   "/about/hobbies/",
+    "content": "      Reading          I like reading both fiction and non-fiction. Recommend me some books to read!              Books read:            ..."
+  },
+
+  {
+    "title": "Home",
+    "url":   "/",
     "content": ""
   },
 
   {
-    "title": "The Oral Cigarettes",
-    "url":   "/lyrics-translations/the-oral-cigarettes/",
-    "content": "                  This page is still under construction, please visit at a later time!            "
+    "title": "Lyrics Translations",
+    "url":   "/lyrics-translations/",
+    "content": ""
   },
 
   {
@@ -74,8 +74,20 @@
   },
 
   {
-    "title": "NUqueSt",
-    "url":   "/about/projects/nuquest/",
+    "title": "My Experiences",
+    "url":   "/about/experiences/",
+    "content": "      Digital Production Assistant                                    I collaborated with 3 professors and 2 other digital production ass..."
+  },
+
+  {
+    "title": "The Oral Cigarettes",
+    "url":   "/lyrics-translations/the-oral-cigarettes/",
+    "content": "                  This page is still under construction, please visit at a later time!            "
+  },
+
+  {
+    "title": "Orbital NUqueSt",
+    "url":   "/about/projects/orbital-nuquest/",
     "content": "      Orbital NUqueSt (Link)                                      NUqueSt is a 2D Top-Down Action-Adventure Singleplayer Questing game. I..."
   },
 

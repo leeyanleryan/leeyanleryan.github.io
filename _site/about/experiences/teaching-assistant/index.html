@@ -90,7 +90,6 @@
     <div class="w3-bar-block">
       <h4><strong>About</strong></h4>
       <a href="/about/profile/" class="w3-bar-item w3-button w3-padding "> Profile</a>
-      
       <!-- Projects + auto-generated sub-nav -->
       <div class="submenu-wrapper
         ">
@@ -107,10 +106,10 @@
           
           
             
-              <a href="/about/projects/nuquest/"
+              <a href="/about/projects/orbital-nuquest/"
                 class="w3-bar-item w3-button w3-padding
                         ">
-                NUqueSt
+                Orbital NUqueSt
               </a>
             
           
@@ -141,7 +140,6 @@
         </div>
       </div>
       <!-- end Projects -->
-      
       <!-- Experiences + auto-generated sub-nav -->
       <div class="submenu-wrapper
         open">
@@ -176,7 +174,6 @@
         </div>
       </div>
       <!-- end Experiences -->
-      
       <a href="/about/awards/" class="w3-bar-item w3-button w3-padding "> Awards</a>
       <a href="/about/hobbies/" class="w3-bar-item w3-button w3-padding "> Hobbies</a>
       <!--
@@ -201,10 +198,40 @@
   <div class="w3-container">
     <h4><strong>Lyrics Translations</strong></h4>
     <div class="w3-bar-block">
-      <a href="/lyrics-translations/the-oral-cigarettes/" class="w3-bar-item w3-button w3-padding "> The Oral Cigarettes</a>
-      <!--
-      <a href="/lyrics-translations/imperial-circus-dead-decadence/" class="w3-bar-item w3-button w3-padding "> Imperial Circus Dead Decadence</a>
-      -->
+      <!-- TOC + auto-generated sub-nav -->
+      <div class="submenu-wrapper
+        ">
+        <div class="submenu-header">
+          <!-- main pill (click -> /lyrics-translations/the-oral-cigarettes/) -->
+          <a href="/lyrics-translations/the-oral-cigarettes/"
+             class="w3-bar-item w3-button w3-padding main-link
+                    ">
+            The Oral Cigarettes
+          </a>
+        </div>
+        <!-- this list is only ever visible if “open” class is present -->
+        <div class="submenu">
+          
+          
+            
+              <a href="/lyrics-translations/the-oral-cigarettes/amy/"
+                class="w3-bar-item w3-button w3-padding
+                        ">
+                Amy
+              </a>
+            
+          
+            
+              <a href="/lyrics-translations/the-oral-cigarettes/flower/"
+                class="w3-bar-item w3-button w3-padding
+                        ">
+                Flower
+              </a>
+            
+          
+        </div>
+      </div>
+      <!-- end TOC -->
     </div>
   </div>
   <hr class="hr-sidebar">
@@ -297,9 +324,9 @@
 
 <!-- Navigation Arrows -->
 <!-- Navigation Arrows -->
-<a href="/about/projects/" class="nav-arrow nav-arrow-left w3-hide-small">
+<a href="/about/experiences/digital-production-assistant/" class="nav-arrow nav-arrow-left w3-hide-small">
   <!-- Label above the arrow -->
-  <div class="nav-label">Projects</div>
+  <div class="nav-label">Digital Production Assistant</div>
   <i class="arrow-symbol fa fa-angle-double-left"></i>
 </a>
 
@@ -311,9 +338,9 @@
 
 <!-- NAVIGATION BOTTOM BAR (Small screens) -->
 <div class="nav-bottom">
-  <a href="/about/projects/">
+  <a href="/about/experiences/digital-production-assistant/">
     <i class="fa fa-angle-double-left"></i>
-    &nbsp;Projects
+    &nbsp;Digital Production Assistant
   </a>
   <a href="/about/awards/">
     Awards&nbsp;
@@ -336,7 +363,24 @@
     searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
     noResultsText:  '&nbsp;No results found',
     limit:          5,                         // show up to 5 matches
-    fuzzy:          false                      // turn on if you want typosuggestions
+    fuzzy:          false,                     // turn on if you want typosuggestions
+
+    sortMiddleware: (a, b) => {
+      const q = (a.query || '').toLowerCase();
+
+      // 1) Title‐matches first
+      const aInTitle = a.title.toLowerCase().includes(q) ? 1 : 0;
+      const bInTitle = b.title.toLowerCase().includes(q) ? 1 : 0;
+      if (aInTitle !== bInTitle) return bInTitle - aInTitle;
+
+      // 2) URL‐matches next
+      const aInUrl = a.url.toLowerCase().includes(q) ? 1 : 0;
+      const bInUrl = b.url.toLowerCase().includes(q) ? 1 : 0;
+      if (aInUrl !== bInUrl) return bInUrl - aInUrl;
+
+      // 3) leave everything else in original order
+      return 0;
+    }
   });
 
   // Grab references

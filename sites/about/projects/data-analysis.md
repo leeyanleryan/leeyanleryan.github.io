@@ -3,10 +3,10 @@ layout: default
 title: Data Analysis
 permalink: /about/projects/data-analysis/
 
-left_label: Profile
-left_url: /about/profile/
-right_label: Experiences
-right_url: /about/experiences/
+left_label: Orbital NUqueSt
+left_url: /about/projects/orbital-nuquest/
+right_label: Board Games
+right_url: /about/projects/board-games
 ---
 
 <!-- !PAGE CONTENT! -->

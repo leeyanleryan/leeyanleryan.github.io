@@ -90,7 +90,6 @@
     <div class="w3-bar-block">
       <h4><strong>About</strong></h4>
       <a href="/about/profile/" class="w3-bar-item w3-button w3-padding {% if page.url == '/about/profile/' %} active{% endif %}"> Profile</a>
-      
       <!-- Projects + auto-generated sub-nav -->
       <div class="submenu-wrapper
         {% if page.url contains '/about/projects/' %}open{% endif %}">
@@ -117,7 +116,6 @@
         </div>
       </div>
       <!-- end Projects -->
-      
       <!-- Experiences + auto-generated sub-nav -->
       <div class="submenu-wrapper
         {% if page.url contains '/about/experiences/' %}open{% endif %}">
@@ -144,7 +142,6 @@
         </div>
       </div>
       <!-- end Experiences -->
-      
       <a href="/about/awards/" class="w3-bar-item w3-button w3-padding {% if page.url == '/about/awards/' %} active{% endif %}"> Awards</a>
       <a href="/about/hobbies/" class="w3-bar-item w3-button w3-padding {% if page.url == '/about/hobbies/' %} active{% endif %}"> Hobbies</a>
       <!--
@@ -169,10 +166,32 @@
   <div class="w3-container">
     <h4><strong>Lyrics Translations</strong></h4>
     <div class="w3-bar-block">
-      <a href="/lyrics-translations/the-oral-cigarettes/" class="w3-bar-item w3-button w3-padding {% if page.url == '/lyrics-translations/the-oral-cigarettes/' %} active{% endif %}"> The Oral Cigarettes</a>
-      <!--
-      <a href="/lyrics-translations/imperial-circus-dead-decadence/" class="w3-bar-item w3-button w3-padding {% if page.url == '/lyrics-translations/imperial-circus-dead-decadence/' %} active{% endif %}"> Imperial Circus Dead Decadence</a>
-      -->
+      <!-- TOC + auto-generated sub-nav -->
+      <div class="submenu-wrapper
+        {% if page.url contains '/lyrics-translations/the-oral-cigarettes/' %}open{% endif %}">
+        <div class="submenu-header">
+          <!-- main pill (click -> /lyrics-translations/the-oral-cigarettes/) -->
+          <a href="/lyrics-translations/the-oral-cigarettes/"
+             class="w3-bar-item w3-button w3-padding main-link
+                    {% if page.url == '/lyrics-translations/the-oral-cigarettes/' %}active{% endif %}">
+            The Oral Cigarettes
+          </a>
+        </div>
+        <!-- this list is only ever visible if “open” class is present -->
+        <div class="submenu">
+          {% assign all_toc = site.data.the-oral-cigarettes | sort: "title" %}
+          {% for toc in all_toc %}
+            {% unless toc.url == "/lyrics-translations/the-oral-cigarettes/" %}
+              <a href="{{ toc.url }}"
+                class="w3-bar-item w3-button w3-padding
+                        {% if page.url == toc.url %} active{% endif %}">
+                {{ toc.title }}
+              </a>
+            {% endunless %}
+          {% endfor %}
+        </div>
+      </div>
+      <!-- end TOC -->
     </div>
   </div>
   <hr class="hr-sidebar">
@@ -219,7 +238,24 @@
     searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
     noResultsText:  '&nbsp;No results found',
     limit:          5,                         // show up to 5 matches
-    fuzzy:          false                      // turn on if you want typosuggestions
+    fuzzy:          false,                     // turn on if you want typosuggestions
+
+    sortMiddleware: (a, b) => {
+      const q = (a.query || '').toLowerCase();
+
+      // 1) Title‐matches first
+      const aInTitle = a.title.toLowerCase().includes(q) ? 1 : 0;
+      const bInTitle = b.title.toLowerCase().includes(q) ? 1 : 0;
+      if (aInTitle !== bInTitle) return bInTitle - aInTitle;
+
+      // 2) URL‐matches next
+      const aInUrl = a.url.toLowerCase().includes(q) ? 1 : 0;
+      const bInUrl = b.url.toLowerCase().includes(q) ? 1 : 0;
+      if (aInUrl !== bInUrl) return bInUrl - aInUrl;
+
+      // 3) leave everything else in original order
+      return 0;
+    }
   });
 
   // Grab references

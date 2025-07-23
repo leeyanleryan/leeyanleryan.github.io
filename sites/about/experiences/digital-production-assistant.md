@@ -3,10 +3,10 @@ layout: default
 title: Digital Production Assistant
 permalink: /about/experiences/digital-production-assistant/
 
-left_label: Projects
-left_url: /about/projects/
-right_label: Awards
-right_url: /about/awards/
+left_label: Experiences
+left_url: /about/experiences/
+right_label: Teaching Assistant
+right_url: /about/experiences/teaching-assistant/
 ---
 
 <!-- !PAGE CONTENT! -->

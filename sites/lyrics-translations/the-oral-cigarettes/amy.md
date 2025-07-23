@@ -1,12 +1,12 @@
 ---
 layout: default
-title: The Oral Cigarettes
-permalink: /lyrics-translations/the-oral-cigarettes/
+title: Amy
+permalink: /lyrics-translations/the-oral-cigarettes/amy/
 
-left_label: Hobbies
-left_url: /about/hobbies/
-right_label: Amy
-right_url: /lyrics-translations/the-oral-cigarettes/amy/
+left_label: The Oral Cigarettes
+left_url: /lyrics-translations/the-oral-cigarettes/
+right_label: Flower
+right_url: /lyrics-translations/the-oral-cigarettes/flower/
 ---
 
 <!-- !PAGE CONTENT! -->

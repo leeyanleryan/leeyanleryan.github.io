@@ -3,10 +3,10 @@ layout: default
 title: Board Games
 permalink: /about/projects/board-games/
 
-left_label: Profile
-left_url: /about/profile/
-right_label: Experiences
-right_url: /about/experiences/
+left_label: Data Analysis
+left_url: /about/projects/data-analysis
+right_label: Puzzle Solvers
+right_url: /about/projects/puzzle-solvers/
 ---
 
 <!-- !PAGE CONTENT! -->

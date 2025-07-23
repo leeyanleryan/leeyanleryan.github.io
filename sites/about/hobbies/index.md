@@ -5,7 +5,7 @@ permalink: /about/hobbies/
 
 left_label: Awards
 left_url: /about/awards/
-right_label: TOC
+right_label: The Oral Cigarettes
 right_url: /lyrics-translations/the-oral-cigarettes/
 ---
 
