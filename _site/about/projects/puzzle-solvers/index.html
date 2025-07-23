@@ -9,7 +9,7 @@
   </style>
   <script src="/assets/js/flicker-fix.js"> </script>
   <!-- take title from front matter of md files -->
-  <title>The Oral Cigarettes</title>
+  <title>Puzzle Solvers</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- favicon -->
@@ -93,7 +93,7 @@
       
       <!-- Projects + auto-generated sub-nav -->
       <div class="submenu-wrapper
-        ">
+        open">
         <div class="submenu-header">
           <!-- main pill (click -> /about/projects/) -->
           <a href="/about/projects/"
@@ -133,7 +133,7 @@
             
               <a href="/about/projects/puzzle-solvers/"
                 class="w3-bar-item w3-button w3-padding
-                        ">
+                         active">
                 Puzzle Solvers
               </a>
             
@@ -201,7 +201,7 @@
   <div class="w3-container">
     <h4><strong>Lyrics Translations</strong></h4>
     <div class="w3-bar-block">
-      <a href="/lyrics-translations/the-oral-cigarettes/" class="w3-bar-item w3-button w3-padding  active"> The Oral Cigarettes</a>
+      <a href="/lyrics-translations/the-oral-cigarettes/" class="w3-bar-item w3-button w3-padding "> The Oral Cigarettes</a>
       <!--
       <a href="/lyrics-translations/imperial-circus-dead-decadence/" class="w3-bar-item w3-button w3-padding "> Imperial Circus Dead Decadence</a>
       -->
@@ -232,39 +232,52 @@
 
 <!-- Page content goes here -->
 <!-- !PAGE CONTENT! -->
-<div id="page-lyrics-translations-toc" class="w3-main">
-  <section id="profile" class="w3-container">
+<div id="page-about-projects" class="w3-main">
+  <section id="puzzle-solvers" class="w3-container">
+    <h2><b>Puzzle Solvers</b> (<a href="https://github.com/leeyanleryan/Puzzle-Solvers" target="_blank">Link</a>)</h2>
+    <h5 style="margin-bottom:20px">
+      This project was created out of an interest in applying computer vision and AI to puzzle-solving. The end goal of this project is to make a phone application, capable of reading 
+      pictures taken from the phone. Its main functionality would be to solve puzzles, but I may choose to expand into a more general direction.
+    </h5>
+    <h3><u>Sudoku (<a href="https://github.com/leeyanleryan/Puzzle-Solvers/tree/main/Sudoku%20(Classic)" target="_blank">Link</a>)</u></h3>
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <h5><i class="fa fa-gear"></i>
-      This page is still under construction, please visit at a later time!
-      <i class="fa fa-gear"></i></h5>
+      <img src="/assets/gif/puzzlesolvers_sudoku1.gif" alt="Puzzle Solvers Sudoku 1" style="width:90%;" />
     </div>
+    <h5 style="margin-bottom:20px">
+      I developed the solver logic in Python. Currently, it is able to take a screenshot of a sudoku puzzle from <a href="https://sudoku.com" target="_blank">https://sudoku.com</a>,
+      read the screenshot, solve the sudoku, and automatically inputs the solution back onto the website. The entire process is automated, and is done with the press
+      of a single button.
+    </h5>
+    <h5>
+      The solver is done using a simple AI search technique known as Depth-First Search (DFS). The image reader is done using a technique similar to the k-Nearest Neighbours (kNN) 
+      algorithm. Both solver and reader are using inefficient methods, so it takes approximately 5-10 seconds to solve the sudoku, depending on the complexity.
+    </h5>
   </section>
 </div>
 
 
 <!-- Navigation Arrows -->
 <!-- Navigation Arrows -->
-<a href="/about/hobbies/" class="nav-arrow nav-arrow-left w3-hide-small">
+<a href="/about/profile/" class="nav-arrow nav-arrow-left w3-hide-small">
   <!-- Label above the arrow -->
-  <div class="nav-label">Hobbies</div>
+  <div class="nav-label">Profile</div>
   <i class="arrow-symbol fa fa-angle-double-left"></i>
 </a>
 
-<a href="/about/profile/" class="nav-arrow nav-arrow-right w3-hide-small">
+<a href="/about/experiences/" class="nav-arrow nav-arrow-right w3-hide-small">
   <!-- Label above the arrow -->
-  <div class="nav-label">Profile</div>
+  <div class="nav-label">Experiences</div>
   <i class="arrow-symbol fa fa-angle-double-right"></i>
 </a>
 
 <!-- NAVIGATION BOTTOM BAR (Small screens) -->
 <div class="nav-bottom">
-  <a href="/about/hobbies/">
-    <i class="fa fa-angle-double-left"></i>
-    &nbsp;Hobbies
-  </a>
   <a href="/about/profile/">
-    Profile&nbsp;
+    <i class="fa fa-angle-double-left"></i>
+    &nbsp;Profile
+  </a>
+  <a href="/about/experiences/">
+    Experiences&nbsp;
     <i class="fa fa-angle-double-right"></i>
   </a>
 </div>

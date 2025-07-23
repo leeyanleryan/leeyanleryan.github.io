@@ -1,0 +1,12 @@
+- title: NUqueSt
+  url:   /about/projects/nuquest/
+  order: 1
+- title: Data Analysis
+  url:   /about/projects/data-analysis/
+  order: 2
+- title: Board Games
+  url:   /about/projects/board-games/
+  order: 3
+- title: Puzzle Solvers
+  url:   /about/projects/puzzle-solvers/
+  order: 4

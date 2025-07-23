@@ -141,3 +141,25 @@ body.dark-mode .sidebar .w3-bar-item.active {
   background-color: rgba(255,255,255,0.10) !important;
   color: white                   !important;
 }
+
+/* wrapper & header row */
+.submenu-header {
+  display: flex;
+  align-items: center;
+}
+
+/* the main “Projects” pill */
+.submenu-header .main-link {
+  flex: 1;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+/* the in-flow submenu */
+.submenu {
+  display: none;
+  padding-left: 16px;
+}
+.submenu-wrapper.open .submenu {
+  display: block;
+}

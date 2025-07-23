@@ -2,14 +2,20 @@
 
 
   {
-    "title": "My Awards",
-    "url":   "/about/awards/",
-    "content": "      Achievements                  NUS Sudoku Competition 2023: Awarded second runner-up                    JPJC Inter-House Games 2018:..."
+    "title": "Board Games",
+    "url":   "/about/projects/board-games/",
+    "content": "      Board Games (Link)          This project was created out of an interest in exploring how artificial intelligence (AI) can be applie..."
   },
 
   {
-    "title": "My Experiences",
-    "url":   "/about/experiences/",
+    "title": "Data Analysis",
+    "url":   "/about/projects/data-analysis/",
+    "content": "      Data Analysis (Link)          This project is a compilation of multiple data analysis projects, most of which incorporate the use o..."
+  },
+
+  {
+    "title": "Digital Production Assistant",
+    "url":   "/about/experiences/digital-production-assistant/",
     "content": "      Digital Production Assistant                                    I collaborated with 3 professors and 2 other digital production ass..."
   },
 
@@ -26,14 +32,32 @@
   },
 
   {
+    "title": "Home",
+    "url":   "/",
+    "content": ""
+  },
+
+  {
+    "title": "My Experiences",
+    "url":   "/about/experiences/",
+    "content": "      Digital Production Assistant                                    I collaborated with 3 professors and 2 other digital production ass..."
+  },
+
+  {
+    "title": "My Awards",
+    "url":   "/about/awards/",
+    "content": "      Achievements                  NUS Sudoku Competition 2023: Awarded second runner-up                    JPJC Inter-House Games 2018:..."
+  },
+
+  {
     "title": "My Projects",
     "url":   "/about/projects/",
     "content": "      Orbital NUqueSt (Link)                                      NUqueSt is a 2D Top-Down Action-Adventure Singleplayer Questing game. I..."
   },
 
   {
-    "title": "About",
-    "url":   "/about/",
+    "title": "Lyrics Translations",
+    "url":   "/lyrics-translations/",
     "content": ""
   },
 
@@ -44,15 +68,27 @@
   },
 
   {
-    "title": "Lyrics Translations",
-    "url":   "/lyrics-translations/",
+    "title": "About",
+    "url":   "/about/",
     "content": ""
   },
 
   {
-    "title": "Home",
-    "url":   "/",
-    "content": ""
+    "title": "NUqueSt",
+    "url":   "/about/projects/nuquest/",
+    "content": "      Orbital NUqueSt (Link)                                      NUqueSt is a 2D Top-Down Action-Adventure Singleplayer Questing game. I..."
+  },
+
+  {
+    "title": "Puzzle Solvers",
+    "url":   "/about/projects/puzzle-solvers/",
+    "content": "      Puzzle Solvers (Link)          This project was created out of an interest in applying computer vision and AI to puzzle-solving. Th..."
+  },
+
+  {
+    "title": "Teaching Assistant",
+    "url":   "/about/experiences/teaching-assistant/",
+    "content": "      Teaching Assistant                              I taught 25 NUS undergraduates CS1010E, a course on programming methodology in Pyth..."
   }
 
 ]
