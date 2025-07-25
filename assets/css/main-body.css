@@ -11,7 +11,8 @@ hr.hr-main-body {
   background: var(--light-mode-border-color);
   font-size: 0;
   border: 0;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color var(--theme-transition) ease, 
+              color var(--theme-transition) ease;
 }
 
 body.dark-mode hr.hr-main-body {

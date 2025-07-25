@@ -1,15 +1,16 @@
 /* Default: light mode top bar */
 #topbar {
   background-color: #f1f1f1 !important;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color var(--theme-transition) ease, 
+              color var(--theme-transition) ease;
   border-bottom: var(--light-mode-border);
-  color: black !important;
+  color: var(--light-mode-text-color) !important;
   z-index: 1004 !important;
 }
 
 /* Dark mode top bar */
 body.dark-mode #topbar {
-  background-color: #252525 !important;    /* same as w3-black */
+  background-color: var(--dark-mode-background-color) !important;
   color: #fff !important;
   border-bottom: var(--dark-mode-border);
 }
@@ -48,13 +49,13 @@ body.dark-mode #topbar {
   border-radius: 0.7rem;
 
   /* text uses the bar’s color (black in light) */
-  color: black;
+  color: var(--light-mode-text-color);
   font-size: 1rem;
 
   /* keep transitions in sync */
-  transition: background-color 0.3s ease,
-              color            0.3s ease,
-              border-color     0.3s ease;
+  transition: background-color var(--theme-transition) ease,
+              color            var(--theme-transition) ease,
+              border-color     var(--theme-transition) ease;
 
   box-sizing: border-box;
 }
@@ -85,15 +86,15 @@ body.dark-mode #topbar-search input {
   border-bottom-left-radius: 0.7rem;
   border-bottom-right-radius: 0.7rem;
 
-  background: var(--light-mode-body);
+  background: var(--light-mode-background-color);
   max-height: 300px;
   overflow-y: auto;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   z-index: 1005;
 
   /* keep transitions in sync */
-  transition: background-color 0.3s ease,
-              color            0.3s ease;
+  transition: background-color var(--theme-transition) ease,
+              color            var(--theme-transition) ease;
 }
 
 /* show each item */
@@ -106,7 +107,7 @@ body.dark-mode #topbar-search input {
   display: block;
   padding: 8px 12px;
   text-decoration: none;
-  color: black;
+  color: var(--light-mode-text-color);
 
   /* same rounding as your input */
   border-radius: 0.7rem;
@@ -115,13 +116,13 @@ body.dark-mode #topbar-search input {
   width: 100%;
   box-sizing: border-box;
 
-  transition:  color 0.3s ease;
+  transition: color var(--theme-transition) ease;
 }
 
 /* hover/focus */
 #search-results li a:hover,
 #search-results li a:focus {
-  background: rgba(0,0,0,0.07);
+  background: var(--light-mode-hover-background-color);
 }
 
 /* dark-mode overrides */
@@ -137,7 +138,7 @@ body.dark-mode #search-results li a {
 }
 body.dark-mode #search-results li a:hover,
 body.dark-mode #search-results li a:focus {
-  background: rgba(255,255,255,0.1);
+  background: var(--dark-mode-hover-background-color);
 }
 
 /* collapse the dropdown when it has no children */

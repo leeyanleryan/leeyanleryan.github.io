@@ -14,15 +14,30 @@
   --body-gap-left:      100px;  /* ← increase this for a bigger gap between left arrow & body */
   --body-gap-right:     30px;   /* ← decrease this for a smaller gap between body & right arrow */
 
+  /* theme transition timings */
+  --theme-transition: 0.3s;
+
   /* border colors for different modes */
   --light-mode-border-color: rgba(0,0,0,0.1);
   --dark-mode-border-color: rgba(255,255,255,0.1);
 
-  /* border setups for different modes */
+  /* borders for different modes */
   --light-mode-border: 1px solid var(--light-mode-border-color);
   --dark-mode-border: 1px solid var(--dark-mode-border-color);
 
-  /* body colors for different modes */
-  --light-mode-body: #f1f1f1;
-  --dark-mode-body: #252525;
+  /* background colors for different modes */
+  --light-mode-background-color: #f1f1f1;
+  --dark-mode-background-color: #252525;
+
+  /* hover/focus background colors for different modes */
+  --light-mode-hover-background-color: rgba(0,0,0,0.03);
+  --dark-mode-hover-background-color: rgba(255,255,255,0.04);
+
+  /* active background colors for different modes */
+  --light-mode-active-background-color: rgba(0,0,0,0.07);
+  --dark-mode-active-background-color: rgba(255,255,255,0.10);
+
+  /* text colors for different modes */
+  --light-mode-text-color: black;
+  --dark-mode-text-color: white;
 }

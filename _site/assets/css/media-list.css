@@ -14,11 +14,11 @@
 }
 
 .media-item:hover {
-  background-color: rgba(0,0,0,0.03);
+  background-color: var(--light-mode-hover-background-color);
 }
 
 body.dark-mode .media-item:hover {
-  background-color: rgba(255,255,255,0.04);
+  background-color: var(--dark-mode-hover-background-color);
 }
 
 .media-card {

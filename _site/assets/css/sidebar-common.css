@@ -9,9 +9,10 @@
   padding: 0 10px;                   /* 10px on left & right */
   z-index: 1002;
   display: none;                     /* shown via ID + media query */
-  background-color: var(--light-mode-body);
-  color: black;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: var(--light-mode-background-color);
+  color: var(--light-mode-text-color);
+  transition: background-color var(--theme-transition) ease, 
+              color var(--theme-transition) ease;
 
   /* hide scrollbar by making it transparent */
   scrollbar-width: thin;
@@ -27,41 +28,41 @@
   background-color: transparent;
 }
 .sidebar::-webkit-scrollbar-track {
-  background-color: var(--light-mode-body);
+  background-color: var(--light-mode-background-color);
 }
 
 /* on hover, paint the reserved gutter */
 .sidebar:hover {
-  scrollbar-color: #888 var(--light-mode-body);
+  scrollbar-color: #888 var(--light-mode-background-color);
 }
 .sidebar:hover::-webkit-scrollbar-thumb {
   background-color: #888;
 }
 .sidebar:hover::-webkit-scrollbar-track {
-  background-color: var(--light-mode-body);
+  background-color: var(--light-mode-background-color);
 }
 
 /* keep everything else the same… */
 body.dark-mode .sidebar {
-  background-color: var(--dark-mode-body);
-  color: white;
+  background-color: var(--dark-mode-background-color);
+  color: var(--dark-mode-text-color);
 
   /* hide scrollbar by default */
   scrollbar-color: transparent transparent;
 }
 body.dark-mode .sidebar::-webkit-scrollbar-track {
-  background-color: var(--dark-mode-body);
+  background-color: var(--dark-mode-background-color);
 }
 
 /* only show on hover */
 body.dark-mode .sidebar:hover {
-  scrollbar-color: #888 var(--dark-mode-body);
+  scrollbar-color: #888 var(--dark-mode-background-color);
 }
 body.dark-mode .sidebar:hover::-webkit-scrollbar-thumb {
   background-color: #888;
 }
 body.dark-mode .sidebar:hover::-webkit-scrollbar-track {
-  background-color: var(--dark-mode-body);
+  background-color: var(--dark-mode-background-color);
 }
 
 /* truncate any w3-container or w3-ul links so text never wraps */
@@ -76,11 +77,11 @@ body.dark-mode .sidebar:hover::-webkit-scrollbar-track {
 
 /* section headers (<h4>) subtly fade in/out */
 .sidebar h4 {
-  transition: color 0.3s ease;
-  color: #757575;
+  transition: color var(--theme-transition) ease;
+  color: var(--light-mode-text-color);
 }
 body.dark-mode .sidebar h4 {
-  color: white;
+  color: var(--dark-mode-text-color);
 }
 
 /* “pill” style menu items */
@@ -89,17 +90,6 @@ body.dark-mode .sidebar h4 {
   padding: 8px 12px;
   border-radius: 10px;
 }
-.sidebar .w3-bar-item:hover,
-.sidebar .w3-bar-item:focus {
-  background-color: rgba(0,0,0,0.07) !important;
-  color: inherit !important;
-}
-/* dark‐mode hover pill */
-body.dark-mode .sidebar .w3-bar-item:hover,
-body.dark-mode .sidebar .w3-bar-item:focus {
-  background-color: rgba(255,255,255,0.10) !important;
-  color: inherit !important;
-}
 
 hr.hr-sidebar {
   height: 1px;
@@ -107,7 +97,8 @@ hr.hr-sidebar {
   background: var(--light-mode-border-color);
   font-size: 0;
   border: 0;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color var(--theme-transition) ease, 
+              color var(--theme-transition) ease;
 }
 
 body.dark-mode hr.hr-sidebar {
@@ -118,28 +109,29 @@ body.dark-mode hr.hr-sidebar {
 /* light-mode hover/focus */
 .sidebar .w3-bar-item:hover,
 .sidebar .w3-bar-item:focus {
-  background-color: rgba(0,0,0,0.03) !important;
-  color: black           !important;
+  background-color: var(--light-mode-hover-background-color) !important;
+  color: var(--light-mode-text-color) !important;
 }
 
 /* light-mode “current page” pill */
 .sidebar .w3-bar-item.active {
-  background-color: rgba(0,0,0,0.07) !important;
-  color: black           !important;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: var(--light-mode-active-background-color) !important;
+  color: var(--light-mode-text-color) !important;
+  transition: background-color var(--theme-transition) ease, 
+              color var(--theme-transition) ease;
 }
 
 /* dark-mode hover/focus */
 body.dark-mode .sidebar .w3-bar-item:hover,
 body.dark-mode .sidebar .w3-bar-item:focus {
-  background-color: rgba(255,255,255,0.04) !important;
-  color: white                   !important;
+  background-color: var(--dark-mode-hover-background-color) !important;
+  color: var(--dark-mode-text-color) !important;
 }
 
 /* dark-mode “current page” pill */
 body.dark-mode .sidebar .w3-bar-item.active {
-  background-color: rgba(255,255,255,0.10) !important;
-  color: white                   !important;
+  background-color: var(--dark-mode-active-background-color) !important;
+  color: var(--dark-mode-text-color) !important;
 }
 
 /* wrapper & header row */
@@ -152,7 +144,7 @@ body.dark-mode .sidebar .w3-bar-item.active {
 .submenu-header .main-link {
   flex: 1;
   border-radius: 10px;
-  transition: background-color 0.3s ease;
+  transition: background-color var(--theme-transition) ease;
 }
 
 /* the in-flow submenu */

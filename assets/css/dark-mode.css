@@ -2,7 +2,8 @@
 body {
     background-color: #f1f1f1;
     color: #000000;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color var(--theme-transition) ease, 
+                color var(--theme-transition) ease;
     font-family: "Raleway", sans-serif;
     scroll-behavior: smooth;
     scroll-padding-top: 43px;
@@ -10,7 +11,7 @@ body {
 
 /* Dark mode styles */
 body.dark-mode {
-  background-color: #252525;
+  background-color: var(--dark-mode-background-color);
   color: #ffffff;
 }
 
@@ -35,7 +36,7 @@ body.dark-mode {
   width: 30px;
   height: 17px;
   background-color: #ccc;
-  transition: 0.4s;
+  transition: var(--theme-transition);
   border-radius: 17px;
   cursor: pointer;
 }
@@ -47,7 +48,7 @@ body.dark-mode {
   left: 2px;
   bottom: 2px;
   background-color: white;
-  transition: 0.4s;
+  transition: var(--theme-transition);
   border-radius: 50%;
 }
 input:checked + .slider {
