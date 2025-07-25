@@ -2,11 +2,7 @@
 <html>
 <head>
   <!-- flicker fix -->
-  <style>
-    .no-transition, .no-transition * {
-      transition: none !important;
-    }
-  </style>
+  <style>.no-transition, .no-transition * {transition: none !important;}</style>
   <script src="/assets/js/flicker-fix.js"> </script>
   <!-- take title from front matter of md files -->
   <title>Digital Production Assistant</title>
@@ -19,6 +15,7 @@
   <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon/android-chrome-512x512.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
   <!-- css -->
+  <link rel="stylesheet" href="/assets/css/variables.css">
   <link rel="stylesheet" href="/assets/css/vendor/font-awesome.css">
   <link rel="stylesheet" href="/assets/css/vendor/raleway.css">
   <link rel="stylesheet" href="/assets/css/vendor/w3.css">
@@ -31,23 +28,7 @@
   <link rel="stylesheet" href="/assets/css/right-sidebar.css">
   <link rel="stylesheet" href="/assets/css/sidebar-common.css">
   <link rel="stylesheet" href="/assets/css/topbar.css">
-  <link rel="stylesheet" href="/assets/css/variables.css">
-  <style>
-    html,h1,h2,h3,h4,h5,h6 {
-      font-family: "Raleway", sans-serif;
-      scroll-behavior: smooth;
-      scroll-padding-top: 43px;
-    }
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-    .no-zoom {
-      -webkit-tap-highlight-color: transparent;
-      touch-action: manipulation;
-      -ms-touch-action: manipulation;
-    }
-  </style>
+  <link rel="stylesheet" href="/assets/css/default.css">
 </head>
 
 <body class="dark-mode">
@@ -172,24 +153,8 @@
       <!-- end Experiences -->
       <a href="/about/awards/" class="w3-bar-item w3-button w3-padding "> Awards</a>
       <a href="/about/hobbies/" class="w3-bar-item w3-button w3-padding "> Hobbies</a>
-      <!--
-      <a href="/about/pets/" class="w3-bar-item w3-button w3-padding "> Pets</a>
-      -->
     </div>
   </div>
-  <!--
-  <hr class="hr-sidebar">
-  <div class="w3-container">
-    <h4><strong>Data Science</strong></h4>
-    <div class="w3-bar-block">
-      <a href="/data-science/python/" class="w3-bar-item w3-button w3-padding "> Python</a>
-      <a href="/data-science/numpy/" class="w3-bar-item w3-button w3-padding "> NumPy</a>
-      <a href="/data-science/pandas/" class="w3-bar-item w3-button w3-padding "> pandas</a>
-      <a href="/data-science/machine-learning/" class="w3-bar-item w3-button w3-padding "> Machine Learning</a>
-      <a href="/data-science/machine-learning/" class="w3-bar-item w3-button w3-padding "> Deep Learning</a>
-    </div>
-  </div>
-  -->
   <hr class="hr-sidebar">
   <div class="w3-container">
     <h4><strong>Lyrics Translations</strong></h4>
@@ -246,7 +211,8 @@
      class="w3-overlay w3-hide-large w3-animate-opacity" 
      onclick="w3_close()" 
      style="cursor:pointer" 
-     title="close side menu"></div>
+     title="close side menu">
+</div>
 
 <!-- Right sidebar -->
 <nav id="right-sidebar" class="sidebar">
@@ -317,71 +283,14 @@
   </a>
 </div>
 
-<hr class="hr-hide-1180" style="border:1px solid gray; opacity:0">
+<hr class="hr-hide-1180">
 
 <script src="/assets/js/dark-mode.js"></script>
+<script src="/assets/js/sidebar-common.js"></script>
 <script src="/assets/js/left-sidebar.js"></script>
 <script src="/assets/js/right-sidebar.js"></script>
-<script src="/assets/js/sidebar-common.js"></script>
 <script src="/assets/js/simple-jekyll-search.js"></script>
-<script>
-  SimpleJekyllSearch({
-    searchInput:    document.getElementById('search-input'),
-    resultsContainer: document.getElementById('search-results'),
-    json:           '/search.json',            // our step-1 index
-    searchResultTemplate: '<li><a href="{url}">{section}: {title}</a></li>',
-    noResultsText:  '&nbsp;No results found',
-    limit:          5,                         // show up to 5 matches
-    fuzzy:          false,                     // turn on if you want typosuggestions
-
-    sortMiddleware: (a, b) => {
-      const q = (a.query || '').toLowerCase();
-
-      // 1) Title‐matches first
-      const aInTitle = a.title.toLowerCase().includes(q) ? 1 : 0;
-      const bInTitle = b.title.toLowerCase().includes(q) ? 1 : 0;
-      if (aInTitle !== bInTitle) return bInTitle - aInTitle;
-
-      // 2) URL‐matches next
-      const aInUrl = a.url.toLowerCase().includes(q) ? 1 : 0;
-      const bInUrl = b.url.toLowerCase().includes(q) ? 1 : 0;
-      if (aInUrl !== bInUrl) return bInUrl - aInUrl;
-
-      // 3) leave everything else in original order
-      return 0;
-    }
-  });
-
-  // Grab references
-  const input   = document.getElementById('search-input');
-  const results = document.getElementById('search-results');
-
-  // On Enter, go to the top result
-  input.addEventListener('keydown', function(e) {
-    if (e.key === 'Enter') {
-      e.preventDefault();                  // stop any default form‐submit
-      const firstLink = results.querySelector('li a');
-      if (firstLink) {
-        // Option A: simulate a click
-        firstLink.click();                 
-
-        // Option B: or just change location
-        // window.location.href = firstLink.href;
-      }
-    }
-  });
-</script>
-<script>
-  document.addEventListener('click', function(e) {
-    const form    = document.getElementById('topbar-search');
-    const results = document.getElementById('search-results');
-
-    // if click is *not* inside the form or the results box
-    if (!form.contains(e.target) && !results.contains(e.target)) {
-      results.innerHTML = '';   // clear out the list
-    }
-  });
-</script>
+<script src="/assets/js/search-bar-config.js"></script>
 
 </body>
 </html>

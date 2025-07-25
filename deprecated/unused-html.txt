@@ -3,3 +3,20 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+<!--
+  <hr class="hr-sidebar">
+  <div class="w3-container">
+    <h4><strong>Data Science</strong></h4>
+    <div class="w3-bar-block">
+      <a href="/data-science/python/" class="w3-bar-item w3-button w3-padding {% if page.url == '/data-science/python/' %} active{% endif %}"> Python</a>
+      <a href="/data-science/numpy/" class="w3-bar-item w3-button w3-padding {% if page.url == '/data-science/numpy/' %} active{% endif %}"> NumPy</a>
+      <a href="/data-science/pandas/" class="w3-bar-item w3-button w3-padding {% if page.url == '/data-science/pandas/' %} active{% endif %}"> pandas</a>
+      <a href="/data-science/machine-learning/" class="w3-bar-item w3-button w3-padding {% if page.url == '/data-science/machine-learning/' %} active{% endif %}"> Machine Learning</a>
+      <a href="/data-science/machine-learning/" class="w3-bar-item w3-button w3-padding {% if page.url == '/data-science/deep-learning/' %} active{% endif %}"> Deep Learning</a>
+    </div>
+  </div> -->
+
+<!--
+    <a href="/about/pets/" class="w3-bar-item w3-button w3-padding {% if page.url == '/about/pets/' %} active{% endif %}"> Pets</a>
+    -->

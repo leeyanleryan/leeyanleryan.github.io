@@ -2,11 +2,7 @@
 <html>
 <head>
   <!-- flicker fix -->
-  <style>
-    .no-transition, .no-transition * {
-      transition: none !important;
-    }
-  </style>
+  <style>.no-transition, .no-transition * {transition: none !important;}</style>
   <script src="/assets/js/flicker-fix.js"> </script>
   <!-- take title from front matter of md files -->
   <title>{{ page.title }}</title>
@@ -19,6 +15,7 @@
   <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon/android-chrome-512x512.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
   <!-- css -->
+  <link rel="stylesheet" href="/assets/css/variables.css">
   <link rel="stylesheet" href="/assets/css/vendor/font-awesome.css">
   <link rel="stylesheet" href="/assets/css/vendor/raleway.css">
   <link rel="stylesheet" href="/assets/css/vendor/w3.css">
@@ -31,187 +28,16 @@
   <link rel="stylesheet" href="/assets/css/right-sidebar.css">
   <link rel="stylesheet" href="/assets/css/sidebar-common.css">
   <link rel="stylesheet" href="/assets/css/topbar.css">
-  <link rel="stylesheet" href="/assets/css/variables.css">
-  <style>
-    html,h1,h2,h3,h4,h5,h6 {
-      font-family: "Raleway", sans-serif;
-      scroll-behavior: smooth;
-      scroll-padding-top: 43px;
-    }
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-    .no-zoom {
-      -webkit-tap-highlight-color: transparent;
-      touch-action: manipulation;
-      -ms-touch-action: manipulation;
-    }
-  </style>
+  <link rel="stylesheet" href="/assets/css/default.css">
 </head>
 
 <body class="dark-mode">
     
-<!-- Top container -->
-<div id="topbar" class="w3-bar w3-top w3-black w3-large">
-  <button class="w3-bar-item w3-button w3-hover-none w3-hover-text-grey no-zoom" onclick="w3_open(); this.blur();"><i class="fa fa-bars"></i>  Menu</button>
-  <form id="topbar-search" onsubmit="return false;">
-    <input id="search-input" type="text" placeholder="Search…">
-    <ul id="search-results"></ul>
-  </form>
-  <span class="w3-bar-item w3-right">
-    <i class="fa fa-moon-o" style="margin-right:10px"></i>
-    <label class="switch">
-      <input id="toggle-dark-mode" type="checkbox">
-      <span class="slider"></span>
-    </label>
-  </span>
-</div>
+{% include topbar.html %}
 
-<!-- Left sidebar/menu -->
-<nav id="left-sidebar" class="sidebar"><br>
-  <div class="w3-container w3-row">
-    <div class="w3-col s4">
-      <img src="https://i.imgur.com/J6a7t0I.png" class="w3-circle w3-margin-right" style="width:46px">
-    </div>
-    <div class="w3-col s8 w3-bar">
-      <span>Lee Yan Le, <strong>Ryan</strong></span><br>
-      <a href="https://github.com/leeyanleryan" class="w3-bar-item w3-button"><i class="fa fa-github"></i></a>
-      <a href="https://linkedin.com/in/leeyanleryan" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
-      <a href="https://www.youtube.com/@Leehai" class="w3-bar-item w3-button"><i class="fa fa-youtube-play"></i></a>
-    </div>
-  </div>
-  <hr class="hr-sidebar">
-  <div class="w3-container">
-    <div class="w3-bar-block">
-      <h4><strong>About</strong></h4>
-      <a href="/about/profile/" class="w3-bar-item w3-button w3-padding {% if page.url == '/about/profile/' %} active{% endif %}"> Profile</a>
-      <!-- Projects + auto-generated sub-nav -->
-      <div class="submenu-wrapper
-        {% if page.url contains '/about/projects/' %}open{% endif %}">
-        <div class="submenu-header">
-          <!-- main pill (click -> /about/projects/) -->
-          <a href="/about/projects/"
-             class="w3-bar-item w3-button w3-padding main-link
-                    {% if page.url == '/about/projects/' %}active{% endif %}">
-            Projects
-          </a>
-        </div>
-        <!-- this list is only ever visible if “open” class is present -->
-        <div class="submenu">
-          {% assign all_projects = site.data.projects | sort: "order" %}
-          {% for proj in all_projects %}
-            {% unless proj.url == "/about/projects/" %}
-              <a href="{{ proj.url }}"
-                class="w3-bar-item w3-button w3-padding
-                        {% if page.url == proj.url %} active{% endif %}">
-                {{ proj.title }}
-              </a>
-            {% endunless %}
-          {% endfor %}
-        </div>
-      </div>
-      <!-- end Projects -->
-      <!-- Experiences + auto-generated sub-nav -->
-      <div class="submenu-wrapper
-        {% if page.url contains '/about/experiences/' %}open{% endif %}">
-        <div class="submenu-header">
-          <!-- main pill (click -> /about/experiences/) -->
-          <a href="/about/experiences/"
-             class="w3-bar-item w3-button w3-padding main-link
-                    {% if page.url == '/about/experiences/' %}active{% endif %}">
-            Experiences
-          </a>
-        </div>
-        <!-- this list is only ever visible if “open” class is present -->
-        <div class="submenu">
-          {% assign all_experiences = site.data.experiences | sort: "order" %}
-          {% for experience in all_experiences %}
-            {% unless experience.url == "/about/experiences/" %}
-              <a href="{{ experience.url }}"
-                class="w3-bar-item w3-button w3-padding
-                        {% if page.url == experience.url %} active{% endif %}">
-                {{ experience.title }}
-              </a>
-            {% endunless %}
-          {% endfor %}
-        </div>
-      </div>
-      <!-- end Experiences -->
-      <a href="/about/awards/" class="w3-bar-item w3-button w3-padding {% if page.url == '/about/awards/' %} active{% endif %}"> Awards</a>
-      <a href="/about/hobbies/" class="w3-bar-item w3-button w3-padding {% if page.url == '/about/hobbies/' %} active{% endif %}"> Hobbies</a>
-      <!--
-      <a href="/about/pets/" class="w3-bar-item w3-button w3-padding {% if page.url == '/about/pets/' %} active{% endif %}"> Pets</a>
-      -->
-    </div>
-  </div>
-  <!--
-  <hr class="hr-sidebar">
-  <div class="w3-container">
-    <h4><strong>Data Science</strong></h4>
-    <div class="w3-bar-block">
-      <a href="/data-science/python/" class="w3-bar-item w3-button w3-padding {% if page.url == '/data-science/python/' %} active{% endif %}"> Python</a>
-      <a href="/data-science/numpy/" class="w3-bar-item w3-button w3-padding {% if page.url == '/data-science/numpy/' %} active{% endif %}"> NumPy</a>
-      <a href="/data-science/pandas/" class="w3-bar-item w3-button w3-padding {% if page.url == '/data-science/pandas/' %} active{% endif %}"> pandas</a>
-      <a href="/data-science/machine-learning/" class="w3-bar-item w3-button w3-padding {% if page.url == '/data-science/machine-learning/' %} active{% endif %}"> Machine Learning</a>
-      <a href="/data-science/machine-learning/" class="w3-bar-item w3-button w3-padding {% if page.url == '/data-science/deep-learning/' %} active{% endif %}"> Deep Learning</a>
-    </div>
-  </div>
-  -->
-  <hr class="hr-sidebar">
-  <div class="w3-container">
-    <h4><strong>Lyrics Translations</strong></h4>
-    <div class="w3-bar-block">
-      <!-- TOC + auto-generated sub-nav -->
-      <div class="submenu-wrapper
-        {% if page.url contains '/lyrics-translations/the-oral-cigarettes/' %}open{% endif %}">
-        <div class="submenu-header">
-          <!-- main pill (click -> /lyrics-translations/the-oral-cigarettes/) -->
-          <a href="/lyrics-translations/the-oral-cigarettes/"
-             class="w3-bar-item w3-button w3-padding main-link
-                    {% if page.url == '/lyrics-translations/the-oral-cigarettes/' %}active{% endif %}">
-            The Oral Cigarettes
-          </a>
-        </div>
-        <!-- this list is only ever visible if “open” class is present -->
-        <div class="submenu">
-          {% assign all_toc = site.data.the-oral-cigarettes | sort: "title" %}
-          {% for toc in all_toc %}
-            {% unless toc.url == "/lyrics-translations/the-oral-cigarettes/" %}
-              <a href="{{ toc.url }}"
-                class="w3-bar-item w3-button w3-padding
-                        {% if page.url == toc.url %} active{% endif %}">
-                {{ toc.title }}
-              </a>
-            {% endunless %}
-          {% endfor %}
-        </div>
-      </div>
-      <!-- end TOC -->
-    </div>
-  </div>
-  <hr class="hr-sidebar">
-  <div class="w3-container">
-    <div class="w3-bar-block">
-      <h4><strong>Fun</strong></h4>
-      <a id="random-page-button" class="w3-bar-item w3-button w3-padding"> Go to a random page</a>
-    </div>
-  </div>
-  <hr style="opacity:0">
-  <hr style="opacity:0">
-</nav>
+{% include left-sidebar.html %}
 
-<!-- Overlay effect when opening left sidebar on small screens -->
-<div id="sidebar-overlay" 
-     class="w3-overlay w3-hide-large w3-animate-opacity" 
-     onclick="w3_close()" 
-     style="cursor:pointer" 
-     title="close side menu"></div>
-
-<!-- Right sidebar -->
-<nav id="right-sidebar" class="sidebar">
-  
-</nav>
+{% include right-sidebar.html %}
 
 <!-- Page content goes here -->
 {{ content }}
@@ -219,71 +45,14 @@
 <!-- Navigation Arrows -->
 {% include nav-arrow.html %}
 
-<hr class="hr-hide-1180" style="border:1px solid gray; opacity:0">
+<hr class="hr-hide-1180">
 
 <script src="/assets/js/dark-mode.js"></script>
+<script src="/assets/js/sidebar-common.js"></script>
 <script src="/assets/js/left-sidebar.js"></script>
 <script src="/assets/js/right-sidebar.js"></script>
-<script src="/assets/js/sidebar-common.js"></script>
 <script src="/assets/js/simple-jekyll-search.js"></script>
-<script>
-  SimpleJekyllSearch({
-    searchInput:    document.getElementById('search-input'),
-    resultsContainer: document.getElementById('search-results'),
-    json:           '/search.json',            // our step-1 index
-    searchResultTemplate: '<li><a href="{url}">{section}: {title}</a></li>',
-    noResultsText:  '&nbsp;No results found',
-    limit:          5,                         // show up to 5 matches
-    fuzzy:          false,                     // turn on if you want typosuggestions
-
-    sortMiddleware: (a, b) => {
-      const q = (a.query || '').toLowerCase();
-
-      // 1) Title‐matches first
-      const aInTitle = a.title.toLowerCase().includes(q) ? 1 : 0;
-      const bInTitle = b.title.toLowerCase().includes(q) ? 1 : 0;
-      if (aInTitle !== bInTitle) return bInTitle - aInTitle;
-
-      // 2) URL‐matches next
-      const aInUrl = a.url.toLowerCase().includes(q) ? 1 : 0;
-      const bInUrl = b.url.toLowerCase().includes(q) ? 1 : 0;
-      if (aInUrl !== bInUrl) return bInUrl - aInUrl;
-
-      // 3) leave everything else in original order
-      return 0;
-    }
-  });
-
-  // Grab references
-  const input   = document.getElementById('search-input');
-  const results = document.getElementById('search-results');
-
-  // On Enter, go to the top result
-  input.addEventListener('keydown', function(e) {
-    if (e.key === 'Enter') {
-      e.preventDefault();                  // stop any default form‐submit
-      const firstLink = results.querySelector('li a');
-      if (firstLink) {
-        // Option A: simulate a click
-        firstLink.click();                 
-
-        // Option B: or just change location
-        // window.location.href = firstLink.href;
-      }
-    }
-  });
-</script>
-<script>
-  document.addEventListener('click', function(e) {
-    const form    = document.getElementById('topbar-search');
-    const results = document.getElementById('search-results');
-
-    // if click is *not* inside the form or the results box
-    if (!form.contains(e.target) && !results.contains(e.target)) {
-      results.innerHTML = '';   // clear out the list
-    }
-  });
-</script>
+<script src="/assets/js/search-bar-config.js"></script>
 
 </body>
 </html>
