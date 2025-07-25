@@ -19,8 +19,8 @@ right_url: /about/projects/puzzle-solvers/
     </h5>
     <h3><u>Chess (<a href="https://github.com/leeyanleryan/Board-Games/tree/main/Chess%20(C%2B%2B)/Chess" target="_blank">Link</a>)</u></h3>
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <img src="/assets/gif/boardgames_chess1.gif" alt="Board Games Chess 1" style="width:50%;">
-      <img src="/assets/gif/boardgames_chess2.gif" alt="Board Games Chess 2" style="width:50%;">
+      <img src="/assets/gif/boardgames-chess1.gif" alt="Board Games Chess 1" style="width:50%;">
+      <img src="/assets/gif/boardgames-chess2.gif" alt="Board Games Chess 2" style="width:50%;">
     </div>
     <h5 style="margin-bottom:20px;">
       I developed the game logic and user interface for Chess using Qt Creator, an IDE for creating and deploying applications. The code is done in C++ 
@@ -35,8 +35,8 @@ right_url: /about/projects/puzzle-solvers/
     </h5>
     <h3><u>Connect Four (<a href="https://github.com/leeyanleryan/Board-Games/tree/main/Connect%204%20(Java)" target="_blank">Java Link</a> | <a href="https://github.com/leeyanleryan/Board-Games/tree/main/Connect%204%20(Python)" target="_blank">Python Link</a>)</u></h3>
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <img src="/assets/gif/boardgames_connectfour1.gif" alt="Board Games Connect Four 1" style="width:53%;">
-      <img src="/assets/gif/boardgames_connectfour2.gif" alt="Board Games Connect Four 2" style="width:45.4%;">
+      <img src="/assets/gif/boardgames-connectfour1.gif" alt="Board Games Connect Four 1" style="width:53%;">
+      <img src="/assets/gif/boardgames-connectfour2.gif" alt="Board Games Connect Four 2" style="width:45.4%;">
     </div>
     <h5 style="margin-bottom:20px">
       I developed the game logic and user interface for Connect Four in two languages: Java (using Swing and AWT) and Python (using Qt5).

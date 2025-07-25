@@ -13,7 +13,7 @@ right_url: /about/projects/
 <div id="page-about" class="w3-main" >
   <section id="profile" class="w3-container">
     <h2><b>Profile</b></h2>
-    <img src="/assets/img/mt_fuji.jpg" alt="Mt Fuji">
+    <img src="/assets/img/mt-fuji.jpg" alt="Mt Fuji">
     <h5>
       Hi! Welcome to my website. My name is Ryan Lee, and I am currently an undergraduate at National University of Singapore (NUS), studying
       Data Science and Analytics. In the near future, I am hoping to undertake a Masters or PhD programme to dive deeper into my topics of interests.

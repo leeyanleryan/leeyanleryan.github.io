@@ -18,9 +18,9 @@ right_url: /about/projects/board-games/
     </h5>
     <h3><u>Breast Cancer Analysis (<a href="https://github.com/leeyanleryan/Data-Analysis/tree/main/Breast%20Cancer%20Analysis%20(IT1244)" target="_blank">Link</a>)</u></h3>
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <img src="/assets/img/dataanalysis_bca_heatmap1.png" alt="Data Analysis BCA Heatmap 1" style="width:33%;">
-      <img src="/assets/img/dataanalysis_bca_heatmap2.png" alt="Data Analysis BCA Heatmap 2" style="width:33%;">
-      <img src="/assets/img/dataanalysis_bca_heatmap3.png" alt="Data Analysis BCA Heatmap 3" style="width:33%;">
+      <img src="/assets/img/dataanalysis-bca-heatmap1.png" alt="Data Analysis BCA Heatmap 1" style="width:33%;">
+      <img src="/assets/img/dataanalysis-bca-heatmap2.png" alt="Data Analysis BCA Heatmap 2" style="width:33%;">
+      <img src="/assets/img/dataanalysis-bca-heatmap3.png" alt="Data Analysis BCA Heatmap 3" style="width:33%;">
     </div>
     <h5 style="margin-bottom:20px">
       The project aimed to classify breast cancer samples (benign vs. malignant) by analyzing imaging attributes from a fine needle aspirate (FNA). It also explored mislabelled
@@ -40,8 +40,8 @@ right_url: /about/projects/board-games/
     </h5>
     <br>
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <img src="/assets/img/dataanalysis_bca_fe1.png" alt="Data Analysis BCA Feature Engineering 1" style="width:50%;">
-      <img src="/assets/img/dataanalysis_bca_fe2.png" alt="Data Analysis BCA Feature Engineering 2" style="width:50%;">
+      <img src="/assets/img/dataanalysis-bca-fe1.png" alt="Data Analysis BCA Feature Engineering 1" style="width:50%;">
+      <img src="/assets/img/dataanalysis-bca-fe2.png" alt="Data Analysis BCA Feature Engineering 2" style="width:50%;">
     </div>
     <h5 style="margin-bottom:20px">
       The problem was split into two tasks. For the first task, we are told that some labels have been mislabelled, and we are required to detect them. We utilised several
@@ -62,10 +62,10 @@ right_url: /about/projects/board-games/
     </h5>
     <br>
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <img src="/assets/img/dataanalysis_bca_rocauc1.png" alt="Data Analysis BCA ROC-AUC 1" style="width:25%;">
-      <img src="/assets/img/dataanalysis_bca_rocauc2.png" alt="Data Analysis BCA ROC-AUC 2" style="width:25%;">
-      <img src="/assets/img/dataanalysis_bca_rocauc3.png" alt="Data Analysis BCA ROC-AUC 3" style="width:25%;">
-      <img src="/assets/img/dataanalysis_bca_rocauc4.png" alt="Data Analysis BCA ROC-AUC 4" style="width:25%;">
+      <img src="/assets/img/dataanalysis-bca-rocauc1.png" alt="Data Analysis BCA ROC-AUC 1" style="width:25%;">
+      <img src="/assets/img/dataanalysis-bca-rocauc2.png" alt="Data Analysis BCA ROC-AUC 2" style="width:25%;">
+      <img src="/assets/img/dataanalysis-bca-rocauc3.png" alt="Data Analysis BCA ROC-AUC 3" style="width:25%;">
+      <img src="/assets/img/dataanalysis-bca-rocauc4.png" alt="Data Analysis BCA ROC-AUC 4" style="width:25%;">
     </div>
     <h5 style="margin-bottom:20px">
       For the second task, we are required to classify the type of breast cancer ('B' vs 'M') given the diagnosis. To do this, we employed the use of several Machine
@@ -86,7 +86,7 @@ right_url: /about/projects/board-games/
     </h5>
     <br>
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <img src="/assets/img/dataanalysis_bca_keyfindings1.png" alt="Data Analysis BCA Key Findings 1" style="width:80%;">
+      <img src="/assets/img/dataanalysis-bca-keyfindings1.png" alt="Data Analysis BCA Key Findings 1" style="width:80%;">
     </div>
     <h5 style="margin-bottom:20px">
       Key Results:
@@ -99,7 +99,7 @@ right_url: /about/projects/board-games/
     </h5>
     <h3><u>Enhancing Guest Experience (<a href="https://github.com/leeyanleryan/Data-Analysis/tree/main/Enhancing%20Guest%20Experience%20(DSA3101)" target="_blank">Link</a>)</u></h3>
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <img src="/assets/img/dataanalysis_ege_waittime1.png" alt="Data Analysis EGE Wait Time 1" style="width:100%;">
+      <img src="/assets/img/dataanalysis-ege-waittime1.png" alt="Data Analysis EGE Wait Time 1" style="width:100%;">
     </div>
     <h5 style="margin-bottom:20px">
       The project aimed to enhance overall guest experience at Universal Studios Singapore (USS). This project was completed by me and 7 others for DSA3101, a course in NUS on
@@ -111,7 +111,7 @@ right_url: /about/projects/board-games/
     </h5>
     <br>
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <img src="/assets/img/dataanalysis_ege_models1.png" alt="Data Analysis EGE Models 1" style="width:80%;">
+      <img src="/assets/img/dataanalysis-ege-models1.png" alt="Data Analysis EGE Models 1" style="width:80%;">
     </div>
     <h5 style="margin-bottom:20px">
       Model 1 - Linear Optimization:
@@ -148,7 +148,7 @@ right_url: /about/projects/board-games/
     </h5>
     <br>
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <img src="/assets/img/dataanalysis_ege_comparison1.png" alt="Data Analysis EGE Comparison 1" style="width:60%;">
+      <img src="/assets/img/dataanalysis-ege-comparison1.png" alt="Data Analysis EGE Comparison 1" style="width:60%;">
     </div>
     <h5>
       Comparing Both Models:
@@ -175,7 +175,7 @@ right_url: /about/projects/board-games/
     </h5>
     <br>
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <img src="/assets/img/dataanalysis_ege_usage1.png" alt="Data Analysis EGE Usage 1" style="width:60%;">
+      <img src="/assets/img/dataanalysis-ege-usage1.png" alt="Data Analysis EGE Usage 1" style="width:60%;">
     </div>
     <h5 style="margin-bottom:20px">
       Usage and Implementation:
