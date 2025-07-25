@@ -1,7 +1,3 @@
-html {
-  overflow-y: scroll;
-}
-
 /* Common arrow container styles for large screens */
 .nav-arrow {
   position: fixed;

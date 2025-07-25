@@ -10,9 +10,9 @@ body.dark-mode #left-sidebar {
 }
 
 /* show on desktop */
-@media (min-width: 1181px) {
+/* @media (min-width: 1181px) {
   #left-sidebar {
     display: block;
     left: 0;
   }
-}
+} */
