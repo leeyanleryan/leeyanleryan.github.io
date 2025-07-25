@@ -11,7 +11,7 @@
 /* Dark mode top bar */
 body.dark-mode #topbar {
   background-color: var(--dark-mode-background-color) !important;
-  color: #fff !important;
+  color: var(--dark-mode-text-color) !important;
   border-bottom: var(--dark-mode-border);
 }
 
@@ -46,7 +46,7 @@ body.dark-mode #topbar {
   /* white background + light border in light mode */
   background-color: #fff;
   border: var(--light-mode-border);
-  border-radius: 0.7rem;
+  border-radius: var(--pill-border-radius);
 
   /* text uses the bar’s color (black in light) */
   color: var(--light-mode-text-color);
@@ -63,7 +63,7 @@ body.dark-mode #topbar {
 /* Dark-mode switch */
 body.dark-mode #topbar-search input {
   background-color: #2D2D2D;           /* pitch-black */
-  color: #fff;                      /* white text */
+  color: var(--dark-mode-text-color);    /* white text */
   border: var(--dark-mode-border);  /* matching your dark borders */
 }
 
@@ -110,7 +110,7 @@ body.dark-mode #topbar-search input {
   color: var(--light-mode-text-color);
 
   /* same rounding as your input */
-  border-radius: 0.7rem;
+  border-radius: var(--pill-border-radius);
   /* keep it full-width but inset by the padding-amount */
   display: block;
   width: 100%;

@@ -10,7 +10,7 @@
 }
 
 .media-item {
-  border-radius: 0.5rem;
+  border-radius: var(--pill-border-radius);
 }
 
 .media-item:hover {
@@ -31,7 +31,7 @@ body.dark-mode .media-item:hover {
   aspect-ratio: 16/9;
   object-fit: cover;
   padding: 5px 5px;
-  border-radius: 0.5rem;
+  border-radius: var(--pill-border-radius);
 }
 
 .media-title {

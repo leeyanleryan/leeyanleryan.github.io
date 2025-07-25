@@ -88,7 +88,7 @@ body.dark-mode .sidebar h4 {
 .sidebar .w3-bar-item {
   display: block;
   padding: 8px 12px;
-  border-radius: 10px;
+  border-radius: var(--pill-border-radius);
 }
 
 hr.hr-sidebar {
@@ -143,14 +143,14 @@ body.dark-mode .sidebar .w3-bar-item.active {
 /* the main “Projects” pill */
 .submenu-header .main-link {
   flex: 1;
-  border-radius: 10px;
+  border-radius: var(--pill-border-radius);
   transition: background-color var(--theme-transition) ease;
 }
 
 /* the in-flow submenu */
 .submenu {
   display: none;
-  padding-left: 16px;
+  padding-left: 12px;
 }
 .submenu-wrapper.open .submenu {
   display: block;

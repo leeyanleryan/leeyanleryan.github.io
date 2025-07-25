@@ -14,6 +14,9 @@
   --body-gap-left:      100px;  /* ← increase this for a bigger gap between left arrow & body */
   --body-gap-right:     30px;   /* ← decrease this for a smaller gap between body & right arrow */
 
+  /* border rounding */
+  --pill-border-radius: 0.7rem;
+
   /* theme transition timings */
   --theme-transition: 0.3s;
 
