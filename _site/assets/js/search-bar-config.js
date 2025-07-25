@@ -9,18 +9,23 @@ SimpleJekyllSearch({
 
   sortMiddleware: (a, b) => {
     const q = (a.query || '').toLowerCase();
-
-    // 1) Title‐matches first
+    
+    // Title
     const aInTitle = a.title.toLowerCase().includes(q) ? 1 : 0;
     const bInTitle = b.title.toLowerCase().includes(q) ? 1 : 0;
     if (aInTitle !== bInTitle) return bInTitle - aInTitle;
 
-    // 2) URL‐matches next
+    // Section
+    const aInSection = a.section.toLowerCase().includes(q) ? 1 : 0;
+    const bInSection = b.section.toLowerCase().includes(q) ? 1 : 0;
+    if (aInSection !== bInSection) return bInSection - aInSection;
+
+    // URL
     const aInUrl = a.url.toLowerCase().includes(q) ? 1 : 0;
     const bInUrl = b.url.toLowerCase().includes(q) ? 1 : 0;
     if (aInUrl !== bInUrl) return bInUrl - aInUrl;
 
-    // 3) leave everything else in original order
+    // Everything else
     return 0;
   }
 });
