@@ -2,6 +2,7 @@
 
 
   {
+    
     "title": "Amy",
     "url":   "/lyrics-translations/the-oral-cigarettes/amy/",
     "content": "                  This page is still under construction, please visit at a later time!            ",
@@ -12,9 +13,10 @@
   },
 
   {
+    
     "title": "Board Games",
     "url":   "/about/projects/board-games/",
-    "content": "      Board Games (Link)          This project was created out of an interest in exploring how artificial intelligence (AI) can be applie...",
+    "content": "      Board Games (Link)          This project was created out of an interest in exploring how artificial intelligence (AI) can be applied to board games, which require varying levels       of strategic thinking and logic.        Chess (Link)                              I developed the game logic and user interface for Chess using Qt Creator, an IDE for creating and deploying applications. The code is done in C++       to achieve faster runtimes and enhance my AI's efficiency.               I chose to make an AI for Chess because I believe there is still room for improvement in leading Chess AIs—for instance, Stockfish can reach depths       of 100 but often draws games against itself or other AIs. My aim is for my AI bot to prioritize winning, rather than settling for draws.              Current level of AI: Incomplete        Connect Four (Java Link | Python Link)                              I developed the game logic and user interface for Connect Four in two languages: Java (using Swing and AWT) and Python (using Qt5).              I decided to build a Connect Four AI first, believing it would be simpler than creating an AI for Chess. This process would also help me gain insights       into the challenges I would face when developing a Chess AI.              Current level of AI: Incomplete      ",
     
     
     
@@ -22,9 +24,10 @@
   },
 
   {
+    
     "title": "Data Analysis",
     "url":   "/about/projects/data-analysis/",
-    "content": "      Data Analysis (Link)          This project is a compilation of multiple data analysis projects, most of which incorporate the use o...",
+    "content": "      Data Analysis (Link)          This project is a compilation of multiple data analysis projects, most of which incorporate the use of various Machine Learning algorithms for predictions.        Breast Cancer Analysis (Link)                                    The project aimed to classify breast cancer samples (benign vs. malignant) by analyzing imaging attributes from a fine needle aspirate (FNA). It also explored mislabelled      data detection to improve data quality.              This project was completed by me and three others for IT1244, a machine learning course at NUS. We chose this topic because we believed that discovering an effective       solution could significantly benefit the medical field.              Dataset:              569 samples labeled 'B' (benign) or 'M' (malignant)        30 features capturing mean, standard error and \"worst\" measurements of cell nuclei (i.e., radius, texture, concavity)        Correlation analysis identified the most influential features (i.e., radius, concavity, concave points)                                            The problem was split into two tasks. For the first task, we are told that some labels have been mislabelled, and we are required to detect them. We utilised several      methods, combining them together to perform a multi-faceted approach in the detection process.              The attribute 'radius' refers to the radius of the tumour. The bigger the tumour, the more harmful it is, falling into the malignant category. We performed feature      engineering on this attribute, taking the squared difference and cubed difference of radius_worst and radius_mean. This allowed the data to split almost perfectly      into two categories, one benign (blue), the other malignant (red). The blues above the curve and the reds below the curve are considered mislabelled data.              Task 1 - Mislabelled Data Detection Methods:              Feature Engineering: Computed differences (worst - mean) and examined squared/cubed values to distinguish benign vs. malignant curves        K-Means Clustering: Ran multiple initializations to find consistent outliers        Logistic Regression: Tested whether flagged points consistently mismatched the known labels                                                        For the second task, we are required to classify the type of breast cancer ('B' vs 'M') given the diagnosis. To do this, we employed the use of several Machine      Learning algorithms, using 10-fold cross-validation and multiple metrics like Accuracy, F1 Score and ROC-AUC to assess the model.              For the pictures, from left to right, the ROC-AUC curves are obtained from the Machine Learning approaches below respectively. If the image is too small, you      can zoom in or right click, then open image in new tab.              Task 2 - Breast Cancer Classification Approaches:              Logistic Regression (LR)        k-Nearest Neighbours (kNN)        Random Forest (RF)        Support Vector Machines (SVM)                                      Key Results:              SVM performed best across all metrics, suggesting it handles high-dimensional, non-linear data effectively        LR came in a close second, indicating the decision boundary might not be overly complex        kNN struggled in higher dimensions without additional feature reduction        RF showed signs of overfitting and noise sensitivity with certain irrelevant features              Enhancing Guest Experience (Link)                        The project aimed to enhance overall guest experience at Universal Studios Singapore (USS). This project was completed by me and 7 others for DSA3101, a course in NUS on      practical Data Science.              My objective is to optimally allocate staff to different attractions at an amusement park (e.g., Universal Studios Singapore) in order to reduce wait times and improve guest       satisfaction. Two models: Linear Optimization and Greedy Heuristic, are compared.                                Model 1 - Linear Optimization:              Objective: Minimize the total deviation from a target staff allocation        Constraints:                      Total staff assigned must not exceed the available staff            Each attraction has a minimum staff requirement            Staff allocation must be close to forecasted wait times                          Insights:                      Tends to produce allocations proportional to ride wait times            Occassionally fails to find a feasible solution if constraints are too tight                                      Model 2 - Greedy Heuristic:              Objective: Reduce overall wait times by continually allocating staff to the ride with the highest current wait time        Wait-Time Formula: Each additional staff reduces wait time by a certain factor (i.e., 0.95)        Insights:                      Always yields a feasible solution            May produce a more uniform allocation than the linear model            Assumes wait time decreases consistently with each staff addition, which might not always be true                                                        Comparing Both Models:              Allocations:                      Linear Optimization often mirrors the distribution of forecasted wait times            Greedy Heuristic focuses on whichever ride currently has the longest wait, potentially distributing staff less proportionally                          Decision Rule:                      By default, pick the model that allocates more staff to the highest-wait attraction            If both allocate equally, default to Linear Optimization (since it tracks wait-time distribution more closely)                          Trade-Offs:                      Greedy is guaranteed feasible but might over-allocate staff to a single ride if it assumes continuous wait-time reductions            Linear Optimization can fail in certain scenarios but often reflects a more directly proportional distribution                                                        Usage and Implementation:                        User Inputs:                      Forecasted wait times            Total available staff            Minimum staff per attraction            (Optional) A reduction factor for the Greedy model                                    Outputs:                      Recommended staff allocation from each model, plus a final “chosen” allocation based on the decision rule            Bar plots visualizing how each model distributes staff                          Observations:                      Both models run quickly (milliseconds)            Stakeholders can override the recommended choice if they prefer a more uniform distribution or have other practical considerations                                      By comparing Linear Optimization and a Greedy Heuristic, this system provides two distinct allocations for staff assignment—one aligning more proportionally       with forecasted wait times, and another always feasible but potentially less proportional. Users can choose the final allocation that best fits their operational       goals and constraints.      ",
     
     
     
@@ -32,9 +35,10 @@
   },
 
   {
+    
     "title": "Digital Production Assistant",
     "url":   "/about/experiences/digital-production-assistant/",
-    "content": "      Digital Production Assistant                                    I collaborated with 3 professors and 2 other digital production ass...",
+    "content": "      Digital Production Assistant                                    I collaborated with 3 professors and 2 other digital production assistants on producing engaging      educational videos on Generative AI and Machine Learning. These videos are made for courses published      under NUS Blended Learning 2.0, to be used by NUS professors and staff to gain relevant knowledge on       recent AI/ML advancements.              The general workflow starts from understanding lecture slides made by the professors, converting them       into slides that are simple to understand, as well as integrating PowerPoint animations and transitions       to convey information better. Afterwards, we used Camtasia to mix the voice recordings and slides together,      ensuring that volume levels stay consistent throughout the video. Lastly, we added captions using Descript,      which are stored in .srt files so that the viewer can disable and enable captions whenever needed.              Topics contributed:              Prompt Engineering for Large Language Models        Introduction to Generative AI        k-Nearest Neighbors        Decision Tree        Convolutional Neural Networks        Recurrent Neural Networks            ",
     
     
     
@@ -42,6 +46,7 @@
   },
 
   {
+    
     "title": "Flower",
     "url":   "/lyrics-translations/the-oral-cigarettes/flower/",
     "content": "                  This page is still under construction, please visit at a later time!            ",
@@ -52,9 +57,10 @@
   },
 
   {
+    
     "title": "My Profile",
     "url":   "/about/profile/",
-    "content": "      Profile              Hi! Welcome to my website. My name is Ryan Lee, and I am currently an undergraduate at National University of ...",
+    "content": "      Profile              Hi! Welcome to my website. My name is Ryan Lee, and I am currently an undergraduate at National University of Singapore (NUS), studying      Data Science and Analytics. In the near future, I am hoping to undertake a Masters or PhD programme to dive deeper into my topics of interests.            I have a deep passion for Artificial Intelligence and Machine Learning, which I explore in my projects. For my 'Board Games' projects, I design the      game logic for several board games such as Chess, allowing me to implement AI into enemy bots. For my 'Data Analysis' projects, I employ several       Machine Learning algorithms onto datasets for analysis and predictions.            My hobbies include reading, playing computer games, playing piano and walking. In the 'Hobbies' section, I showcase rankings I have achieved       across various competitive games.            If you would like to find out more about me, you can navigate to different sections by clicking on the arrows on the left or right, or use the      menu button at the top-left of the page.                Resume          Preview |      Download              Contact          Email: leeyanleryan.21@gmail.com      Discord: leeyanleryan      ",
     
     
     
@@ -62,9 +68,10 @@
   },
 
   {
+    
     "title": "My Awards",
     "url":   "/about/awards/",
-    "content": "      Achievements                  NUS Sudoku Competition 2023: Awarded second runner-up                    JPJC Inter-House Games 2018:...",
+    "content": "      Achievements                  NUS Sudoku Competition 2023: Awarded second runner-up                    JPJC Inter-House Games 2018: Awarded 3rd place for Brawlhalla (Mixed)                    Edusave Awards 2013, 2014, 2017, 2018: Awarded over $2000 SGD                    CCPS Sports Carnival 2012: Awarded 1st place                    CCPS Lower Primary Games 2010: Awarded 2nd place                    CCPS Lower Primary Games 2008: Awarded 1st place                      Certifications                  Orbital - Artemis (Extreme): Awarded for achieving the highest level of achievement in CP2106, a         self-directed software engineering project course at NUS. For more information on the SWE project I        completed, check the Orbital NUqueSt page under the 'Projects' section in the menu.                    Teach Singapore: Awarded for the completion of GEN2050Y, an integrated service-learning course hosted        by NUS for the education sector to help uplift primary and secondary school students from less-privileged         family circumstances.            ",
     
     
     
@@ -72,9 +79,10 @@
   },
 
   {
+    
     "title": "My Projects",
     "url":   "/about/projects/",
-    "content": "          My Projects                                                                                                  Orbital NUqueSt   ...",
+    "content": "          My Projects                                                                                                  Orbital NUqueSt                              A 2D top-down action-adventure game in Unity to gamify NUS courses.                                                                                                                                                    Data Analysis                              Compilation of various data analysis projects using Machine Learning.                                                                                                                                                    Board Games                              Offline Board Games with UI and AI.                                                                                                                                                    Puzzle Solvers                              Automated Sudoku solver using Computer Vision and AI search.                                                          ",
     
     
     
@@ -82,9 +90,10 @@
   },
 
   {
+    
     "title": "My Hobbies",
     "url":   "/about/hobbies/",
-    "content": "      Reading          I like reading both fiction and non-fiction. Recommend me some books to read!              Books read:            ...",
+    "content": "      Reading          I like reading both fiction and non-fiction. Recommend me some books to read!              Books read:              Harry Potter and the Sorcerer's Stone        Harry Potter and the Chamber of Secrets        Harry Potter and the Prisoner of Azkaban        Harry Potter and the Goblet of Fire        Harry Potter and the Order of the Phoenix        Harry Potter and the Half-Blood Prince        Harry Potter and the Deathly Hallows        The Hobbit        Lord of the Rings: The Fellowship of the Ring        Lord of the Rings: The Two Towers        Lord of the Rings: The Return of the King                    Gaming    Rocket League                                      Rocket League Stat Tracker            Peak Rating: Grand Champion III Division I (1723 Rating), 28/01/2023      Peak Ranking: Singapore Rank #1, 23/09/2018        Brawlhalla                                Brawlhalla Stat Tracker            Peak ELO: Valhallan (2302 ELO), 02/11/2024      Peak Ranking: South-East Asia Rank #24, 02/11/2024        osu!                                      osu! Profile            Peak PP Play: Epitaph (705pp), 25/06/2024      Peak Ranking: Global Rank #2067, 30/09/2024        Marvel Rivals                                Marvel Rivals Stat Tracker            Peak RS: Grandmaster III (4504 RS), 13/03/2025        Valorant                                Valorant Stat Tracker            Peak Rating: Diamond I, 04/08/2022                Piano          I am self-taught. I learn from watching MIDI covers on YouTube.              Pieces learnt:              Canon in D        River Flows in You        Fur Elise        Hollow Knight        Wet Hands            ",
     
     
     
@@ -92,6 +101,7 @@
   },
 
   {
+    
     "title": "Home",
     "url":   "/",
     "content": "",
@@ -102,6 +112,7 @@
   },
 
   {
+    
     "title": "Lyrics Translations",
     "url":   "/lyrics-translations/",
     "content": "",
@@ -112,6 +123,7 @@
   },
 
   {
+    
     "title": "About",
     "url":   "/about/",
     "content": "",
@@ -122,9 +134,10 @@
   },
 
   {
+    
     "title": "My Experiences",
     "url":   "/about/experiences/",
-    "content": "          My Experiences                                                                                                  Digital Product...",
+    "content": "          My Experiences                                                                                                  Digital Production Assistant                              Created engaging educational videos on Machine Learning,  Artificial Intelligence, and Deep Learning.                                                                                                                                                    Teaching Assistant                              Taught CS1010E Programming Methodology to 25 undergraduates.                                                          ",
     
     
     
@@ -132,9 +145,10 @@
   },
 
   {
+    
     "title": "The Oral Cigarettes",
     "url":   "/lyrics-translations/the-oral-cigarettes/",
-    "content": "          The Oral Cigarettes                                                                                                  Amy       ...",
+    "content": "          The Oral Cigarettes                                                                                                  Amy                              From the album \"FIXION\", 2016.                                                                                                                                                    Flower                              From the album \"Black Memory\", 2017.                                                          ",
     
     
     
@@ -142,9 +156,10 @@
   },
 
   {
+    
     "title": "Orbital NUqueSt",
     "url":   "/about/projects/orbital-nuquest/",
-    "content": "      Orbital NUqueSt (Link)                                      NUqueSt is a 2D Top-Down Action-Adventure Singleplayer Questing game. I...",
+    "content": "      Orbital NUqueSt (Link)                                      NUqueSt is a 2D Top-Down Action-Adventure Singleplayer Questing game. It was heavily inspired by Stardew Valley, incorporating core gameplay elements      such as fighting, farming and mining. It features 3 different biomes, 8 Non-Playable-Characters (NPCs), 6 ores, 3 enemies, 1 boss and 40 quests.                                      The main purpose of creating NUqueSt was to help familiarise incoming undergraduates with the challenges of various courses in a fun and interactive way.      We achieved this by gamifying each course into a quest. For example, the computing course “CS1010” became an N-Queens puzzle, where players had to provide       two valid configurations for placing 6 queens on a 6x6 board. These quests are given by the NPCs, and reward the player with GPA upon completion.                                                    My friend              Thaw and I developed NUqueSt for CP2106 (Orbital), a three-month software engineering course at NUS during AY22/23 Special Term. We followed         an agile methodology with monthly sprints. Each sprint began with planning feasible features and ended with peer reviews, alongside the creation of a         poster and video to showcase the project. We then incorporated feedback in subsequent sprints, guiding us toward the right direction.                                      For our project, we were awarded Artemis (Extreme), the highest level of achievement, placing us roughly in the top 5% of the cohort. The link to the      digital certificate can be found       here.      ",
     
     
     
@@ -152,9 +167,10 @@
   },
 
   {
+    
     "title": "Puzzle Solvers",
     "url":   "/about/projects/puzzle-solvers/",
-    "content": "      Puzzle Solvers (Link)          This project was created out of an interest in applying computer vision and AI to puzzle-solving. Th...",
+    "content": "      Puzzle Solvers (Link)          This project was created out of an interest in applying computer vision and AI to puzzle-solving. The end goal of this project is to make a phone application, capable of reading       pictures taken from the phone. Its main functionality would be to solve puzzles, but I may choose to expand into a more general direction.        Sudoku (Link)                        I developed the solver logic in Python. Currently, it is able to take a screenshot of a sudoku puzzle from https://sudoku.com,      read the screenshot, solve the sudoku, and automatically inputs the solution back onto the website. The entire process is automated, and is done with the press      of a single button.              The solver is done using a simple AI search technique known as Depth-First Search (DFS). The image reader is done using a technique similar to the k-Nearest Neighbours (kNN)       algorithm. Both solver and reader are using inefficient methods, so it takes approximately 5-10 seconds to solve the sudoku, depending on the complexity.      ",
     
     
     
@@ -162,9 +178,10 @@
   },
 
   {
+    
     "title": "Teaching Assistant",
     "url":   "/about/experiences/teaching-assistant/",
-    "content": "      Teaching Assistant                              I taught 25 NUS undergraduates CS1010E, a course on programming methodology in Pyth...",
+    "content": "      Teaching Assistant                              I taught 25 NUS undergraduates CS1010E, a course on programming methodology in Python. The course      educates students from the ground up, allowing those with no programming background to acquire computational      skills at a moderate pace while having fun.               I incorporated animations and transitions learnt from my digital production assistant role into the PowerPoint      slides. This allowed me to better visualise the flow of the code to bridge learning gaps. The animations also      helped in keeping the students engaged in looking at the slides, as it would capture their attention.                                                For their first lesson, I conducted the 'Spaghetti Tower' icebreaker challenge as a way to convey the analogy     that coding is an iterative process. The goal of the challenge was to make the tallest tower using spaghetti    sticks and marshmallow. The students were split into 4 different groups, each building unique structures. The    tallest tower was around 50cm.                                    I received 9 nominations for teaching excellence, as well as better reviews on average compared to several    departments, showing the efficiency of my teaching. The feedback report can be found     here.            Topics taught:          Variables      Expressions      Functions      Iteration      Recursion      Sequences      Higher Order Functions      File I/O      Multi-Dimensional Arrays      Object-Oriented Programming      Searching      Sorting      Time/Space Complexity      Exceptions          ",
     
     
     

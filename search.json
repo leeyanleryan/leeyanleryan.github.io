@@ -6,12 +6,14 @@ permalink: /search.json
 {% assign pages = site.pages | where_exp:"p","p.title" %}
 {% for page in pages %}
   {
+    {% comment %}
+      "content" truncate: 140
+    {% endcomment %}
     "title": {{ page.title | jsonify }},
     "url":   {{ page.url   | jsonify }},
     "content": {{ page.content 
                    | strip_html 
                    | strip_newlines 
-                   | truncate: 140 
                    | jsonify }},
     {% assign parts = page.url | split:'/' %}
     {% assign length = parts | size %}

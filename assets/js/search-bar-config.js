@@ -25,6 +25,11 @@ SimpleJekyllSearch({
     const bInUrl = b.url.toLowerCase().includes(q) ? 1 : 0;
     if (aInUrl !== bInUrl) return bInUrl - aInUrl;
 
+    // 4) Content
+    const aContent = a.content.toLowerCase().includes(q) ? 1 : 0;
+    const bContent = b.content.toLowerCase().includes(q) ? 1 : 0;
+    if (aContent !== bContent) return bContent - aContent;
+
     // Everything else
     return 0;
   }
