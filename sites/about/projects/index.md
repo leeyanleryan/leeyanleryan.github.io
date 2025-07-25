@@ -16,7 +16,7 @@ right_url: /about/projects/orbital-nuquest/
       | where_exp:"p","p.url contains '/about/projects/'"
       | sort:"order" %}
 
-    <h1>{{ page.title }}</h1>
+    <h2><b>{{ page.title }}</b></h2>
     {% include media-list.html items=projects exclude=page.url %}
   </section>
 </div>

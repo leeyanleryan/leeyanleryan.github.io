@@ -1,12 +1,64 @@
-/* Remove default bullets & spacing from your media list */
 .media-list {
   list-style: none;    /* no bullets */
   margin: 0;           /* reset default ul margin */
   padding: 0;          /* reset default ul padding */
 }
 
-/* Optional: remove any indent on the <li> itself */
 .media-list li {
   margin: 0;
   padding: 0;
+}
+
+.media-item {
+  border-radius: 0.5rem;
+}
+
+.media-item:hover {
+  background-color: rgba(0,0,0,0.03);
+}
+
+body.dark-mode .media-item:hover {
+  background-color: rgba(255,255,255,0.04);
+}
+
+.media-card {
+  display:flex; 
+  align-items:flex-start;
+}
+
+.media-thumb {
+  width:100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  padding: 5px 5px;
+  border-radius: 0.5rem;
+}
+
+.media-title {
+  margin-top: 5px; 
+  margin-left: 15px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+.media-excerpt {
+  margin-top:0; 
+  margin-left:15px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media (min-width: 1181px) {
+  .media-excerpt {
+    -webkit-line-clamp: 2;
+  }
+}
+
+@media (max-width: 1180px) {
+  .media-excerpt {
+    -webkit-line-clamp: 1;
+  }
 }

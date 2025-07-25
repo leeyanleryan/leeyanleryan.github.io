@@ -2,8 +2,15 @@
 - title: Teaching Assistant
   url:   /about/experiences/teaching-assistant/
   image: /assets/gif/ta_animation1.gif/
+  excerpt: >
+    Taught CS1010E Programming Methodology to 25 undergraduates.
   order: -1
+
 - title: Digital Production Assistant
   url:   /about/experiences/digital-production-assistant/
   image: /assets/gif/dpa_animation1.gif/
+  excerpt: >
+    Created engaging educational videos on Machine Learning, 
+    Artificial Intelligence, and Deep Learning.
   order: -2
+  

@@ -73,5 +73,10 @@ body.left-sidebar-open .nav-arrow-right {
     margin: 43px auto 20px 
       calc(var(--sidebar-w)) !important;
   }
+
+  body.left-sidebar-open .w3-main {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
 }
 
