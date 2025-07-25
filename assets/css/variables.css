@@ -37,8 +37,8 @@
   --dark-mode-hover-background-color: rgba(255,255,255,0.04);
 
   /* active background colors for different modes */
-  --light-mode-active-background-color: rgba(0,0,0,0.07);
-  --dark-mode-active-background-color: rgba(255,255,255,0.10);
+  --light-mode-active-background-color: #c0daef;
+  --dark-mode-active-background-color: #2196F3;
 
   /* text colors for different modes */
   --light-mode-text-color: black;
