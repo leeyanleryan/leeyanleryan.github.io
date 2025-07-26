@@ -15,3 +15,7 @@ img {
   touch-action: manipulation;
   -ms-touch-action: manipulation;
 }
+
+/* html [lang="ja"], .jp-text {
+  font-family: "Noto Sans JP", sans-serif;
+} */

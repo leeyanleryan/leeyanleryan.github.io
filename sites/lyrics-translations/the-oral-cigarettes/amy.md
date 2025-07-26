@@ -12,10 +12,60 @@ right_url: /lyrics-translations/the-oral-cigarettes/flower/
 <!-- !PAGE CONTENT! -->
 <div id="page-lyrics-translations-toc" class="w3-main">
   <section id="profile" class="w3-container">
-    <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <h5><i class="fa fa-gear"></i>
-      This page is still under construction, please visit at a later time!
-      <i class="fa fa-gear"></i></h5>
+    <h2><b>Amy</b></h2>
+    <h5>
+      A song from The Oral Cigarettes released in 2016 under the album "FIXION".
+    </h5>
+    <hr class="hr-main-body">
+    <h2><b>Lyrics</b></h2>
+    <div style="text-align:center;">
+      <h5>
+        --------------------------------------<br>
+        <br>
+        「今何してる?」<br>
+        <em>Ima nani shiteru?</em><br>
+        What are you doing right now?<br>
+        <br>
+        「きっと恋してる」<br>
+        <em>Kitto koishiteru</em><br>
+        I'm surely in love.<br>
+        <br>
+        「こんな思いなんて初めてなの」って<br>
+        <em>Konna omoi nante hajimete nano tte</em><br>
+        It's the first time I've had feelings like this.<br>
+        <br>
+        本当にわかってくれてたのは<br>
+        <em>Hontou ni wakatte kureteta no wa</em><br>
+        The one who truly understood me...<br>
+        <br>
+        君のほうだと気付いた<br>
+        <em>Kimi no hou da to kidzuita</em><br>
+        I realized it was you.<br>
+        <br>
+        --------------------------------------<br>
+        <br>
+        知らないうちに<br>
+        <em>Shiranai uchi ni</em><br>
+        Without realizing it,<br>
+        <br>
+        長い道のりを歩いたね僕ら<br>
+        <em>Nagai michi nori wo aruita ne bokura</em><br>
+        We've come a long way together.<br>
+        <br>
+        ずっと君のためだって<br>
+        <em>Zutto kimi no tame datte</em><br>
+        It was always for you.<br>
+        <br>
+        思ってたんだよ<br>
+        <em>Omotteta nda yo</em><br>
+        That's what I was thinking.<br>
+        <br>
+        --------------------------------------<br>
+        <br>
+        諦めてた君との時間に<br>
+        <em>Akirameteta kimi to no jikan ni</em><br>
+        <br>
+      </h5>
     </div>
   </section>
 </div>
