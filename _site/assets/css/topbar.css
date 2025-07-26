@@ -27,7 +27,7 @@ body.dark-mode #topbar {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: clamp(200px, 50%, 600px);
+  width: clamp(150px, 45vw, 600px);
 }
 
 /* Style the input itself */
