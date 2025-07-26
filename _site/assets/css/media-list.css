@@ -21,6 +21,15 @@ body.dark-mode .media-item:hover {
   background-color: var(--dark-mode-hover-background-color);
 }
 
+a.media-link {
+  text-decoration: none;
+}
+
+a.media-link:hover,
+a.media-link:focus {
+  text-decoration: none;
+}
+
 .media-card {
   display:flex; 
   align-items:flex-start;
