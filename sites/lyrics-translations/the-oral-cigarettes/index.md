@@ -16,7 +16,7 @@ right_url: /lyrics-translations/the-oral-cigarettes/amy/
       | where_exp:"p","p.url contains '/lyrics-translations/the-oral-cigarettes/'"
       | sort:"title" %}
 
-    <h1>{{ page.title }}</h1>
+    <h2><b>{{ page.title }}</b></h2>
     {% include media-list.html items=the-oral-cigarettes exclude=page.url %}
   </section>
 </div>

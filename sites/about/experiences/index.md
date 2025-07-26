@@ -16,7 +16,7 @@ right_url: /about/experiences/digital-production-assistant/
       | where_exp:"p","p.url contains '/about/experiences/'"
       | sort:"order" %}
 
-    <h1>{{ page.title }}</h1>
+    <h2><b>{{ page.title }}</b></h2>
     {% include media-list.html items=experiences exclude=page.url %}
   </section>
 </div>
