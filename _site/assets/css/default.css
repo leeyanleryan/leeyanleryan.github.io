@@ -15,8 +15,8 @@ img {
 
 .no-double-tap-zoom {
   -webkit-tap-highlight-color: transparent;
-  touch-action: manipulation;
   -ms-touch-action: manipulation;
+  touch-action: manipulation;
 }
 
 @media (hover: hover) and (pointer: fine) {
