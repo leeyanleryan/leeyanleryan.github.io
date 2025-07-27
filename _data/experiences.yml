@@ -1,4 +1,4 @@
-# append experience, order negative to sort reversed
+# To add an experience, append it with decreasing order
 - title: Teaching Assistant
   url:   /about/experiences/teaching-assistant/
   image: /assets/gif/ta-animation1.gif

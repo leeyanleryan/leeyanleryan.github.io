@@ -15,6 +15,16 @@ lyrics:
     kanji:   "「今何してる?」"
     romaji:  "Ima nani shiteru?"
     english: "What are you doing right now?"
+    explanation:
+      - kanji: "今"
+        hiragana: "いま"
+        english: "now"
+      - kanji: "何"
+        hiragana: "なに"
+        english: "what"
+      - hiragana: "してる"
+        romaji: "してる"
+        english: "doing (to be in)"
 
   - lang:    "jp"
     kanji:   "「きっと恋してる」"
@@ -213,17 +223,19 @@ lyrics:
     <h5>
       Follows line by line from <a href="https://open.spotify.com/track/1PubxlFeesWDghC3B9I280?si=dfdd361e391e4041" target="_blank"> Spotify</a>.
     </h5>
-    <div style="text-align:center; padding-top:2px;">
+    <div class="lyrics-translations">
       <h5>
         {% for line in page.lyrics %}
           {% if line.divider %}
-            --------------------------------------<br>
+            -----------------------------------<br>
           {% else %}
-            {% if line.lang == "jp" %}
-              {{ line.kanji }}<br>
-              <em>{{ line.romaji }}</em><br>
-              {{ line.english }}<br>
-            {% endif %}
+            <div class="lyrics-stanza">
+              {% if line.lang == "jp" %}
+                {{ line.kanji }}<br>
+                <em>{{ line.romaji }}</em><br>
+                {{ line.english }}<br>
+              {% endif %}
+            </div>
           {% endif %}
           <br>
         {% endfor %}
