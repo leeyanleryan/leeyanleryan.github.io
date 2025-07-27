@@ -14,7 +14,7 @@
 .lyrics-explanation {
   display: none;
   margin: 10px auto 10px;
-  max-width: 600px;
+  max-width: 500px;
   background: var(--light-mode-accent-background-color);
   padding: 4px;
   border-radius: var(--pill-border-radius);
