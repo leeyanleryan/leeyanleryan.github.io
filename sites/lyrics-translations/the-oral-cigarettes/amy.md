@@ -246,7 +246,7 @@ lyrics:
             <ul class="w3-row">
               <h6 class="w3-col s3 m3" style="margin:0;">Kanji</h6>
               <h6 class="w3-col s3 m3" style="margin:0;">Hiragana</h6>
-              <h6 class="w3-col s3 m3" style="margin:0;"><em>Romaji</em></h6> 
+              <h6 class="w3-col s3 m3" style="margin:0;">Romaji</h6> 
               <h6 class="w3-col s3 m3" style="margin:0;">English</h6>
               <hr class="hr-lyrics-explanation">
               {% for expl in line.explanation %}
