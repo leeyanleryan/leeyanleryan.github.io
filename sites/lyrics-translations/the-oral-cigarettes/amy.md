@@ -22,8 +22,8 @@ lyrics:
       - kanji: "何"
         hiragana: "なに"
         english: "what"
-      - hiragana: "してる"
-        romaji: "してる"
+      - kanji: "してる"
+        hiragana: "してる"
         english: "doing (to be in)"
 
   - lang:    "jp"
@@ -221,6 +221,7 @@ lyrics:
     <hr class="hr-main-body">
     <h2><b>Lyrics</b></h2>
     <h5>
+      Click on any section to learn more about it.
       Follows line by line from <a href="https://open.spotify.com/track/1PubxlFeesWDghC3B9I280?si=dfdd361e391e4041" target="_blank"> Spotify</a>.
     </h5>
     <div class="lyrics-translations">
@@ -229,15 +230,24 @@ lyrics:
           {% if line.divider %}
             -----------------------------------<br>
           {% else %}
-            <div class="lyrics-stanza">
+            {% assign idx = forloop.index0 %}
+            <div class="lyrics-stanza no-double-tap-zoom no-hover-background-after-click" data-idx="{{ idx }}">
               {% if line.lang == "jp" %}
                 {{ line.kanji }}<br>
                 <em>{{ line.romaji }}</em><br>
                 {{ line.english }}<br>
               {% endif %}
             </div>
+            <div class="lyrics-explanation" id="exp-{{ idx }}">
+              <ul>
+                {% for expl in line.explanation %}
+                  <li>
+                    {{ expl.kanji }} ({{ expl.hiragana }}): {{ expl.english }}
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
           {% endif %}
-          <br>
         {% endfor %}
       </h5>
     </div>

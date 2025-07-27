@@ -40,6 +40,11 @@
   --light-mode-active-background-color: #b3ddff;
   --dark-mode-active-background-color: #0076d6;
 
+  /* accent background colors for different modes */
+  --light-mode-accent-background-color: #fbfbfb;
+  --dark-mode-accent-background-color: #1e1e1e;
+  --dark-mode-accent2-background-color: #2d2d2d;
+
   /* text colors for different modes */
   --light-mode-text-color: black;
   --dark-mode-text-color: white;

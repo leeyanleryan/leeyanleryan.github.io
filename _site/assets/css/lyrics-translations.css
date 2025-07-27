@@ -1,19 +1,37 @@
 .lyrics-translations {
-    text-align:center; 
-    padding-top:2px;
+    text-align: center; 
+    margin-top: 10px;
 }
 
 .lyrics-stanza {
     width: fit-content;
-    margin: auto;
+    margin: 15px auto 15px;
+    padding: 3px;
     background: transparent;
     border-radius: var(--pill-border-radius);
 }
 
-.lyrics-stanza:hover {
-    background: var(--light-mode-hover-background-color);
+.lyrics-explanation {
+  display: none;
+  margin: 10px auto 10px;
+  max-width: 400px;
+  background: var(--light-mode-accent-background-color);
+  padding: 4px;
+  border-radius: var(--pill-border-radius);
+  font-size: 1rem;
+  transition: background-color var(--theme-transition)
 }
 
-body.dark-mode .lyrics-stanza:hover {
-    background: var(--dark-mode-hover-background-color);
+body.dark-mode .lyrics-explanation {
+    background: var(--dark-mode-accent2-background-color);
+}
+
+.lyrics-explanation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.lyrics-explanation li + li {
+  margin-top: 0.25rem;
 }

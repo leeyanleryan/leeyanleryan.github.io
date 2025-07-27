@@ -44,7 +44,7 @@ body.dark-mode #topbar {
   padding: 0.9rem 0.75rem;
 
   /* white background + light border in light mode */
-  background-color: #fff;
+  background-color: var(--light-mode-accent-background-color);
   border: var(--light-mode-border);
   border-radius: var(--pill-border-radius);
 
@@ -62,7 +62,7 @@ body.dark-mode #topbar {
 
 /* Dark-mode switch */
 body.dark-mode #topbar-search input {
-  background-color: #2D2D2D;           /* pitch-black */
+  background-color: var(--dark-mode-accent2-background-color);
   color: var(--dark-mode-text-color);    /* white text */
   border: var(--dark-mode-border);  /* matching your dark borders */
 }
