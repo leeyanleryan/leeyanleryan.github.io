@@ -16,15 +16,18 @@ lyrics:
     romaji:  "Ima nani shiteru?"
     english: "What are you doing right now?"
     explanation:
-      - kanji: "今"
+      - kanji:    "今"
         hiragana: "いま"
-        english: "now"
-      - kanji: "何"
+        romaji:   "ima"
+        english:  "now"
+      - kanji:    "何"
         hiragana: "なに"
-        english: "what"
-      - kanji: "してる"
+        romaji:   "nani"
+        english:  "what"
+      - kanji:    "してる"
         hiragana: "してる"
-        english: "doing (to be in)"
+        romaji:   "shiteru"
+        english:  "doing (to be in)"
 
   - lang:    "jp"
     kanji:   "「きっと恋してる」"
@@ -225,31 +228,39 @@ lyrics:
       Follows line by line from <a href="https://open.spotify.com/track/1PubxlFeesWDghC3B9I280?si=dfdd361e391e4041" target="_blank"> Spotify</a>.
     </h5>
     <div class="lyrics-translations">
-      <h5>
-        {% for line in page.lyrics %}
-          {% if line.divider %}
-            -----------------------------------<br>
-          {% else %}
-            {% assign idx = forloop.index0 %}
-            <div class="lyrics-stanza no-double-tap-zoom no-hover-background-after-click" data-idx="{{ idx }}">
-              {% if line.lang == "jp" %}
-                {{ line.kanji }}<br>
-                <em>{{ line.romaji }}</em><br>
-                {{ line.english }}<br>
-              {% endif %}
-            </div>
-            <div class="lyrics-explanation" id="exp-{{ idx }}">
-              <ul>
-                {% for expl in line.explanation %}
-                  <li>
-                    {{ expl.kanji }} ({{ expl.hiragana }}): {{ expl.english }}
-                  </li>
-                {% endfor %}
-              </ul>
-            </div>
-          {% endif %}
-        {% endfor %}
-      </h5>
+      {% for line in page.lyrics %}
+        {% if line.divider %}
+          <h5 style="margin:0;">-----------------------------------<br></h5>
+        {% else %}
+          {% assign idx = forloop.index0 %}
+          <div class="lyrics-stanza no-double-tap-zoom no-hover-background-after-click" data-idx="{{ idx }}">
+            {% if line.lang == "jp" %}
+              <h5 style="margin:0;">
+              {{ line.kanji }}<br>
+              <em>{{ line.romaji }}</em><br>
+              {{ line.english }}<br>
+              </h5>
+            {% endif %}
+          </div>
+          <div class="lyrics-explanation" id="exp-{{ idx }}">
+            <ul class="w3-row">
+              <h6 class="w3-col s3 m3" style="margin:0;">Kanji</h6>
+              <h6 class="w3-col s3 m3" style="margin:0;">Hiragana</h6>
+              <h6 class="w3-col s3 m3" style="margin:0;"><em>Romaji</em></h6> 
+              <h6 class="w3-col s3 m3" style="margin:0;">English</h6>
+              <hr class="hr-lyrics-explanation">
+              {% for expl in line.explanation %}
+                <li>
+                  <h6 class="w3-col s3 m3" style="margin:0;">{{ expl.kanji }}</h6>
+                  <h6 class="w3-col s3 m3" style="margin:0;">{{ expl.hiragana }}</h6>
+                  <h6 class="w3-col s3 m3" style="margin:0;"><em>{{ expl.romaji }}</em></h6> 
+                  <h6 class="w3-col s3 m3" style="margin:0;">{{ expl.english }}</h6>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endif %}
+      {% endfor %}
     </div>
   </section>
 </div>

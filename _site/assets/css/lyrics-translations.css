@@ -18,12 +18,14 @@
   background: var(--light-mode-accent-background-color);
   padding: 4px;
   border-radius: var(--pill-border-radius);
-  font-size: 1rem;
-  transition: background-color var(--theme-transition)
+  color: #9f9f9f;
+  transition: background-color var(--theme-transition) ease,
+              color var(--theme-transition) ease;
 }
 
 body.dark-mode .lyrics-explanation {
     background: var(--dark-mode-accent2-background-color);
+    color: #858585;
 }
 
 .lyrics-explanation ul {
@@ -34,4 +36,21 @@ body.dark-mode .lyrics-explanation {
 
 .lyrics-explanation li + li {
   margin-top: 0.25rem;
+}
+
+hr.hr-lyrics-explanation {
+  height: 1px;
+  color: var(--light-mode-border-color);
+  background: var(--light-mode-border-color);
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 0;
+  border: 0;
+  transition: background-color var(--theme-transition) ease, 
+              color var(--theme-transition) ease;
+}
+
+body.dark-mode hr.hr-lyrics-explanation {
+  color: var(--dark-mode-border-color);
+  background: var(--dark-mode-border-color);
 }
