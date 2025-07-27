@@ -178,7 +178,7 @@ lyrics:
         hiragana: "ながい"
         katakana: ""
         romaji:   "nagai"
-        english:  "long (time/distance)"
+        english:  "long (time, distance)"
       - kanji:    "道のり"
         hiragana: "みちのり"
         katakana: ""
@@ -979,24 +979,20 @@ lyrics:
               </h5>
             {% endif %}
           </div>
-          <div class="lyrics-explanation" id="exp-{{ idx }}">
-            <ul class="w3-row">
-              {% if line.lang == "jp" %}
-                <h6 class="w3-col s3 m3" style="margin:0;">Kanji</h6>
-                <h6 class="w3-col s3 m3" style="margin:0;">Hira/Kata</h6>
-                <h6 class="w3-col s3 m3" style="margin:0;">Romaji</h6> 
-                <h6 class="w3-col s3 m3" style="margin:0;">English</h6>
-                <hr class="hr-lyrics-explanation">
-                {% for expl in line.explanation %}
-                  <li>
-                    <h6 class="w3-col s3 m3" style="margin:0;">{{ expl.kanji }}</h6>
-                    <h6 class="w3-col s3 m3" style="margin:0;">{{ expl.hiragana }}{{ expl.katakana }}</h6>
-                    <h6 class="w3-col s3 m3" style="margin:0;"><em>{{ expl.romaji }}</em></h6> 
-                    <h6 class="w3-col s3 m3" style="margin:0;">{{ expl.english }}</h6>
-                  </li>
-                {% endfor %}
-              {% endif %}
-            </ul>
+          <div class="w3-row lyrics-explanation" id="exp-{{ idx }}">
+            {% if line.lang == "jp" %}
+              <h6 class="w3-col s3 m3" style="margin:0;">Kanji</h6>
+              <h6 class="w3-col s3 m3" style="margin:0;">Hira/Kata</h6>
+              <h6 class="w3-col s3 m3" style="margin:0;">Romaji</h6> 
+              <h6 class="w3-col s3 m3" style="margin:0;">English</h6>
+              <hr class="hr-lyrics-explanation">
+              {% for expl in line.explanation %}
+                  <h6 class="w3-col s3 m3" style="margin:0;">{{ expl.kanji }}</h6>
+                  <h6 class="w3-col s3 m3" style="margin:0;">{{ expl.hiragana }}{{ expl.katakana }}</h6>
+                  <h6 class="w3-col s3 m3" style="margin:0;"><em>{{ expl.romaji }}</em></h6> 
+                  <h6 class="w3-col s3 m3" style="margin:0;">{{ expl.english }}</h6>
+              {% endfor %}
+            {% endif %}
           </div>
         {% endif %}
       {% endfor %}

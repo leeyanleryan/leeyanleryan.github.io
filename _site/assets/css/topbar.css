@@ -145,3 +145,7 @@ body.dark-mode #search-results li a:focus {
 #search-results:empty {
   display: none;
 }
+
+#topbar .moon-icon {
+  margin-right: 10px;
+}

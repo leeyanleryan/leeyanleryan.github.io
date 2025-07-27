@@ -155,3 +155,15 @@ body.dark-mode .sidebar .w3-bar-item.active {
 .submenu-wrapper.open .submenu {
   display: block;
 }
+
+.sidebar .profile-picture-icon {
+  width: 46px;
+}
+
+hr.hr-sidebar-invisible {
+  opacity: 0;
+}
+
+.close-side-menu {
+  cursor: pointer;
+}

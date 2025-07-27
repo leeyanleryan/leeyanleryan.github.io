@@ -44,9 +44,9 @@ right_url: /about/projects/
 
   <section id="contact" class="w3-container">
     <h2><b>Contact</b></h2>
-    <ul><h5>
+    <h5><ul>
       <li>Email: leeyanleryan.21@gmail.com</li>
       <li>Discord: leeyanleryan</li>
-    </h5></ul>
+    </ul></h5>
   </section>
 </div>

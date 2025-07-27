@@ -1,6 +1,6 @@
 <!-- Top container -->
 <div id="topbar" class="w3-bar w3-top w3-black w3-large">
-  <button class="w3-bar-item w3-button w3-hover-none w3-hover-text-grey no-double-tap-zoom" onclick="w3_open()">
+  <button class="w3-bar-item w3-button w3-hover-none w3-hover-text-grey no-double-tap-zoom" onclick="w3_open()" type="button">
     <i class="fa fa-bars"></i>  Menu
   </button>
   <form id="topbar-search" onsubmit="return false;">
@@ -8,9 +8,9 @@
     <ul id="search-results"></ul>
   </form>
   <span class="w3-bar-item w3-right">
-    <i class="fa fa-moon-o" style="margin-right:10px"></i>
+    <i class="fa fa-moon-o moon-icon"></i>
     <label class="switch">
-      <input id="toggle-dark-mode" type="checkbox">
+      <input id="toggle-dark-mode" type="checkbox" title="Toggle theme">
       <span class="slider"></span>
     </label>
   </span>
