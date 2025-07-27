@@ -12,9 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
 document.querySelectorAll('.no-hover-background-after-click').forEach(stanza => {
   stanza.addEventListener('touchstart', () => {
     stanza.classList.add('touch-active');
-    setTimeout(() => el.classList.remove('touch-active'), 200);
-  });
-  stanza.addEventListener('touchend', () => {
-    stanza.classList.remove('touch-active');
+    setTimeout(() => stanza.classList.remove('touch-active'), 200);
   });
 });
