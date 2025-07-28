@@ -145,12 +145,21 @@ body.dark-mode .arrow-symbol {
   color: #757575 !important;
 }
 
+.nav-bottom a:active {
+  color: var(--light-mode-text-color) !important;
+}
+
 /* Dark Mode overrides for bottom nav */
 body.dark-mode .nav-bottom {
   background-color: var(--dark-mode-background-color);
   color: var(--dark-mode-text-color);
   border-top: var(--dark-mode-border);
 }
+
 body.dark-mode .nav-bottom a {
   color: var(--dark-mode-text-color);
+}
+
+body.dark-mode .nav-bottom a:active {
+  color: var(--dark-mode-text-color) !important;
 }
