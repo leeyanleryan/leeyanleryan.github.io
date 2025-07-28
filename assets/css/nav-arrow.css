@@ -29,7 +29,8 @@
   white-space: normal;
   word-break: break-word;
   text-align: center;
-  margin-bottom: 0.25rem;  /* gap between last line and arrow */
+  padding-bottom: 0.25rem;  /* gap between last line and arrow */
+  margin-bottom: 0px;
   line-height: 1.2;        /* tweak to taste */
 }
 
@@ -37,6 +38,17 @@
 .nav-arrow:hover .nav-label {
   color: #757575 !important;
 }
+
+.nav-arrow:active .arrow-symbol,
+.nav-arrow:active .nav-label {
+  color: var(--light-mode-text-color) !important;
+}
+
+body.dark-mode .nav-arrow:active .arrow-symbol,
+body.dark-mode .nav-arrow:active .nav-label {
+  color: var(--dark-mode-text-color) !important;
+}
+
 
 /* remove the default underline */
 a.nav-arrow {
