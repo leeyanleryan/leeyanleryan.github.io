@@ -1,9 +1,0 @@
-title: leeyanleryan
-description: >-
-  Portfolio and projects of Lee Yan Le (Ryan)
-baseurl: ""
-url: "https://calm-mushroom-0f6710b00.1.azurestaticapps.net"
-
-theme: null
-plugins:
-  - jekyll-redirect-from
