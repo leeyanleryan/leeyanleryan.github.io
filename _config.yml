@@ -1,8 +1,8 @@
 title: leeyanleryan
 description: >-
-  Portfolio and projects of Lee Yan Le (Ryan)
+  Lee Yan Le Ryan's Website
 baseurl: ""
-url: ""
+url: "https://leeyanleryan.github.io"
 
 theme: null
 plugins:
