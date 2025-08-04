@@ -58,20 +58,9 @@
 
   {
     
-    "title": "My Profile",
-    "url":   "/about/profile/",
-    "content": "      Profile              Hi! Welcome to my website. My name is Ryan Lee, and I am currently an undergraduate at National University of Singapore (NUS), studying      Data Science and Analytics. In the near future, I am hoping to undertake a Masters or PhD programme to dive deeper into my topics of interests.            I have a deep passion for Artificial Intelligence and Machine Learning, which I explore in my projects. For my 'Board Games' projects, I design the      game logic for several board games such as Chess, allowing me to implement AI into enemy bots. For my 'Data Analysis' projects, I employ several       Machine Learning algorithms onto datasets for analysis and predictions.            My hobbies include reading, playing computer games, playing piano and walking. In the 'Hobbies' section, I showcase rankings I have achieved       across various competitive games.            If you would like to find out more about me, you can navigate to different sections by clicking on the arrows on the left or right, or use the      menu button at the top-left of the page.                Resume          Preview |      Download              Contact          Email: leeyanleryan.21@gmail.com      Discord: leeyanleryan      ",
-    
-    
-    
-    "section": "About"
-  },
-
-  {
-    
-    "title": "My Awards",
-    "url":   "/about/awards/",
-    "content": "      Achievements                  NUS Sudoku Competition 2023: Awarded second runner-up                    JPJC Inter-House Games 2018: Awarded 3rd place for Brawlhalla (Mixed)                    Edusave Awards 2013, 2014, 2017, 2018: Awarded over $2000 SGD                    CCPS Sports Carnival 2012: Awarded 1st place                    CCPS Lower Primary Games 2010: Awarded 2nd place                    CCPS Lower Primary Games 2008: Awarded 1st place                      Certifications                  Orbital - Artemis (Extreme): Awarded for achieving the highest level of achievement in CP2106, a         self-directed software engineering project course at NUS. For more information on the SWE project I        completed, check the Orbital NUqueSt page under the 'Projects' section in the menu.                    Teach Singapore: Awarded for the completion of GEN2050Y, an integrated service-learning course hosted        by NUS for the education sector to help uplift primary and secondary school students from less-privileged         family circumstances.            ",
+    "title": "My Hobbies",
+    "url":   "/about/hobbies/",
+    "content": "      Reading          I like reading both fiction and non-fiction. Recommend me some books to read!              Books read:              Harry Potter and the Sorcerer's Stone        Harry Potter and the Chamber of Secrets        Harry Potter and the Prisoner of Azkaban        Harry Potter and the Goblet of Fire        Harry Potter and the Order of the Phoenix        Harry Potter and the Half-Blood Prince        Harry Potter and the Deathly Hallows        The Hobbit        Lord of the Rings: The Fellowship of the Ring        Lord of the Rings: The Two Towers        Lord of the Rings: The Return of the King                    Gaming    Rocket League                                      Rocket League Stat Tracker            Peak Rating: Grand Champion III Division I (1723 Rating), 28/01/2023      Peak Ranking: Singapore Rank #1, 23/09/2018        Brawlhalla                                Brawlhalla Stat Tracker            Peak ELO: Valhallan (2302 ELO), 02/11/2024      Peak Ranking: South-East Asia Rank #24, 02/11/2024        osu!                                      osu! Profile            Peak PP Play: Epitaph (705pp), 25/06/2024      Peak Ranking: Global Rank #2067, 30/09/2024        Marvel Rivals                                Marvel Rivals Stat Tracker            Peak RS: Grandmaster III (4504 RS), 13/03/2025        Valorant                                Valorant Stat Tracker            Peak Rating: Diamond I, 04/08/2022                Piano          I am self-taught. I learn from watching MIDI covers on YouTube.              Pieces learnt:              Canon in D        River Flows in You        Fur Elise        Hollow Knight        Wet Hands            ",
     
     
     
@@ -91,30 +80,19 @@
 
   {
     
-    "title": "My Hobbies",
-    "url":   "/about/hobbies/",
-    "content": "      Reading          I like reading both fiction and non-fiction. Recommend me some books to read!              Books read:              Harry Potter and the Sorcerer's Stone        Harry Potter and the Chamber of Secrets        Harry Potter and the Prisoner of Azkaban        Harry Potter and the Goblet of Fire        Harry Potter and the Order of the Phoenix        Harry Potter and the Half-Blood Prince        Harry Potter and the Deathly Hallows        The Hobbit        Lord of the Rings: The Fellowship of the Ring        Lord of the Rings: The Two Towers        Lord of the Rings: The Return of the King                    Gaming    Rocket League                                      Rocket League Stat Tracker            Peak Rating: Grand Champion III Division I (1723 Rating), 28/01/2023      Peak Ranking: Singapore Rank #1, 23/09/2018        Brawlhalla                                Brawlhalla Stat Tracker            Peak ELO: Valhallan (2302 ELO), 02/11/2024      Peak Ranking: South-East Asia Rank #24, 02/11/2024        osu!                                      osu! Profile            Peak PP Play: Epitaph (705pp), 25/06/2024      Peak Ranking: Global Rank #2067, 30/09/2024        Marvel Rivals                                Marvel Rivals Stat Tracker            Peak RS: Grandmaster III (4504 RS), 13/03/2025        Valorant                                Valorant Stat Tracker            Peak Rating: Diamond I, 04/08/2022                Piano          I am self-taught. I learn from watching MIDI covers on YouTube.              Pieces learnt:              Canon in D        River Flows in You        Fur Elise        Hollow Knight        Wet Hands            ",
+    "title": "The Oral Cigarettes",
+    "url":   "/lyrics-translations/the-oral-cigarettes/",
+    "content": "          The Oral Cigarettes                                                                                                  Amy                              From the album \"FIXION\", 2016.                                                                                                                                                    Flower                              From the album \"Black Memory\", 2017.                                                          ",
     
     
     
-    "section": "About"
+    "section": "Lyrics\n        \n          Translations"
   },
 
   {
     
     "title": "Home",
     "url":   "/",
-    "content": "",
-    
-    
-    
-    "section": "-"
-  },
-
-  {
-    
-    "title": "Lyrics Translations",
-    "url":   "/lyrics-translations/",
     "content": "",
     
     
@@ -146,13 +124,35 @@
 
   {
     
-    "title": "The Oral Cigarettes",
-    "url":   "/lyrics-translations/the-oral-cigarettes/",
-    "content": "          The Oral Cigarettes                                                                                                  Amy                              From the album \"FIXION\", 2016.                                                                                                                                                    Flower                              From the album \"Black Memory\", 2017.                                                          ",
+    "title": "My Awards",
+    "url":   "/about/awards/",
+    "content": "      Achievements                  NUS Sudoku Competition 2023: Awarded second runner-up                    JPJC Inter-House Games 2018: Awarded 3rd place for Brawlhalla (Mixed)                    Edusave Awards 2013, 2014, 2017, 2018: Awarded over $2000 SGD                    CCPS Sports Carnival 2012: Awarded 1st place                    CCPS Lower Primary Games 2010: Awarded 2nd place                    CCPS Lower Primary Games 2008: Awarded 1st place                      Certifications                  Orbital - Artemis (Extreme): Awarded for achieving the highest level of achievement in CP2106, a         self-directed software engineering project course at NUS. For more information on the SWE project I        completed, check the Orbital NUqueSt page under the 'Projects' section in the menu.                    Teach Singapore: Awarded for the completion of GEN2050Y, an integrated service-learning course hosted        by NUS for the education sector to help uplift primary and secondary school students from less-privileged         family circumstances.            ",
     
     
     
-    "section": "Lyrics\n        \n          Translations"
+    "section": "About"
+  },
+
+  {
+    
+    "title": "My Profile",
+    "url":   "/about/profile/",
+    "content": "      Profile              Hi! Welcome to my website. My name is Ryan Lee, and I am currently an undergraduate at National University of Singapore (NUS), studying      Data Science and Analytics. In the near future, I am hoping to undertake a Masters or PhD programme to dive deeper into my topics of interests.            I have a deep passion for Artificial Intelligence and Machine Learning, which I explore in my projects. For my 'Board Games' projects, I design the      game logic for several board games such as Chess, allowing me to implement AI into enemy bots. For my 'Data Analysis' projects, I employ several       Machine Learning algorithms onto datasets for analysis and predictions.            My hobbies include reading, playing computer games, playing piano and walking. In the 'Hobbies' section, I showcase rankings I have achieved       across various competitive games.            If you would like to find out more about me, you can navigate to different sections by clicking on the arrows on the left or right, or use the      menu button at the top-left of the page.                Resume          Preview |      Download              Contact          Email: leeyanleryan.21@gmail.com      Discord: leeyanleryan      ",
+    
+    
+    
+    "section": "About"
+  },
+
+  {
+    
+    "title": "Lyrics Translations",
+    "url":   "/lyrics-translations/",
+    "content": "",
+    
+    
+    
+    "section": "-"
   },
 
   {

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- flicker fix -->
+  <style>.no-transition, .no-transition * {transition: none !important;}</style>
+  <script src="/assets/js/flicker-fix.js"> </script>
+  <!-- take title from front matter of md files -->
+  <title></title>
+  <!-- favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon.png">
+  <link rel="shortcut icon" href="/assets/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon/android-chrome-512x512.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+  <!-- css -->
+  <link rel="stylesheet" href="/assets/css/variables.css">
+  <link rel="stylesheet" href="/assets/css/vendor/font-awesome.css">
+  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Raleway:wght@400;700&display=swap"> -->
+  <link rel="stylesheet" href="/assets/css/vendor/raleway.css">
+  <link rel="stylesheet" href="/assets/css/vendor/w3.css">
+  <link rel="stylesheet" href="/assets/css/clamp-content.css">
+  <link rel="stylesheet" href="/assets/css/dark-mode.css">
+  <link rel="stylesheet" href="/assets/css/default.css">
+  <link rel="stylesheet" href="/assets/css/left-sidebar.css">
+  <link rel="stylesheet" href="/assets/css/lyrics-translations.css">
+  <link rel="stylesheet" href="/assets/css/main-body.css">
+  <link rel="stylesheet" href="/assets/css/media-list.css">
+  <link rel="stylesheet" href="/assets/css/nav-arrow.css">
+  <link rel="stylesheet" href="/assets/css/right-sidebar.css">
+  <link rel="stylesheet" href="/assets/css/sidebar-common.css">
+  <link rel="stylesheet" href="/assets/css/topbar.css">
+</head>
+
+<body class="dark-mode">
+    
+<!-- Top container -->
+<div id="topbar" class="w3-bar w3-top w3-black w3-large">
+  <button class="w3-bar-item w3-button w3-hover-none w3-hover-text-grey no-double-tap-zoom" onclick="w3_open()" type="button">
+    <i class="fa fa-bars"></i>  Menu
+  </button>
+  <form id="topbar-search" onsubmit="return false;">
+    <input id="search-input" type="text" placeholder="Search…">
+    <ul id="search-results"></ul>
+  </form>
+  <span class="w3-bar-item w3-right">
+    <i class="fa fa-moon-o moon-icon"></i>
+    <label class="switch">
+      <input id="toggle-dark-mode" type="checkbox" title="Toggle theme">
+      <span class="slider"></span>
+    </label>
+  </span>
+</div>
+
+<!-- Left sidebar/menu -->
+<nav id="left-sidebar" class="sidebar"><br>
+  <div class="w3-container w3-row">
+    <div class="w3-col s4">
+      <img src="/assets/img/ares-sofa2.png" alt="Ares" class="w3-circle w3-margin-right profile-picture-icon">
+    </div>
+    <div class="w3-col s8 w3-bar">
+      <span>Lee Yan Le, <strong>Ryan</strong></span><br>
+      <a href="https://github.com/leeyanleryan" class="w3-bar-item w3-button" title="GitHub"><i class="fa fa-github"></i></a>
+      <a href="https://linkedin.com/in/leeyanleryan" class="w3-bar-item w3-button" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+      <a href="https://www.youtube.com/@Leehai" class="w3-bar-item w3-button" title="YouTube"><i class="fa fa-youtube-play"></i></a>
+    </div>
+  </div>
+  <hr class="hr-sidebar">
+  <div class="w3-container">
+    <div class="w3-bar-block">
+      <h4><strong>About</strong></h4>
+      <a href="/about/profile/" class="w3-bar-item w3-button w3-padding "> Profile</a>
+      <!-- Projects + auto-generated sub-nav -->
+      <div class="submenu-wrapper
+        ">
+        <div class="submenu-header">
+          <!-- main pill (click -> /about/projects/) -->
+          <a href="/about/projects/"
+             class="w3-bar-item w3-button w3-padding main-link
+                    ">
+            Projects
+          </a>
+        </div>
+        <!-- this list is only ever visible if “open” class is present -->
+        <div class="submenu">
+          
+          
+            
+              <a href="/about/projects/orbital-nuquest/"
+                class="w3-bar-item w3-button w3-padding
+                        ">
+                Orbital NUqueSt
+              </a>
+            
+          
+            
+              <a href="/about/projects/data-analysis/"
+                class="w3-bar-item w3-button w3-padding
+                        ">
+                Data Analysis
+              </a>
+            
+          
+            
+              <a href="/about/projects/board-games/"
+                class="w3-bar-item w3-button w3-padding
+                        ">
+                Board Games
+              </a>
+            
+          
+            
+              <a href="/about/projects/puzzle-solvers/"
+                class="w3-bar-item w3-button w3-padding
+                        ">
+                Puzzle Solvers
+              </a>
+            
+          
+        </div>
+      </div>
+      <!-- end Projects -->
+      <!-- Experiences + auto-generated sub-nav -->
+      <div class="submenu-wrapper
+        ">
+        <div class="submenu-header">
+          <!-- main pill (click -> /about/experiences/) -->
+          <a href="/about/experiences/"
+             class="w3-bar-item w3-button w3-padding main-link
+                    ">
+            Experiences
+          </a>
+        </div>
+        <!-- this list is only ever visible if “open” class is present -->
+        <div class="submenu">
+          
+          
+            
+              <a href="/about/experiences/digital-production-assistant/"
+                class="w3-bar-item w3-button w3-padding
+                        ">
+                Digital Production Assistant
+              </a>
+            
+          
+            
+              <a href="/about/experiences/teaching-assistant/"
+                class="w3-bar-item w3-button w3-padding
+                        ">
+                Teaching Assistant
+              </a>
+            
+          
+        </div>
+      </div>
+      <!-- end Experiences -->
+      <a href="/about/awards/" class="w3-bar-item w3-button w3-padding "> Awards</a>
+      <a href="/about/hobbies/" class="w3-bar-item w3-button w3-padding "> Hobbies</a>
+    </div>
+  </div>
+  <hr class="hr-sidebar">
+  <div class="w3-container">
+    <h4><strong>Lyrics Translations</strong></h4>
+    <div class="w3-bar-block">
+      <!-- TOC + auto-generated sub-nav -->
+      <div class="submenu-wrapper
+        ">
+        <div class="submenu-header">
+          <!-- main pill (click -> /lyrics-translations/the-oral-cigarettes/) -->
+          <a href="/lyrics-translations/the-oral-cigarettes/"
+             class="w3-bar-item w3-button w3-padding main-link
+                    ">
+            The Oral Cigarettes
+          </a>
+        </div>
+        <!-- this list is only ever visible if “open” class is present -->
+        <div class="submenu">
+          
+          
+            
+              <a href="/lyrics-translations/the-oral-cigarettes/amy/"
+                class="w3-bar-item w3-button w3-padding
+                        ">
+                Amy
+              </a>
+            
+          
+            
+              <a href="/lyrics-translations/the-oral-cigarettes/flower/"
+                class="w3-bar-item w3-button w3-padding
+                        ">
+                Flower
+              </a>
+            
+          
+        </div>
+      </div>
+      <!-- end TOC -->
+    </div>
+  </div>
+  <hr class="hr-sidebar">
+  <div class="w3-container">
+    <div class="w3-bar-block">
+      <h4><strong>Fun</strong></h4>
+      <a id="random-page-button" class="w3-bar-item w3-button w3-padding"> Go to a random page</a>
+    </div>
+  </div>
+  <hr class="hr-sidebar-invisible">
+  <hr class="hr-sidebar-invisible">
+</nav>
+
+<!-- Overlay effect when opening left sidebar on small screens -->
+<div id="sidebar-overlay" 
+     class="w3-overlay w3-hide-large w3-animate-opacity close-side-menu" 
+     onclick="w3_close()" 
+     title="close side menu">
+</div>
+
+<!-- Right sidebar -->
+<!-- <nav id="right-sidebar" class="sidebar">
+  
+</nav> -->
+
+<!-- Page content goes here -->
+<!-- !PAGE CONTENT! -->
+<div id="page-404" class="w3-main">
+  <section id="profile" class="w3-container">
+    <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
+      <h5><i class="fa fa-gear"></i>
+      Oops! Looks like this page doesn't exist yet.
+      <i class="fa fa-gear"></i></h5>
+    </div>
+  </section>
+</div>
+
+
+<!-- Navigation Arrows -->
+<!-- Navigation Arrows -->
+<a href="" class="nav-arrow nav-arrow-left w3-hide-small">
+  <!-- Label above the arrow -->
+  <div class="nav-label"></div>
+  <i class="arrow-symbol fa fa-angle-double-left"></i>
+</a>
+
+<a href="" class="nav-arrow nav-arrow-right w3-hide-small">
+  <!-- Label above the arrow -->
+  <div class="nav-label"></div>
+  <i class="arrow-symbol fa fa-angle-double-right"></i>
+</a>
+
+<!-- NAVIGATION BOTTOM BAR (Small screens) -->
+<div class="nav-bottom">
+  <a href="">
+    <i class="fa fa-angle-double-left"></i>
+    &nbsp;
+  </a>
+  <a href="">
+    &nbsp;
+    <i class="fa fa-angle-double-right"></i>
+  </a>
+</div>
+
+<hr class="hr-hide-1180">
+
+<script src="/assets/js/dark-mode.js"></script>
+<script src="/assets/js/sidebar-common.js"></script>
+<script src="/assets/js/left-sidebar.js"></script>
+<script src="/assets/js/right-sidebar.js"></script>
+<script src="/assets/js/simple-jekyll-search.js"></script>
+<script src="/assets/js/search-bar-config.js"></script>
+<script src="/assets/js/lyrics-translations.js"></script>
+
+</body>
+</html>
