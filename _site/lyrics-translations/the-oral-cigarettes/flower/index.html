@@ -330,6 +330,15 @@
 </div>
 <button id="quiz-next" style="margin-top:1em;">Next Question</button>
 <script>
+  function replaceNth(str, search, repl, n) {
+  let i = 0;
+  return str.replace(new RegExp(search, 'g'), m => {
+    i++;
+    return i === n ? repl : m;
+  });
+}
+</script>
+<script>
   // 1) Build a JS array of only those lines that have explanations
   window._lyricsTestData = [
     
@@ -399,14 +408,21 @@
 
       // render into container
       const container = document.getElementById('test-container');
+      const highlighted = replaceNth(
+        line.kanji,
+        exp.word,
+        `<span class="highlight">${exp.word}</span>`,
+        /* compute which “の” (or word) this is in the line */  
+        line.explanations
+            .filter(e => e.word === exp.word)
+            .indexOf(exp) + 1
+      );
+
       container.innerHTML = `
         <h4>
           Sentence:
           <span class="test-sentence">
-            ${line.kanji.replace(
-              exp.word,
-              `<span class="highlight">${exp.word}</span>`
-            )}
+            ${highlighted}
           </span>
         </h4>
         <ul class="test-options">
