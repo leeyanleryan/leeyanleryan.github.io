@@ -1,7 +1,7 @@
-<div id="test-container" style="margin-top:1.5em;">
+<div id="lt-test-container" style="margin-top:1.5em;">
   <!-- JS will populate this -->
 </div>
-<button id="quiz-next" style="margin-top:1em;">Next Question</button>
+<button id="lt-quiz-next" class="no-double-tap-zoom" style="margin-top:1em;">Next Question</button>
 <script>
   function replaceNth(str, search, repl, n) {
   let i = 0;
@@ -91,11 +91,11 @@
         .sort(() => Math.random() - 0.5);
 
       // render into container
-      const container = document.getElementById('test-container');
+      const container = document.getElementById('lt-test-container');
       const highlighted = replaceNth(
         line.kanji,
         exp.word,
-        `<span class="highlight">${exp.word}</span>`,
+        `<span class="lt-highlight">${exp.word}</span>`,
         /* compute which “の” (or word) this is in the line */  
         line.explanations
             .filter(e => e.word === exp.word)
@@ -105,19 +105,19 @@
       container.innerHTML = `
         <h4>
           Sentence:
-          <span class="test-sentence">
+          <span class="lt-test-sentence">
             ${highlighted}
           </span>
         </h4>
-        <ul class="test-options">
+        <ul class="lt-test-options">
           ${options.map(opt =>
-            `<li><button class="opt-btn"><h5 style="margin: 3px 0;">${opt}</h5></button></li>`
+            `<li><button class="lt-opt-btn no-double-tap-zoom"><h5 style="margin: 3px 0;">${opt}</h5></button></li>`
           ).join('')}
         </ul>
       `;
 
       // wire up the newly‐inserted buttons
-      const buttons = container.querySelectorAll('.opt-btn');
+      const buttons = container.querySelectorAll('.lt-opt-btn');
       buttons.forEach(btn => {
         btn.disabled = false;
         btn.classList.remove('correct','incorrect');
@@ -135,7 +135,7 @@
     renderQuestion();
 
     // 5) “Next” button hooks into it
-    document.getElementById('quiz-next')
+    document.getElementById('lt-quiz-next')
             .addEventListener('click', renderQuestion);
 
   })();

@@ -1,8 +1,8 @@
 
-<div class="toggle-buttons-jp no-double-tap-zoom">
-  <button id="toggle-kanji">Toggle Kanji</button>
-  <button id="toggle-romaji">Toggle Romaji</button>
-  <button id="toggle-english">Toggle English</button>
+<div class="lt-toggle-buttons-jp no-double-tap-zoom">
+  <button id="lt-toggle-kanji">Toggle Kanji</button>
+  <button id="lt-toggle-romaji">Toggle Romaji</button>
+  <button id="lt-toggle-english">Toggle English</button>
 </div>
 <div class="lyrics-translations">
   {% for line in page.lyrics %}
@@ -13,9 +13,9 @@
       <div class="lyrics-stanza no-double-tap-zoom no-hover-background-after-click" data-idx="{{ idx }}">
         {% if line.lang == "jp" %}
           <h5 class="h5-margin-0">
-          <span class="kanji-text">{{ line.kanji }}<br></span>
-          <span class="romaji-text"><em>{{ line.romaji }}</em><br></span>
-          <span class="english-text">{{ line.english }}<br></span>
+          <span class="lt-kanji-text">{{ line.kanji }}<br></span>
+          <span class="lt-romaji-text"><em>{{ line.romaji }}</em><br></span>
+          <span class="lt-english-text">{{ line.english }}<br></span>
           </h5>
         {% endif %}
       </div>

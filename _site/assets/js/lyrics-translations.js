@@ -26,32 +26,32 @@ document.querySelectorAll('.no-hover-background-after-click').forEach(stanza => 
 
   // 2) update visibility & button text
   function update() {
-    document.querySelectorAll('.kanji-text')
+    document.querySelectorAll('.lt-kanji-text')
             .forEach(el => el.style.display = settings.kanji ? '' : 'none');
-    document.querySelectorAll('.romaji-text')
+    document.querySelectorAll('.lt-romaji-text')
             .forEach(el => el.style.display = settings.romaji ? '' : 'none');
-    document.querySelectorAll('.english-text')
+    document.querySelectorAll('.lt-english-text')
             .forEach(el => el.style.display = settings.english ? '' : 'none');
 
-    document.getElementById('toggle-kanji').textContent   = settings.kanji   ? 'Hide Kanji'   : 'Show Kanji';
-    document.getElementById('toggle-romaji').textContent  = settings.romaji  ? 'Hide Romaji'  : 'Show Romaji';
-    document.getElementById('toggle-english').textContent = settings.english ? 'Hide English' : 'Show English';
+    document.getElementById('lt-toggle-kanji').textContent   = settings.kanji   ? 'Hide Kanji'   : 'Show Kanji';
+    document.getElementById('lt-toggle-romaji').textContent  = settings.romaji  ? 'Hide Romaji'  : 'Show Romaji';
+    document.getElementById('lt-toggle-english').textContent = settings.english ? 'Hide English' : 'Show English';
   }
 
   // 3) wire up buttons
-  document.getElementById('toggle-kanji')
+  document.getElementById('lt-toggle-kanji')
           .addEventListener('click', () => {
     settings.kanji = !settings.kanji;
     localStorage.setItem('showKanji', settings.kanji);
     update();
   });
-  document.getElementById('toggle-romaji')
+  document.getElementById('lt-toggle-romaji')
           .addEventListener('click', () => {
     settings.romaji = !settings.romaji;
     localStorage.setItem('showRomaji', settings.romaji);
     update();
   });
-  document.getElementById('toggle-english')
+  document.getElementById('lt-toggle-english')
           .addEventListener('click', () => {
     settings.english = !settings.english;
     localStorage.setItem('showEnglish', settings.english);
