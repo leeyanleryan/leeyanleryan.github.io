@@ -3,6 +3,23 @@
   margin-top: 20px;
 }
 
+/* .lt-toggle-buttons-jp button,
+#lt-test-container button,
+#lt-quiz-next button {
+  -webkit-appearance: push-button;
+  display: inline-block;
+  color: black;
+  background-color: #EFEFEF;
+  border: 1px outset #767676;
+  border-radius: var(--button-border-radius);
+  padding: 1px 6px;
+  text-align: center;
+  cursor: default;
+  transition: background-color var(--theme-transition), 
+              border-color var(--theme-transition), 
+              color var(--theme-transition);
+} */
+
 .lyrics-translations {
   text-align: center; 
   margin-top: 10px;

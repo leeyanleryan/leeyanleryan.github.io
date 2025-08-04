@@ -188,7 +188,7 @@ lyrics:
       - text: "君"
         sense: "you"
       - text: "に"
-        sense: "indirect_object"
+        sense: "indirect-object"
       - text: "一言"
       - text: "伝えたい"
 
