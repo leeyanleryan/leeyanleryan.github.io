@@ -12,14 +12,19 @@
         romaji:  {{ line.romaji | jsonify }},
         english: {{ line.english | jsonify }},
         explanations: [
+          {% assign valid_expls = "" | split: "," %}
           {% for item in line.explanation %}
-          {
-            word: {{ item.text | jsonify }},
-            {% comment %} Look up the entry in your word-bank {% endcomment %}
             {% assign entry = site.data.word-bank-jp[item.text] %}
             {% if entry %}
-              {% if entry.senses %}
-                {%- comment -%} pick the provided sense, or fall back to the first key {%- endcomment -%}
+              {% assign valid_expls = valid_expls | push: item %}
+            {% endif %}
+          {% endfor %}
+          {% for item in valid_expls %}
+            {
+              word: {{ item.text | jsonify }},
+              {% assign entry = site.data.word-bank-jp[item.text] %}
+              {%- if entry.senses -%}
+                {%- comment -%}pick sense_key logic…{%- endcomment -%}
                 {% assign sense_key = item.sense %}
                 {% if sense_key == nil %}
                   {% for pair in entry.senses %}
@@ -31,11 +36,8 @@
               {% else %}
                 {% assign gloss_val = entry.english %}
               {% endif %}
-            {% else %}
-              {% assign gloss_val = "<MISSING>" %}
-            {% endif %}
-            gloss: {{ gloss_val | jsonify }}
-          }{% if forloop.last == false %},{% endif %}
+              gloss: {{ gloss_val | jsonify }}
+            }{% unless forloop.last %},{% endunless %}
           {% endfor %}
         ]
       }{% if forloop.last == false %},{% endif %}
