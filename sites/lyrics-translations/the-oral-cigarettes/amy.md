@@ -498,10 +498,10 @@ lyrics:
 
 <!-- !PAGE CONTENT! -->
 <div id="page-lyrics-translations-toc" class="w3-main">
-  <section id="profile" class="w3-container">
+  <section id="amy" class="w3-container">
     <h2><b>Amy</b></h2>
     <h5>
-      A song from The Oral Cigarettes released in 2016 under the album "FIXION".
+      A song released by The Oral Cigarettes in 2016 under the album "FIXION".
     </h5>
     <hr class="hr-main-body">
     <h2><b>Lyrics</b></h2>
@@ -509,58 +509,6 @@ lyrics:
       Click on any section to learn more about it.
       Follows line by line from <a href="https://open.spotify.com/track/1PubxlFeesWDghC3B9I280?si=dfdd361e391e4041" target="_blank"> Spotify</a>.
     </h5>
-    <div class="lyrics-translations">
-      {% for line in page.lyrics %}
-        {% if line.divider %}
-          <h5 class="h5-margin-0">-----------------------------------<br></h5>
-        {% else %}
-          {% assign idx = forloop.index0 %}
-          <div class="lyrics-stanza no-double-tap-zoom no-hover-background-after-click" data-idx="{{ idx }}">
-            {% if line.lang == "jp" %}
-              <h5 class="h5-margin-0">
-              {{ line.kanji }}<br>
-              <em>{{ line.romaji }}</em><br>
-              {{ line.english }}<br>
-              </h5>
-            {% endif %}
-          </div>
-          <div class="w3-row lyrics-explanation" id="exp-{{ idx }}">
-            {% if line.lang == "jp" %}
-              <h6 class="w3-col s4 m4 h6-margin-0">Text</h6>
-              <h6 class="w3-col s4 m4 h6-margin-0">Romaji</h6> 
-              <h6 class="w3-col s4 m4 h6-margin-0">English</h6>
-              <hr class="hr-lyrics-explanation">
-              {% for item in line.explanation %}
-                {% assign entry = site.data.word-bank-jp[item.text] %}
-                {% if entry.senses %}
-                  {% assign sense_key = item.sense %}
-                  {% if sense_key == nil %}
-                    {% for pair in entry.senses %}
-                      {% assign sense_key = pair[0] %}
-                      {% break %}
-                    {% endfor %}
-                  {% endif %}
-                  {% assign definition = entry.senses[sense_key] %}
-                  {% assign gloss      = definition.english %}
-                {% else %}
-                  {% assign gloss = entry.english %}
-                {% endif %}
-                <h6 class="w3-col s4 m4 h6-margin-0">
-                  {%- if entry.kanji != "" -%}{{ entry.kanji }}
-                  {%- elsif entry.katakana != "" -%}{{ entry.katakana }}
-                  {%- else -%}-{%- endif -%}
-                </h6>
-                <h6 class="w3-col s4 m4 h6-margin-0"><em>
-                  {%- if entry.romaji != "" -%}{{ entry.romaji }}
-                  {%- else -%}-{%- endif -%}</em></h6>
-                <h6 class="w3-col s4 m4 h6-margin-0">
-                  {%- if gloss != "" -%}{{ gloss }}
-                  {%- else -%}-{%- endif -%}</h6>
-              {% endfor %}
-            {% endif %}
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
+    {% include lyrics-translation.html %}
   </section>
 </div>

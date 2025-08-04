@@ -1,14 +1,19 @@
+.toggle-buttons-jp {
+  text-align: center;
+  margin-top: 20px;
+}
+
 .lyrics-translations {
-    text-align: center; 
-    margin-top: 10px;
+  text-align: center; 
+  margin-top: 10px;
 }
 
 .lyrics-stanza {
-    width: fit-content;
-    margin: 15px auto 15px;
-    padding: 3px;
-    background: transparent;
-    border-radius: var(--pill-border-radius);
+  width: fit-content;
+  margin: 15px auto 15px;
+  padding: 3px;
+  background: transparent;
+  border-radius: var(--pill-border-radius);
 }
 
 .lyrics-explanation {
