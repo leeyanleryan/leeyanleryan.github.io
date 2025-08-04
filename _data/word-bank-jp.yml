@@ -1,0 +1,505 @@
+# Sorted A-Z first by romaji, second by text
+
+# ------------------------------------------ #
+# A
+諦めてた:
+  kanji:    "諦めてた"
+  hiragana: "あきらめてた"
+  katakana: ""
+  romaji:   "akirameteta"
+  english:  "had given up"
+
+ありがとう:
+  kanji:    "ありがとう"
+  hiragana: "ありがとう"
+  katakana: ""
+  romaji:   "arigatou"
+  english:  "thank you"
+
+歩いた:
+  kanji:    "歩いた"
+  hiragana: "あるいた"
+  katakana: ""
+  romaji:   "aruita"
+  english:  "walked"
+# ------------------------------------------ #
+# B
+僕ら:
+  kanji:    "僕ら"
+  hiragana: "ぼくら"
+  katakana: ""
+  romaji:   "bokura"
+  english:  "we, us"
+# ------------------------------------------ #
+# C
+# ------------------------------------------ #
+# D
+だ:
+  kanji:    "だ"
+  hiragana: "だ"
+  katakana: ""
+  romaji:   "da"
+  senses:
+    copula:
+      english: "is (copula)"
+
+だって:
+  kanji:    "だって"
+  hiragana: "だって"
+  katakana: ""
+  romaji:   "datte"
+  senses:
+    quotative:
+      english: "-colloquial emphatic ending (you know)-"
+
+で:
+  kanji:    "で"
+  hiragana: "で"
+  katakana: ""
+  romaji:   "de"
+  senses:
+    location:
+      english: "-location marker (at, in)-"
+# ------------------------------------------ #
+# E
+エイミー:
+  kanji:    ""
+  hiragana: ""
+  katakana: "エイミー"
+  romaji:   "Eimī"
+  english:  "Amy"
+# ------------------------------------------ #
+# F
+二人:
+  kanji:    "二人"
+  hiragana: "ふたり"
+  katakana: ""
+  romaji:   "futari"
+  english:  "two people, the two of us"
+# ------------------------------------------ #
+# G
+が:
+  kanji:    "が"
+  hiragana: "が"
+  katakana: ""
+  romaji:   "ga"
+  senses:
+    subject:
+      english: "-subject marker-"
+
+ごめん:
+  kanji:    "ごめん"
+  hiragana: "ごめん"
+  katakana: ""
+  romaji:   "gomen"
+  senses:
+    apology:
+      english: "sorry"
+    permission:
+      english: "permission, pardon"
+# ------------------------------------------ #
+# H
+初めて:
+  kanji:    "初めて"
+  hiragana: "はじめて"
+  katakana: ""
+  romaji:   "hajimete"
+  english:  "for the first time"
+
+日々:
+  kanji:    "日々"
+  hiragana: "ひび"
+  katakana: ""
+  romaji:   "hibi"
+  english:  "days"
+
+一言:
+  kanji:    "一言"
+  hiragana: "ひとこと"
+  katakana: ""
+  romaji:   "hitokoto"
+  english:  "a word, a brief remark"
+
+ほう:
+  kanji:    "ほう"
+  hiragana: "ほう"
+  katakana: ""
+  romaji:   "hou"
+  english:  "side, direction, the one"
+
+本当に:
+  kanji:    "本当に"
+  hiragana: "ほんとうに"
+  katakana: ""
+  romaji:   "houtou ni"
+  english:  "truly, really"
+# ------------------------------------------ #
+# I
+今:
+  kanji:    "今"
+  hiragana: "いま"
+  katakana: ""
+  romaji:   "ima"
+  senses:
+    temporal:
+      english: "now"
+# ------------------------------------------ #
+# J
+時間:
+  kanji:    "時間"
+  hiragana: "じかん"
+  katakana: ""
+  romaji:   "jikan"
+  english:  "time"
+# ------------------------------------------ #
+# K
+肩:
+  kanji:    "肩"
+  hiragana: "かた"
+  katakana: ""
+  romaji:   "kata"
+  english:  "shoulder"
+
+気:
+  kanji:    "気"
+  hiragana: "き"
+  katakana: ""
+  romaji:   "ki"
+  english:  "feeling, sense"
+
+君:
+  kanji:    "君"
+  hiragana: "きみ"
+  katakana: ""
+  romaji:   "kimi"
+  english:  "you"
+
+きっと:
+  kanji:    "きっと"
+  hiragana: "きっと"
+  katakana: ""
+  romaji:   "kitto"
+  english:  "surely, certainly, definitely"
+
+気付いた:
+  kanji:    "気付いた"
+  hiragana: "きづいた"
+  katakana: ""
+  romaji:   "kizuita"
+  english:  "realized, noticed"
+
+恋:
+  kanji:    "恋"
+  hiragana: "こい"
+  katakana: ""
+  romaji:   "koi"
+  english:  "romantic love"
+
+ここ:
+  kanji:    "ここ"
+  hiragana: "ここ"
+  katakana: ""
+  romaji:   "koko"
+  senses:
+    location:
+      english:  "here"
+
+こんな:
+  kanji:    "こんな"
+  hiragana: "こんな"
+  katakana: ""
+  romaji:   "konna"
+  english:  "like this, this kind of"
+
+くれてた:
+  kanji:    "くれてた"
+  hiragana: "くれてた"
+  katakana: ""
+  romaji:   "kureteta"
+  english:  "did for me"
+# ------------------------------------------ #
+# L
+# ------------------------------------------ #
+# M
+道のり:
+  kanji:    "道のり"
+  hiragana: "みちのり"
+  katakana: ""
+  romaji:   "michinori"
+  english:  "journey, distance"
+
+戻せる:
+  kanji:    "戻せる"
+  hiragana: "もどせる"
+  katakana: ""
+  romaji:   "modoseru"
+  english:  "can return"
+
+もし:
+  kanji:    "もし"
+  hiragana: "もし"
+  katakana: ""
+  romaji:   "moshi"
+  senses:
+    hypothetical:
+      english:  "if"
+# ------------------------------------------ #
+# N
+ん:
+  kanji:    "ん"
+  hiragana: "ん"
+  katakana: ""
+  romaji:   "n"
+  senses:
+    explanatory:
+      english:  "-explanatory nominaliser-"
+
+長い:
+  kanji:    "長い"
+  hiragana: "ながい"
+  katakana: ""
+  romaji:   "nagai"
+  english:  "long (time, distance)"
+
+何:
+  kanji:    "何"
+  hiragana: "なに"
+  katakana: ""
+  romaji:   "nani"
+  english:  "what"
+
+なの:
+  kanji:    "なの"
+  hiragana: "なの"
+  katakana: ""
+  romaji:   "nano"
+  english:  "-soften sentence-"
+
+なんて:
+  kanji:    "なんて"
+  hiragana: "なんて"
+  katakana: ""
+  romaji:   "nante"
+  senses:
+    exclamative:
+      english: "such as, things like"
+
+なら:
+  kanji:    "なら"
+  hiragana: "なら"
+  katakana: ""
+  romaji:   "nara"
+  senses:
+    conditional:
+      english: "-conditional particle (if)-"
+
+ね:
+  kanji:    "ね"
+  hiragana: "ね"
+  katakana: ""
+  romaji:   "ne"
+  senses:
+    confirmation:
+      english: "-confirmation particle (isn't it?, right?)-"
+    softener:
+      english: "-soften sentence-"
+
+に:
+  kanji:    "に"
+  hiragana: "に"
+  katakana: ""
+  romaji:   "ni"
+  senses:
+    temporal:
+      english: "-temporal (in, at)-"
+    indirect_object:
+      english: "-indirect object marker (to, for)-"
+
+の:
+  kanji:    "の"
+  hiragana: "の"
+  katakana: ""
+  romaji:   "no"
+  senses:
+    possessive:
+      english: "-possessive particle-"
+    nominaliser:
+      english: "-nominaliser (verb to noun)-"
+
+伸ばせば:
+  kanji:    "伸ばせば"
+  hiragana: "のばせば"
+  katakana: ""
+  romaji:   "nobaseba"
+  english:  "if (one) stretches"
+# ------------------------------------------ #
+# O
+思い:
+  kanji:    "思い"
+  hiragana: "おもい"
+  katakana: ""
+  romaji:   "omoi"
+  english:  "feeling, thought, emotion"
+
+思ってた:
+  kanji:    "思ってた"
+  hiragana: "おもってた"
+  katakana: ""
+  romaji:   "omotteta"
+  english:  "was thinking"
+# ------------------------------------------ #
+# P
+# ------------------------------------------ #
+# Q
+# ------------------------------------------ #
+# R
+# ------------------------------------------ #
+# S
+知らない:
+  kanji:    "知らない"
+  hiragana: "しらない"
+  katakana: ""
+  romaji:   "shiranai"
+  english:  "don't know"
+
+した:
+  kanji:    "した"
+  hiragana: "した"
+  katakana: ""
+  romaji:   "shita"
+  english:  "felt, did"
+
+してる:
+  kanji:    "してる"
+  hiragana: "してる"
+  katakana: ""
+  romaji:   "shiteru"
+  english:  "doing, to be in"
+
+少し:
+  kanji:    "少し"
+  hiragana: "すこし"
+  katakana: ""
+  romaji:   "sukoshi"
+  english:  "a little, a bit"
+# ------------------------------------------ #
+# T
+ため:
+  kanji:    "ため"
+  hiragana: "ため"
+  katakana: ""
+  romaji:   "tame"
+  english:  "sake, purpose"
+
+手:
+  kanji:    "手"
+  hiragana: "て"
+  katakana: ""
+  romaji:   "te"
+  english:  "hand"
+
+と:
+  kanji:    "と"
+  hiragana: "と"
+  katakana: ""
+  romaji:   "to"
+  senses:
+    quotative:
+      english: "that"
+    comitative:
+      english: "-connect words (and, with)-"
+
+届く:
+  kanji:    "届く"
+  hiragana: "とどく"
+  katakana: ""
+  romaji:   "todoku"
+  english:  "to reach"
+
+時:
+  kanji:    "時"
+  hiragana: "とき"
+  katakana: ""
+  romaji:   "toki"
+  english:  "time, moment"
+
+って:
+  kanji:    "って"
+  hiragana: "って"
+  katakana: ""
+  romaji:   "tte"
+  senses:
+    quotative:
+      english: "-quotative particle-"
+
+伝えたい:
+  kanji:    "伝えたい"
+  hiragana: "つたえたい"
+  katakana: ""
+  romaji:   "tsutaetai"
+  english:  "want to say"
+# ------------------------------------------ #
+# U
+うち:
+  kanji:    "うち"
+  hiragana: "うち"
+  katakana: ""
+  romaji:   "uchi"
+  senses:
+    temporal:
+      english: "time, while, before"
+# ------------------------------------------ #
+# V
+# ------------------------------------------ #
+# W
+は:
+  kanji:    "は"
+  hiragana: "は"
+  katakana: ""
+  romaji:   "wa"
+  senses:
+    topic:
+      english: "-topic marker-"
+
+わかって:
+  kanji:    "わかって"
+  hiragana: "わかって"
+  katakana: ""
+  romaji:   "wakatte"
+  english:  "understood"
+
+を:
+  kanji:    "を"
+  hiragana: "を"
+  katakana: ""
+  romaji:   "wo"
+  senses:
+    object:
+      english: "-object marker-"
+# ------------------------------------------ #
+# X
+# ------------------------------------------ #
+# Y
+よ:
+  kanji:    "よ"
+  hiragana: "よ"
+  katakana: ""
+  romaji:   "yo"
+  senses:
+    emphatic:
+      english: "-emphatic particle (you know)-"
+
+寄せ合った:
+  kanji:    "寄せ合った"
+  hiragana: "よせあった"
+  katakana: ""
+  romaji:   "yoseatta"
+  english:  "huddled close"
+# ------------------------------------------ #
+# Z
+ずっと:
+  kanji:    "ずっと"
+  hiragana: "ずっと"
+  katakana: ""
+  romaji:   "zutto"
+  english:  "always, continuously"
