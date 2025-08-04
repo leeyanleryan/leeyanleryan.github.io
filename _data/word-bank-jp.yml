@@ -22,6 +22,17 @@
   katakana: ""
   romaji:   "aruita"
   english:  "walked"
+
+あっても:
+  kanji:    "あっても"
+  hiragana: "あっても"
+  katakana: ""
+  romaji:   "attemo"
+  senses:
+    concessive:
+      english: "even if there is, no matter what happens"
+    meeting:
+      english: "even if we meet"
 # ------------------------------------------ #
 # B
 僕ら:
@@ -43,6 +54,15 @@
     copula:
       english: "is (copula)"
 
+だろう:
+  kanji:    "だろう"
+  hiragana: "だろう"
+  katakana: ""
+  romaji:   "darou"
+  sense:
+    probability:
+      english:  "-conjectural ending ('I guess, probably, right?')-"
+
 だって:
   kanji:    "だって"
   hiragana: "だって"
@@ -60,13 +80,20 @@
   senses:
     location:
       english: "-location marker (at, in)-"
+
+出会える:
+  kanji:    "出会える"
+  hiragana: "であえる"
+  katakana: ""
+  romaji:   "deaeru"
+  english:  "can meet, be able to encounter"
 # ------------------------------------------ #
 # E
 エイミー:
   kanji:    ""
   hiragana: ""
   katakana: "エイミー"
-  romaji:   "Eimī"
+  romaji:   "Eimii"
   english:  "Amy"
 # ------------------------------------------ #
 # F
@@ -97,6 +124,13 @@
       english: "sorry"
     permission:
       english: "permission, pardon"
+
+ぎゅっと:
+  kanji:    "ぎゅっと"
+  hiragana: "ぎゅっと"
+  katakana: ""
+  romaji:   "gyutto"
+  english:  "tightly, with a squeeze"
 # ------------------------------------------ #
 # H
 初めて:
@@ -172,7 +206,13 @@
   hiragana: "きみ"
   katakana: ""
   romaji:   "kimi"
-  english:  "you"
+  senses:
+    you:
+      english: "you (casual)"
+    darling:
+      english: "darling, dear"
+    archaic:
+      english: "lord, master"
 
 きっと:
   kanji:    "きっと"
@@ -211,6 +251,15 @@
   romaji:   "konna"
   english:  "like this, this kind of"
 
+こと:
+  kanji:    "こと"
+  hiragana: "こと"
+  katakana: ""
+  romaji:   "koto"
+  senses:
+    nominaliser:
+      english:  "-nominaliser: quote to noun-, thing, fact"
+
 くれてた:
   kanji:    "くれてた"
   hiragana: "くれてた"
@@ -221,12 +270,35 @@
 # L
 # ------------------------------------------ #
 # M
+また:
+  kanji:    "また"
+  hiragana: "また"
+  katakana: ""
+  romaji:   "mata"
+  english:  "again, once more"
+
+待つ:
+  kanji:    "待つ"
+  hiragana: "まつ"
+  katakana: ""
+  romaji:   "matsu"
+  english: "to wait"
+
 道のり:
   kanji:    "道のり"
   hiragana: "みちのり"
   katakana: ""
   romaji:   "michinori"
   english:  "journey, distance"
+
+も:
+  kanji:    "も"
+  hiragana: "も"
+  katakana: ""
+  romaji:   "mo"
+  senses:
+    additive:
+      english: "also, too"
 
 戻せる:
   kanji:    "戻せる"
@@ -243,6 +315,13 @@
   senses:
     hypothetical:
       english:  "if"
+
+胸:
+  kanji:    "胸"
+  hiragana: "むね"
+  katakana: ""
+  romaji:   "mune"
+  english:  "chest, heart (emotionally)"
 # ------------------------------------------ #
 # N
 ん:
@@ -304,6 +383,19 @@
     softener:
       english: "-soften sentence-"
 
+ねぇ:
+  kanji:    "ねぇ"
+  hiragana: "ねぇ"
+  katakana: ""
+  romaji:   "nee"
+  senses:
+    vocative:
+      english: "hey"
+    confirmation:
+      english: "isn't it?, right?"
+    filler:
+      english: "um..., you know..."
+
 に:
   kanji:    "に"
   hiragana: "に"
@@ -324,7 +416,7 @@
     possessive:
       english: "-possessive particle-"
     nominaliser:
-      english: "-nominaliser (verb to noun)-"
+      english: "-nominaliser: verb to noun-"
 
 伸ばせば:
   kanji:    "伸ばせば"
@@ -334,12 +426,26 @@
   english:  "if (one) stretches"
 # ------------------------------------------ #
 # O
+奥:
+  kanji:    "奥"
+  hiragana: "おく"
+  katakana: ""
+  romaji:   "oku"
+  english:  "inner part, depths"
+
 思い:
   kanji:    "思い"
   hiragana: "おもい"
   katakana: ""
   romaji:   "omoi"
   english:  "feeling, thought, emotion"
+
+思い出す:
+  kanji:    "思い出す"
+  hiragana: "おもいだす"
+  katakana: ""
+  romaji:   "omoidasu"
+  english:  "to recall; to remember"
 
 思ってた:
   kanji:    "思ってた"
@@ -355,6 +461,13 @@
 # R
 # ------------------------------------------ #
 # S
+信じて:
+  kanji:    "信じて"
+  hiragana: "しんじて"
+  katakana: ""
+  romaji:   "shinjite"
+  english:  "believing"
+
 知らない:
   kanji:    "知らない"
   hiragana: "しらない"
@@ -375,6 +488,15 @@
   katakana: ""
   romaji:   "shiteru"
   english:  "doing, to be in"
+
+そう:
+  kanji:    "そう"
+  hiragana: "そう"
+  katakana: ""
+  romaji:   "sou"
+  senses:
+    demonstrative:
+      english: "like that, so"
 
 少し:
   kanji:    "少し"
@@ -408,6 +530,8 @@
       english: "that"
     comitative:
       english: "-connect words (and, with)-"
+    conditional:
+      english: "-conditional (when)-"
 
 届く:
   kanji:    "届く"
@@ -502,4 +626,8 @@
   hiragana: "ずっと"
   katakana: ""
   romaji:   "zutto"
-  english:  "always, continuously"
+  senses:
+    continuity:
+      english: "always, continuously"
+    comparative:
+      english: "by far, much more"
