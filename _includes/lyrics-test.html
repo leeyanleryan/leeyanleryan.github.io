@@ -1,0 +1,175 @@
+<div id="test-container" style="margin-top:1.5em;">
+  <!-- JS will populate this -->
+</div>
+<button id="quiz-next" style="margin-top:1em;">Next Question</button>
+<script>
+  // 1) Build a JS array of only those lines that have explanations
+  window._lyricsTestData = [
+    {% for line in page.lyrics %}
+      {% if line.explanation and line.explanation.size > 0 %}
+      {
+        kanji:   {{ line.kanji | jsonify }},
+        romaji:  {{ line.romaji | jsonify }},
+        english: {{ line.english | jsonify }},
+        explanations: [
+          {% for item in line.explanation %}
+          {
+            word: {{ item.text | jsonify }},
+            {% comment %} Look up the entry in your word-bank {% endcomment %}
+            {% assign entry = site.data.word-bank-jp[item.text] %}
+            {% if entry.senses %}
+              {%- comment -%} pick the provided sense, or fall back to the first key {%- endcomment -%}
+              {% assign sense_key = item.sense %}
+              {% if sense_key == nil %}
+                {% for pair in entry.senses %}
+                  {% assign sense_key = pair[0] %}
+                  {% break %}
+                {% endfor %}
+              {% endif %}
+              {% assign gloss_val = entry.senses[sense_key].english %}
+            {% else %}
+              {% assign gloss_val = entry.english %}
+            {% endif %}
+            gloss: {{ gloss_val | jsonify }}
+          }{% if forloop.last == false %},{% endif %}
+          {% endfor %}
+        ]
+      }{% if forloop.last == false %},{% endif %}
+      {% endif %}
+    {% endfor %}
+  ];
+</script>
+<script>
+  ;(function(){
+    const data = window._lyricsTestData;
+    if (!data.length) return;  // no quiz if no data
+    
+    // Utility: pick random element
+    function pick(arr){ return arr[Math.floor(Math.random()*arr.length)]; }
+    
+    // 1) Pick a random line & a random explanation
+    const line = pick(data);
+    const exp  = pick(line.explanations);
+    
+    // 2) Build choices: correct gloss + two random *other* glosses
+    const others = data
+      .flatMap(l => l.explanations.map(e=>e.gloss))
+      .filter(g => g !== exp.gloss);
+    
+      // pick two distractors
+    const distractors = [];
+    while (distractors.length < 2 && others.length){
+      const cand = pick(others);
+      if (!distractors.includes(cand)) distractors.push(cand);
+    }
+    const options = [exp.gloss, ...distractors]
+      .sort(() => Math.random() - .5); // shuffle
+    
+    // 3) Render
+    const container = document.getElementById('test-container');
+    container.innerHTML = `
+      Sentence:
+      <span class="test-sentence">
+          ${line.kanji.replace(
+          exp.word,
+          `<span class="highlight">${exp.word}</span>`
+          )}
+      </span>
+      </h4>
+      <ul class="test-options">
+      ${options.map(opt =>
+          `<li><button class="opt-btn">${opt}</button></li>`
+      ).join('')}
+      </ul>
+    `;
+    
+    // 4) Wire up answer buttons
+    const buttons = container.querySelectorAll('.opt-btn');
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+      // disable all immediately
+        buttons.forEach(b => b.disabled = true);
+
+        // highlight the correct one
+        buttons.forEach(b => {
+        if (b.textContent === exp.gloss) {
+            b.classList.add('correct');
+        }
+        });
+
+        // if they picked wrong, highlight their choice red
+        if (btn.textContent !== exp.gloss) {
+        btn.classList.add('incorrect');
+        }
+      });
+    });
+  })();
+</script>
+<script>
+  ;(() => {
+    // 1) Grab the data once
+    const data = window._lyricsTestData;
+    if (!data.length) return;
+
+    // 2) Utility
+    function pick(arr) { return arr[Math.floor(Math.random()*arr.length)]; }
+
+    // 3) The render function
+    function renderQuestion() {
+      const line = pick(data);
+      const exp  = pick(line.explanations);
+
+      // build distractors
+      const others = data.flatMap(l => l.explanations.map(e=>e.gloss))
+                        .filter(g => g !== exp.gloss);
+      const distractors = [];
+      while (distractors.length < 2 && others.length) {
+        const cand = pick(others);
+        if (!distractors.includes(cand)) distractors.push(cand);
+      }
+      const options = [exp.gloss, ...distractors]
+        .sort(() => Math.random() - .5);
+
+      // render into container
+      const container = document.getElementById('test-container');
+      container.innerHTML = `
+        <h4>
+          Sentence:
+          <span class="test-sentence">
+            ${line.kanji.replace(
+              exp.word,
+              `<span class="highlight">${exp.word}</span>`
+            )}
+          </span>
+        </h4>
+        <ul class="test-options">
+          ${options.map(opt =>
+            `<li><button class="opt-btn">${opt}</button></li>`
+          ).join('')}
+        </ul>
+      `;
+
+      // wire up the newly‐inserted buttons
+      const buttons = container.querySelectorAll('.opt-btn');
+      buttons.forEach(btn => {
+        btn.disabled = false;
+        btn.classList.remove('correct','incorrect');
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.disabled = true);
+          buttons.forEach(b => {
+            if (b.textContent === exp.gloss) b.classList.add('correct');
+          });
+          if (btn.textContent !== exp.gloss) btn.classList.add('incorrect');
+        });
+      });
+    }
+
+    // 4) Initial draw
+    renderQuestion();
+
+    // 5) “Next” button hooks into it
+    document.getElementById('quiz-next')
+            .addEventListener('click', renderQuestion);
+
+  })();
+</script>

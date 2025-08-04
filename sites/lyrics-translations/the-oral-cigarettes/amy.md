@@ -510,5 +510,12 @@ lyrics:
       Follows line by line from <a href="https://open.spotify.com/track/1PubxlFeesWDghC3B9I280?si=dfdd361e391e4041" target="_blank"> Spotify</a>.
     </h5>
     {% include lyrics-translation.html %}
+    <hr class="hr-main-body">
+    <h2><b>Test</b></h2>
+    <h5>
+      Would you like to test your understanding?  
+      Select the correct meaning of the highlighted word!
+    </h5>
+    {% include lyrics-test.html %}
   </section>
 </div>

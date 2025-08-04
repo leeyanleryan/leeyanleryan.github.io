@@ -5,8 +5,11 @@
   "less.lint.vendorPrefix": "ignore",
   "scss.lint.vendorPrefix": "ignore",
 
-  // Treat just search.json as Liquid/Jekyll, not JSON
   "files.associations": {
-    "search.json": "liquid"
-  }
+    // Treat just search.json as Liquid/Jekyll, not JSON
+    "search.json": "liquid",
+
+    // Treat any file in _includes/*.html as Liquid
+    "**/_includes/*.html": "liquid"
+  },
 }

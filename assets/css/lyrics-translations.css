@@ -59,3 +59,42 @@ body.dark-mode hr.hr-lyrics-explanation {
   color: var(--dark-mode-border-color);
   background: var(--dark-mode-border-color);
 }
+
+.highlight {
+  background-color: var(--light-mode-active-background-color) !important;
+  padding: 0 .2em;
+  border-radius: 3px;
+  transition: background-color var(--theme-transition) ease,
+              color var(--theme-transition) ease;
+}
+body.dark-mode .highlight {
+  background-color: var(--dark-mode-active-background-color) !important;
+}
+
+.test-options {
+  list-style: none;
+  padding: 0;
+}
+.test-options li {
+  margin: .5em 0;
+}
+.opt-btn {
+  font-size: 1.15rem;
+  padding: .4em .8em;
+  cursor: pointer;
+  transition: background-color var(--theme-transition), 
+              border-color var(--theme-transition), 
+              color var(--theme-transition) !important;
+}
+
+.opt-btn.correct {
+  background-color: #d4edda;
+  border-color:   #c3e6cb;
+  color:          #155724;
+}
+
+.opt-btn.incorrect {
+  background-color: #f8d7da;
+  border-color:   #f5c6cb;
+  color:          #721c24;
+}

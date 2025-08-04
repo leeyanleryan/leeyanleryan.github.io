@@ -2716,6 +2716,2397 @@
     
   
 </div>
+    <hr class="hr-main-body" />
+    <h2><b>Test</b></h2>
+    <h5>
+      Would you like to test your understanding?  
+      Select the correct meaning of the highlighted word!
+    </h5>
+    <div id="test-container" style="margin-top:1.5em;">
+  <!-- JS will populate this -->
+</div>
+<button id="quiz-next" style="margin-top:1em;">Next Question</button>
+<script>
+  // 1) Build a JS array of only those lines that have explanations
+  window._lyricsTestData = [
+    
+      
+    
+      
+      {
+        kanji:   "「今何してる?」",
+        romaji:  "Ima nani shiteru?",
+        english: "What are you doing right now?",
+        explanations: [
+          
+          {
+            word: "今",
+            
+            
+            
+              
+              
+            
+            gloss: "now"
+          },
+          
+          {
+            word: "何",
+            
+            
+            
+              
+            
+            gloss: "what"
+          },
+          
+          {
+            word: "してる",
+            
+            
+            
+              
+            
+            gloss: "doing, to be in"
+          }
+          
+        ]
+      },
+      
+    
+      
+      {
+        kanji:   "「きっと恋してる」",
+        romaji:  "Kitto koi shiteru",
+        english: "I'm definitely in love.",
+        explanations: [
+          
+          {
+            word: "きっと",
+            
+            
+            
+              
+            
+            gloss: "surely, certainly, definitely"
+          },
+          
+          {
+            word: "恋",
+            
+            
+            
+              
+            
+            gloss: "romantic love"
+          },
+          
+          {
+            word: "してる",
+            
+            
+            
+              
+            
+            gloss: "doing, to be in"
+          }
+          
+        ]
+      },
+      
+    
+      
+      {
+        kanji:   "「こんな思いなんて初めてなの」って",
+        romaji:  "Konna omoi nante hajimete nano tte",
+        english: "I've never felt this way before.",
+        explanations: [
+          
+          {
+            word: "こんな",
+            
+            
+            
+              
+            
+            gloss: "like this, this kind of"
+          },
+          
+          {
+            word: "思い",
+            
+            
+            
+              
+            
+            gloss: "feeling, thought, emotion"
+          },
+          
+          {
+            word: "なんて",
+            
+            
+            
+              
+              
+            
+            gloss: "such as, things like"
+          },
+          
+          {
+            word: "初めて",
+            
+            
+            
+              
+            
+            gloss: "for the first time"
+          },
+          
+          {
+            word: "なの",
+            
+            
+            
+              
+            
+            gloss: "-soften sentence-"
+          },
+          
+          {
+            word: "って",
+            
+            
+            
+              
+              
+            
+            gloss: "-quotative particle-"
+          }
+          
+        ]
+      },
+      
+    
+      
+      {
+        kanji:   "本当にわかってくれてたのは",
+        romaji:  "Hontou ni wakatte kureteta no wa",
+        english: "The one who truly understood me was...",
+        explanations: [
+          
+          {
+            word: "本当に",
+            
+            
+            
+              
+            
+            gloss: "truly, really"
+          },
+          
+          {
+            word: "わかって",
+            
+            
+            
+              
+            
+            gloss: "understood"
+          },
+          
+          {
+            word: "くれてた",
+            
+            
+            
+              
+            
+            gloss: "did for me"
+          },
+          
+          {
+            word: "の",
+            
+            
+            
+              
+              
+            
+            gloss: "-nominaliser: verb to noun-"
+          },
+          
+          {
+            word: "は",
+            
+            
+            
+              
+              
+            
+            gloss: "-topic marker-"
+          }
+          
+        ]
+      },
+      
+    
+      
+      {
+        kanji:   "君のほうだと気付いた",
+        romaji:  "Kimi no hou da to kizuita",
+        english: "I realised it was you.",
+        explanations: [
+          
+          {
+            word: "君",
+            
+            
+            
+              
+              
+            
+            gloss: "you (casual)"
+          },
+          
+          {
+            word: "の",
+            
+            
+            
+              
+              
+            
+            gloss: "-possessive particle-"
+          },
+          
+          {
+            word: "ほう",
+            
+            
+            
+              
+            
+            gloss: "side, direction, the one"
+          },
+          
+          {
+            word: "だ",
+            
+            
+            
+              
+              
+            
+            gloss: "is (copula)"
+          },
+          
+          {
+            word: "と",
+            
+            
+            
+              
+              
+            
+            gloss: "that"
+          },
+          
+          {
+            word: "気付いた",
+            
+            
+            
+              
+            
+            gloss: "realized, noticed"
+          }
+          
+        ]
+      },
+      
+    
+      
+    
+      
+      {
+        kanji:   "知らないうちに",
+        romaji:  "Shiranai uchi ni",
+        english: "Without realizing it,",
+        explanations: [
+          
+          {
+            word: "知らない",
+            
+            
+            
+              
+            
+            gloss: "don't know"
+          },
+          
+          {
+            word: "うち",
+            
+            
+            
+              
+              
+            
+            gloss: "time, while, before"
+          },
+          
+          {
+            word: "に",
+            
+            
+            
+              
+              
+            
+            gloss: "-temporal (in, at)-"
+          }
+          
+        ]
+      },
+      
+    
+      
+      {
+        kanji:   "長い道のりを歩いたね僕ら",
+        romaji:  "Nagai michinori wo aruita ne bokura",
+        english: "We've come a long way, haven't we?",
+        explanations: [
+          
+          {
+            word: "長い",
+            
+            
+            
+              
+            
+            gloss: "long (time, distance)"
+          },
+          
+          {
+            word: "道のり",
+            
+            
+            
+              
+            
+            gloss: "journey, distance"
+          },
+          
+          {
+            word: "を",
+            
+            
+            
+              
+              
+            
+            gloss: "-object marker-"
+          },
+          
+          {
+            word: "歩いた",
+            
+            
+            
+              
+            
+            gloss: "walked"
+          },
+          
+          {
+            word: "ね",
+            
+            
+            
+              
+              
+            
+            gloss: "-confirmation particle (isn't it?, right?)-"
+          },
+          
+          {
+            word: "僕ら",
+            
+            
+            
+              
+            
+            gloss: "we, us"
+          }
+          
+        ]
+      },
+      
+    
+      
+      {
+        kanji:   "ずっと君のためだって",
+        romaji:  "Zutto kimi no tame datte",
+        english: "It was always for you.",
+        explanations: [
+          
+          {
+            word: "ずっと",
+            
+            
+            
+              
+              
+            
+            gloss: "always, continuously"
+          },
+          
+          {
+            word: "君",
+            
+            
+            
+              
+              
+            
+            gloss: "you (casual)"
+          },
+          
+          {
+            word: "の",
+            
+            
+            
+              
+              
+            
+            gloss: "-possessive particle-"
+          },
+          
+          {
+            word: "ため",
+            
+            
+            
+              
+            
+            gloss: "sake, purpose"
+          },
+          
+          {
+            word: "だって",
+            
+            
+            
+              
+                
+                  
+                  
+              
+              
+            
+            gloss: "-colloquial emphatic ending (you know)-"
+          }
+          
+        ]
+      },
+      
+    
+      
+      {
+        kanji:   "思ってたんだよ",
+        romaji:  "Omotteta nda yo",
+        english: "That's what I was thinking.",
+        explanations: [
+          
+          {
+            word: "思ってた",
+            
+            
+            
+              
+            
+            gloss: "was thinking"
+          },
+          
+          {
+            word: "ん",
+            
+            
+            
+              
+              
+            
+            gloss: "-explanatory nominaliser-"
+          },
+          
+          {
+            word: "だ",
+            
+            
+            
+              
+              
+            
+            gloss: "is (copula)"
+          },
+          
+          {
+            word: "よ",
+            
+            
+            
+              
+              
+            
+            gloss: "-emphatic particle (you know)-"
+          }
+          
+        ]
+      },
+      
+    
+      
+    
+      
+      {
+        kanji:   "諦めてた君との時間に",
+        romaji:  "Akirameteta kimi to no jikan ni",
+        english: "The time I had given up on with you...",
+        explanations: [
+          
+          {
+            word: "諦めてた",
+            
+            
+            
+              
+            
+            gloss: "had given up"
+          },
+          
+          {
+            word: "君",
+            
+            
+            
+              
+              
+            
+            gloss: "you (casual)"
+          },
+          
+          {
+            word: "と",
+            
+            
+            
+              
+              
+            
+            gloss: "-connect words (and, with)-"
+          },
+          
+          {
+            word: "の",
+            
+            
+            
+              
+              
+            
+            gloss: "-possessive particle-"
+          },
+          
+          {
+            word: "時間",
+            
+            
+            
+              
+            
+            gloss: "time"
+          },
+          
+          {
+            word: "に",
+            
+            
+            
+              
+              
+            
+            gloss: "-temporal (in, at)-"
+          }
+          
+        ]
+      },
+      
+    
+      
+      {
+        kanji:   "手を伸ばせば少しなら届く気がした",
+        romaji:  "Te wo nobaseba sukoshi nara todoku ki ga shita",
+        english: "I felt like I could reach it if I stretched out my hand a little.",
+        explanations: [
+          
+          {
+            word: "手",
+            
+            
+            
+              
+            
+            gloss: "hand"
+          },
+          
+          {
+            word: "を",
+            
+            
+            
+              
+              
+            
+            gloss: "-object marker-"
+          },
+          
+          {
+            word: "伸ばせば",
+            
+            
+            
+              
+            
+            gloss: "if (one) stretches"
+          },
+          
+          {
+            word: "少し",
+            
+            
+            
+              
+            
+            gloss: "a little, a bit"
+          },
+          
+          {
+            word: "なら",
+            
+            
+            
+              
+              
+            
+            gloss: "-conditional particle (if)-"
+          },
+          
+          {
+            word: "届く",
+            
+            
+            
+              
+            
+            gloss: "to reach"
+          },
+          
+          {
+            word: "気",
+            
+            
+            
+              
+            
+            gloss: "feeling, sense"
+          },
+          
+          {
+            word: "が",
+            
+            
+            
+              
+              
+            
+            gloss: "-subject marker-"
+          },
+          
+          {
+            word: "した",
+            
+            
+            
+              
+            
+            gloss: "felt, did"
+          }
+          
+        ]
+      },
+      
+    
+      
+      {
+        kanji:   "もし時を戻せるのなら",
+        romaji:  "Moshi toki wo modoseru no nara",
+        english: "If I could turn back time...",
+        explanations: [
+          
+          {
+            word: "もし",
+            
+            
+            
+              
+              
+            
+            gloss: "if"
+          },
+          
+          {
+            word: "時",
+            
+            
+            
+              
+            
+            gloss: "time, moment"
+          },
+          
+          {
+            word: "を",
+            
+            
+            
+              
+              
+            
+            gloss: "-object marker-"
+          },
+          
+          {
+            word: "戻せる",
+            
+            
+            
+              
+            
+            gloss: "can return"
+          },
+          
+          {
+            word: "の",
+            
+            
+            
+              
+              
+            
+            gloss: "-nominaliser: verb to noun-"
+          },
+          
+          {
+            word: "なら",
+            
+            
+            
+              
+              
+            
+            gloss: "-conditional particle (if)-"
+          }
+          
+        ]
+      },
+      
+    
+      
+      {
+        kanji:   "君に一言伝えたい",
+        romaji:  "Kimi ni hitokoto tsutaetai",
+        english: "I want to say something to you.",
+        explanations: [
+          
+          {
+            word: "君",
+            
+            
+            
+              
+              
+            
+            gloss: "you (casual)"
+          },
+          
+          {
+            word: "に",
+            
+            
+            
+              
+              
+            
+            gloss: null
+          },
+          
+          {
+            word: "一言",
+            
+            
+            
+              
+            
+            gloss: "a word, a brief remark"
+          },
+          
+          {
+            word: "伝えたい",
+            
+            
+            
+              
+            
+            gloss: "want to say"
+          }
+          
+        ]
+      },
+      
+    
+      
+      {
+        kanji:   "ごめんねありがとう",
+        romaji:  "Gomen ne arigatou",
+        english: "I'm sorry... thank you.",
+        explanations: [
+          
+          {
+            word: "ごめん",
+            
+            
+            
+              
+              
+            
+            gloss: "sorry"
+          },
+          
+          {
+            word: "ね",
+            
+            
+            
+              
+              
+            
+            gloss: "-soften sentence-"
+          },
+          
+          {
+            word: "ありがとう",
+            
+            
+            
+              
+            
+            gloss: "thank you"
+          }
+          
+        ]
+      },
+      
+    
+      
+    
+      
+      {
+        kanji:   "エイミーここで今二人",
+        romaji:  "Amy koko de ima futari",
+        english: "Amy, the two of us, here and now...",
+        explanations: [
+          
+          {
+            word: "エイミー",
+            
+            
+            
+              
+            
+            gloss: "Amy"
+          },
+          
+          {
+            word: "ここ",
+            
+            
+            
+              
+              
+            
+            gloss: "here"
+          },
+          
+          {
+            word: "で",
+            
+            
+            
+              
+              
+            
+            gloss: "-location marker (at, in)-"
+          },
+          
+          {
+            word: "今",
+            
+            
+            
+              
+              
+            
+            gloss: "now"
+          },
+          
+          {
+            word: "二人",
+            
+            
+            
+              
+            
+            gloss: "two people, the two of us"
+          }
+          
+        ]
+      },
+      
+    
+      
+      {
+        kanji:   "肩を寄せ合った日々を",
+        romaji:  "Kata wo yoseatta hibi wo",
+        english: "Those days we huddled close...",
+        explanations: [
+          
+          {
+            word: "肩",
+            
+            
+            
+              
+            
+            gloss: "shoulder"
+          },
+          
+          {
+            word: "を",
+            
+            
+            
+              
+              
+            
+            gloss: "-object marker-"
+          },
+          
+          {
+            word: "寄せ合った",
+            
+            
+            
+              
+            
+            gloss: "huddled close"
+          },
+          
+          {
+            word: "日々",
+            
+            
+            
+              
+            
+            gloss: "days"
+          },
+          
+          {
+            word: "を",
+            
+            
+            
+              
+              
+            
+            gloss: "-object marker-"
+          }
+          
+        ]
+      },
+      
+    
+      
+      {
+        kanji:   "思い出すと胸の奥ぎゅっと",
+        romaji:  "Omoidasu to mune no oku gyutto",
+        english: "When I remember them, my heart tightens deep inside.",
+        explanations: [
+          
+          {
+            word: "思い出す",
+            
+            
+            
+              
+            
+            gloss: "to recall, to remember"
+          },
+          
+          {
+            word: "と",
+            
+            
+            
+              
+              
+            
+            gloss: "-conditional (when)-"
+          },
+          
+          {
+            word: "胸",
+            
+            
+            
+              
+            
+            gloss: "chest, heart (emotionally)"
+          },
+          
+          {
+            word: "の",
+            
+            
+            
+              
+              
+            
+            gloss: "-possessive particle-"
+          },
+          
+          {
+            word: "奥",
+            
+            
+            
+              
+            
+            gloss: "inner part, depths"
+          },
+          
+          {
+            word: "ぎゅっと",
+            
+            
+            
+              
+            
+            gloss: "tightly, with a squeeze"
+          }
+          
+        ]
+      },
+      
+    
+      
+      {
+        kanji:   "エイミーここで今二人",
+        romaji:  "Amy koko de ima futari",
+        english: "Amy, the two of us, here and now...",
+        explanations: [
+          
+          {
+            word: "エイミー",
+            
+            
+            
+              
+            
+            gloss: "Amy"
+          },
+          
+          {
+            word: "ここ",
+            
+            
+            
+              
+              
+            
+            gloss: "here"
+          },
+          
+          {
+            word: "で",
+            
+            
+            
+              
+              
+            
+            gloss: "-location marker (at, in)-"
+          },
+          
+          {
+            word: "今",
+            
+            
+            
+              
+              
+            
+            gloss: "now"
+          },
+          
+          {
+            word: "二人",
+            
+            
+            
+              
+            
+            gloss: "two people, the two of us"
+          }
+          
+        ]
+      },
+      
+    
+      
+      {
+        kanji:   "また出会えるってことを",
+        romaji:  "Mata deaeru tte koto wo",
+        english: "The fact that we'll meet again...",
+        explanations: [
+          
+          {
+            word: "また",
+            
+            
+            
+              
+            
+            gloss: "again, once more"
+          },
+          
+          {
+            word: "出会える",
+            
+            
+            
+              
+            
+            gloss: "can meet, be able to encounter"
+          },
+          
+          {
+            word: "って",
+            
+            
+            
+              
+              
+            
+            gloss: "-quotative particle-"
+          },
+          
+          {
+            word: "こと",
+            
+            
+            
+              
+              
+            
+            gloss: "-nominaliser: quote to noun-, thing, fact"
+          },
+          
+          {
+            word: "を",
+            
+            
+            
+              
+              
+            
+            gloss: "-object marker-"
+          }
+          
+        ]
+      },
+      
+    
+      
+      {
+        kanji:   "信じて待つよ",
+        romaji:  "Shinjite matsu yo",
+        english: "I'll keep waiting and believing.",
+        explanations: [
+          
+          {
+            word: "信じて",
+            
+            
+            
+              
+            
+            gloss: "believing"
+          },
+          
+          {
+            word: "待つ",
+            
+            
+            
+              
+            
+            gloss: "to wait"
+          },
+          
+          {
+            word: "よ",
+            
+            
+            
+              
+              
+            
+            gloss: "-emphatic particle (you know)-"
+          }
+          
+        ]
+      },
+      
+    
+      
+      {
+        kanji:   "何があってもずっと",
+        romaji:  "Nani ga attemo zutto",
+        english: "No matter what happens, always.",
+        explanations: [
+          
+          {
+            word: "何",
+            
+            
+            
+              
+            
+            gloss: "what"
+          },
+          
+          {
+            word: "が",
+            
+            
+            
+              
+              
+            
+            gloss: "-subject marker-"
+          },
+          
+          {
+            word: "あっても",
+            
+            
+            
+              
+              
+            
+            gloss: "even if there is, no matter what happens"
+          },
+          
+          {
+            word: "ずっと",
+            
+            
+            
+              
+              
+            
+            gloss: "always, continuously"
+          }
+          
+        ]
+      },
+      
+    
+      
+      {
+        kanji:   "ねぇ君もそうだろう?",
+        romaji:  "Nee kimi mo sou darou?",
+        english: "Hey, you feel the same way... don't you?",
+        explanations: [
+          
+          {
+            word: "ねぇ",
+            
+            
+            
+              
+              
+            
+            gloss: "hey"
+          },
+          
+          {
+            word: "君",
+            
+            
+            
+              
+              
+            
+            gloss: "you (casual)"
+          },
+          
+          {
+            word: "も",
+            
+            
+            
+              
+              
+            
+            gloss: "also, too"
+          },
+          
+          {
+            word: "そう",
+            
+            
+            
+              
+              
+            
+            gloss: "like that, so"
+          },
+          
+          {
+            word: "だろう",
+            
+            
+            
+              
+              
+            
+            gloss: null
+          }
+          
+        ]
+      },
+      
+    
+      
+    
+      
+      {
+        kanji:   "季節が過ぎて",
+        romaji:  "Kisetsu ga sugite",
+        english: "As the seasons passed...",
+        explanations: [
+          
+          {
+            word: "季節",
+            
+            
+            
+              
+            
+            gloss: "season, seasons"
+          },
+          
+          {
+            word: "が",
+            
+            
+            
+              
+              
+            
+            gloss: "-subject marker-"
+          },
+          
+          {
+            word: "過ぎて",
+            
+            
+            
+              
+            
+            gloss: "passed, gone by"
+          }
+          
+        ]
+      },
+      
+    
+      
+      {
+        kanji:   "僕のことを本当に思うのなら",
+        romaji:  "Boku no koto wo hontou ni omou no nara",
+        english: "If you still really care about me...",
+        explanations: [
+          
+          {
+            word: "僕",
+            
+            
+            
+              
+            
+            gloss: "I, me, myself"
+          },
+          
+          {
+            word: "の",
+            
+            
+            
+              
+              
+            
+            gloss: "-possessive particle-"
+          },
+          
+          {
+            word: "こと",
+            
+            
+            
+              
+              
+            
+            gloss: "-nominaliser: quote to noun-, thing, fact"
+          },
+          
+          {
+            word: "を",
+            
+            
+            
+              
+              
+            
+            gloss: "-object marker-"
+          },
+          
+          {
+            word: "本当に",
+            
+            
+            
+              
+            
+            gloss: "truly, really"
+          },
+          
+          {
+            word: "思う",
+            
+            
+            
+              
+            
+            gloss: "to think, to feel"
+          },
+          
+          {
+            word: "の",
+            
+            
+            
+              
+              
+            
+            gloss: "-nominaliser: verb to noun-"
+          },
+          
+          {
+            word: "なら",
+            
+            
+            
+              
+              
+            
+            gloss: "-conditional particle (if)-"
+          }
+          
+        ]
+      },
+      
+    
+      
+      {
+        kanji:   "今更だって構わない",
+        romaji:  "Imasara datte kamawanai",
+        english: "Even if it's too late now, I don't mind.",
+        explanations: [
+          
+          {
+            word: "今更",
+            
+            
+            
+              
+            
+            gloss: "too late now, at this late juncture"
+          },
+          
+          {
+            word: "だって",
+            
+            
+            
+              
+              
+            
+            gloss: "even if"
+          },
+          
+          {
+            word: "構わない",
+            
+            
+            
+              
+            
+            gloss: "don't mind, doesn't matter, it's okay"
+          }
+          
+        ]
+      },
+      
+    
+      
+      {
+        kanji:   "小さな手を掴むよ",
+        romaji:  "Chiisana te wo tsukamu yo",
+        english: "I’ll hold your little hand.",
+        explanations: [
+          
+          {
+            word: "小さな",
+            
+            
+            
+              
+            
+            gloss: "small, little"
+          },
+          
+          {
+            word: "手",
+            
+            
+            
+              
+            
+            gloss: "hand"
+          },
+          
+          {
+            word: "を",
+            
+            
+            
+              
+              
+            
+            gloss: "-object marker-"
+          },
+          
+          {
+            word: "掴む",
+            
+            
+            
+              
+            
+            gloss: "to grasp, to hold, to take"
+          },
+          
+          {
+            word: "よ",
+            
+            
+            
+              
+              
+            
+            gloss: "-emphatic particle (you know)-"
+          }
+          
+        ]
+      },
+      
+    
+      
+    
+      
+      {
+        kanji:   "愛しき人よ",
+        romaji:  "Itoshiki hito yo",
+        english: "My beloved,",
+        explanations: [
+          
+          {
+            word: "愛しき",
+            
+            
+            
+              
+            
+            gloss: "beloved"
+          },
+          
+          {
+            word: "人",
+            
+            
+            
+              
+            
+            gloss: "person, one"
+          },
+          
+          {
+            word: "よ",
+            
+            
+            
+              
+              
+            
+            gloss: "-emphatic particle (you know)-"
+          }
+          
+        ]
+      },
+      
+    
+      
+      {
+        kanji:   "僕の声は君に届いてますか?",
+        romaji:  "Boku no koe wa kimi ni todoitemasu ka?",
+        english: "Is my voice reaching you?",
+        explanations: [
+          
+          {
+            word: "僕",
+            
+            
+            
+              
+            
+            gloss: "I, me, myself"
+          },
+          
+          {
+            word: "の",
+            
+            
+            
+              
+              
+            
+            gloss: "-possessive particle-"
+          },
+          
+          {
+            word: "声",
+            
+            
+            
+              
+            
+            gloss: "voice, sound"
+          },
+          
+          {
+            word: "は",
+            
+            
+            
+              
+              
+            
+            gloss: "-topic marker-"
+          },
+          
+          {
+            word: "君",
+            
+            
+            
+              
+                
+                  
+                  
+              
+              
+            
+            gloss: "you (casual)"
+          },
+          
+          {
+            word: "に",
+            
+            
+            
+              
+              
+            
+            gloss: "-indirect object marker (to, for)-"
+          },
+          
+          {
+            word: "届いてます",
+            
+            
+            
+              
+            
+            gloss: "is reaching, is being delivered"
+          },
+          
+          {
+            word: "か",
+            
+            
+            
+              
+              
+            
+            gloss: "-question particle-"
+          }
+          
+        ]
+      },
+      
+    
+      
+      {
+        kanji:   "愛する人を守るためにそっと",
+        romaji:  "Ai suru hito wo mamoru tame ni sotto",
+        english: "Gently, to protect the one I love.",
+        explanations: [
+          
+          {
+            word: "愛する",
+            
+            
+            
+              
+            
+            gloss: "to love"
+          },
+          
+          {
+            word: "人",
+            
+            
+            
+              
+            
+            gloss: "person, one"
+          },
+          
+          {
+            word: "を",
+            
+            
+            
+              
+              
+            
+            gloss: "-object marker-"
+          },
+          
+          {
+            word: "守る",
+            
+            
+            
+              
+            
+            gloss: "to protect, to guard"
+          },
+          
+          {
+            word: "ために",
+            
+            
+            
+              
+              
+            
+            gloss: "-purpose (in order to, for the sake of)-"
+          },
+          
+          {
+            word: "そっと",
+            
+            
+            
+              
+            
+            gloss: "gently, softly, quietly"
+          }
+          
+        ]
+      },
+      
+    
+      
+    
+      
+      {
+        kanji:   "エイミーここで今二人",
+        romaji:  "Amy koko de ima futari",
+        english: "Amy, the two of us, here and now...",
+        explanations: [
+          
+          {
+            word: "エイミー",
+            
+            
+            
+              
+            
+            gloss: "Amy"
+          },
+          
+          {
+            word: "ここ",
+            
+            
+            
+              
+              
+            
+            gloss: "here"
+          },
+          
+          {
+            word: "で",
+            
+            
+            
+              
+              
+            
+            gloss: "-location marker (at, in)-"
+          },
+          
+          {
+            word: "今",
+            
+            
+            
+              
+              
+            
+            gloss: "now"
+          },
+          
+          {
+            word: "二人",
+            
+            
+            
+              
+            
+            gloss: "two people, the two of us"
+          }
+          
+        ]
+      },
+      
+    
+      
+      {
+        kanji:   "肩を寄せ合った日々を",
+        romaji:  "Kata wo yoseatta hibi wo",
+        english: "Those days we huddled close...",
+        explanations: [
+          
+          {
+            word: "肩",
+            
+            
+            
+              
+            
+            gloss: "shoulder"
+          },
+          
+          {
+            word: "を",
+            
+            
+            
+              
+              
+            
+            gloss: "-object marker-"
+          },
+          
+          {
+            word: "寄せ合った",
+            
+            
+            
+              
+            
+            gloss: "huddled close"
+          },
+          
+          {
+            word: "日々",
+            
+            
+            
+              
+            
+            gloss: "days"
+          },
+          
+          {
+            word: "を",
+            
+            
+            
+              
+              
+            
+            gloss: "-object marker-"
+          }
+          
+        ]
+      },
+      
+    
+      
+      {
+        kanji:   "思い出すと胸の奥ぎゅっと",
+        romaji:  "Omoidasu to mune no oku gyutto",
+        english: "When I remember them, my heart tightens deep inside.",
+        explanations: [
+          
+          {
+            word: "思い出す",
+            
+            
+            
+              
+            
+            gloss: "to recall, to remember"
+          },
+          
+          {
+            word: "と",
+            
+            
+            
+              
+              
+            
+            gloss: "-conditional (when)-"
+          },
+          
+          {
+            word: "胸",
+            
+            
+            
+              
+            
+            gloss: "chest, heart (emotionally)"
+          },
+          
+          {
+            word: "の",
+            
+            
+            
+              
+              
+            
+            gloss: "-possessive particle-"
+          },
+          
+          {
+            word: "奥",
+            
+            
+            
+              
+            
+            gloss: "inner part, depths"
+          },
+          
+          {
+            word: "ぎゅっと",
+            
+            
+            
+              
+            
+            gloss: "tightly, with a squeeze"
+          }
+          
+        ]
+      },
+      
+    
+      
+      {
+        kanji:   "世界中の人々が笑えるように",
+        romaji:  "Sekaijuu no hitobito ga waraeru you ni",
+        english: "So that people around the world can laugh...",
+        explanations: [
+          
+          {
+            word: "世界中",
+            
+            
+            
+              
+            
+            gloss: "throughout the world, around the world"
+          },
+          
+          {
+            word: "の",
+            
+            
+            
+              
+              
+            
+            gloss: "-possessive particle-"
+          },
+          
+          {
+            word: "人々",
+            
+            
+            
+              
+            
+            gloss: "people"
+          },
+          
+          {
+            word: "が",
+            
+            
+            
+              
+              
+            
+            gloss: "-subject marker-"
+          },
+          
+          {
+            word: "笑える",
+            
+            
+            
+              
+            
+            gloss: "can smile, can laugh"
+          },
+          
+          {
+            word: "ように",
+            
+            
+            
+              
+              
+            
+            gloss: "so that, in order that"
+          }
+          
+        ]
+      },
+      
+    
+      
+      {
+        kanji:   "この歌を送るよ",
+        romaji:  "Kono uta wo okuru yo",
+        english: "I'm sending this song.",
+        explanations: [
+          
+          {
+            word: "この",
+            
+            
+            
+              
+            
+            gloss: "this"
+          },
+          
+          {
+            word: "歌",
+            
+            
+            
+              
+            
+            gloss: "song"
+          },
+          
+          {
+            word: "を",
+            
+            
+            
+              
+              
+            
+            gloss: "-object marker-"
+          },
+          
+          {
+            word: "送る",
+            
+            
+            
+              
+            
+            gloss: "to send"
+          },
+          
+          {
+            word: "よ",
+            
+            
+            
+              
+              
+            
+            gloss: "-emphatic particle (you know)-"
+          }
+          
+        ]
+      },
+      
+    
+      
+      {
+        kanji:   "ねぇエイミーいいだろう?",
+        romaji:  "Nee Amy ii darou?",
+        english: "Hey, Amy... that's okay, right?",
+        explanations: [
+          
+          {
+            word: "ねぇ",
+            
+            
+            
+              
+                
+                  
+                  
+              
+              
+            
+            gloss: "hey"
+          },
+          
+          {
+            word: "エイミー",
+            
+            
+            
+              
+            
+            gloss: "Amy"
+          },
+          
+          {
+            word: "いい",
+            
+            
+            
+              
+            
+            gloss: "good, fine, okay"
+          },
+          
+          {
+            word: "だろう",
+            
+            
+            
+              
+              
+            
+            gloss: "-conjectural ending (I guess, probably, right?)-"
+          }
+          
+        ]
+      },
+      
+    
+      
+    
+  ];
+</script>
+<script>
+  ;(function(){
+    const data = window._lyricsTestData;
+    if (!data.length) return;  // no quiz if no data
+    
+    // Utility: pick random element
+    function pick(arr){ return arr[Math.floor(Math.random()*arr.length)]; }
+    
+    // 1) Pick a random line & a random explanation
+    const line = pick(data);
+    const exp  = pick(line.explanations);
+    
+    // 2) Build choices: correct gloss + two random *other* glosses
+    const others = data
+      .flatMap(l => l.explanations.map(e=>e.gloss))
+      .filter(g => g !== exp.gloss);
+    
+      // pick two distractors
+    const distractors = [];
+    while (distractors.length < 2 && others.length){
+      const cand = pick(others);
+      if (!distractors.includes(cand)) distractors.push(cand);
+    }
+    const options = [exp.gloss, ...distractors]
+      .sort(() => Math.random() - .5); // shuffle
+    
+    // 3) Render
+    const container = document.getElementById('test-container');
+    container.innerHTML = `
+      Sentence:
+      <span class="test-sentence">
+          ${line.kanji.replace(
+          exp.word,
+          `<span class="highlight">${exp.word}</span>`
+          )}
+      </span>
+      </h4>
+      <ul class="test-options">
+      ${options.map(opt =>
+          `<li><button class="opt-btn">${opt}</button></li>`
+      ).join('')}
+      </ul>
+    `;
+    
+    // 4) Wire up answer buttons
+    const buttons = container.querySelectorAll('.opt-btn');
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+      // disable all immediately
+        buttons.forEach(b => b.disabled = true);
+
+        // highlight the correct one
+        buttons.forEach(b => {
+        if (b.textContent === exp.gloss) {
+            b.classList.add('correct');
+        }
+        });
+
+        // if they picked wrong, highlight their choice red
+        if (btn.textContent !== exp.gloss) {
+        btn.classList.add('incorrect');
+        }
+      });
+    });
+  })();
+</script>
+<script>
+  ;(() => {
+    // 1) Grab the data once
+    const data = window._lyricsTestData;
+    if (!data.length) return;
+
+    // 2) Utility
+    function pick(arr) { return arr[Math.floor(Math.random()*arr.length)]; }
+
+    // 3) The render function
+    function renderQuestion() {
+      const line = pick(data);
+      const exp  = pick(line.explanations);
+
+      // build distractors
+      const others = data.flatMap(l => l.explanations.map(e=>e.gloss))
+                        .filter(g => g !== exp.gloss);
+      const distractors = [];
+      while (distractors.length < 2 && others.length) {
+        const cand = pick(others);
+        if (!distractors.includes(cand)) distractors.push(cand);
+      }
+      const options = [exp.gloss, ...distractors]
+        .sort(() => Math.random() - .5);
+
+      // render into container
+      const container = document.getElementById('test-container');
+      container.innerHTML = `
+        <h4>
+          Sentence:
+          <span class="test-sentence">
+            ${line.kanji.replace(
+              exp.word,
+              `<span class="highlight">${exp.word}</span>`
+            )}
+          </span>
+        </h4>
+        <ul class="test-options">
+          ${options.map(opt =>
+            `<li><button class="opt-btn">${opt}</button></li>`
+          ).join('')}
+        </ul>
+      `;
+
+      // wire up the newly‐inserted buttons
+      const buttons = container.querySelectorAll('.opt-btn');
+      buttons.forEach(btn => {
+        btn.disabled = false;
+        btn.classList.remove('correct','incorrect');
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.disabled = true);
+          buttons.forEach(b => {
+            if (b.textContent === exp.gloss) b.classList.add('correct');
+          });
+          if (btn.textContent !== exp.gloss) btn.classList.add('incorrect');
+        });
+      });
+    }
+
+    // 4) Initial draw
+    renderQuestion();
+
+    // 5) “Next” button hooks into it
+    document.getElementById('quiz-next')
+            .addEventListener('click', renderQuestion);
+
+  })();
+</script>
   </section>
 </div>
 
