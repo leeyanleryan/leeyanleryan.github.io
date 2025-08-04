@@ -78,21 +78,19 @@ body.dark-mode .highlight {
 .test-options li {
   margin: .5em 0;
 }
+
 .opt-btn {
-  font-size: 1.15rem;
-  padding: .4em .8em;
+  padding: 0 .8em;
   cursor: pointer;
   transition: background-color var(--theme-transition), 
               border-color var(--theme-transition), 
               color var(--theme-transition) !important;
 }
-
 .opt-btn.correct {
   background-color: #d4edda;
   border-color:   #c3e6cb;
   color:          #155724;
 }
-
 .opt-btn.incorrect {
   background-color: #f8d7da;
   border-color:   #f5c6cb;

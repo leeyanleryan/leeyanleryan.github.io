@@ -17,18 +17,22 @@
             word: {{ item.text | jsonify }},
             {% comment %} Look up the entry in your word-bank {% endcomment %}
             {% assign entry = site.data.word-bank-jp[item.text] %}
-            {% if entry.senses %}
-              {%- comment -%} pick the provided sense, or fall back to the first key {%- endcomment -%}
-              {% assign sense_key = item.sense %}
-              {% if sense_key == nil %}
-                {% for pair in entry.senses %}
-                  {% assign sense_key = pair[0] %}
-                  {% break %}
-                {% endfor %}
+            {% if entry %}
+              {% if entry.senses %}
+                {%- comment -%} pick the provided sense, or fall back to the first key {%- endcomment -%}
+                {% assign sense_key = item.sense %}
+                {% if sense_key == nil %}
+                  {% for pair in entry.senses %}
+                    {% assign sense_key = pair[0] %}
+                    {% break %}
+                  {% endfor %}
+                {% endif %}
+                {% assign gloss_val = entry.senses[sense_key].english %}
+              {% else %}
+                {% assign gloss_val = entry.english %}
               {% endif %}
-              {% assign gloss_val = entry.senses[sense_key].english %}
             {% else %}
-              {% assign gloss_val = entry.english %}
+              {% assign gloss_val = "<MISSING>" %}
             {% endif %}
             gloss: {{ gloss_val | jsonify }}
           }{% if forloop.last == false %},{% endif %}
@@ -61,13 +65,19 @@
       const numChoices    = 4;
       const numDistractors = numChoices - 1;
 
-      const distractors = [];
-      while (distractors.length < numDistractors && others.length) {
-        const cand = pick(others);
-        if (!distractors.includes(cand)) distractors.push(cand);
-      }
+      // build a unique pool of wrong glosses
+      const uniqueOthers = Array.from(new Set(
+        data.flatMap(l => l.explanations.map(e => e.gloss))
+          .filter(g => g && g !== exp.gloss)
+      ));
+
+      // shuffle & take as many as you can up to numDistractors
+      const distractors = uniqueOthers
+        .sort(() => Math.random() - 0.5)
+        .slice(0, numDistractors);
+
       const options = [exp.gloss, ...distractors]
-        .sort(() => Math.random() - .5);
+        .sort(() => Math.random() - 0.5);
 
       // render into container
       const container = document.getElementById('test-container');
@@ -83,7 +93,7 @@
         </h4>
         <ul class="test-options">
           ${options.map(opt =>
-            `<li><button class="opt-btn">${opt}</button></li>`
+            `<li><button class="opt-btn"><h5 style="margin: 3px 0;">${opt}</h5></button></li>`
           ).join('')}
         </ul>
       `;

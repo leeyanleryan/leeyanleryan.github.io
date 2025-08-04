@@ -254,9 +254,9 @@
       <div class="lyrics-stanza no-double-tap-zoom no-hover-background-after-click" data-idx="1">
         
           <h5 class="h5-margin-0">
-          <span class="kanji-text"><br /></span>
-          <span class="romaji-text"><em></em><br /></span>
-          <span class="english-text"><br /></span>
+          <span class="kanji-text">きつくまぶしい太陽の下<br /></span>
+          <span class="romaji-text"><em>Kitsuku mabushii taiyou no shita</em><br /></span>
+          <span class="english-text">Under the harsh, dazzling sun<br /></span>
           </h5>
         
       </div>
@@ -275,6 +275,41 @@
             <h6 class="w3-col s4 m4 h6-margin-0"><em></em></h6>
             <h6 class="w3-col s4 m4 h6-margin-0"></h6>
           
+            
+            
+              
+            
+            <h6 class="w3-col s4 m4 h6-margin-0"></h6>
+            <h6 class="w3-col s4 m4 h6-margin-0"><em></em></h6>
+            <h6 class="w3-col s4 m4 h6-margin-0"></h6>
+          
+            
+            
+              
+            
+            <h6 class="w3-col s4 m4 h6-margin-0"></h6>
+            <h6 class="w3-col s4 m4 h6-margin-0"><em></em></h6>
+            <h6 class="w3-col s4 m4 h6-margin-0"></h6>
+          
+            
+            
+              
+              
+              
+              
+            
+            <h6 class="w3-col s4 m4 h6-margin-0">の</h6>
+            <h6 class="w3-col s4 m4 h6-margin-0"><em>no</em></h6>
+            <h6 class="w3-col s4 m4 h6-margin-0">-possessive particle-</h6>
+          
+            
+            
+              
+            
+            <h6 class="w3-col s4 m4 h6-margin-0"></h6>
+            <h6 class="w3-col s4 m4 h6-margin-0"><em></em></h6>
+            <h6 class="w3-col s4 m4 h6-margin-0"></h6>
+          
         
       </div>
     
@@ -284,6 +319,169 @@
     
   
 </div>
+    <hr class="hr-main-body" />
+    <h2><b>Test</b></h2>
+    <h5>
+      Would you like to test your understanding?  
+      Select the correct meaning of the highlighted word!
+    </h5>
+    <div id="test-container" style="margin-top:1.5em;">
+  <!-- JS will populate this -->
+</div>
+<button id="quiz-next" style="margin-top:1em;">Next Question</button>
+<script>
+  // 1) Build a JS array of only those lines that have explanations
+  window._lyricsTestData = [
+    
+      
+    
+      
+      {
+        kanji:   "きつくまぶしい太陽の下",
+        romaji:  "Kitsuku mabushii taiyou no shita",
+        english: "Under the harsh, dazzling sun",
+        explanations: [
+          
+          {
+            word: "きつく",
+            
+            
+            
+              
+            
+            gloss: "<MISSING>"
+          },
+          
+          {
+            word: "まぶしい",
+            
+            
+            
+              
+            
+            gloss: "<MISSING>"
+          },
+          
+          {
+            word: "太陽",
+            
+            
+            
+              
+            
+            gloss: "<MISSING>"
+          },
+          
+          {
+            word: "の",
+            
+            
+            
+              
+                
+                
+              
+            
+            gloss: "-possessive particle-"
+          },
+          
+          {
+            word: "下",
+            
+            
+            
+              
+            
+            gloss: "<MISSING>"
+          }
+          
+        ]
+      },
+      
+    
+      
+    
+  ];
+</script>
+<script>
+  ;(() => {
+    // 1) Grab the data once
+    const data = window._lyricsTestData;
+    if (!data.length) return;
+
+    // 2) Utility
+    function pick(arr) { return arr[Math.floor(Math.random()*arr.length)]; }
+
+    // 3) The render function
+    function renderQuestion() {
+      const line = pick(data);
+      const exp  = pick(line.explanations);
+
+      // build distractors
+      const others = data
+        .flatMap(l => l.explanations.map(e => e.gloss))
+        .filter(g => g && g !== exp.gloss);
+
+      const numChoices    = 4;
+      const numDistractors = numChoices - 1;
+
+      // build a unique pool of wrong glosses
+      const uniqueOthers = Array.from(new Set(
+        data.flatMap(l => l.explanations.map(e => e.gloss))
+          .filter(g => g && g !== exp.gloss)
+      ));
+
+      // shuffle & take as many as you can up to numDistractors
+      const distractors = uniqueOthers
+        .sort(() => Math.random() - 0.5)
+        .slice(0, numDistractors);
+
+      const options = [exp.gloss, ...distractors]
+        .sort(() => Math.random() - 0.5);
+
+      // render into container
+      const container = document.getElementById('test-container');
+      container.innerHTML = `
+        <h4>
+          Sentence:
+          <span class="test-sentence">
+            ${line.kanji.replace(
+              exp.word,
+              `<span class="highlight">${exp.word}</span>`
+            )}
+          </span>
+        </h4>
+        <ul class="test-options">
+          ${options.map(opt =>
+            `<li><button class="opt-btn"><h5 style="margin: 3px 0;">${opt}</h5></button></li>`
+          ).join('')}
+        </ul>
+      `;
+
+      // wire up the newly‐inserted buttons
+      const buttons = container.querySelectorAll('.opt-btn');
+      buttons.forEach(btn => {
+        btn.disabled = false;
+        btn.classList.remove('correct','incorrect');
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.disabled = true);
+          buttons.forEach(b => {
+            if (b.textContent === exp.gloss) b.classList.add('correct');
+          });
+          if (btn.textContent !== exp.gloss) btn.classList.add('incorrect');
+        });
+      });
+    }
+
+    // 4) Initial draw
+    renderQuestion();
+
+    // 5) “Next” button hooks into it
+    document.getElementById('quiz-next')
+            .addEventListener('click', renderQuestion);
+
+  })();
+</script>
   </section>
 </div>
 
