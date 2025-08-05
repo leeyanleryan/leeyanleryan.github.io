@@ -111,22 +111,27 @@
         </h4>
         <ul class="lt-test-options">
           ${options.map(opt =>
-            `<li><button class="lt-opt-btn no-double-tap-zoom"><h5 style="margin: 3px 0;">${opt}</h5></button></li>`
+            `<li><div class="lt-option-button no-double-tap-zoom"><h5 style="margin: 3px 0;">${opt}</h5></div></li>`
           ).join('')}
         </ul>
       `;
 
       // wire up the newly‐inserted buttons
-      const buttons = container.querySelectorAll('.lt-opt-btn');
-      buttons.forEach(btn => {
-        btn.disabled = false;
-        btn.classList.remove('correct','incorrect');
-        btn.addEventListener('click', () => {
-          buttons.forEach(b => b.disabled = true);
-          buttons.forEach(b => {
-            if (b.textContent === exp.gloss) b.classList.add('correct');
+      const optionsEls = container.querySelectorAll('.lt-option-button');
+
+      optionsEls.forEach(el => {
+        // reset state
+        el.classList.remove('correct','incorrect','disabled');
+        el.addEventListener('click', () => {
+          // disable all options
+          optionsEls.forEach(o => o.classList.add('disabled'));
+
+          // highlight correct
+          optionsEls.forEach(o => {
+            if (o.textContent === exp.gloss) o.classList.add('correct');
           });
-          if (btn.textContent !== exp.gloss) btn.classList.add('incorrect');
+          // highlight wrong choice
+          if (el.textContent !== exp.gloss) el.classList.add('incorrect');
         });
       });
     }
