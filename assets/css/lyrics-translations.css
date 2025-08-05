@@ -128,3 +128,20 @@ body.dark-mode .lt-highlight {
 .lt-test-options li {
   margin: .5em 0;
 }
+
+.lt-quiz-next {
+  display: inline-block;
+  background-color: #f0f0f0;
+  color: #000;
+  border: 1px solid #ccc;
+  padding: 0 .4em;
+  margin-left: .1em;
+  margin-right: .1em;
+  border-radius: 0;         /* match your desktop look */
+  cursor: pointer;
+  transition: background-color var(--theme-transition), 
+              border-color var(--theme-transition), 
+              color var(--theme-transition),
+              opacity var(--theme-transition) !important;
+  user-select: none;        /* optional: prevent text-select on click */
+}
