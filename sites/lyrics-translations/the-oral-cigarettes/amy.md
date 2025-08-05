@@ -8,6 +8,13 @@ left_url: /lyrics-translations/the-oral-cigarettes/
 right_label: Flower
 right_url: /lyrics-translations/the-oral-cigarettes/flower/
 
+song_description: >-
+  A song released by The Oral Cigarettes in 2016 under the album 'FIXION'.
+lyrics_guide: >-
+  Click on any section to learn more about it. Follows line by line from <a href="https://open.spotify.com/track/1PubxlFeesWDghC3B9I280?si=dfdd361e391e4041" target="_blank"> Spotify</a>.
+lyrics_test: >-
+  Would you like to test your understanding? Select the correct meaning of the highlighted word!
+
 lyrics:
   - divider: true
 
@@ -188,7 +195,7 @@ lyrics:
       - text: "君"
         sense: "you"
       - text: "に"
-        sense: "indirect-object"
+        sense: "indirect_object"
       - text: "一言"
       - text: "伝えたい"
 
@@ -392,7 +399,7 @@ lyrics:
         sense: "topic"
       - text: "君"
       - text: "に"
-        sense: "indirect-object"
+        sense: "indirect_object"
       - text: "届いてます"
       - text: "か"
         sense: "question"
@@ -497,25 +504,4 @@ lyrics:
 ---
 
 <!-- !PAGE CONTENT! -->
-<div id="page-lyrics-translations-toc" class="w3-main">
-  <section id="amy" class="w3-container">
-    <h2><b>Amy</b></h2>
-    <h5>
-      A song released by The Oral Cigarettes in 2016 under the album "FIXION".
-    </h5>
-    <hr class="hr-main-body">
-    <h2><b>Lyrics</b></h2>
-    <h5>
-      Click on any section to learn more about it.
-      Follows line by line from <a href="https://open.spotify.com/track/1PubxlFeesWDghC3B9I280?si=dfdd361e391e4041" target="_blank"> Spotify</a>.
-    </h5>
-    {% include lyrics-translation.html %}
-    <hr class="hr-main-body">
-    <h2><b>Test</b></h2>
-    <h5>
-      Would you like to test your understanding?  
-      Select the correct meaning of the highlighted word!
-    </h5>
-    {% include lyrics-test.html %}
-  </section>
-</div>
+{% include lyrics-content.html %}

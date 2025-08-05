@@ -505,7 +505,7 @@
   senses:
     temporal:
       english: "-temporal (in, at)-"
-    indirect-object:
+    indirect_object:
       english: "-indirect object marker (to, for)-"
 
 の:
