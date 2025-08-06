@@ -5,8 +5,8 @@ permalink: /about/hobbies/
 
 left_label: Awards
 left_url: /about/awards/
-right_label: The Oral Cigarettes
-right_url: /lyrics-translations/the-oral-cigarettes/
+right_label: Aimer
+right_url: /lyrics-translations/aimer/
 ---
 
 <!-- !PAGE CONTENT! -->

@@ -3,10 +3,10 @@ layout: default
 title: Ref:rain
 permalink: /lyrics-translations/aimer/ref-rain/
 
-left_label: Amy
-left_url: /lyrics-translations/the-oral-cigarettes/amy/
-right_label: Profile
-right_url: /about/profile/
+left_label: Aimer
+left_url: /lyrics-translations/aimer/
+right_label: The Oral Cigarettes
+right_url: /lyrics-translations/the-oral-cigarettes/
 
 song_description: >-
   A song released by Aimer in 2019 under the album "Penny Rain".

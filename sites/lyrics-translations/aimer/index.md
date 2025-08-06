@@ -5,8 +5,8 @@ permalink: /lyrics-translations/aimer/
 
 left_label: Hobbies
 left_url: /about/hobbies/
-right_label: Amy
-right_url: /lyrics-translations/the-oral-cigarettes/amy/
+right_label: Ref:rain
+right_url: /lyrics-translations/aimer/ref-rain/
 ---
 
 <!-- !PAGE CONTENT! -->
