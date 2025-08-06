@@ -33,6 +33,9 @@ document.querySelectorAll('.no-hover-background-after-click').forEach(stanza => 
     document.querySelectorAll('.lt-english-text')
             .forEach(el => el.style.display = settings.english ? '' : 'none');
 
+    const allOff = !settings.kanji && !settings.romaji && !settings.english;
+    document.querySelectorAll('.lt-english-text-only').forEach(el => el.style.display = allOff ? 'none' : '');
+
     document.getElementById('lt-toggle-kanji').textContent   = settings.kanji   ? 'Hide Kanji'   : 'Show Kanji';
     document.getElementById('lt-toggle-romaji').textContent  = settings.romaji  ? 'Hide Romaji'  : 'Show Romaji';
     document.getElementById('lt-toggle-english').textContent = settings.english ? 'Hide English' : 'Show English';
