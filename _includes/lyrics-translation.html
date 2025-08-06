@@ -18,6 +18,11 @@
           <span class="lt-english-text">{{ line.english }}<br></span>
           </h5>
         {% endif %}
+        {% if line.lang == "en" %}
+          <h5 class="h5-margin-0">
+          <span class="lt-english-text-only">{{ line.english }}<br></span>
+          </h5>
+        {% endif %}
       </div>
       <div class="w3-row lyrics-explanation" id="exp-{{ idx }}">
         {% if line.lang == "jp" %}

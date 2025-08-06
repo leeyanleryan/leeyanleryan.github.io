@@ -136,6 +136,13 @@
     subject:
       english: "-subject marker-"
 
+午後:
+  kanji:    "午後"
+  hiragana: "ごご"
+  katakana: ""
+  romaji:   "gogo"
+  english:  "afternoon, p.m."
+
 ごめん:
   kanji:    "ごめん"
   hiragana: "ごめん"
@@ -260,6 +267,13 @@
   romaji:   "kamawanai"
   english:  "don't mind, doesn't matter, it's okay"
 
+傘:
+  kanji:    "傘"
+  hiragana: "かさ"
+  katakana: ""
+  romaji:   "kasa"
+  english:  "umbrella"
+
 肩:
   kanji:    "肩"
   hiragana: "かた"
@@ -364,6 +378,13 @@
 # L
 # ------------------------------------------ #
 # M
+まだ:
+  kanji:    "まだ"
+  hiragana: "まだ"
+  katakana: ""
+  romaji:   "mada"
+  english:  "still, yet, not yet"
+
 守る:
   kanji:    "守る"
   hiragana: "まもる"
@@ -472,6 +493,13 @@
   senses:
     conditional:
       english: "-conditional particle (if)-"
+
+夏:
+  kanji:    "夏"
+  hiragana: "なつ"
+  katakana: ""
+  romaji:   "natsu"
+  english:  "summer"
 
 ね:
   kanji:    "ね"
@@ -604,6 +632,13 @@
   romaji:   "shita"
   english:  "felt, did"
 
+下:
+  kanji:    "下"
+  hiragana: "した"
+  katakana: ""
+  romaji:   "shita"
+  english:  "beneath, under"
+
 してる:
   kanji:    "してる"
   hiragana: "してる"
@@ -658,6 +693,13 @@
     purpose:
       english: "-purpose (in order to, for the sake of)-"
 
+足りなくて:
+  kanji:    "足りなくて"
+  hiragana: "たりなくて"
+  katakana: ""
+  romaji:   "tarinakute"
+  english:  "not enough, insufficient"
+
 手:
   kanji:    "手"
   hiragana: "て"
@@ -698,6 +740,13 @@
   katakana: ""
   romaji:   "toki"
   english:  "time, moment"
+
+通り雨:
+  kanji:    "通り雨"
+  hiragana: "とおりあめ"
+  katakana: ""
+  romaji:   "tooriame"
+  english:  "passing shower, sudden rain"
 
 掴む:
   kanji:    "掴む"

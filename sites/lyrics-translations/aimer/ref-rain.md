@@ -19,11 +19,37 @@ lyrics:
   - divider: true
 
   - lang:    "jp"
-    kanji:   ""
-    romaji:  ""
-    english: ""
+    kanji:   "Raining 夏の午後に 通り雨 傘の下"
+    romaji:  "Raining natsu no gogo ni tooriame kasa no shita"
+    english: "Raining on a summer afternoon, a passing shower beneath the umbrella."
     explanation:
-      - text: ""
+      - text: "Raining"
+      - text: "夏"
+      - text: "の"
+        sense: "possessive"
+      - text: "午後"
+      - text: "に"
+        sense: "temporal"
+      - text: "通り雨"
+      - text: "傘"
+      - text: "の"
+        sense: "possessive"
+      - text: "下"
+
+  - divider: true
+
+  - lang:    "en"
+    english: "Nothing but you're the part of me"
+
+  - divider: true
+
+  - lang:    "jp"
+    kanji:   "まだ 足りなくて"
+    romaji:  "Mada tarinakute"
+    english: "It's still not enough."
+    explanation:
+      - text: "まだ"
+      - text: "足りなくて"
 
   - divider: true
 ---
