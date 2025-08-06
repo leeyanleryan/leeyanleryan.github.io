@@ -16,58 +16,16 @@
     <div class="w3-bar-block">
       <h4><strong>About</strong></h4>
       <a href="/about/profile/" class="w3-bar-item w3-button w3-padding {% if page.url == '/about/profile/' %} active{% endif %}"> Profile</a>
-      <!-- Projects + auto-generated sub-nav -->
-      <div class="submenu-wrapper
-        {% if page.url contains '/about/projects/' %}open{% endif %}">
-        <div class="submenu-header">
-          <!-- main pill (click -> /about/projects/) -->
-          <a href="/about/projects/"
-             class="w3-bar-item w3-button w3-padding main-link
-                    {% if page.url == '/about/projects/' %}active{% endif %}">
-            Projects
-          </a>
-        </div>
-        <!-- this list is only ever visible if “open” class is present -->
-        <div class="submenu">
-          {% assign all_projects = site.data.projects | sort: "order" %}
-          {% for proj in all_projects %}
-            {% unless proj.url == "/about/projects/" %}
-              <a href="{{ proj.url }}"
-                class="w3-bar-item w3-button w3-padding
-                        {% if page.url == proj.url %} active{% endif %}">
-                {{ proj.title }}
-              </a>
-            {% endunless %}
-          {% endfor %}
-        </div>
-      </div>
-      <!-- end Projects -->
-      <!-- Experiences + auto-generated sub-nav -->
-      <div class="submenu-wrapper
-        {% if page.url contains '/about/experiences/' %}open{% endif %}">
-        <div class="submenu-header">
-          <!-- main pill (click -> /about/experiences/) -->
-          <a href="/about/experiences/"
-             class="w3-bar-item w3-button w3-padding main-link
-                    {% if page.url == '/about/experiences/' %}active{% endif %}">
-            Experiences
-          </a>
-        </div>
-        <!-- this list is only ever visible if “open” class is present -->
-        <div class="submenu">
-          {% assign all_experiences = site.data.experiences | sort: "order" %}
-          {% for experience in all_experiences %}
-            {% unless experience.url == "/about/experiences/" %}
-              <a href="{{ experience.url }}"
-                class="w3-bar-item w3-button w3-padding
-                        {% if page.url == experience.url %} active{% endif %}">
-                {{ experience.title }}
-              </a>
-            {% endunless %}
-          {% endfor %}
-        </div>
-      </div>
-      <!-- end Experiences -->
+      {% include sidebar-submenu.html 
+         subheader="Projects" 
+         suburl="/about/projects/" 
+         sublinks=site.data.projects 
+         suborder="order" %}
+      {% include sidebar-submenu.html 
+         subheader="Experiences" 
+         suburl="/about/experiences/" 
+         sublinks=site.data.experiences 
+         suborder="order" %}
       <a href="/about/awards/" class="w3-bar-item w3-button w3-padding {% if page.url == '/about/awards/' %} active{% endif %}"> Awards</a>
       <a href="/about/hobbies/" class="w3-bar-item w3-button w3-padding {% if page.url == '/about/hobbies/' %} active{% endif %}"> Hobbies</a>
     </div>
@@ -76,58 +34,16 @@
   <div class="w3-container">
     <h4><strong>Lyrics Translations</strong></h4>
     <div class="w3-bar-block">
-      <!-- Aimer + auto-generated sub-nav -->
-      <div class="submenu-wrapper
-        {% if page.url contains '/lyrics-translations/aimer/' %}open{% endif %}">
-        <div class="submenu-header">
-          <!-- main pill (click -> /lyrics-translations/aimer/) -->
-          <a href="/lyrics-translations/aimer/"
-             class="w3-bar-item w3-button w3-padding main-link
-                    {% if page.url == '/lyrics-translations/aimer/' %}active{% endif %}">
-            Aimer
-          </a>
-        </div>
-        <!-- this list is only ever visible if “open” class is present -->
-        <div class="submenu">
-          {% assign all_aimer = site.data.aimer | sort: "title" %}
-          {% for aimer in all_aimer %}
-            {% unless aimer.url == "/lyrics-translations/aimer/" %}
-              <a href="{{ aimer.url }}"
-                class="w3-bar-item w3-button w3-padding
-                        {% if page.url == aimer.url %} active{% endif %}">
-                {{ aimer.title }}
-              </a>
-            {% endunless %}
-          {% endfor %}
-        </div>
-      </div>
-      <!-- end Aimer -->
-      <!-- TOC + auto-generated sub-nav -->
-      <div class="submenu-wrapper
-        {% if page.url contains '/lyrics-translations/the-oral-cigarettes/' %}open{% endif %}">
-        <div class="submenu-header">
-          <!-- main pill (click -> /lyrics-translations/the-oral-cigarettes/) -->
-          <a href="/lyrics-translations/the-oral-cigarettes/"
-             class="w3-bar-item w3-button w3-padding main-link
-                    {% if page.url == '/lyrics-translations/the-oral-cigarettes/' %}active{% endif %}">
-            The Oral Cigarettes
-          </a>
-        </div>
-        <!-- this list is only ever visible if “open” class is present -->
-        <div class="submenu">
-          {% assign all_toc = site.data.the-oral-cigarettes | sort: "title" %}
-          {% for toc in all_toc %}
-            {% unless toc.url == "/lyrics-translations/the-oral-cigarettes/" %}
-              <a href="{{ toc.url }}"
-                class="w3-bar-item w3-button w3-padding
-                        {% if page.url == toc.url %} active{% endif %}">
-                {{ toc.title }}
-              </a>
-            {% endunless %}
-          {% endfor %}
-        </div>
-      </div>
-      <!-- end TOC -->
+      {% include sidebar-submenu.html 
+         subheader="Aimer" 
+         suburl="/lyrics-translations/aimer/" 
+         sublinks=site.data.aimer 
+         suborder="title" %}
+      {% include sidebar-submenu.html 
+         subheader="The Oral Cigarettes" 
+         suburl="/lyrics-translations/the-oral-cigarettes/" 
+         sublinks=site.data.the-oral-cigarettes 
+         suborder="title" %}
     </div>
   </div>
   <hr class="hr-sidebar">

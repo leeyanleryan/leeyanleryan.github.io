@@ -1,21 +1,21 @@
 <div class="submenu-wrapper
-  {% if page.url contains '/lyrics-translations/aimer/' %}open{% endif %}">
+  {% if page.url contains include.suburl %}open{% endif %}">
   <div class="submenu-header">
-    <a href="/lyrics-translations/aimer/"
+    <a href="{{ include.suburl }}"
         class="w3-bar-item w3-button w3-padding main-link
-              {% if page.url == '/lyrics-translations/aimer/' %}active{% endif %}">
-      Aimer
+              {% if page.url == include.suburl %}active{% endif %}">
+      {{ include.subheader }}
     </a>
   </div>
   <!-- this list is only ever visible if “open” class is present -->
   <div class="submenu">
-    {% assign all_aimer = site.data.aimer | sort: "title" %}
-    {% for aimer in all_aimer %}
-      {% unless aimer.url == "/lyrics-translations/aimer/" %}
-        <a href="{{ aimer.url }}"
+    {% assign all_sublinks = include.sublinks | sort: include.suborder %}
+    {% for sublink in all_sublinks %}
+      {% unless sublink.url == {{ include.suburl }} %}
+        <a href="{{ sublink.url }}"
           class="w3-bar-item w3-button w3-padding
-                  {% if page.url == aimer.url %} active{% endif %}">
-          {{ aimer.title }}
+                  {% if page.url == sublink.url %} active{% endif %}">
+          {{ sublink.title }}
         </a>
       {% endunless %}
     {% endfor %}
