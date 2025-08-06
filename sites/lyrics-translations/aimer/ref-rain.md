@@ -38,6 +38,21 @@ lyrics:
 
   - divider: true
 
+  - lang:    "jp"
+    kanji:   "何も手につかずに 上の空の日々"
+    romaji:  "Nanimo te ni tsukazu ni uwanosora no hibi"
+    english: "Idle days when I couldn't focus on anything..."
+    explanation:
+      - text: "何も"
+      - text: "手"
+      - text: "に"
+        sense: "indirect_object"
+      - text: "つかずに"
+      - text: "上の空"
+      - text: "の"
+        sense: "possessive"
+      - text: "日々"
+
   - lang:    "en"
     english: "Nothing but you're the part of me"
 
