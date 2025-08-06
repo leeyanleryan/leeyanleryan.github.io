@@ -1,5 +1,5 @@
-<div id="page-lyrics-translations-toc" class="w3-main">
-  <section id="amy" class="w3-container">
+<div id="page-lyrics-translation" class="w3-main">
+  <section id="lyrics-translation" class="w3-container">
     <h2><b>{{ page.title }}</b></h2>
     <h5>
       {{ page.song_description }}
@@ -9,12 +9,12 @@
     <h5>
       {{ page.lyrics_guide }}
     </h5>
-    {% include lyrics-translation.html %}
+    {% include lyrics-translation.html lyrics=include.lyrics %}
     <hr class="hr-main-body">
     <h2><b>Test</b></h2>
     <h5>
       {{ page.lyrics_test }}
     </h5>
-    {% include lyrics-test.html %}
+    {% include lyrics-test.html lyrics=include.lyrics %}
   </section>
 </div>

@@ -12,44 +12,31 @@
 }
 </script>
 <script>
-  // 1) Build a JS array of only those lines that have explanations
+  // build five parallel arrays from include.lyrics
+  {% assign originals   = include.lyrics.original.lines   | split: "\n" %}
+  {% assign romanized   = include.lyrics.romanized.lines  | split: "\n" %}
+  {% assign englishs    = include.lyrics.english.lines     | split: "\n" %}
+  {% assign langs       = include.lyrics.lang.lines        | split: "\n" %}
+  {% assign expl_rows   = include.lyrics.explanation.lines | split: "\n" %}
+
   window._lyricsTestData = [
-    {% for line in page.lyrics %}
-      {% if line.explanation and line.explanation.size > 0 %}
+    {% for i in (0..originals.size | minus: 1) %}
+      {% if langs[i] == "jp" and expl_rows[i] != "<empty>" %}
       {
-        kanji:   {{ line.kanji | jsonify }},
-        romaji:  {{ line.romaji | jsonify }},
-        english: {{ line.english | jsonify }},
+        kanji:   {{ originals[i] | jsonify }},
+        romaji:  {{ romanized[i] | jsonify }},
+        english: {{ englishs[i]   | jsonify }},
         explanations: [
-          {% assign valid_expls = "" | split: "," %}
-          {% for item in line.explanation %}
-            {% assign entry = site.data.word-bank-jp[item.text] %}
-            {% if entry %}
-              {% assign valid_expls = valid_expls | push: item %}
-            {% endif %}
-          {% endfor %}
-          {% for item in valid_expls %}
+          {% assign cells = expl_rows[i] | split: "," %}
+          {% for cell in cells %}
+            {% assign parts = cell | split: "|" %}
             {
-              word: {{ item.text | jsonify }},
-              {% assign entry = site.data.word-bank-jp[item.text] %}
-              {%- if entry.senses -%}
-                {%- comment -%}pick sense_key logic…{%- endcomment -%}
-                {% assign sense_key = item.sense %}
-                {% if sense_key == nil %}
-                  {% for pair in entry.senses %}
-                    {% assign sense_key = pair[0] %}
-                    {% break %}
-                  {% endfor %}
-                {% endif %}
-                {% assign gloss_val = entry.senses[sense_key].english %}
-              {% else %}
-                {% assign gloss_val = entry.english %}
-              {% endif %}
-              gloss: {{ gloss_val | jsonify }}
+              word:  {{ parts[0] | jsonify }},
+              sense: {{ parts[2] | jsonify }}
             }{% unless forloop.last %},{% endunless %}
           {% endfor %}
         ]
-      }{% if forloop.last == false %},{% endif %}
+      }{% unless forloop.last %},{% endunless %}
       {% endif %}
     {% endfor %}
   ];
