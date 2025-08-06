@@ -1,17 +1,17 @@
 <div class="submenu-wrapper
-  {% if page.url contains include.suburl %}open{% endif %}">
+  {% if page.url contains include.sublinks.header.url %}open{% endif %}">
   <div class="submenu-header">
-    <a href="{{ include.suburl }}"
+    <a href="{{ include.sublinks.header.url }}"
         class="w3-bar-item w3-button w3-padding main-link
-              {% if page.url == include.suburl %}active{% endif %}">
-      {{ include.subheader }}
+              {% if page.url == include.sublinks.header.url %}active{% endif %}">
+      {{ include.sublinks.header.title }}
     </a>
   </div>
   <!-- this list is only ever visible if “open” class is present -->
   <div class="submenu">
-    {% assign sublinks = include.sublinks | sort: include.suborder %}
+    {% assign sublinks = include.sublinks.subheaders | sort: include.sublinks.header.order %}
     {% for sublink in sublinks %}
-      {% unless sublink.url == {{ include.suburl }} %}
+      {% unless sublink.url == {{ include.sublinks.header.url }} %}
         <a href="{{ sublink.url }}"
           class="w3-bar-item w3-button w3-padding
                   {% if page.url == sublink.url %} active{% endif %}">

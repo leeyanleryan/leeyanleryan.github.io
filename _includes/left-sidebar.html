@@ -16,16 +16,8 @@
     <div class="w3-bar-block">
       <h4><strong>About</strong></h4>
       <a href="/about/profile/" class="w3-bar-item w3-button w3-padding {% if page.url == '/about/profile/' %} active{% endif %}"> Profile</a>
-      {% include sidebar-submenu.html 
-         subheader="Projects" 
-         suburl="/about/projects/" 
-         sublinks=site.data.projects 
-         suborder="order" %}
-      {% include sidebar-submenu.html 
-         subheader="Experiences" 
-         suburl="/about/experiences/" 
-         sublinks=site.data.experiences 
-         suborder="order" %}
+      {% include sidebar-submenu.html sublinks=site.data.projects %}
+      {% include sidebar-submenu.html sublinks=site.data.experiences %}
       <a href="/about/awards/" class="w3-bar-item w3-button w3-padding {% if page.url == '/about/awards/' %} active{% endif %}"> Awards</a>
       <a href="/about/hobbies/" class="w3-bar-item w3-button w3-padding {% if page.url == '/about/hobbies/' %} active{% endif %}"> Hobbies</a>
     </div>
@@ -34,16 +26,8 @@
   <div class="w3-container">
     <h4><strong>Lyrics Translations</strong></h4>
     <div class="w3-bar-block">
-      {% include sidebar-submenu.html 
-         subheader="Aimer" 
-         suburl="/lyrics-translations/aimer/" 
-         sublinks=site.data.aimer 
-         suborder="title" %}
-      {% include sidebar-submenu.html 
-         subheader="The Oral Cigarettes" 
-         suburl="/lyrics-translations/the-oral-cigarettes/" 
-         sublinks=site.data.the-oral-cigarettes 
-         suborder="title" %}
+      {% include sidebar-submenu.html sublinks=site.data.aimer %}
+      {% include sidebar-submenu.html sublinks=site.data.the-oral-cigarettes %}
     </div>
   </div>
   <hr class="hr-sidebar">

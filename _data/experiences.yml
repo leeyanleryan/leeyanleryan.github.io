@@ -1,16 +1,21 @@
-# To add an experience, append it with decreasing order
-- title: Teaching Assistant
-  url:   /about/experiences/teaching-assistant/
-  image: /assets/gif/ta-animation1.gif
-  excerpt: >
-    Taught CS1010E Programming Methodology to 25 undergraduates.
-  order: -1
+header: 
+  title: Experiences
+  url:   /about/experiences/
+  order: order
 
-- title: Digital Production Assistant
-  url:   /about/experiences/digital-production-assistant/
-  image: /assets/gif/dpa-animation1.gif
-  excerpt: >
-    Created engaging educational videos on Machine Learning, 
-    Artificial Intelligence, and Deep Learning.
-  order: -2
+subheaders:
+  - title: Teaching Assistant
+    url:   /about/experiences/teaching-assistant/
+    image: /assets/gif/ta-animation1.gif
+    excerpt: >
+      Taught CS1010E Programming Methodology to 25 undergraduates.
+    order: -1
+
+  - title: Digital Production Assistant
+    url:   /about/experiences/digital-production-assistant/
+    image: /assets/gif/dpa-animation1.gif
+    excerpt: >
+      Created engaging educational videos on Machine Learning, 
+      Artificial Intelligence, and Deep Learning.
+    order: -2
   

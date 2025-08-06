@@ -7,11 +7,7 @@ left_label: Profile
 left_url: /about/profile/
 right_label: Orbital NUqueSt
 right_url: /about/projects/orbital-nuquest/
-
-suborder: order
 ---
 
 <!-- !PAGE CONTENT! -->
-{% include media-overview.html 
-   sublinks=site.data.projects
-   suborder="order" %}
+{% include media-overview.html sublinks=site.data.projects %}

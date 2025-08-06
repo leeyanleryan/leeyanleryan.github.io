@@ -1,5 +1,5 @@
 <ul class="media-list">
-  {% assign items = include.items | sort: include.suborder %}
+  {% assign items = include.sublinks.subheaders | sort: include.sublinks.header.order %}
   {% for item in items %}
     {% unless item.url == include.exclude %}
       <li class="media-item">

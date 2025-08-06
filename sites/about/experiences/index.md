@@ -7,11 +7,7 @@ left_label: Puzzle Solvers
 left_url: /about/projects/puzzle-solvers/
 right_label: Digital Production Assistant
 right_url: /about/experiences/digital-production-assistant/
-
-suborder: order
 ---
 
 <!-- !PAGE CONTENT! -->
-{% include media-overview.html 
-   sublinks=site.data.experiences
-   suborder="order" %}
+{% include media-overview.html sublinks=site.data.experiences %}
