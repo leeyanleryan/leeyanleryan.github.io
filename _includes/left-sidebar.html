@@ -76,6 +76,32 @@
   <div class="w3-container">
     <h4><strong>Lyrics Translations</strong></h4>
     <div class="w3-bar-block">
+      <!-- Aimer + auto-generated sub-nav -->
+      <div class="submenu-wrapper
+        {% if page.url contains '/lyrics-translations/aimer/' %}open{% endif %}">
+        <div class="submenu-header">
+          <!-- main pill (click -> /lyrics-translations/aimer/) -->
+          <a href="/lyrics-translations/aimer/"
+             class="w3-bar-item w3-button w3-padding main-link
+                    {% if page.url == '/lyrics-translations/aimer/' %}active{% endif %}">
+            Aimer
+          </a>
+        </div>
+        <!-- this list is only ever visible if “open” class is present -->
+        <div class="submenu">
+          {% assign all_aimer = site.data.aimer | sort: "title" %}
+          {% for aimer in all_aimer %}
+            {% unless aimer.url == "/lyrics-translations/aimer/" %}
+              <a href="{{ aimer.url }}"
+                class="w3-bar-item w3-button w3-padding
+                        {% if page.url == aimer.url %} active{% endif %}">
+                {{ aimer.title }}
+              </a>
+            {% endunless %}
+          {% endfor %}
+        </div>
+      </div>
+      <!-- end Aimer -->
       <!-- TOC + auto-generated sub-nav -->
       <div class="submenu-wrapper
         {% if page.url contains '/lyrics-translations/the-oral-cigarettes/' %}open{% endif %}">
