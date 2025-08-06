@@ -7,16 +7,11 @@ left_label: Profile
 left_url: /about/profile/
 right_label: Orbital NUqueSt
 right_url: /about/projects/orbital-nuquest/
+
+suborder: order
 ---
 
 <!-- !PAGE CONTENT! -->
-<div id="page-about-projects" class="w3-main">
-  <section id="overview" class="w3-container">
-    {% assign projects = site.data.projects
-      | where_exp:"p","p.url contains '/about/projects/'"
-      | sort:"order" %}
-
-    <h2><b>{{ page.title }}</b></h2>
-    {% include media-list.html items=projects exclude=page.url %}
-  </section>
-</div>
+{% include media-overview.html 
+   sublinks=site.data.projects
+   suborder="order" %}

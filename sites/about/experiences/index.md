@@ -7,16 +7,11 @@ left_label: Puzzle Solvers
 left_url: /about/projects/puzzle-solvers/
 right_label: Digital Production Assistant
 right_url: /about/experiences/digital-production-assistant/
+
+suborder: order
 ---
 
 <!-- !PAGE CONTENT! -->
-<div id="page-about-experiences" class="w3-main">
-  <section id="overview" class="w3-container">
-    {% assign experiences = site.data.experiences
-      | where_exp:"p","p.url contains '/about/experiences/'"
-      | sort:"order" %}
-
-    <h2><b>{{ page.title }}</b></h2>
-    {% include media-list.html items=experiences exclude=page.url %}
-  </section>
-</div>
+{% include media-overview.html 
+   sublinks=site.data.experiences
+   suborder="order" %}

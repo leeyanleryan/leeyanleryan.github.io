@@ -1,5 +1,6 @@
 <ul class="media-list">
-  {% for item in include.items %}
+  {% assign items = include.items | sort: include.suborder %}
+  {% for item in items %}
     {% unless item.url == include.exclude %}
       <li class="media-item">
         <a href="{{ item.url }}" class="media-link">

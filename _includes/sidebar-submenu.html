@@ -9,8 +9,8 @@
   </div>
   <!-- this list is only ever visible if “open” class is present -->
   <div class="submenu">
-    {% assign all_sublinks = include.sublinks | sort: include.suborder %}
-    {% for sublink in all_sublinks %}
+    {% assign sublinks = include.sublinks | sort: include.suborder %}
+    {% for sublink in sublinks %}
       {% unless sublink.url == {{ include.suburl }} %}
         <a href="{{ sublink.url }}"
           class="w3-bar-item w3-button w3-padding
