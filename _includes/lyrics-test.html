@@ -26,7 +26,7 @@
       {% assign roma_line = romanized_lines[i] %}
       {% assign eng_line  = english_lines[i] %}
       {% assign expl_line = explanation_lines[i] %}
-      {% if expl_line != "[[divider]]" and expl_line != "[[empty]]" %}
+      {% if expl_line and expl_line != "[[divider]]" and expl_line != "[[empty]]" %}
       {
         original:  {{ orig_line | jsonify }},
         romanized: {{ roma_line | jsonify }},
