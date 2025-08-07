@@ -16,6 +16,20 @@
   romaji:   "akirameteta"
   english:  "had given up"
 
+あなた:
+  kanji:    "あなた"
+  hiragana: "あなた"
+  katakana: ""
+  romaji:   "anata"
+  english:  "you"
+
+青:
+  kanji:    "青"
+  hiragana: "あお"
+  katakana: ""
+  romaji:   "ao"
+  english:  "blue"
+
 ありがとう:
   kanji:    "ありがとう"
   hiragana: "ありがとう"
@@ -308,6 +322,13 @@
   romaji:   "kisetsu"
   english:  "season, seasons"
 
+きつく:
+  kanji:    "きつく"
+  hiragana: "きつく"
+  katakana: ""
+  romaji:   "kitsuku"
+  english:  "harshly; severely"
+
 きっと:
   kanji:    "きっと"
   hiragana: "きっと"
@@ -368,6 +389,13 @@
     nominaliser:
       english:  "-nominaliser: quote to noun-, thing, fact"
 
+くらむ:
+  kanji:    "くらむ"
+  hiragana: "くらむ"
+  katakana: ""
+  romaji:   "kuramu"
+  english:  "to blur; to become dizzy"
+
 くれてた:
   kanji:    "くれてた"
   hiragana: "くれてた"
@@ -378,6 +406,13 @@
 # L
 # ------------------------------------------ #
 # M
+眩しい:
+  kanji:    "眩しい"
+  hiragana: "まぶしい"
+  katakana: ""
+  romaji:   "mabushii"
+  english:  "dazzling; bright"
+
 まだ:
   kanji:    "まだ"
   hiragana: "まだ"
@@ -406,12 +441,26 @@
   romaji:   "matsu"
   english: "to wait"
 
+眼:
+  kanji:    "眼"
+  hiragana: "め"
+  katakana: ""
+  romaji:   "me"
+  english:  "eye; eyes"
+
 道のり:
   kanji:    "道のり"
   hiragana: "みちのり"
   katakana: ""
   romaji:   "michinori"
   english:  "journey, distance"
+
+見開いて:
+  kanji:    "見開いて"
+  hiragana: "みひらいて"
+  katakana: ""
+  romaji:   "mihiraite"
+  english:  "to open (wide); to open one's eyes"
 
 も:
   kanji:    "も"
@@ -461,6 +510,13 @@
   katakana: ""
   romaji:   "nagai"
   english:  "long (time, distance)"
+
+馴染む:
+  kanji:    "馴染む"
+  hiragana: "なじむ"
+  katakana: ""
+  romaji:   "najimu"
+  english:  "to fit in, to become familiar with"
 
 何:
   kanji:    "何"
@@ -646,6 +702,13 @@
   romaji:   "shiteru"
   english:  "doing, to be in"
 
+空:
+  kanji:    "空"
+  hiragana: "そら"
+  katakana: ""
+  romaji:   "sora"
+  english:  "sky"
+
 そっと:
   kanji:    "そっと"
   hiragana: "そっと"
@@ -677,6 +740,13 @@
   english:  "a little, a bit"
 # ------------------------------------------ #
 # T
+太陽:
+  kanji:    "太陽"
+  hiragana: "たいよう"
+  katakana: ""
+  romaji:   "taiyou"
+  english:  "sun"
+
 ため:
   kanji:    "ため"
   hiragana: "ため"
