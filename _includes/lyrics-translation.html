@@ -34,11 +34,11 @@
       {% endif %}
       
       {%- comment -%} parse the comma-delimited “text|lang|sense” row {%- endcomment -%}
-      <div class="lyrics-explanation" id="exp-{{ i }}">
+      <div class="w3-row lyrics-explanation" id="exp-{{ i }}">
         {% if lang == "jp" and expl != "<empty>" %}
-          <h6 class="w3-col s4">Original</h6>
-          <h6 class="w3-col s4">Romanized</h6>
-          <h6 class="w3-col s4">English</h6>
+          <h6 class="w3-col s4 m4 h6-margin-0">Original</h6>
+          <h6 class="w3-col s4 m4 h6-margin-0">Romanized</h6>
+          <h6 class="w3-col s4 m4 h6-margin-0">English</h6>
           <hr class="hr-lyrics-explanation">
 
           {% assign cells = expl | split: "," %}
