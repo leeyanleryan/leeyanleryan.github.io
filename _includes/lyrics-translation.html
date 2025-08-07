@@ -48,7 +48,7 @@
             {% assign parts = cell | split: "|" %}
             {% assign txt       = parts[0] %}
             {% assign sense_key = parts[2] | default: "" %}
-            {% assign entry     = site.data.word-bank-jp[txt] %}
+            {% assign entry     = site.data["word-bank"]["word-bank-jp"][txt] %}
 
             {% if entry.senses %}
               {% if sense_key != "" %}

@@ -12,56 +12,44 @@
 }
 </script>
 <script>
-  {% assign language_lines    = include.lyrics.language    %}
-  {% assign original_lines    = include.lyrics.original    %}
-  {% assign romanized_lines   = include.lyrics.romanized   %}
-  {% assign english_lines     = include.lyrics.english     %}
-  {% assign explanation_lines = include.lyrics.explanation %}
-
+  // 1) Build a JS array of only those lines that have explanations
   window._lyricsTestData = [
-    {% for orig in original_lines %}
-      {% assign i = forloop.index0 %}
-      {% assign lang_line = language_lines[i] %}
-      {% assign orig_line = original_lines[i] %}
-      {% assign roma_line = romanized_lines[i] %}
-      {% assign eng_line  = english_lines[i] %}
-      {% assign expl_line = explanation_lines[i] %}
-      {% if expl_line != "[[divider]]" and expl_line != "[[empty]]" %}
+    {% for line in page.lyrics %}
+      {% if line.explanation and line.explanation.size > 0 %}
       {
-        original:  {{ orig_line | jsonify }},
-        romanized: {{ roma_line | jsonify }},
-        english:   {{ eng_line  | jsonify }},
+        kanji:   {{ line.kanji | jsonify }},
+        romaji:  {{ line.romaji | jsonify }},
+        english: {{ line.english | jsonify }},
         explanations: [
-          {% assign cells = expl_line | split: "," %}
-          {% for cell in cells %}
-            {% assign parts = cell | split: "|" %}
-            {% assign orig_word = parts[0] %}
-            {% assign lang_word = parts[1] %}
-            {% assign sense_word = parts[2] %}
-            {% if lang_word == "jp" %}
-              {% assign entry = site.data["word-bank"]["word-bank-jp"][orig_word] %}
-            {% endif %}
+          {% assign valid_expls = "" | split: "," %}
+          {% for item in line.explanation %}
+            {% assign entry = site.data.word-bank-jp[item.text] %}
             {% if entry %}
-              {% if entry.senses %}
-                {% if sense_word != "-" %}
-                  {% assign sw = sense_word %}
-                {% else %}
-                  {% assign sw = entry.senses | first | first %}
-                {% endif %}
-                {% assign gloss = entry.senses[sw].english %}
-              {% else %}
-                {% assign gloss = entry.english %}
-              {% endif %}
-              {
-                  word:  {{ orig_word  | jsonify }},
-                  lang:  {{ lang_word  | jsonify }},
-                  sense: {{ sense_word | jsonify }},
-                  gloss: {{ gloss      | jsonify }}
-              }{% unless forloop.last %},{% endunless %}
+              {% assign valid_expls = valid_expls | push: item %}
             {% endif %}
           {% endfor %}
+          {% for item in valid_expls %}
+            {
+              word: {{ item.text | jsonify }},
+              {% assign entry = site.data.word-bank-jp[item.text] %}
+              {%- if entry.senses -%}
+                {%- comment -%}pick sense_key logic…{%- endcomment -%}
+                {% assign sense_key = item.sense %}
+                {% if sense_key == nil %}
+                  {% for pair in entry.senses %}
+                    {% assign sense_key = pair[0] %}
+                    {% break %}
+                  {% endfor %}
+                {% endif %}
+                {% assign gloss_val = entry.senses[sense_key].english %}
+              {% else %}
+                {% assign gloss_val = entry.english %}
+              {% endif %}
+              gloss: {{ gloss_val | jsonify }}
+            }{% unless forloop.last %},{% endunless %}
+          {% endfor %}
         ]
-      }{% unless forloop.last %},{% endunless %}
+      }{% if forloop.last == false %},{% endif %}
       {% endif %}
     {% endfor %}
   ];
@@ -105,7 +93,7 @@
       // render into container
       const container = document.getElementById('lt-test-container');
       const highlighted = replaceNth(
-        line.original,
+        line.kanji,
         exp.word,
         `<span class="lt-highlight">${exp.word}</span>`,
         /* compute which “の” (or word) this is in the line */  
