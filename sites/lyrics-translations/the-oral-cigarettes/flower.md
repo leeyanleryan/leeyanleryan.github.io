@@ -17,4 +17,5 @@ lyrics_test: >-
 ---
 
 <!-- !PAGE CONTENT! -->
-{% include lyrics-content.html lyrics=site.data.lyrics-translations.the-oral-cigarettes.flower %}
+{% assign lyrics = site.data["lyrics-translations"]["the-oral-cigarettes"]["flower"] %}
+{% include lyrics-content.html lyrics=lyrics %}
