@@ -1,3 +1,38 @@
+/* .progress-bar {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  border: 2px solid #000;
+  border-radius: var(--pill-border-radius);
+  background-color: #ddd;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: green;
+  border-radius: var(--pill-border-radius) 0 0 var(--pill-border-radius);
+}
+
+.progress-marker {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background-color: black;
+}
+
+.progress-marker:nth-child(2) {
+  left: 25%;
+}
+
+.progress-marker:nth-child(3) {
+  left: 50%;
+}
+
+.progress-marker:nth-child(4) {
+  left: 75%;
+} */
+
 .lt-toggle-buttons-jp {
   text-align: center;
   margin-top: 20px;
