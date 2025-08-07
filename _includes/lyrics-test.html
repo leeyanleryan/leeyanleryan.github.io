@@ -38,6 +38,9 @@
             {% assign orig_word = parts[0] %}
             {% assign lang_word = parts[1] %}
             {% assign sense_word = parts[2] %}
+            {% comment %} 
+              ADD MORE LANGUAGES HERE
+            {% endcomment %}
             {% if lang_word == "jp" %}
               {% assign entry = site.data["word-bank"]["word-bank-jp"][orig_word] %}
             {% endif %}
