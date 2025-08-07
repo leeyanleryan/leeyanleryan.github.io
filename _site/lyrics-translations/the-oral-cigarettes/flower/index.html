@@ -294,7 +294,6 @@
 }
 </script>
 <script>
-  // build five parallel arrays from include.lyrics
   
   
   
@@ -302,6 +301,14 @@
   
 
   window._lyricsTestData = [
+    
+      
+      
+      
+      
+      
+      
+      
     
   ];
 </script>
@@ -344,7 +351,7 @@
       // render into container
       const container = document.getElementById('lt-test-container');
       const highlighted = replaceNth(
-        line.kanji,
+        line.original,
         exp.word,
         `<span class="lt-highlight">${exp.word}</span>`,
         /* compute which “の” (or word) this is in the line */  

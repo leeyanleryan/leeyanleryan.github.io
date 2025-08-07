@@ -12,22 +12,27 @@
 }
 </script>
 <script>
-  // build five parallel arrays from include.lyrics
-  {% assign originals   = include.lyrics.original.lines   | split: "\n" %}
-  {% assign romanized   = include.lyrics.romanized.lines  | split: "\n" %}
-  {% assign englishs    = include.lyrics.english.lines     | split: "\n" %}
-  {% assign langs       = include.lyrics.lang.lines        | split: "\n" %}
-  {% assign expl_rows   = include.lyrics.explanation.lines | split: "\n" %}
+  {% assign language_lines    = include.lyrics.language    %}
+  {% assign original_lines    = include.lyrics.original    %}
+  {% assign romanized_lines   = include.lyrics.romanized   %}
+  {% assign english_lines     = include.lyrics.english     %}
+  {% assign explanation_lines = include.lyrics.explanation %}
 
   window._lyricsTestData = [
-    {% for i in (0..originals.size | minus: 1) %}
-      {% if langs[i] == "jp" and expl_rows[i] != "<empty>" %}
+    {% for orig in original_lines %}
+      {% assign i = forloop.index0 %}
+      {% assign lang = language_lines[i] %}
+      {% assign orig = original_lines[i] %}
+      {% assign roma = romanized_lines[i] %}
+      {% assign eng  = english_lines[i] %}
+      {% assign expl = explanation_lines[i] %}
+      {% if lang == "jp" and expl != "[[empty]]" %}
       {
-        kanji:   {{ originals[i] | jsonify }},
-        romaji:  {{ romanized[i] | jsonify }},
-        english: {{ englishs[i]   | jsonify }},
+        original:  {{ orig | jsonify }},
+        romanized: {{ roma | jsonify }},
+        english:   {{ eng  | jsonify }},
         explanations: [
-          {% assign cells = expl_rows[i] | split: "," %}
+          {% assign cells = expl | split: "," %}
           {% for cell in cells %}
             {% assign parts = cell | split: "|" %}
             {
@@ -80,7 +85,7 @@
       // render into container
       const container = document.getElementById('lt-test-container');
       const highlighted = replaceNth(
-        line.kanji,
+        line.original,
         exp.word,
         `<span class="lt-highlight">${exp.word}</span>`,
         /* compute which “の” (or word) this is in the line */  

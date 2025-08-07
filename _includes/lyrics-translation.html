@@ -4,14 +4,14 @@
   <div id="lt-toggle-english" class="lt-toggle-button">Toggle English</div>
 </div>
 <div class="lyrics-translations">
-  {% assign lang_lines        = include.lyrics.lang        %}
+  {% assign language_lines    = include.lyrics.language    %}
   {% assign original_lines    = include.lyrics.original    %}
   {% assign romanized_lines   = include.lyrics.romanized   %}
   {% assign english_lines     = include.lyrics.english     %}
   {% assign explanation_lines = include.lyrics.explanation %}
   {% for orig in original_lines %}
     {% assign i = forloop.index0 %}
-    {% assign lang = lang_lines[i] %}
+    {% assign lang = language_lines[i] %}
     {% assign orig = original_lines[i] %}
     {% assign roma = romanized_lines[i] %}
     {% assign eng  = english_lines[i] %}
@@ -20,22 +20,24 @@
       <h5 class="h5-margin-0">-----------------------------------<br></h5>
     {% else %}
       {% if lang == "jp" %}
-        <div class="lyrics-stanza" data-idx="{{ i }}">
-          <h5>
-            <span class="lt-original-text">{{ orig }}<br></span>
-            <span class="lt-romanized-text"><em>{{ roma }}</em><br></span>
+        <div class="lyrics-stanza no-double-tap-zoom no-hover-background-after-click" data-idx="{{ i }}">
+          <h5 class="h5-margin-0">
+            <span class="lt-kanji-text">{{ orig }}<br></span>
+            <span class="lt-romaji-text"><em>{{ roma }}</em><br></span>
             <span class="lt-english-text">{{ eng }}<br></span>
           </h5>
         </div>
       {% elsif lang == "en" %}
         <div class="lyrics-stanza-none">
-          <h5><span class="lt-english-text-only">{{ eng }}<br></span></h5>
+          <h5 class="h5-margin-0">
+            <span class="lt-english-text-only">{{ eng }}<br></span>
+          </h5>
         </div>
       {% endif %}
       
       {%- comment -%} parse the comma-delimited “text|lang|sense” row {%- endcomment -%}
       <div class="w3-row lyrics-explanation" id="exp-{{ i }}">
-        {% if lang == "jp" and expl != "<empty>" %}
+        {% if lang == "jp" %}
           <h6 class="w3-col s4 m4 h6-margin-0">Original</h6>
           <h6 class="w3-col s4 m4 h6-margin-0">Romanized</h6>
           <h6 class="w3-col s4 m4 h6-margin-0">English</h6>
@@ -59,11 +61,11 @@
               {% assign gloss = entry.english %}
             {% endif %}
 
-            <h6 class="w3-col s4">
+            <h6 class="w3-col s4 m4 h6-margin-0">
               {{ entry.kanji | default: entry.katakana | default: "-" }}
             </h6>
-            <h6 class="w3-col s4"><em>{{ entry.romaji | default: "-" }}</em></h6>
-            <h6 class="w3-col s4">{{ gloss | default: "-" }}</h6>
+            <h6 class="w3-col s4 m4 h6-margin-0"><em>{{ entry.romaji | default: "-" }}</em></h6>
+            <h6 class="w3-col s4 m4 h6-margin-0">{{ gloss | default: "-" }}</h6>
           {% endfor %}
         {% endif %}
       </div>
