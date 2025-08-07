@@ -4,27 +4,19 @@
   <div id="lt-toggle-english" class="lt-toggle-button">Toggle English</div>
 </div>
 <div class="lyrics-translations">
-  {% capture nl %}
-  {% endcapture %}
-  {% assign raw = include.lyrics.original.lines | strip %}
-  {% assign dedented = raw
-    | replace_regex: '\n {2}', '\n'
-    | replace_regex: '^ {2}', '' %} 
-  {% assign lang_lines        = include.lyrics.lang.lines        | split: nl %}
-  {% assign original_lines    = dedented    | split: nl %}
-  {% assign romanized_lines   = include.lyrics.romanized.lines   | split: nl %}
-  {% assign english_lines     = include.lyrics.english.lines     | split: nl %}
-  {% assign explanation_lines = include.lyrics.explanation.lines | split: nl %}
-
+  {% assign lang_lines        = include.lyrics.lang        %}
+  {% assign original_lines    = include.lyrics.original    %}
+  {% assign romanized_lines   = include.lyrics.romanized   %}
+  {% assign english_lines     = include.lyrics.english     %}
+  {% assign explanation_lines = include.lyrics.explanation %}
   {% for orig in original_lines %}
     {% assign i = forloop.index0 %}
-    {{ i }}: {{ orig }}
     {% assign lang = lang_lines[i] %}
     {% assign orig = original_lines[i] %}
     {% assign roma = romanized_lines[i] %}
     {% assign eng  = english_lines[i] %}
     {% assign expl = explanation_lines[i] %}
-    {% if lang == "<divider>" %}
+    {% if lang == "[[divider]]" %}
       <h5 class="h5-margin-0">-----------------------------------<br></h5>
     {% else %}
       {% if lang == "jp" %}
