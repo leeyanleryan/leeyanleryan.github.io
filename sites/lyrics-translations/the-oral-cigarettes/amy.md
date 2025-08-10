@@ -18,5 +18,4 @@ lyrics_test: >-
 ---
 
 <!-- !PAGE CONTENT! -->
-{% assign lyrics = site.data["lyrics-translations"]["the-oral-cigarettes"]["amy"] %}
-{% include lyrics-content.html lyrics=lyrics %}
+{% include lyrics-content.html band="the-oral-cigarettes" song="amy" %}

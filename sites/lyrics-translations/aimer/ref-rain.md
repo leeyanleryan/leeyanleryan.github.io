@@ -22,5 +22,4 @@ lyrics_test: >-
 ---
 
 <!-- !PAGE CONTENT! -->
-{% assign lyrics = site.data["lyrics-translations"]["aimer"]["ref-rain"] %}
-{% include lyrics-content.html lyrics=lyrics %}
+{% include lyrics-content.html band="aimer" song="ref-rain" %}
