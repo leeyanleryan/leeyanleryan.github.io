@@ -30,7 +30,7 @@
           <h5 class="h5-margin-0">
             <span class="lt-original-text">{{ orig_line }}<br></span>
             <span class="lt-romanized-text"><em>{{ roma_line }}</em><br></span>
-            <span class="lt-english-text">{{ eng_line }}<br></span>
+            <span class="lt-english-text lyrics-explanation-english">{{ eng_line }}<br></span>
           </h5>
         </div>
       {% elsif lang_line == "en" %}
@@ -78,7 +78,7 @@
               {{ entry.kanji | default: entry.katakana | default: orig_word }}
             </h6>
             <h6 class="w3-col s4 m4 h6-margin-0"><em>{{ entry.romaji | default: "-" }}</em></h6>
-            <h6 class="w3-col s4 m4 h6-margin-0">{{ gloss | default: "-" }}</h6>
+            <h6 class="w3-col s4 m4 h6-margin-0 lyrics-explanation-english">{{ gloss | default: "-" }}</h6>
           {% endif %}
         {% endfor %}
       </div>

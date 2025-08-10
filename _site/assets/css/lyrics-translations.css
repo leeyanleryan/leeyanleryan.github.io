@@ -100,6 +100,10 @@ body.dark-mode .lyrics-explanation {
   margin-top: 0.25rem;
 }
 
+/* .lyrics-explanation-english {
+  font-family: 'Raleway' sans-serif !important;
+} */
+
 hr.hr-lyrics-explanation {
   height: 1px;
   color: var(--light-mode-border-color);
