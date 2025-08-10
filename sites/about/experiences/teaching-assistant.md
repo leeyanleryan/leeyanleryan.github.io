@@ -14,8 +14,8 @@ right_url: /about/awards/
   <section id="teaching-assistant" class="w3-container">
     <h2><b>Teaching Assistant</b></h2>
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <img src="/assets/gif/ta-animation1.gif" alt="TA Animation 1" style="width:49%;">
-      <img src="/assets/gif/ta-animation2.gif" alt="TA Animation 2" style="width:49%;">
+      {% include video-player.html file="ta-animation1" width="49%" %}
+      {% include video-player.html file="ta-animation2" width="49%" %}
     </div>
     <h5 style="margin-bottom:20px">
       I taught 25 NUS undergraduates CS1010E, a course on programming methodology in Python. The course

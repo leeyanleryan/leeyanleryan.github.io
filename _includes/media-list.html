@@ -6,7 +6,11 @@
         <a href="{{ item.url }}" class="media-link">
           <div class="w3-row media-card">
             <div class="w3-col s4 m4">
-              <img src="{{ item.image }}" alt="{{ item.title }}" class="media-thumb">
+              {% if item.image %}
+                <img src="{{ item.image }}" alt="{{ item.title }}" class="media-thumb">
+              {% elsif item.video %}
+                {% include video-player.html file=item.video width="100%" class="media-thumb" %}
+              {% endif %}
             </div>
             <div class="w3-col s8 m8">
               <h4 class="media-title"><b>{{ item.title }}</b></h4>

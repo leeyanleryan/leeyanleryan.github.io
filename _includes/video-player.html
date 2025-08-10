@@ -1,0 +1,7 @@
+<video autoplay muted loop playsinline preload="metadata" 
+  {% if include.class %}class="{{ include.class }}"{% endif %} 
+  {% if include.width %}style="width:{{ include.width }};"{% endif %}>
+  <source src="/assets/video/{{ include.file }}.webm" type="video/webm">
+  <source src="/assets/video/{{ include.file }}.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
