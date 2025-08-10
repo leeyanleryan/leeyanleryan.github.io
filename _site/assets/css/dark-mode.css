@@ -1,20 +1,3 @@
-/* Default light mode */
-body {
-    background-color: #f1f1f1;
-    color: #000000;
-    transition: background-color var(--theme-transition) ease, 
-                color var(--theme-transition) ease;
-    font-family: "Raleway", sans-serif;
-    scroll-behavior: smooth;
-    scroll-padding-top: 43px;
-}
-
-/* Dark mode styles */
-body.dark-mode {
-  background-color: var(--dark-mode-background-color);
-  color: #ffffff;
-}
-
 /* Toggle Switch Styling */
 .switch {
   position: relative;

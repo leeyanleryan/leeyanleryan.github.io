@@ -1,4 +1,4 @@
-html,h1,h2,h3,h4,h5,h6 {
+html,body,h1,h2,h3,h4,h5,h6 {
   font-family: "Raleway", sans-serif;
   scroll-behavior: smooth;
   scroll-padding-top: 43px;
@@ -6,6 +6,20 @@ html,h1,h2,h3,h4,h5,h6 {
 
 html {
   overflow-y: scroll;
+}
+
+/* Default light mode */
+body {
+  background-color: #f1f1f1;
+  color: #000000;
+  transition: background-color var(--theme-transition) ease, 
+              color var(--theme-transition) ease;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: var(--dark-mode-background-color);
+  color: #ffffff;
 }
 
 img {
@@ -38,10 +52,6 @@ body.dark-mode .no-hover-background-after-click.touch-active {
   background: var(--dark-mode-hover-background-color);
   transition: background-color 0.2s ease-out;
 }
-
-/* html [lang="ja"], .jp-text {
-  font-family: "Noto Sans JP", sans-serif;
-} */
 
 li.li-padding-bottom-10 {
   padding-bottom: 10px;

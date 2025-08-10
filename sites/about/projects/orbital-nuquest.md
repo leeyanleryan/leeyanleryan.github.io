@@ -14,8 +14,8 @@ right_url: /about/projects/data-analysis/
   <section id="orbital-nuquest" class="w3-container">
     <h2><b>Orbital NUqueSt</b> (<a href="https://github.com/leeyanleryan/Orbital-NUqueSt" target="_blank">Link</a>)</h2>
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <img src="/assets/gif/nuquest-gameplay2.gif" alt="NUqueSt Gameplay 1" style="width:33%;">
-      <img src="/assets/gif/nuquest-gameplay1.gif" alt="NUqueSt Gameplay 2" style="width:33%;">
+      <img src="/assets/gif/nuquest-gameplay1.gif" alt="NUqueSt Gameplay 1" style="width:33%;">
+      <img src="/assets/gif/nuquest-gameplay2.gif" alt="NUqueSt Gameplay 2" style="width:33%;">
       <img src="/assets/gif/nuquest-gameplay3.gif" alt="NUqueSt Gameplay 3" style="width:33%;">
     </div>
     <h5>

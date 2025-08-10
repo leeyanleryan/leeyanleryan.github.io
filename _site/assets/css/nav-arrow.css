@@ -6,7 +6,6 @@
   z-index: 998;            /* On top of main content */
   width: 80px;             /* Enough space for the label + arrow */
   text-align: center;      /* Center the label + arrow horizontally */
-  font-family: "Raleway", sans-serif;
   white-space: nowrap;
 
   height: 2.5rem;
@@ -125,7 +124,6 @@ body.dark-mode .arrow-symbol {
   justify-content: space-between;
   padding: 10px 20px;       /* Add some spacing */
   font-size: 1.2rem;
-  font-family: "Raleway", sans-serif;
   z-index: 1004;            /* Ensure it's on top */
   background-color: #f1f1f1; /* White backdrop to prevent overlap */
   border-top: var(--light-mode-border);
