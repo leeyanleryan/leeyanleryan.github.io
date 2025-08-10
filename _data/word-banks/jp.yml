@@ -51,7 +51,7 @@
   romaji:   "attemo"
   functions:
     concessive:
-      english: "even if there is, no matter what happens"
+      english: "even if there is; no matter what happens"
     meeting:
       english: "even if we meet"
 # ------------------------------------------ #
@@ -61,14 +61,14 @@
   hiragana: "ぼく"
   katakana: ""
   romaji:   "boku"
-  english:  "I, me, myself"
+  english:  "I; me; myself"
 
 僕ら:
   kanji:    "僕ら"
   hiragana: "ぼくら"
   katakana: ""
   romaji:   "bokura"
-  english:  "we, us"
+  english:  "we; us"
 # ------------------------------------------ #
 # C
 小さな:
@@ -76,7 +76,7 @@
   hiragana: "ちいさな"
   katakana: ""
   romaji:   "chiisana"
-  english:  "small, little"
+  english:  "small; little"
 # ------------------------------------------ #
 # D
 だ:
@@ -95,7 +95,7 @@
   romaji:   "darou"
   functions:
     conjectural:
-      english:  "-conjectural ending (I guess, probably, right?)-"
+      english:  "-conjectural ending: 'I guess'; 'probably'; 'right?'-"
 
 だって:
   kanji:    "だって"
@@ -104,7 +104,7 @@
   romaji:   "datte"
   functions:
     quotative:
-      english: "-colloquial emphatic ending (you know)-"
+      english: "-colloquial emphatic ending: 'you know'-"
     even-if:
       english: "even if"
 
@@ -115,14 +115,14 @@
   romaji:   "de"
   functions:
     location:
-      english: "-location marker (at, in)-"
+      english: "-location marker: 'at'; 'in'-"
 
 出会える:
   kanji:    "出会える"
   hiragana: "であえる"
   katakana: ""
   romaji:   "deaeru"
-  english:  "can meet, be able to encounter"
+  english:  "can meet; be able to encounter"
 # ------------------------------------------ #
 # E
 エイミー:
@@ -138,7 +138,7 @@
   hiragana: "ふたり"
   katakana: ""
   romaji:   "futari"
-  english:  "two people, the two of us"
+  english:  "two people; the two of us"
 # ------------------------------------------ #
 # G
 が:
@@ -155,7 +155,7 @@
   hiragana: "ごご"
   katakana: ""
   romaji:   "gogo"
-  english:  "afternoon, p.m."
+  english:  "afternoon; p.m."
 
 ごめん:
   kanji:    "ごめん"
@@ -166,14 +166,14 @@
     apology:
       english: "sorry"
     permission:
-      english: "permission, pardon"
+      english: "permission; pardon"
 
 ぎゅっと:
   kanji:    "ぎゅっと"
   hiragana: "ぎゅっと"
   katakana: ""
   romaji:   "gyutto"
-  english:  "tightly, with a squeeze"
+  english:  "tightly; with a squeeze"
 # ------------------------------------------ #
 # H
 初めて:
@@ -190,12 +190,19 @@
   romaji:   "hibi"
   english:  "days"
 
+引き込んだ:
+  kanji:    "引き込んだ"
+  hiragana: "ひきこんだ"
+  katakana: ""
+  romaji:   "hikikonda"
+  english:  "pulled in; drew in"
+
 人:
   kanji:    "人"
   hiragana: "ひと"
   katakana: ""
   romaji:   "hito"
-  english:  "person, one"
+  english:  "person; one"
 
 人々:
   kanji:    "人々"
@@ -209,21 +216,21 @@
   hiragana: "ひとこと"
   katakana: ""
   romaji:   "hitokoto"
-  english:  "a word, a brief remark"
+  english:  "a word; a brief remark"
 
 ほう:
   kanji:    "ほう"
   hiragana: "ほう"
   katakana: ""
   romaji:   "hou"
-  english:  "side, direction, the one"
+  english:  "side; direction; the one"
 
 本当に:
   kanji:    "本当に"
   hiragana: "ほんとうに"
   katakana: ""
   romaji:   "houtou ni"
-  english:  "truly, really"
+  english:  "truly; really"
 # ------------------------------------------ #
 # I
 いい:
@@ -231,7 +238,14 @@
   hiragana: "いい"
   katakana: ""
   romaji:   "ii"
-  english:  "good, fine, okay"
+  english:  "good; fine; okay"
+
+行こう:
+  kanji:    "行こう"
+  hiragana: "いこう"
+  katakana: ""
+  romaji:   "ikou"
+  english:  "let's go"
 
 今:
   kanji:    "今"
@@ -247,7 +261,7 @@
   hiragana: "いまさら"
   katakana: ""
   romaji:   "imasara"
-  english:  "too late now, at this late juncture"
+  english:  "too late now; at this late juncture"
 
 愛しき:
   kanji:    "愛しき"
@@ -279,7 +293,7 @@
   hiragana: "かまわない"
   katakana: ""
   romaji:   "kamawanai"
-  english:  "don't mind, doesn't matter, it's okay"
+  english:  "don't mind; doesn't matter; it's okay"
 
 傘:
   kanji:    "傘"
@@ -300,7 +314,7 @@
   hiragana: "き"
   katakana: ""
   romaji:   "ki"
-  english:  "feeling, sense"
+  english:  "feeling; sense"
 
 君:
   kanji:    "君"
@@ -311,16 +325,16 @@
     you:
       english: "you (casual)"
     darling:
-      english: "darling, dear"
+      english: "darling; dear"
     archaic:
-      english: "lord, master"
+      english: "lord; master"
 
 季節:
   kanji:    "季節"
   hiragana: "きせつ"
   katakana: ""
   romaji:   "kisetsu"
-  english:  "season, seasons"
+  english:  "season; seasons"
 
 きつく:
   kanji:    "きつく"
@@ -334,21 +348,21 @@
   hiragana: "きっと"
   katakana: ""
   romaji:   "kitto"
-  english:  "surely, certainly, definitely"
+  english:  "surely; certainly; definitely"
 
 気付いた:
   kanji:    "気付いた"
   hiragana: "きづいた"
   katakana: ""
   romaji:   "kizuita"
-  english:  "realized, noticed"
+  english:  "realized; noticed"
 
 声:
   kanji:    "声"
   hiragana: "こえ"
   katakana: ""
   romaji:   "koe"
-  english:  "voice, sound"
+  english:  "voice; sound"
 
 恋:
   kanji:    "恋"
@@ -371,7 +385,7 @@
   hiragana: "こんな"
   katakana: ""
   romaji:   "konna"
-  english:  "like this, this kind of"
+  english:  "like this; this kind of"
 
 この:
   kanji:    "この"
@@ -387,7 +401,7 @@
   romaji:   "koto"
   functions:
     nominaliser:
-      english:  "-nominaliser: quote to noun-, thing, fact"
+      english:  "-nominaliser (quote to noun)-; thing; fact"
 
 くらむ:
   kanji:    "くらむ"
@@ -402,6 +416,13 @@
   katakana: ""
   romaji:   "kureteta"
   english:  "did for me"
+
+きゅっと:
+  kanji:    "きゅっと"
+  hiragana: "きゅっと"
+  katakana: ""
+  romaji:   "kyutto"
+  english:  "tightly; firmly; with a squeeze"
 # ------------------------------------------ #
 # L
 # ------------------------------------------ #
@@ -418,21 +439,21 @@
   hiragana: "まだ"
   katakana: ""
   romaji:   "mada"
-  english:  "still, yet, not yet"
+  english:  "still; yet; not yet"
 
 守る:
   kanji:    "守る"
   hiragana: "まもる"
   katakana: ""
   romaji:   "mamoru"
-  english:  "to protect, to guard"
+  english:  "to protect; to guard"
 
 また:
   kanji:    "また"
   hiragana: "また"
   katakana: ""
   romaji:   "mata"
-  english:  "again, once more"
+  english:  "again; once more"
 
 待つ:
   kanji:    "待つ"
@@ -453,7 +474,7 @@
   hiragana: "みちのり"
   katakana: ""
   romaji:   "michinori"
-  english:  "journey, distance"
+  english:  "journey; distance"
 
 見開いて:
   kanji:    "見開いて"
@@ -462,6 +483,13 @@
   romaji:   "mihiraite"
   english:  "to open (wide); to open one's eyes"
 
+未来:
+  kanji:    "未来"
+  hiragana: "みらい"
+  katakana: ""
+  romaji:   "mirai"
+  english:  "future"
+
 も:
   kanji:    "も"
   hiragana: "も"
@@ -469,7 +497,7 @@
   romaji:   "mo"
   functions:
     additive:
-      english: "also, too"
+      english: "also; too"
 
 戻せる:
   kanji:    "戻せる"
@@ -492,7 +520,7 @@
   hiragana: "むね"
   katakana: ""
   romaji:   "mune"
-  english:  "chest, heart (emotionally)"
+  english:  "chest; heart (emotionally)"
 # ------------------------------------------ #
 # N
 ん:
@@ -509,14 +537,21 @@
   hiragana: "ながい"
   katakana: ""
   romaji:   "nagai"
-  english:  "long (time, distance)"
+  english:  "long (time; distance)"
 
 馴染む:
   kanji:    "馴染む"
   hiragana: "なじむ"
   katakana: ""
   romaji:   "najimu"
-  english:  "to fit in, to become familiar with"
+  english:  "to fit in; to become familiar with"
+
+中:
+  kanji:    "中"
+  hiragana: "なか"
+  katakana: ""
+  romaji:   "naka"
+  english:  "inside; middle"
 
 何:
   kanji:    "何"
@@ -539,7 +574,7 @@
   romaji:   "nante"
   functions:
     exclamative:
-      english: "such as, things like"
+      english: "such as; things like"
 
 なら:
   kanji:    "なら"
@@ -548,7 +583,7 @@
   romaji:   "nara"
   functions:
     conditional:
-      english: "-conditional particle (if)-"
+      english: "-conditional particle: 'if'-"
 
 夏:
   kanji:    "夏"
@@ -564,7 +599,7 @@
   romaji:   "ne"
   functions:
     confirmation:
-      english: "-confirmation particle (isn't it?, right?)-"
+      english: "-confirmation particle: 'isn't it?'; 'right?'-"
     softener:
       english: "-soften sentence-"
 
@@ -577,9 +612,9 @@
     vocative:
       english: "hey"
     confirmation:
-      english: "isn't it?, right?"
+      english: "isn't it?; right?"
     filler:
-      english: "um..., you know..."
+      english: "um...; you know..."
 
 に:
   kanji:    "に"
@@ -588,9 +623,16 @@
   romaji:   "ni"
   functions:
     temporal:
-      english: "-temporal (in, at)-"
+      english: "-temporal: 'in'; 'at'-"
     indirect_object:
-      english: "-indirect object marker (to, for)-"
+      english: "-indirect object marker: 'to'; 'for'-"
+
+握りしめてた:
+  kanji:    "握りしめてた"
+  hiragana: "にぎりしめてた"
+  katakana: ""
+  romaji:   "nigirishimeteta"
+  english:  "had been clutching; holding tightly"
 
 の:
   kanji:    "の"
@@ -616,7 +658,7 @@
   hiragana: "おく"
   katakana: ""
   romaji:   "oku"
-  english:  "inner part, depths"
+  english:  "inner part; depths"
 
 送る:
   kanji:    "送る"
@@ -630,14 +672,14 @@
   hiragana: "おもい"
   katakana: ""
   romaji:   "omoi"
-  english:  "feeling, thought, emotion"
+  english:  "feeling; thought; emotion"
 
 思い出す:
   kanji:    "思い出す"
   hiragana: "おもいだす"
   katakana: ""
   romaji:   "omoidasu"
-  english:  "to recall, to remember"
+  english:  "to recall; to remember"
 
 思ってた:
   kanji:    "思ってた"
@@ -651,21 +693,36 @@
   hiragana: "おもう"
   katakana: ""
   romaji:   "omou"
-  english:  "to think, to feel"
+  english:  "to think; to feel"
 # ------------------------------------------ #
 # P
+ポケット:
+  kanji:    ""
+  hiragana: ""
+  katakana: "ポケット"
+  romaji:   "poketto"
+  english:  "pocket"
 # ------------------------------------------ #
 # Q
 # ------------------------------------------ #
 # R
 # ------------------------------------------ #
 # S
+さ:
+  kanji:    "さ"
+  hiragana: "さ"
+  katakana: ""
+  romaji:   "sa"
+  functions:
+    emphatic:
+      english: "-sentence-ending emphasis-"
+
 世界中:
   kanji:    "世界中"
   hiragana: "せかいじゅう"
   katakana: ""
   romaji:   "sekaijuu"
-  english:  "throughout the world, around the world"
+  english:  "throughout the world; around the world"
 
 信じて:
   kanji:    "信じて"
@@ -686,21 +743,21 @@
   hiragana: "した"
   katakana: ""
   romaji:   "shita"
-  english:  "felt, did"
+  english:  "felt; did"
 
 下:
   kanji:    "下"
   hiragana: "した"
   katakana: ""
   romaji:   "shita"
-  english:  "beneath, under"
+  english:  "beneath; under"
 
 してる:
   kanji:    "してる"
   hiragana: "してる"
   katakana: ""
   romaji:   "shiteru"
-  english:  "doing, to be in"
+  english:  "doing; to be in"
 
 空:
   kanji:    "空"
@@ -714,7 +771,7 @@
   hiragana: "そっと"
   katakana: ""
   romaji:   "sotto"
-  english:  "gently, softly, quietly"
+  english:  "gently; softly; quietly"
 
 そう:
   kanji:    "そう"
@@ -723,21 +780,28 @@
   romaji:   "sou"
   functions:
     demonstrative:
-      english: "like that, so"
+      english: "like that; so"
 
 過ぎて:
   kanji:    "過ぎて"
   hiragana: "すぎて"
   katakana: ""
   romaji:   "sugite"
-  english:  "passed, gone by"
+  english:  "passed; gone by"
+
+吸い込まれそう:
+  kanji:    "吸い込まれそう"
+  hiragana: "すいこまれそう"
+  katakana: ""
+  romaji:   "suikomaresou"
+  english:  "seems/about to be sucked in"
 
 少し:
   kanji:    "少し"
   hiragana: "すこし"
   katakana: ""
   romaji:   "sukoshi"
-  english:  "a little, a bit"
+  english:  "a little; a bit"
 # ------------------------------------------ #
 # T
 太陽:
@@ -752,7 +816,7 @@
   hiragana: "ため"
   katakana: ""
   romaji:   "tame"
-  english:  "sake, purpose"
+  english:  "sake; purpose"
 
 ために:
   kanji:    "ために"
@@ -761,14 +825,14 @@
   romaji:   "tame ni"
   functions:
     purpose:
-      english: "-purpose (in order to, for the sake of)-"
+      english: "-purpose: 'in order to'; 'for the sake of'-"
 
 足りなくて:
   kanji:    "足りなくて"
   hiragana: "たりなくて"
   katakana: ""
   romaji:   "tarinakute"
-  english:  "not enough, insufficient"
+  english:  "not enough; insufficient"
 
 手:
   kanji:    "手"
@@ -784,18 +848,18 @@
   romaji:   "to"
   functions:
     quotative:
-      english: "-quotative (that)-"
+      english: "-quotative: 'that'-"
     comitative:
-      english: "-connect words (and, with)-"
+      english: "-connect words: 'and'; 'with'-"
     conditional:
-      english: "-conditional (when)-"
+      english: "-conditional: 'when'-"
 
 届いてます:
   kanji:    "届いてます"
   hiragana: "とどいてます"
   katakana: ""
   romaji:   "todoitemasu"
-  english:  "is reaching, is being delivered"
+  english:  "is reaching; is being delivered"
 
 届く:
   kanji:    "届く"
@@ -809,21 +873,21 @@
   hiragana: "とき"
   katakana: ""
   romaji:   "toki"
-  english:  "time, moment"
+  english:  "time; moment"
 
 通り雨:
   kanji:    "通り雨"
   hiragana: "とおりあめ"
   katakana: ""
   romaji:   "tooriame"
-  english:  "passing shower, sudden rain"
+  english:  "passing shower; sudden rain"
 
 掴む:
   kanji:    "掴む"
   hiragana: "つかむ"
   katakana: ""
   romaji:   "tsukamu"
-  english:  "to grasp, to hold, to take"
+  english:  "to grasp; to hold; to take"
 
 って:
   kanji:    "って"
@@ -849,7 +913,7 @@
   romaji:   "uchi"
   functions:
     temporal:
-      english: "time, while, before"
+      english: "time; while; before"
 
 歌:
   kanji:    "歌"
@@ -882,7 +946,7 @@
   hiragana: "わらえる"
   katakana: ""
   romaji:   "waraeru"
-  english:  "can smile, can laugh"
+  english:  "can smile; can laugh"
 
 を:
   kanji:    "を"
@@ -903,7 +967,7 @@
   romaji:   "yo"
   functions:
     emphatic:
-      english: "-emphatic particle (you know)-"
+      english: "-emphatic particle: 'you know'-"
 
 ように:
   kanji:    "ように"
@@ -912,7 +976,7 @@
   romaji:   "you ni"
   functions:
     purpose:
-      english: "so that, in order that"
+      english: "so that; in order that"
 
 寄せ合った:
   kanji:    "寄せ合った"
@@ -922,6 +986,15 @@
   english:  "huddled close"
 # ------------------------------------------ #
 # Z
+ぜ:
+  kanji:    "ぜ"
+  hiragana: "ぜ"
+  katakana: ""
+  romaji:   "ze"
+  functions:
+    emphatic:
+      english: "-sentence-ending, masculine emphasis-"
+
 ずっと:
   kanji:    "ずっと"
   hiragana: "ずっと"
@@ -929,6 +1002,6 @@
   romaji:   "zutto"
   functions:
     continuity:
-      english: "always, continuously"
+      english: "always; continuously"
     comparative:
-      english: "by far, much more"
+      english: "by far; much more"
