@@ -34,10 +34,10 @@ right_url: /about/projects/data-analysis/
     </h5>
     <br>
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <img src="/assets/img/nuquest-poster1.png" alt="NUqueSt Poster 1" style="width:25%;">
-      <img src="/assets/img/nuquest-poster2.png" alt="NUqueSt Poster 2" style="width:25%;">
-      <img src="/assets/img/nuquest-poster3.png" alt="NUqueSt Poster 3" style="width:25%;">
-      <img src="/assets/img/nuquest-poster4.png" alt="NUqueSt Poster 4" style="width:25%;">
+      <img src="/assets/img/nuquest-poster1-900.jpg" alt="NUqueSt Poster 1" style="width:25%;">
+      <img src="/assets/img/nuquest-poster2-900.jpg" alt="NUqueSt Poster 2" style="width:25%;">
+      <img src="/assets/img/nuquest-poster3-900.jpg" alt="NUqueSt Poster 3" style="width:25%;">
+      <img src="/assets/img/nuquest-poster4-900.jpg" alt="NUqueSt Poster 4" style="width:25%;">
     </div>
     <h5>
         My friend
