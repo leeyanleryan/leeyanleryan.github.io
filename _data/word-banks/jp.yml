@@ -49,7 +49,7 @@
   hiragana: "あっても"
   katakana: ""
   romaji:   "attemo"
-  senses:
+  functions:
     concessive:
       english: "even if there is, no matter what happens"
     meeting:
@@ -84,7 +84,7 @@
   hiragana: "だ"
   katakana: ""
   romaji:   "da"
-  senses:
+  functions:
     copula:
       english: "is (copula)"
 
@@ -93,7 +93,7 @@
   hiragana: "だろう"
   katakana: ""
   romaji:   "darou"
-  senses:
+  functions:
     conjectural:
       english:  "-conjectural ending (I guess, probably, right?)-"
 
@@ -102,7 +102,7 @@
   hiragana: "だって"
   katakana: ""
   romaji:   "datte"
-  senses:
+  functions:
     quotative:
       english: "-colloquial emphatic ending (you know)-"
     even-if:
@@ -113,7 +113,7 @@
   hiragana: "で"
   katakana: ""
   romaji:   "de"
-  senses:
+  functions:
     location:
       english: "-location marker (at, in)-"
 
@@ -146,7 +146,7 @@
   hiragana: "が"
   katakana: ""
   romaji:   "ga"
-  senses:
+  functions:
     subject:
       english: "-subject marker-"
 
@@ -162,7 +162,7 @@
   hiragana: "ごめん"
   katakana: ""
   romaji:   "gomen"
-  senses:
+  functions:
     apology:
       english: "sorry"
     permission:
@@ -238,7 +238,7 @@
   hiragana: "いま"
   katakana: ""
   romaji:   "ima"
-  senses:
+  functions:
     temporal:
       english: "now"
 
@@ -270,7 +270,7 @@
   hiragana: "か"
   katakana: ""
   romaji:   "ka"
-  senses:
+  functions:
     question:
       english: "-question particle-"
 
@@ -307,7 +307,7 @@
   hiragana: "きみ"
   katakana: ""
   romaji:   "kimi"
-  senses:
+  functions:
     you:
       english: "you (casual)"
     darling:
@@ -362,7 +362,7 @@
   hiragana: "ここ"
   katakana: ""
   romaji:   "koko"
-  senses:
+  functions:
     location:
       english:  "here"
 
@@ -385,7 +385,7 @@
   hiragana: "こと"
   katakana: ""
   romaji:   "koto"
-  senses:
+  functions:
     nominaliser:
       english:  "-nominaliser: quote to noun-, thing, fact"
 
@@ -467,7 +467,7 @@
   hiragana: "も"
   katakana: ""
   romaji:   "mo"
-  senses:
+  functions:
     additive:
       english: "also, too"
 
@@ -483,7 +483,7 @@
   hiragana: "もし"
   katakana: ""
   romaji:   "moshi"
-  senses:
+  functions:
     hypothetical:
       english:  "if"
 
@@ -500,7 +500,7 @@
   hiragana: "ん"
   katakana: ""
   romaji:   "n"
-  senses:
+  functions:
     explanatory:
       english:  "-explanatory nominaliser-"
 
@@ -537,7 +537,7 @@
   hiragana: "なんて"
   katakana: ""
   romaji:   "nante"
-  senses:
+  functions:
     exclamative:
       english: "such as, things like"
 
@@ -546,7 +546,7 @@
   hiragana: "なら"
   katakana: ""
   romaji:   "nara"
-  senses:
+  functions:
     conditional:
       english: "-conditional particle (if)-"
 
@@ -562,7 +562,7 @@
   hiragana: "ね"
   katakana: ""
   romaji:   "ne"
-  senses:
+  functions:
     confirmation:
       english: "-confirmation particle (isn't it?, right?)-"
     softener:
@@ -573,7 +573,7 @@
   hiragana: "ねぇ"
   katakana: ""
   romaji:   "nee"
-  senses:
+  functions:
     vocative:
       english: "hey"
     confirmation:
@@ -586,7 +586,7 @@
   hiragana: "に"
   katakana: ""
   romaji:   "ni"
-  senses:
+  functions:
     temporal:
       english: "-temporal (in, at)-"
     indirect_object:
@@ -597,7 +597,7 @@
   hiragana: "の"
   katakana: ""
   romaji:   "no"
-  senses:
+  functions:
     possessive:
       english: "-possessive particle-"
     nominaliser:
@@ -721,7 +721,7 @@
   hiragana: "そう"
   katakana: ""
   romaji:   "sou"
-  senses:
+  functions:
     demonstrative:
       english: "like that, so"
 
@@ -759,7 +759,7 @@
   hiragana: "ために"
   katakana: ""
   romaji:   "tame ni"
-  senses:
+  functions:
     purpose:
       english: "-purpose (in order to, for the sake of)-"
 
@@ -782,7 +782,7 @@
   hiragana: "と"
   katakana: ""
   romaji:   "to"
-  senses:
+  functions:
     quotative:
       english: "-quotative (that)-"
     comitative:
@@ -830,7 +830,7 @@
   hiragana: "って"
   katakana: ""
   romaji:   "tte"
-  senses:
+  functions:
     quotative:
       english: "-quotative particle-"
 
@@ -847,7 +847,7 @@
   hiragana: "うち"
   katakana: ""
   romaji:   "uchi"
-  senses:
+  functions:
     temporal:
       english: "time, while, before"
 
@@ -866,7 +866,7 @@
   hiragana: "は"
   katakana: ""
   romaji:   "wa"
-  senses:
+  functions:
     topic:
       english: "-topic marker-"
 
@@ -889,7 +889,7 @@
   hiragana: "を"
   katakana: ""
   romaji:   "wo"
-  senses:
+  functions:
     object:
       english: "-object marker-"
 # ------------------------------------------ #
@@ -901,7 +901,7 @@
   hiragana: "よ"
   katakana: ""
   romaji:   "yo"
-  senses:
+  functions:
     emphatic:
       english: "-emphatic particle (you know)-"
 
@@ -910,7 +910,7 @@
   hiragana: "ように"
   katakana: ""
   romaji:   "you ni"
-  senses:
+  functions:
     purpose:
       english: "so that, in order that"
 
@@ -927,7 +927,7 @@
   hiragana: "ずっと"
   katakana: ""
   romaji:   "zutto"
-  senses:
+  functions:
     continuity:
       english: "always, continuously"
     comparative:
