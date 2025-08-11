@@ -1,0 +1,33 @@
+header:
+  title: Projects
+  url:   /about/projects/
+  order: order
+
+subheaders:
+  - title: Orbital NUqueSt
+    url:   /about/projects/orbital-nuquest/
+    video: nuquest-gameplay3
+    excerpt: >
+      A 2D top-down action-adventure game in Unity to gamify NUS courses.
+    order: 1
+
+  - title: Data Analysis
+    url:   /about/projects/data-analysis/
+    image: /assets/img/dataanalysis-bca-heatmap1.png
+    excerpt: >
+      Compilation of various data analysis projects using Machine Learning.
+    order: 2
+
+  - title: Board Games
+    url:   /about/projects/board-games/
+    video: boardgames-chess2
+    excerpt: >
+      Offline Board Games with UI and AI.
+    order: 3
+
+  - title: Puzzle Solvers
+    url:   /about/projects/puzzle-solvers/
+    video: puzzlesolvers-sudoku1
+    excerpt: >
+      Automated Sudoku solver using Computer Vision and AI search.
+    order: 4
