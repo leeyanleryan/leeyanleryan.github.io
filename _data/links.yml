@@ -13,7 +13,7 @@ About:
 
       Data Analysis:
         url:   /about/projects/data-analysis/
-        image: /assets/img/dataanalysis-bca-heatmap1.png
+        image: dataanalysis-bca-heatmap1.png
         excerpt: >
           Compilation of various data analysis projects using Machine Learning.
 
@@ -57,7 +57,7 @@ Lyrics Translations:
     subheaders:
       Ref:rain:
         url: /lyrics-translations/aimer/ref-rain/
-        image: /assets/img/no-image.png
+        image: no-image.png
         excerpt: >
           From the album "Penny Rain", 2019.
 
@@ -66,12 +66,12 @@ Lyrics Translations:
     subheaders:
       Amy:
         url:   /lyrics-translations/the-oral-cigarettes/amy/
-        image: /assets/img/no-image.png
+        image: no-image.png
         excerpt: >
           From the album "FIXION", 2016.
 
       Flower:
         url:   /lyrics-translations/the-oral-cigarettes/flower/
-        image: /assets/img/no-image.png
+        image: no-image.png
         excerpt: >
           From the album "Black Memory", 2017.

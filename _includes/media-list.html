@@ -16,7 +16,7 @@
           <div class="w3-row media-card">
             <div class="w3-col s4 m4">
               {% if item_image %}
-                <img src="{{ item_image }}" alt="{{ item_title }}" class="media-thumb">
+                <img src="/assets/img/{{ item_image }}" alt="{{ item_title }}" class="media-thumb">
               {% elsif item_video %}
                 {% include video-player.html file=item_video width="100%" class="media-thumb" %}
               {% endif %}

@@ -41,6 +41,8 @@ a.media-link:focus {
   object-fit: cover;
   padding: 5px 5px;
   border-radius: var(--pill-border-radius);
+  display: block;
+  box-sizing: border-box;
 }
 
 .media-title {
