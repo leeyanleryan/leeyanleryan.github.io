@@ -5,6 +5,13 @@
   transition: none;
 }
 
+.media-display {
+  display:flex; 
+  justify-content:center; 
+  gap:10px; 
+  align-items:center;
+}
+
 hr.hr-main-body {
   height: 1px;
   color: var(--light-mode-border-color);
