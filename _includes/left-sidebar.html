@@ -12,24 +12,33 @@
     </div>
   </div>
   <hr class="hr-sidebar">
-  <div class="w3-container">
-    <div class="w3-bar-block">
-      <h4><strong>About</strong></h4>
-      <a href="/about/profile/" class="w3-bar-item w3-button w3-padding {% if page.url == '/about/profile/' %} active{% endif %}"> Profile</a>
-      {% include sidebar-submenu.html sublinks=site.data.projects %}
-      {% include sidebar-submenu.html sublinks=site.data.experiences %}
-      <a href="/about/awards/" class="w3-bar-item w3-button w3-padding {% if page.url == '/about/awards/' %} active{% endif %}"> Awards</a>
-      <a href="/about/hobbies/" class="w3-bar-item w3-button w3-padding {% if page.url == '/about/hobbies/' %} active{% endif %}"> Hobbies</a>
+
+  {% for link in site.data.links %}
+    {% assign title = link[0] %}
+    {% assign headers = link[1] %}
+    <div class="w3-container">
+      <div class="w3-bar-block">
+        <h4><strong>{{ title }}</strong></h4>
+        {% for h in headers %}
+          {% assign header = h[0] %}
+          {% assign header_info = h[1] %}
+          {% assign header_url = header_info.url %}
+          {% if header_info.subheaders %}
+            {% include sidebar-submenu.html header=header header_info=header_info header_url=header_url %}
+          {% else %}
+            <a href="{{ header_url }}"
+              class="w3-bar-item w3-button w3-padding {% if page.url == header_url %}active{% endif %}">
+              {{ header }}
+            </a>
+          {% endif %}
+        {% endfor %}
+      </div>
     </div>
-  </div>
-  <hr class="hr-sidebar">
-  <div class="w3-container">
-    <h4><strong>Lyrics Translations</strong></h4>
-    <div class="w3-bar-block">
-      {% include sidebar-submenu.html sublinks=site.data.aimer %}
-      {% include sidebar-submenu.html sublinks=site.data.the-oral-cigarettes %}
-    </div>
-  </div>
+    {% unless forloop.last %}
+      <hr class="hr-sidebar">
+    {% endunless %}
+  {% endfor %}
+
   <hr class="hr-sidebar">
   <div class="w3-container">
     <div class="w3-bar-block">
