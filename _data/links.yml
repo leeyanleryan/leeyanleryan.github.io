@@ -31,7 +31,7 @@ About:
 
       Personal Website:
         url:   /about/projects/personal-website/
-        image: no-image.png
+        video: personal-website1
         excerpt: >
           Automated Sudoku solver using Computer Vision and AI search.
 

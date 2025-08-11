@@ -4,5 +4,4 @@ title: Aimer
 permalink: /lyrics-translations/aimer/
 ---
 
-<!-- !PAGE CONTENT! -->
 {% include media-overview.html section_title="Lyrics Translations" header="Aimer" %}
