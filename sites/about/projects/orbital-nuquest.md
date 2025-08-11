@@ -2,11 +2,6 @@
 layout: default
 title: Orbital NUqueSt
 permalink: /about/projects/orbital-nuquest/
-
-left_label: Projects
-left_url: /about/projects/
-right_label: Data Analysis
-right_url: /about/projects/data-analysis/
 ---
 
 <!-- !PAGE CONTENT! -->

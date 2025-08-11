@@ -2,11 +2,6 @@
 layout: default
 title: Puzzle Solvers
 permalink: /about/projects/puzzle-solvers/
-
-left_label: Board Games
-left_url: /about/projects/board-games/
-right_label: Experiences
-right_url: /about/experiences/
 ---
 
 <!-- !PAGE CONTENT! -->

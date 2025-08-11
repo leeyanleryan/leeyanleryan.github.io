@@ -3,11 +3,6 @@ layout: default
 title: Amy
 permalink: /lyrics-translations/the-oral-cigarettes/amy/
 
-left_label: The Oral Cigarettes
-left_url: /lyrics-translations/the-oral-cigarettes/
-right_label: Flower
-right_url: /lyrics-translations/the-oral-cigarettes/flower/
-
 song_description: >-
   A song released by The Oral Cigarettes in 2016 under the album 'FIXION'.
 lyrics_guide: >-

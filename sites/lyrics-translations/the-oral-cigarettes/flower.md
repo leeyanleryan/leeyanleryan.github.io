@@ -3,11 +3,6 @@ layout: default
 title: Flower
 permalink: /lyrics-translations/the-oral-cigarettes/flower/
 
-left_label: Amy
-left_url: /lyrics-translations/the-oral-cigarettes/amy/
-right_label: Profile
-right_url: /about/profile/
-
 song_description: >-
   A song released by The Oral Cigarettes in 2017 under the album "Black Memory".
 lyrics_guide: >-

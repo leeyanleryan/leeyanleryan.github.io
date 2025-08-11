@@ -2,11 +2,6 @@
 layout: default
 title: The Oral Cigarettes
 permalink: /lyrics-translations/the-oral-cigarettes/
-
-left_label: Ref:rain
-left_url: /lyrics-translations/aimer/ref-rain/
-right_label: Amy
-right_url: /lyrics-translations/the-oral-cigarettes/amy/
 ---
 
 <!-- !PAGE CONTENT! -->

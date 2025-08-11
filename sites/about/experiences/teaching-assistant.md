@@ -2,11 +2,6 @@
 layout: default
 title: Teaching Assistant
 permalink: /about/experiences/teaching-assistant/
-
-left_label: Digital Production Assistant
-left_url: /about/experiences/digital-production-assistant/
-right_label: Awards
-right_url: /about/awards/
 ---
 
 <!-- !PAGE CONTENT! -->

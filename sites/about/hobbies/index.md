@@ -2,11 +2,6 @@
 layout: default
 title: My Hobbies
 permalink: /about/hobbies/
-
-left_label: Awards
-left_url: /about/awards/
-right_label: Aimer
-right_url: /lyrics-translations/aimer/
 ---
 
 <!-- !PAGE CONTENT! -->

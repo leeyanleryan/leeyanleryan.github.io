@@ -2,11 +2,6 @@
 layout: default
 title: Board Games
 permalink: /about/projects/board-games/
-
-left_label: Data Analysis
-left_url: /about/projects/data-analysis
-right_label: Puzzle Solvers
-right_url: /about/projects/puzzle-solvers/
 ---
 
 <!-- !PAGE CONTENT! -->

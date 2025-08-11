@@ -2,11 +2,6 @@
 layout: default
 title: My Awards
 permalink: /about/awards/
-
-left_label: Teaching Assistant
-left_url: /about/experiences/teaching-assistant/
-right_label: Hobbies
-right_url: /about/hobbies/
 ---
 
 <!-- !PAGE CONTENT! -->
