@@ -10,4 +10,4 @@ right_url: /about/projects/orbital-nuquest/
 ---
 
 <!-- !PAGE CONTENT! -->
-{% include media-overview.html sublinks=site.data.projects %}
+{% include media-overview.html section_title="About" header="Projects" %}

@@ -13,12 +13,12 @@
   </div>
   <hr class="hr-sidebar">
 
-  {% for link in site.data.links %}
-    {% assign title = link[0] %}
-    {% assign headers = link[1] %}
+  {% for section in site.data.links %}
+    {% assign section_title = section[0] %}
+    {% assign headers = section[1] %}
     <div class="w3-container">
       <div class="w3-bar-block">
-        <h4><strong>{{ title }}</strong></h4>
+        <h4><strong>{{ section_title }}</strong></h4>
         {% for h in headers %}
           {% assign header = h[0] %}
           {% assign header_info = h[1] %}

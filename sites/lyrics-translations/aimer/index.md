@@ -10,4 +10,4 @@ right_url: /lyrics-translations/aimer/ref-rain/
 ---
 
 <!-- !PAGE CONTENT! -->
-{% include media-overview.html sublinks=site.data.aimer %}
+{% include media-overview.html section_title="Lyrics Translations" header="Aimer" %}

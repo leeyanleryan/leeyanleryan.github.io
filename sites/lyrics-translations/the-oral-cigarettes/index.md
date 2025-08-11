@@ -10,4 +10,4 @@ right_url: /lyrics-translations/the-oral-cigarettes/amy/
 ---
 
 <!-- !PAGE CONTENT! -->
-{% include media-overview.html sublinks=site.data.the-oral-cigarettes %}
+{% include media-overview.html section_title="Lyrics Translations" header="The Oral Cigarettes" %}

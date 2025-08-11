@@ -1,21 +1,30 @@
+{% assign section_title = include.section_title %}
+{% assign header = include.header %}
+{% assign items = site.data.links[section_title][header].subheaders %}
+
 <ul class="media-list">
-  {% assign items = include.sublinks.subheaders | sort: include.sublinks.header.order %}
   {% for item in items %}
-    {% unless item.url == include.exclude %}
+    {% assign item_title = item[0] %}
+    {% assign item_info = item[1] %}
+    {% assign item_url = item_info.url %}
+    {% assign item_image = item_info.image %}
+    {% assign item_video = item_info.video %}
+    {% assign item_excerpt = item_info.excerpt %}
+    {% unless item_url == page.url %}
       <li class="media-item">
-        <a href="{{ item.url }}" class="media-link">
+        <a href="{{ item_url }}" class="media-link">
           <div class="w3-row media-card">
             <div class="w3-col s4 m4">
-              {% if item.image %}
-                <img src="{{ item.image }}" alt="{{ item.title }}" class="media-thumb">
-              {% elsif item.video %}
-                {% include video-player.html file=item.video width="100%" class="media-thumb" %}
+              {% if item_image %}
+                <img src="{{ item_image }}" alt="{{ item_title }}" class="media-thumb">
+              {% elsif item_video %}
+                {% include video-player.html file=item_video width="100%" class="media-thumb" %}
               {% endif %}
             </div>
             <div class="w3-col s8 m8">
-              <h4 class="media-title"><b>{{ item.title }}</b></h4>
+              <h4 class="media-title"><b>{{ item_title }}</b></h4>
               <h6 class="media-excerpt">
-                {{ item.excerpt | default: item.content | strip_html }}
+                {{ item_excerpt | strip_html }}
               </h6>
             </div>
           </div>

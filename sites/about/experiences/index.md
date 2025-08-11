@@ -10,4 +10,4 @@ right_url: /about/experiences/digital-production-assistant/
 ---
 
 <!-- !PAGE CONTENT! -->
-{% include media-overview.html sublinks=site.data.experiences %}
+{% include media-overview.html section_title="About" header="Experiences" %}
