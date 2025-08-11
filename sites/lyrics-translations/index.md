@@ -5,7 +5,6 @@ permalink: /lyrics-translations/
 redirect_to: /lyrics-translations/the-oral-cigarettes/
 ---
 
-<!-- !PAGE CONTENT! -->
 <div id="page-lyrics-translations" class="w3-main" >
   <section id="profile" class="w3-container">
     <h2><b>Oops!</b></h2>

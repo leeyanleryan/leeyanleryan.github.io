@@ -4,7 +4,6 @@ title: Board Games
 permalink: /about/projects/board-games/
 ---
 
-<!-- !PAGE CONTENT! -->
 <div id="page-about-projects" class="w3-main">
   <section id="board-games" class="w3-container">
     <h2><b>Board Games</b> (<a href="https://github.com/leeyanleryan/Board-Games" target="_blank">Link</a>)</h2>

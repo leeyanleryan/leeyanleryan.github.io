@@ -58,9 +58,20 @@
 
   {
     
-    "title": "My Experiences",
-    "url":   "/about/experiences/",
-    "content": "      My Experiences                                                                                                          Your browser does not support the video tag.                                                    Digital Production Assistant                              Created engaging educational videos on Machine Learning,  Artificial Intelligence, and Deep Learning.                                                                                                                                                            Your browser does not support the video tag.                                                    Teaching Assistant                              Taught CS1010E Programming Methodology to 25 undergraduates.                                                          ",
+    "title": "Home",
+    "url":   "/",
+    "content": "",
+    
+    
+    
+    "section": "-"
+  },
+
+  {
+    
+    "title": "My Projects",
+    "url":   "/about/projects/",
+    "content": "      My Projects                                                                                                          Your browser does not support the video tag.                                                    Orbital NUqueSt                              A 2D top-down action-adventure game in Unity to gamify NUS courses.                                                                                                                                                                                                          Data Analysis                              Compilation of various data analysis projects using Machine Learning.                                                                                                                                                            Your browser does not support the video tag.                                                    Board Games                              Offline Board Games with UI and AI.                                                                                                                                                            Your browser does not support the video tag.                                                    Puzzle Solvers                              Automated Sudoku solver using Computer Vision and AI search.                                                                                                                                                                                                          Personal Website                              Automated Sudoku solver using Computer Vision and AI search.                                                          ",
     
     
     
@@ -69,9 +80,31 @@
 
   {
     
-    "title": "My Projects",
-    "url":   "/about/projects/",
-    "content": "      My Projects                                                                                                          Your browser does not support the video tag.                                                    Orbital NUqueSt                              A 2D top-down action-adventure game in Unity to gamify NUS courses.                                                                                                                                                                                                          Data Analysis                              Compilation of various data analysis projects using Machine Learning.                                                                                                                                                            Your browser does not support the video tag.                                                    Board Games                              Offline Board Games with UI and AI.                                                                                                                                                            Your browser does not support the video tag.                                                    Puzzle Solvers                              Automated Sudoku solver using Computer Vision and AI search.                                                          ",
+    "title": "Lyrics Translations",
+    "url":   "/lyrics-translations/",
+    "content": "",
+    
+    
+    
+    "section": "-"
+  },
+
+  {
+    
+    "title": "The Oral Cigarettes",
+    "url":   "/lyrics-translations/the-oral-cigarettes/",
+    "content": "      The Oral Cigarettes                                                                                                                                                        Amy                              From the album \"FIXION\", 2016.                                                                                                                                                                                                          Flower                              From the album \"Black Memory\", 2017.                                                          ",
+    
+    
+    
+    "section": "Lyrics\n        \n          Translations"
+  },
+
+  {
+    
+    "title": "My Hobbies",
+    "url":   "/about/hobbies/",
+    "content": "      Reading          I like reading both fiction and non-fiction. Recommend me some books to read!              Books read:              Harry Potter and the Sorcerer's Stone        Harry Potter and the Chamber of Secrets        Harry Potter and the Prisoner of Azkaban        Harry Potter and the Goblet of Fire        Harry Potter and the Order of the Phoenix        Harry Potter and the Half-Blood Prince        Harry Potter and the Deathly Hallows        The Hobbit        Lord of the Rings: The Fellowship of the Ring        Lord of the Rings: The Two Towers        Lord of the Rings: The Return of the King                    Gaming    Rocket League                                                Rocket League Stat Tracker                Peak Rating: Grand Champion III Division I (1723 Rating), 28/01/2023        Peak Ranking: Singapore Rank #1, 23/09/2018              Brawlhalla                                          Brawlhalla Stat Tracker                Peak ELO: Valhallan (2302 ELO), 02/11/2024        Peak Ranking: South-East Asia Rank #24, 02/11/2024              osu!                                                osu! Profile                Peak PP Play: Epitaph (705pp), 25/06/2024        Peak Ranking: Global Rank #2067, 30/09/2024              Marvel Rivals                                          Marvel Rivals Stat Tracker                Peak RS: Grandmaster III (4504 RS), 13/03/2025              Valorant                                          Valorant Stat Tracker                Peak Rating: Diamond I, 04/08/2022                      Piano          I am self-taught. I learn from watching MIDI covers on YouTube.              Pieces learnt:              Canon in D        River Flows in You        Fur Elise        Hollow Knight        Wet Hands            ",
     
     
     
@@ -87,17 +120,6 @@
     
     
     "section": "About"
-  },
-
-  {
-    
-    "title": "The Oral Cigarettes",
-    "url":   "/lyrics-translations/the-oral-cigarettes/",
-    "content": "      The Oral Cigarettes                                                                                                                                                        Amy                              From the album \"FIXION\", 2016.                                                                                                                                                                                                          Flower                              From the album \"Black Memory\", 2017.                                                          ",
-    
-    
-    
-    "section": "Lyrics\n        \n          Translations"
   },
 
   {
@@ -124,31 +146,9 @@
 
   {
     
-    "title": "Lyrics Translations",
-    "url":   "/lyrics-translations/",
-    "content": "",
-    
-    
-    
-    "section": "-"
-  },
-
-  {
-    
-    "title": "Home",
-    "url":   "/",
-    "content": "",
-    
-    
-    
-    "section": "-"
-  },
-
-  {
-    
-    "title": "My Hobbies",
-    "url":   "/about/hobbies/",
-    "content": "      Reading          I like reading both fiction and non-fiction. Recommend me some books to read!              Books read:              Harry Potter and the Sorcerer's Stone        Harry Potter and the Chamber of Secrets        Harry Potter and the Prisoner of Azkaban        Harry Potter and the Goblet of Fire        Harry Potter and the Order of the Phoenix        Harry Potter and the Half-Blood Prince        Harry Potter and the Deathly Hallows        The Hobbit        Lord of the Rings: The Fellowship of the Ring        Lord of the Rings: The Two Towers        Lord of the Rings: The Return of the King                    Gaming    Rocket League                                                Rocket League Stat Tracker                Peak Rating: Grand Champion III Division I (1723 Rating), 28/01/2023        Peak Ranking: Singapore Rank #1, 23/09/2018              Brawlhalla                                          Brawlhalla Stat Tracker                Peak ELO: Valhallan (2302 ELO), 02/11/2024        Peak Ranking: South-East Asia Rank #24, 02/11/2024              osu!                                                osu! Profile                Peak PP Play: Epitaph (705pp), 25/06/2024        Peak Ranking: Global Rank #2067, 30/09/2024              Marvel Rivals                                          Marvel Rivals Stat Tracker                Peak RS: Grandmaster III (4504 RS), 13/03/2025              Valorant                                          Valorant Stat Tracker                Peak Rating: Diamond I, 04/08/2022                      Piano          I am self-taught. I learn from watching MIDI covers on YouTube.              Pieces learnt:              Canon in D        River Flows in You        Fur Elise        Hollow Knight        Wet Hands            ",
+    "title": "My Experiences",
+    "url":   "/about/experiences/",
+    "content": "      My Experiences                                                                                                          Your browser does not support the video tag.                                                    Digital Production Assistant                              Created engaging educational videos on Machine Learning,  Artificial Intelligence, and Deep Learning.                                                                                                                                                            Your browser does not support the video tag.                                                    Teaching Assistant                              Taught CS1010E Programming Methodology to 25 undergraduates.                                                          ",
     
     
     
@@ -171,6 +171,17 @@
     "title": "Orbital NUqueSt",
     "url":   "/about/projects/orbital-nuquest/",
     "content": "      Orbital NUqueSt (Link)                Your browser does not support the video tag.            Your browser does not support the video tag.            Your browser does not support the video tag.                NUqueSt is a 2D Top-Down Action-Adventure Singleplayer Questing game. It was heavily inspired by Stardew Valley, incorporating core gameplay elements      such as fighting, farming and mining. It features 3 different biomes, 8 Non-Playable-Characters (NPCs), 6 ores, 3 enemies, 1 boss and 40 quests.                    Your browser does not support the video tag.            Your browser does not support the video tag.              The main purpose of creating NUqueSt was to help familiarise incoming undergraduates with the challenges of various courses in a fun and interactive way.      We achieved this by gamifying each course into a quest. For example, the computing course “CS1010” became an N-Queens puzzle, where players had to provide       two valid configurations for placing 6 queens on a 6x6 board. These quests are given by the NPCs, and reward the player with GPA upon completion.                                                My friend              Thaw and I developed NUqueSt for CP2106 (Orbital), a three-month software engineering course at NUS during AY22/23 Special Term. We followed         an agile methodology with monthly sprints. Each sprint began with planning feasible features and ended with peer reviews, alongside the creation of a         poster and video to showcase the project. We then incorporated feedback in subsequent sprints, guiding us toward the right direction.                                  For our project, we were awarded Artemis (Extreme), the highest level of achievement, placing us roughly in the top 5% of the cohort. The link to the      digital certificate can be found       here.      ",
+    
+    
+    
+    "section": "Projects"
+  },
+
+  {
+    
+    "title": "Personal Website",
+    "url":   "/about/projects/personal-website/",
+    "content": "    ",
     
     
     

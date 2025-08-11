@@ -4,7 +4,6 @@ title: Data Analysis
 permalink: /about/projects/data-analysis/
 ---
 
-<!-- !PAGE CONTENT! -->
 <div id="page-about-projects" class="w3-main">
   <section id="data-analysis" class="w3-container">
     <h2><b>Data Analysis</b> (<a href="https://github.com/leeyanleryan/Data-Analysis" target="_blank">Link</a>)</h2>

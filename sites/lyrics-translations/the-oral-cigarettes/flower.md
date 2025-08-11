@@ -16,5 +16,4 @@ lyrics_test: >-
   NOTE: Explanation box containing breakdown of words is incomplete. There will only be a few test questions.
 ---
 
-<!-- !PAGE CONTENT! -->
 {% include lyrics-content.html band="the-oral-cigarettes" song="flower" %}

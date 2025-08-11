@@ -4,7 +4,6 @@ title: My Profile
 permalink: /about/profile/
 ---
 
-<!-- !PAGE CONTENT! -->
 <div id="page-about" class="w3-main">
   <section id="profile" class="w3-container">
     <h2><b>Profile</b></h2>

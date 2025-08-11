@@ -4,7 +4,6 @@ title: Teaching Assistant
 permalink: /about/experiences/teaching-assistant/
 ---
 
-<!-- !PAGE CONTENT! -->
 <div id="page-about-experiences" class="w3-main">
   <section id="teaching-assistant" class="w3-container">
     <h2><b>Teaching Assistant</b></h2>

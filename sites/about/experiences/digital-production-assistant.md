@@ -4,7 +4,6 @@ title: Digital Production Assistant
 permalink: /about/experiences/digital-production-assistant/
 ---
 
-<!-- !PAGE CONTENT! -->
 <div id="page-about-experiences" class="w3-main">
   <section id="digital-production-assistant" class="w3-container">
     <h2><b>Digital Production Assistant</b></h2>

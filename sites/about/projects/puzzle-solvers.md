@@ -4,7 +4,6 @@ title: Puzzle Solvers
 permalink: /about/projects/puzzle-solvers/
 ---
 
-<!-- !PAGE CONTENT! -->
 <div id="page-about-projects" class="w3-main">
   <section id="puzzle-solvers" class="w3-container">
     <h2><b>Puzzle Solvers</b> (<a href="https://github.com/leeyanleryan/Puzzle-Solvers" target="_blank">Link</a>)</h2>

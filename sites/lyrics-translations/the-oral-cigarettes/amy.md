@@ -12,5 +12,4 @@ lyrics_test: >-
   Would you like to test your understanding? Select the correct meaning of the highlighted word!
 ---
 
-<!-- !PAGE CONTENT! -->
 {% include lyrics-content.html band="the-oral-cigarettes" song="amy" %}

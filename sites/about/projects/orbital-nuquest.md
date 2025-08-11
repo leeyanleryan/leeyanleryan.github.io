@@ -4,7 +4,6 @@ title: Orbital NUqueSt
 permalink: /about/projects/orbital-nuquest/
 ---
 
-<!-- !PAGE CONTENT! -->
 <div id="page-about-projects" class="w3-main">
   <section id="orbital-nuquest" class="w3-container">
     <h2><b>Orbital NUqueSt</b> (<a href="https://github.com/leeyanleryan/Orbital-NUqueSt" target="_blank">Link</a>)</h2>

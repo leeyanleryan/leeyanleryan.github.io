@@ -29,6 +29,12 @@ About:
         excerpt: >
           Automated Sudoku solver using Computer Vision and AI search.
 
+      Personal Website:
+        url:   /about/projects/personal-website/
+        image: no-image.png
+        excerpt: >
+          Automated Sudoku solver using Computer Vision and AI search.
+
   Experiences:
     url: /about/experiences/
     subheaders:
