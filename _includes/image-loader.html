@@ -1,4 +1,5 @@
 <img src="/assets/img/{{ include.file }}"
-     width="{{ include.file_width }}" height="{{ include.file_height }}" 
-     decoding="async"
-     alt="{{ include.file }}" style="width:{{ include.css_width }};">
+  {% if include.file_width %}width="{{ include.file_width }}"{% endif %} 
+  {% if include.file_height %}height="{{ include.file_height }}"{% endif %}
+  {% if include.css_width %}style="width:{{ include.css_width }};"{% endif %}
+  decoding="async" alt="{{ include.file }}">

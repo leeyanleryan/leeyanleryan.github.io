@@ -8,17 +8,17 @@ permalink: /about/projects/orbital-nuquest/
   <section id="orbital-nuquest" class="w3-container">
     <h2><b>Orbital NUqueSt</b> (<a href="https://github.com/leeyanleryan/Orbital-NUqueSt" target="_blank">Link</a>)</h2>
     <div class="media-display">
-      {% include video-player.html file="nuquest-gameplay1" width="33%" %}
-      {% include video-player.html file="nuquest-gameplay2" width="33%" %}
-      {% include video-player.html file="nuquest-gameplay3" width="33%" %}
+      {% include video-player.html file="nuquest-gameplay1" file_width="400" file_height="300" css_width="33%" %}
+      {% include video-player.html file="nuquest-gameplay2" file_width="400" file_height="300" css_width="33%" %}
+      {% include video-player.html file="nuquest-gameplay3" file_width="400" file_height="300" css_width="33%" %}
     </div>
     <h5 class="h5-img-gap">
         NUqueSt is a 2D Top-Down Action-Adventure Singleplayer Questing game. It was heavily inspired by Stardew Valley, incorporating core gameplay elements
       such as fighting, farming and mining. It features 3 different biomes, 8 Non-Playable-Characters (NPCs), 6 ores, 3 enemies, 1 boss and 40 quests.
     </h5>
     <div class="media-display">
-      {% include video-player.html file="nuquest-quest1" width="50%" %}
-      {% include video-player.html file="nuquest-quest2" width="50%" %}
+      {% include video-player.html file="nuquest-quest1" file_width="400" file_height="300" css_width="50%" %}
+      {% include video-player.html file="nuquest-quest2" file_width="400" file_height="300" css_width="50%" %}
     </div>
     <h5 class="h5-img-gap">
       The main purpose of creating NUqueSt was to help familiarise incoming undergraduates with the challenges of various courses in a fun and interactive way.

@@ -8,9 +8,9 @@ permalink: /about/experiences/digital-production-assistant/
   <section id="digital-production-assistant" class="w3-container">
     <h2><b>Digital Production Assistant</b></h2>
     <div class="media-display">
-      {% include video-player.html file="dpa-intro1" width="32%" %}
-      {% include video-player.html file="dpa-intro2" width="32%" %}
-      {% include video-player.html file="dpa-intro3" width="32%" %}
+      {% include video-player.html file="dpa-intro1" file_width="800" file_height="450" css_width="32%" %}
+      {% include video-player.html file="dpa-intro2" file_width="800" file_height="450" css_width="32%" %}
+      {% include video-player.html file="dpa-intro3" file_width="800" file_height="450" css_width="32%" %}
     </div>
     <h5 class="h5-text-gap">
       I collaborated with 3 professors and 2 other digital production assistants on producing engaging

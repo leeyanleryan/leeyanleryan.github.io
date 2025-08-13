@@ -8,8 +8,8 @@ permalink: /about/experiences/teaching-assistant/
   <section id="teaching-assistant" class="w3-container">
     <h2><b>Teaching Assistant</b></h2>
     <div class="media-display">
-      {% include video-player.html file="ta-animation1" width="49%" %}
-      {% include video-player.html file="ta-animation2" width="49%" %}
+      {% include video-player.html file="ta-animation1" file_width="800" file_height="450" css_width="49%" %}
+      {% include video-player.html file="ta-animation2" file_width="800" file_height="450" css_width="49%" %}
     </div>
     <h5 class="h5-text-gap">
       I taught 25 NUS undergraduates CS1010E, a course on programming methodology in Python. The course
