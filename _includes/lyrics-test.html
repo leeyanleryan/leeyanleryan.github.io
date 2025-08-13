@@ -12,28 +12,24 @@
 }
 </script>
 <script>
-  {% assign language_lines    = include.lyrics.language    %}
-  {% assign original_lines    = include.lyrics.original    %}
-  {% assign romanized_lines   = include.lyrics.romanized   %}
-  {% assign english_lines     = include.lyrics.english     %}
-  {% assign explanation_lines = include.lyrics.explanation %}
+  {% assign lyrics = include.lyrics %}
 
   window._lyricsTestData = [
-    {% for orig in original_lines %}
+    {% for line in lyrics %}
       {% assign i = forloop.index0 %}
-      {% assign lang_line = language_lines[i] %}
-      {% assign orig_line = original_lines[i] %}
-      {% assign roma_line = romanized_lines[i] %}
-      {% assign eng_line  = english_lines[i] %}
-      {% assign expl_line = explanation_lines[i] %}
-      {% if expl_line and expl_line != "[[divider]]" and expl_line != "[[empty]]" %}
+      {% assign div_line = line.divider %}
+      {% assign lang_line = line.language %}
+      {% assign orig_line = line.original %}
+      {% assign roma_line = line.romanized %}
+      {% assign eng_line  = line.english %}
+      {% assign expl_line = line.explanation %}
+      {% if expl_line %}
       {
         original:  {{ orig_line | jsonify }},
         romanized: {{ roma_line | jsonify }},
         english:   {{ eng_line  | jsonify }},
         explanations: [
-          {% assign cells = expl_line | split: "," %}
-          {% for cell in cells %}
+          {% for cell in expl_line %}
             {% assign parts = cell | split: "|" %}
             {% assign orig_word = parts[0] %}
             {% assign lang_word = parts[1] %}

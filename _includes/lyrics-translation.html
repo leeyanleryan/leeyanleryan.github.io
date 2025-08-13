@@ -10,19 +10,16 @@
   <div id="lt-toggle-english" class="lt-toggle-button">Toggle English</div>
 </div>
 <div class="lyrics-translations">
-  {% assign language_lines    = include.lyrics.language    %}
-  {% assign original_lines    = include.lyrics.original    %}
-  {% assign romanized_lines   = include.lyrics.romanized   %}
-  {% assign english_lines     = include.lyrics.english     %}
-  {% assign explanation_lines = include.lyrics.explanation %}
-  {% for orig in original_lines %}
+  {% assign lyrics = include.lyrics %}
+  {% for line in lyrics %}
     {% assign i = forloop.index0 %}
-    {% assign lang_line = language_lines[i] %}
-    {% assign orig_line = original_lines[i] %}
-    {% assign roma_line = romanized_lines[i] %}
-    {% assign eng_line  = english_lines[i] %}
-    {% assign expl_line = explanation_lines[i] %}
-    {% if lang_line == "[[divider]]" %}
+    {% assign div_line = line.divider %}
+    {% assign lang_line = line.language %}
+    {% assign orig_line = line.original %}
+    {% assign roma_line = line.romanized %}
+    {% assign eng_line  = line.english %}
+    {% assign expl_line = line.explanation %}
+    {% if div_line %}
       <h5 class="h5-margin-0">-----------------------------------<br></h5>
     {% else %}
       {% if lang_line == "jp" %}
@@ -48,39 +45,40 @@
         <h6 class="w3-col s4 m4 h6-margin-0">English</h6>
         <hr class="hr-lyrics-explanation">
 
-        {% assign cells = expl_line | split: "," %}
-        {% for cell in cells %}
-          {% assign parts = cell | split: "|" %}
-          {% assign orig_word = parts[0] %}
-          {% assign lang_word = parts[1] %}
-          {% assign func_word = parts[2] %}
-          {% comment %} 
-            ADD MORE LANGUAGES HERE
-          {% endcomment %}
-          {% if lang_word == "jp" %}
-            {% assign entry = site.data["word-banks"]["jp"][orig_word] %}
-          {% endif %}
-          {% if entry.functions %}
-            {% if func_word != "-" %}
-              {% assign fw = func_word %}
-            {% else %}
-              {% assign fw = entry.functions | first | first %}
+        {% if expl_line %}
+          {% for cell in expl_line %}
+            {% assign parts = cell | split: "|" %}
+            {% assign orig_word = parts[0] %}
+            {% assign lang_word = parts[1] %}
+            {% assign func_word = parts[2] %}
+            {% comment %} 
+              ADD MORE LANGUAGES HERE
+            {% endcomment %}
+            {% if lang_word == "jp" %}
+              {% assign entry = site.data["word-banks"]["jp"][orig_word] %}
             {% endif %}
-            {% assign gloss = entry.functions[fw].english %}
-          {% else %}
-            {% assign gloss = entry.english %}
-          {% endif %}
-          {% comment %} 
-            ADD MORE LANGUAGES HERE
-          {% endcomment %}
-          {% if lang_word == "jp" %}
-            <h6 class="w3-col s4 m4 h6-margin-0">
-              {{ entry.kanji | default: entry.katakana | default: orig_word }}
-            </h6>
-            <h6 class="w3-col s4 m4 h6-margin-0"><em>{{ entry.romaji | default: "-" }}</em></h6>
-            <h6 class="w3-col s4 m4 h6-margin-0 lyrics-explanation-english">{{ gloss | default: "-" }}</h6>
-          {% endif %}
-        {% endfor %}
+            {% if entry.functions %}
+              {% if func_word != "-" %}
+                {% assign fw = func_word %}
+              {% else %}
+                {% assign fw = entry.functions | first | first %}
+              {% endif %}
+              {% assign gloss = entry.functions[fw].english %}
+            {% else %}
+              {% assign gloss = entry.english %}
+            {% endif %}
+            {% comment %} 
+              ADD MORE LANGUAGES HERE
+            {% endcomment %}
+            {% if lang_word == "jp" %}
+              <h6 class="w3-col s4 m4 h6-margin-0">
+                {{ entry.kanji | default: entry.katakana | default: orig_word }}
+              </h6>
+              <h6 class="w3-col s4 m4 h6-margin-0"><em>{{ entry.romaji | default: "-" }}</em></h6>
+              <h6 class="w3-col s4 m4 h6-margin-0 lyrics-explanation-english">{{ gloss | default: "-" }}</h6>
+            {% endif %}
+          {% endfor %}
+        {% endif %}
       </div>
     {% endif %}
   {% endfor %}
