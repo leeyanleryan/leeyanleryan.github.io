@@ -8,7 +8,7 @@ permalink: /about/projects/personal-website/
   <section id="personal-website" class="w3-container">
     <h2><b>Personal Website</b></h2>
     <div class="media-display">
-      {% include video-player.html file="personal-website2" file_width="800" file_height="450" css_width="80%" %}
+      {% include video-loader.html file="personal-website2" file_width="800" file_height="450" css_width="80%" %}
     </div>
     <h5 class="h5-text-gap">
       I initially created my website as a way to display my portfolio. With a website, I have the freedom
@@ -28,8 +28,8 @@ permalink: /about/projects/personal-website/
       but it worked out in the end, allowing me to host my website on <a href="/" target="_blank">https://www.leeyanleryan.com</a>.
     </h5>
     <div class="media-display">
-      {% include video-player.html file="personal-website-lt1" file_width="800" file_height="450" css_width="50%" %}
-      {% include video-player.html file="personal-website-lt2" file_width="800" file_height="450" css_width="50%" %}
+      {% include video-loader.html file="personal-website-lt1" file_width="800" file_height="450" css_width="50%" %}
+      {% include video-loader.html file="personal-website-lt2" file_width="800" file_height="450" css_width="50%" %}
     </div>
     <h5 class="h5-text-gap">
       I frequently listen to music of varying languages. More often than not, it is difficult to find a

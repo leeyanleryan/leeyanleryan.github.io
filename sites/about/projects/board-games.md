@@ -13,8 +13,8 @@ permalink: /about/projects/board-games/
     </h5>
     <h3><u>Chess (<a href="https://github.com/leeyanleryan/Board-Games/tree/main/Chess%20(C%2B%2B)/Chess" target="_blank">Link</a>)</u></h3>
     <div class="media-display">
-      {% include video-player.html file="boardgames-chess1" file_width="800" file_height="638" css_width="50%" %}
-      {% include video-player.html file="boardgames-chess2" file_width="800" file_height="638" css_width="50%" %}
+      {% include video-loader.html file="boardgames-chess1" file_width="800" file_height="638" css_width="50%" %}
+      {% include video-loader.html file="boardgames-chess2" file_width="800" file_height="638" css_width="50%" %}
     </div>
     <h5 class="h5-text-gap">
       I developed the game logic and user interface for Chess using Qt Creator, an IDE for creating and deploying applications. The code is done in C++ 
@@ -29,8 +29,8 @@ permalink: /about/projects/board-games/
     </h5>
     <h3><u>Connect Four (<a href="https://github.com/leeyanleryan/Board-Games/tree/main/Connect%204%20(Java)" target="_blank">Java Link</a> | <a href="https://github.com/leeyanleryan/Board-Games/tree/main/Connect%204%20(Python)" target="_blank">Python Link</a>)</u></h3>
     <div class="media-display">
-      {% include video-player.html file="boardgames-connectfour1" file_width="462" file_height="370" css_width="53%" %}
-      {% include video-player.html file="boardgames-connectfour2" file_width="406" file_height="380" css_width="45.4%" %}
+      {% include video-loader.html file="boardgames-connectfour1" file_width="462" file_height="370" css_width="53%" %}
+      {% include video-loader.html file="boardgames-connectfour2" file_width="406" file_height="380" css_width="45.4%" %}
     </div>
     <h5 class="h5-text-gap">
       I developed the game logic and user interface for Connect Four in two languages: Java (using Swing and AWT) and Python (using Qt5).

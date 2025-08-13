@@ -13,7 +13,7 @@ permalink: /about/projects/puzzle-solvers/
     </h5>
     <h3><u>Sudoku (<a href="https://github.com/leeyanleryan/Puzzle-Solvers/tree/main/Sudoku%20(Classic)" target="_blank">Link</a>)</u></h3>
     <div class="media-display">
-      {% include video-player.html file="puzzlesolvers-sudoku1" file_width="600" file_height="376" css_width="90%" %}
+      {% include video-loader.html file="puzzlesolvers-sudoku1" file_width="600" file_height="376" css_width="90%" %}
     </div>
     <h5 class="h5-text-gap">
       I developed the solver logic in Python. Currently, it is able to take a screenshot of a sudoku puzzle from <a href="https://sudoku.com" target="_blank">https://sudoku.com</a>,
