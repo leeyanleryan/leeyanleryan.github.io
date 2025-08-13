@@ -90,7 +90,7 @@ permalink: /about/projects/data-analysis/
     </h5>
     <h3><u>Enhancing Guest Experience (<a href="https://github.com/leeyanleryan/Data-Analysis/tree/main/Enhancing%20Guest%20Experience%20(DSA3101)" target="_blank">Link</a>)</u></h3>
     <div style="display:flex; justify-content:center; gap:10px; align-items:center;">
-      <img src="/assets/img/dataanalysis-ege-waittime1.png" alt="Data Analysis EGE Wait Time 1" style="width:100%;">
+      {% include image-loader.html file="dataanalysis-ege-waittime1.png" file_width="976" file_height="455" css_width="100%" %}
     </div>
     <h5 class="h5-text-gap">
       The project aimed to enhance overall guest experience at Universal Studios Singapore (USS). This project was completed by me and 7 others for DSA3101, a course in NUS on
