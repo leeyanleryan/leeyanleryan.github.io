@@ -38,10 +38,11 @@
 
 - language: "jp"
   original: "吸い込まれそうさ"
-  romanized: "Suikomaresou sa"
-  english: "It feels like I'm being drawn in."
+  romanized: "Suikomare sou sa"
+  english: "It feels like I'm being pulled in."
   explanation:
-  - "吸い込まれそう|jp|-"
+  - "吸い込まれ|jp|-"
+  - "そう|jp|seeming"
   - "さ|jp|emphatic"
 
 - divider: true
@@ -82,8 +83,16 @@
 - language: "jp"
   original: "曖昧な夢も希望も乗せ僕ら"
   romanized: "Aimai na yume mo kibou mo nose bokura"
-  english: "We who carry vague dreams and hopes"
-  explanation: null
+  english: "Carrying our vague dreams and hopes, we…"
+  explanation:
+  - "曖昧|jp|-"
+  - "な|jp|adnominal"
+  - "夢|jp|-"
+  - "も|jp|additive"
+  - "希望|jp|-"
+  - "も|jp|additive"
+  - "乗せ|jp|-"
+  - "僕ら|jp|-"
 
 - language: "jp"
   original: "忙しない街へと繰り出した"

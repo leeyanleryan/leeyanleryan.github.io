@@ -9,6 +9,13 @@
   romaji:   "ai suru"
   english:  "to love"
 
+曖昧:
+  kanji:    "曖昧"
+  hiragana: "あいまい"
+  katakana: ""
+  romaji:   "aimai"
+  english:  "vague; ambiguous"
+
 諦めてた:
   kanji:    "諦めてた"
   hiragana: "あきらめてた"
@@ -316,6 +323,13 @@
   romaji:   "ki"
   english:  "feeling; sense"
 
+希望:
+  kanji:    "希望"
+  hiragana: "きぼう"
+  katakana: ""
+  romaji:   "kibou"
+  english:  "hope"
+
 君:
   kanji:    "君"
   hiragana: "きみ"
@@ -532,6 +546,15 @@
     explanatory:
       english:  "-explanatory nominalizer-"
 
+な:
+  kanji:    "な"
+  hiragana: "な"
+  katakana: ""
+  romaji:   "na"
+  functions:
+    adnominal:
+      english: "-adnominal linker for na-adjectives-"
+
 長い:
   kanji:    "長い"
   hiragana: "ながい"
@@ -651,6 +674,13 @@
   katakana: ""
   romaji:   "nobaseba"
   english:  "if (one) stretches"
+
+乗せ:
+  kanji:    "乗せ"
+  hiragana: "のせ"
+  katakana: ""
+  romaji:   "nose"
+  english:  "to load; to carry (on); to place on (top)"
 # ------------------------------------------ #
 # O
 奥:
@@ -781,6 +811,8 @@
   functions:
     demonstrative:
       english: "like that; so"
+    seeming:
+      english: "-suffix: looks; seems; likely-"
 
 過ぎて:
   kanji:    "過ぎて"
@@ -789,12 +821,12 @@
   romaji:   "sugite"
   english:  "passed; gone by"
 
-吸い込まれそう:
-  kanji:    "吸い込まれそう"
-  hiragana: "すいこまれそう"
+吸い込まれ:
+  kanji:    "吸い込まれ"
+  hiragana: "すいこまれ"
   katakana: ""
-  romaji:   "suikomaresou"
-  english:  "seems/about to be sucked in"
+  romaji:   "suikomare"
+  english:  "be sucked in (passive stem of 'suikomu')"
 
 少し:
   kanji:    "少し"
@@ -984,6 +1016,13 @@
   katakana: ""
   romaji:   "yoseatta"
   english:  "huddled close"
+
+夢:
+  kanji:    "夢"
+  hiragana: "ゆめ"
+  katakana: ""
+  romaji:   "yume"
+  english:  "dream"
 # ------------------------------------------ #
 # Z
 ぜ:
