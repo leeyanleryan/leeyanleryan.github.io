@@ -12,6 +12,8 @@ lyrics_guide: >-
 lyrics_progress: 25%
 lyrics_test: >-
   Would you like to test your understanding? Select the correct meaning of the highlighted word!
+  <br><br>
+  NOTE: Explanation box containing breakdown of words is incomplete. There will only be a few test questions.
 ---
 
 {% include lyrics-content.html band="babymetal" song="no-rain-no-rainbow" %}
