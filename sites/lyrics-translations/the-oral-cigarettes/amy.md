@@ -4,7 +4,7 @@ title: Amy
 permalink: /lyrics-translations/the-oral-cigarettes/amy/
 
 song_description: >-
-  A song released by The Oral Cigarettes in 2016 under the album 'FIXION'.
+  A song released by THE ORAL CIGARETTES in 2016 under the album 'FIXION'.
 lyrics_guide: >-
   Click on any section to learn more about it. Follows line by line from <a href="https://open.spotify.com/track/1PubxlFeesWDghC3B9I280?si=dfdd361e391e4041" target="_blank"> Spotify</a>.
 lyrics_progress: 100%

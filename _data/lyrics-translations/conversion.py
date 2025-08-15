@@ -23,15 +23,18 @@ if not (len(original) == len(romanized) == len(english)):
 
 output = []
 for o, r, e in zip(original, romanized, english):
-    if o == "[[divider]]":
-        output.append({"divider": True})
+    if o == "[[divider]]" or r == "[[divider]]" or e == "[[divider]]":
+        if o == r == e:
+            output.append({"divider": True})
+        else:
+            break
     else:
         output.append({
             "language": dq(""),
             "original": dq(o),
             "romanized": dq(r),
             "english": dq(e),
-            "explanation": dq("")
+            "explanation": None
         })
 
 def dump_with_blank_lines(data, file):
