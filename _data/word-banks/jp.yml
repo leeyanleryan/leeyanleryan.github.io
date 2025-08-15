@@ -400,8 +400,8 @@
   katakana: ""
   romaji:   "koto"
   functions:
-    nominaliser:
-      english:  "-nominaliser (quote to noun)-; thing; fact"
+    nominalizer:
+      english:  "-nominalizer (quote to noun)-; thing; fact"
 
 くらむ:
   kanji:    "くらむ"
@@ -530,7 +530,7 @@
   romaji:   "n"
   functions:
     explanatory:
-      english:  "-explanatory nominaliser-"
+      english:  "-explanatory nominalizer-"
 
 長い:
   kanji:    "長い"
@@ -642,8 +642,8 @@
   functions:
     possessive:
       english: "-possessive particle-"
-    nominaliser:
-      english: "-nominaliser: verb to noun-"
+    nominalizer:
+      english: "-nominalizer: verb to noun-"
 
 伸ばせば:
   kanji:    "伸ばせば"

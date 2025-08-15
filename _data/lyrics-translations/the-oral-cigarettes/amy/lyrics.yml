@@ -38,7 +38,7 @@
   - "本当に|jp|-"
   - "わかって|jp|-"
   - "くれてた|jp|-"
-  - "の|jp|nominaliser"
+  - "の|jp|nominalizer"
   - "は|jp|topic"
 
 - language: "jp"
@@ -135,7 +135,7 @@
   - "時|jp|-"
   - "を|jp|object"
   - "戻せる|jp|-"
-  - "の|jp|nominaliser"
+  - "の|jp|nominalizer"
   - "なら|jp|conditional"
 
 - language: "jp"
@@ -212,7 +212,7 @@
   - "また|jp|-"
   - "出会える|jp|-"
   - "って|jp|quotative"
-  - "こと|jp|nominaliser"
+  - "こと|jp|nominalizer"
   - "を|jp|object"
 
 - language: "jp"
@@ -263,11 +263,11 @@
   explanation:
   - "僕|jp|-"
   - "の|jp|possessive"
-  - "こと|jp|nominaliser"
+  - "こと|jp|nominalizer"
   - "を|jp|object"
   - "本当に|jp|-"
   - "思う|jp|-"
-  - "の|jp|nominaliser"
+  - "の|jp|nominalizer"
   - "なら|jp|conditional"
 
 - language: "jp"
