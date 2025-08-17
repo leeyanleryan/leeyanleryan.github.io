@@ -1,6 +1,9 @@
-# Personal website: https://leeyanleryan.github.io
+# Welcome to my personal website!
 
-## For myself:
+- https://leeyanleryan.github.io
+- https://www.leeyanleryan.com
+
+## For myself
 
 ### To view site locally
 ```
