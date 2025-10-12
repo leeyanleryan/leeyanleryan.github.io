@@ -29,11 +29,11 @@ About:
         excerpt: >
           Automated Sudoku solver using Computer Vision and AI search.
 
-      Personal Website:
-        url:   /about/projects/personal-website/
-        video: personal-website1
+      Leerically:
+        url:   /about/projects/leerically/
+        image: leerically-home-page.png
         excerpt: >
-          Built to show portfolio, learning resources, lyrics translations, etc.
+          A web app for lyrics translations, breakdowns and interpretations of songs.
 
   Experiences:
     url: /about/experiences/
