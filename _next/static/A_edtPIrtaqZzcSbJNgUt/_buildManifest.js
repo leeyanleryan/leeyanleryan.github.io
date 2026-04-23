@@ -6,16 +6,16 @@ self.__BUILD_MANIFEST = {
     "./static/chunks/15e02a0dca742b07.js"
   ],
   "/experiences": [
-    "./static/chunks/228788be0dcad788.js"
+    "./static/chunks/eee1c22cc3cd2786.js"
   ],
   "/experiences/digital-production-assistant": [
     "./static/chunks/32e71341fa76f12c.js"
   ],
   "/experiences/teaching-assistant": [
-    "./static/chunks/193bda87e4dd2732.js"
+    "./static/chunks/449d7d085df4ed98.js"
   ],
   "/others": [
-    "./static/chunks/4ee1986b915201a8.js"
+    "./static/chunks/f3532c461801288a.js"
   ],
   "/others/awards": [
     "./static/chunks/d78cedb0a44a55dd.js"
@@ -24,7 +24,7 @@ self.__BUILD_MANIFEST = {
     "./static/chunks/ed7b293e8344f2b9.js"
   ],
   "/projects": [
-    "./static/chunks/3288759a6749ce90.js"
+    "./static/chunks/f946157ee95df319.js"
   ],
   "/projects/board-games": [
     "./static/chunks/dccdcdb12726f354.js"
@@ -36,10 +36,7 @@ self.__BUILD_MANIFEST = {
     "./static/chunks/c661a49ac3086d74.js"
   ],
   "/projects/orbital-nuquest": [
-    "./static/chunks/31afd6686b7bdfe5.js"
-  ],
-  "/projects/personal-website": [
-    "./static/chunks/ab2eaaba9df3b5ed.js"
+    "./static/chunks/968eac098219f084.js"
   ],
   "/projects/puzzle-solvers": [
     "./static/chunks/51b30e3dbb9c31e9.js"
@@ -64,7 +61,6 @@ self.__BUILD_MANIFEST = {
     "/projects/data-analysis",
     "/projects/leerically",
     "/projects/orbital-nuquest",
-    "/projects/personal-website",
     "/projects/puzzle-solvers"
   ]
 };self.__BUILD_MANIFEST_CB && self.__BUILD_MANIFEST_CB()
