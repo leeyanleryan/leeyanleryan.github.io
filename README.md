@@ -1,20 +1,24 @@
 # Welcome to my personal website!
 
+You can visit my website at any of the following URLs:
+
 - https://leeyanleryan.github.io
 - https://www.leeyanleryan.com
 
-## For myself
+## Purpose
 
-### To view site locally
-```
-1. Run "bundle exec jekyll serve" in terminal
-2. See site locally at http://localhost:4000/
-```
+This website serves as a personal portfolio for sharing my projects, experiences, hobbies, and awards.
 
-### To add dash and wrap lyrics in quotes
-```
-1. Ctrl+F
-2. Select "Use regular expression"
-3. Find: ^(.+)$
-4. Replace: - "$1"
-```
+I will likely add blog posts, tutorials, and other content over time.
+
+## Tech Stack
+
+- Framework: Next.js
+- Library: React
+- Language: TypeScript
+- Hosting: Github Pages
+
+## Contact
+
+- Email: leeyanleryan@gmail.com
+- LinkedIn: https://www.linkedin.com/in/leeyanleryan/
