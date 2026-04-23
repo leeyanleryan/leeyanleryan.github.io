@@ -84,11 +84,31 @@ body.dark-mode .sidebar h4 {
   color: var(--dark-mode-text-color);
 }
 
+.sidebar-menu-section {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.sidebar-section-link {
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+}
+
 /* “pill” style menu items */
 .sidebar .w3-bar-item {
   display: block;
   padding: 8px 12px;
   border-radius: var(--pill-border-radius);
+}
+
+.sidebar-link-indent {
+  width: auto !important;
+  margin-left: 14px;
+  margin-right: 14px;
 }
 
 hr.hr-sidebar {

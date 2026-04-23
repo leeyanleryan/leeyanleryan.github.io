@@ -64,7 +64,7 @@ export default function LeftSidebar() {
       <Link
         key={title}
         href={info.url}
-        className={`w3-bar-item w3-button w3-padding ${
+        className={`w3-bar-item w3-button w3-padding sidebar-link-indent ${
           isActive ? "active" : ""
         }`}
       >
@@ -121,15 +121,53 @@ export default function LeftSidebar() {
           ([sectionTitle, sectionInfo]) => {
             if (sectionInfo.sublinks) {
               return (
+                // <div key={sectionTitle}>
+                //   <div className="w3-container">
+                //     <div className="w3-bar-block">
+                //       <h4>
+                //         <strong>{sectionTitle}</strong>
+                //       </h4>
+                //       {Object.entries(sectionInfo.sublinks).map(
+                //         ([headerTitle, headerInfo]) =>
+                //           renderHeader(headerTitle, headerInfo)
+                //       )}
+                //     </div>
+                //   </div>
+                //   <hr className="hr-sidebar" />
+                // </div>
+
+                // <div key={sectionTitle}>
+                //   <div className="w3-container">
+                //     <div className="w3-bar-block">
+                //       <Link
+                //         href={sectionInfo.url}
+                //         className={`w3-bar-item w3-button w3-padding sidebar-section-link ${
+                //           pathname === sectionInfo.url ? "active" : ""
+                //         }`}
+                //       >
+                //         <strong>{sectionTitle}</strong>
+                //       </Link>
+                //       {Object.entries(sectionInfo.sublinks).map(([headerTitle, headerInfo]) =>
+                //         renderHeader(headerTitle, headerInfo)
+                //       )}
+                //     </div>
+                //   </div>
+                //   <hr className="hr-sidebar" />
+                // </div>
+
                 <div key={sectionTitle}>
-                  <div className="w3-container">
+                  <div className="w3-container sidebar-menu-section">
                     <div className="w3-bar-block">
-                      <h4>
+                      <Link
+                        href={sectionInfo.url}
+                        className={`w3-bar-item w3-button w3-padding sidebar-section-link ${
+                          pathname === sectionInfo.url ? "active" : ""
+                        }`}
+                      >
                         <strong>{sectionTitle}</strong>
-                      </h4>
-                      {Object.entries(sectionInfo.sublinks).map(
-                        ([headerTitle, headerInfo]) =>
-                          renderHeader(headerTitle, headerInfo)
+                      </Link>
+                      {Object.entries(sectionInfo.sublinks).map(([headerTitle, headerInfo]) =>
+                        renderHeader(headerTitle, headerInfo)
                       )}
                     </div>
                   </div>
@@ -139,12 +177,28 @@ export default function LeftSidebar() {
             } else {
               const isSectionActive = pathname === sectionInfo.url;
               return (
+                // <div key={sectionTitle}>
+                //   <div className="w3-container">
+                //     <div className="w3-bar-block">
+                //       <Link
+                //         href={sectionInfo.url}
+                //         className={`w3-bar-item w3-button w3-padding ${
+                //           isSectionActive ? "active" : ""
+                //         }`}
+                //       >
+                //         {sectionTitle}
+                //       </Link>
+                //     </div>
+                //   </div>
+                //   <hr className="hr-sidebar" />
+                // </div>
+
                 <div key={sectionTitle}>
-                  <div className="w3-container">
+                  <div className="w3-container sidebar-menu-section">
                     <div className="w3-bar-block">
                       <Link
                         href={sectionInfo.url}
-                        className={`w3-bar-item w3-button w3-padding ${
+                        className={`w3-bar-item w3-button w3-padding sidebar-link-indent ${
                           isSectionActive ? "active" : ""
                         }`}
                       >
