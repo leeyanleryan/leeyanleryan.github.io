@@ -23,7 +23,7 @@ const ImageLoader: React.FC<ImageLoaderProps> = ({
 
   if (fileWidth && fileHeight) {
     // aspect-ratio: file_width/file_height;
-    (style as any).aspectRatio = `${fileWidth}/${fileHeight}`;
+    style.aspectRatio = `${fileWidth}/${fileHeight}`;
   }
 
   if (cssWidth) {

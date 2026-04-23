@@ -1,5 +1,5 @@
 import ImageLoader from "@/tsx/ImageLoader";
-import VideoLoader from "@/tsx/VideoLoader";
+// import VideoLoader from "@/tsx/VideoLoader";
 
 
 export default function Profile() {
@@ -16,12 +16,12 @@ export default function Profile() {
             Data Science and Analytics. In the near future, I am hoping to undertake a Masters or PhD programme to dive deeper into my topics of interests.
           </h5>
           <h5 className="h5-text-gap">
-            I have a deep passion for Artificial Intelligence and Machine Learning, which I explore in my projects. For my 'Board Games' projects, I design the
-            game logic for several board games such as Chess, allowing me to implement AI into enemy bots. For my 'Data Analysis' projects, I employ several 
+            I have a deep passion for Artificial Intelligence and Machine Learning, which I explore in my projects. For my &apos;Board Games&apos; projects, I design the
+            game logic for several board games such as Chess, allowing me to implement AI into enemy bots. For my &apos;Data Analysis&apos; projects, I employ several 
             Machine Learning algorithms onto datasets for analysis and predictions.
           </h5>
           <h5 className="h5-text-gap">
-            My hobbies include reading, playing computer games, playing piano and walking. In the 'Hobbies' section, I showcase rankings I have achieved 
+            My hobbies include reading, playing computer games, playing piano and walking. In the &apos;Hobbies&apos; section, I showcase rankings I have achieved 
             across various competitive games.
           </h5>
           <h5>

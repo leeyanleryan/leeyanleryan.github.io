@@ -1,4 +1,4 @@
-import ImageLoader from "@/tsx/ImageLoader";
+// import ImageLoader from "@/tsx/ImageLoader";
 import VideoLoader from "@/tsx/VideoLoader";
 
 
@@ -19,7 +19,7 @@ export default function BoardGames() {
           </div>
           <h5 className="h5-text-gap">
             I developed the game logic and user interface for Chess using Qt Creator, an IDE for creating and deploying applications. The code is done in C++ 
-            to achieve faster runtimes and enhance my AI's efficiency. 
+            to achieve faster runtimes and enhance my AI&apos;s efficiency. 
           </h5>
           <h5 className="h5-text-gap">
             I chose to make an AI for Chess because I believe there is still room for improvement in leading Chess AIs. For instance, Stockfish can reach depths 

@@ -1,5 +1,5 @@
-import ImageLoader from "@/tsx/ImageLoader";
-import VideoLoader from "@/tsx/VideoLoader";
+// import ImageLoader from "@/tsx/ImageLoader";
+// import VideoLoader from "@/tsx/VideoLoader";
 
 
 export default function BoardGames() {
@@ -41,7 +41,7 @@ export default function BoardGames() {
               <li className="li-padding-bottom-10"><a href="https://credentials.nus.edu.sg/1fcad03a-4d76-43b8-9544-702f537b3d6e#acc.eo5gw2x1" target="_blank" rel="noopener noreferrer">
                 Orbital - Artemis (Extreme)</a>: Awarded for achieving the highest level of achievement in CP2106, a 
                 self-directed software engineering project course at NUS. For more information on the SWE project I
-                completed, check the Orbital NUqueSt page under the 'Projects' section in the menu.
+                completed, check the Orbital NUqueSt page under the &apos;Projects&apos; section in the menu.
               </li>
               <li><a href="https://credentials.nus.edu.sg/eeac580c-7ad5-438a-8635-3a3b6d85bf65#acc.VOjqr1Xs" target="_blank" rel="noopener noreferrer">
                 Teach Singapore</a>: Awarded for the completion of GEN2050Y, an integrated service-learning course hosted

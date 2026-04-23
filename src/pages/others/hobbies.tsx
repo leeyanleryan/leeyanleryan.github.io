@@ -1,5 +1,5 @@
 import ImageLoader from "@/tsx/ImageLoader";
-import VideoLoader from "@/tsx/VideoLoader";
+// import VideoLoader from "@/tsx/VideoLoader";
 
 
 export default function BoardGames() {
@@ -14,7 +14,7 @@ export default function BoardGames() {
           <h5>
             Books read:
             <ul className="ul-margin-top-0">
-              <li>Harry Potter and the Sorcerer's Stone</li>
+              <li>Harry Potter and the Sorcerer&apos;s Stone</li>
               <li>Harry Potter and the Chamber of Secrets</li>
               <li>Harry Potter and the Prisoner of Azkaban</li>
               <li>Harry Potter and the Goblet of Fire</li>

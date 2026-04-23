@@ -20,7 +20,7 @@ const VideoLoader: React.FC<VideoLoaderProps> = ({
   const style: React.CSSProperties = {};
 
   if (fileWidth && fileHeight) {
-    (style as any).aspectRatio = `${fileWidth}/${fileHeight}`;
+    style.aspectRatio = `${fileWidth}/${fileHeight}`;
   }
 
   if (cssWidth) {

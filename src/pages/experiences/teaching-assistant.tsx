@@ -29,7 +29,7 @@ export default function Profile() {
             <ImageLoader file="ta-icebreaker4.jpg" fileWidth={960} fileHeight={1280} cssWidth="24.1%" />
           </div>
           <h5 className="h5-img-gap">
-          For their first lesson, I conducted the 'Spaghetti Tower' icebreaker challenge as a way to convey the analogy 
+          For their first lesson, I conducted the &apos;Spaghetti Tower&apos; icebreaker challenge as a way to convey the analogy 
           that coding is an iterative process. The goal of the challenge was to make the tallest tower using spaghetti
           sticks and marshmallow. The students were split into 4 different groups, each building unique structures. The
           tallest tower was around 50cm.

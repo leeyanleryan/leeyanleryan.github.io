@@ -1,5 +1,5 @@
 import ImageLoader from "@/tsx/ImageLoader";
-import VideoLoader from "@/tsx/VideoLoader";
+// import VideoLoader from "@/tsx/VideoLoader";
 
 
 export default function DataAnalysis() {
@@ -28,8 +28,8 @@ export default function DataAnalysis() {
           <h5 className="h5-img-gap">
             Dataset:
             <ul className="ul-margin-top-0">
-              <li>569 samples labeled 'B' (benign) or 'M' (malignant)</li>
-              <li>30 features capturing mean, standard error and "worst" measurements of cell nuclei (i.e., radius, texture, concavity)</li>
+              <li>569 samples labeled &apos;B&apos; (benign) or &apos;M&apos; (malignant)</li>
+              <li>30 features capturing mean, standard error and &quot;worst&quot; measurements of cell nuclei (i.e., radius, texture, concavity)</li>
               <li>Correlation analysis identified the most influential features (i.e., radius, concavity, concave points)</li>
             </ul>
           </h5>
@@ -42,7 +42,7 @@ export default function DataAnalysis() {
             methods, combining them together to perform a multi-faceted approach in the detection process.
           </h5>
           <h5 className="h5-text-gap">
-            The attribute 'radius' refers to the radius of the tumour. The bigger the tumour, the more harmful it is, falling into the malignant category. We performed feature
+            The attribute &apos;radius&apos; refers to the radius of the tumour. The bigger the tumour, the more harmful it is, falling into the malignant category. We performed feature
             engineering on this attribute, taking the squared difference and cubed difference of radius_worst and radius_mean. This allowed the data to split almost perfectly
             into two categories, one benign (blue), the other malignant (red). The blues above the curve and the reds below the curve are considered mislabelled data.
           </h5>
@@ -61,7 +61,7 @@ export default function DataAnalysis() {
             <ImageLoader file="dataanalysis-bca-rocauc4.png" fileWidth={567} fileHeight={455} cssWidth="25%" />
           </div>
           <h5 className="h5-text-gap">
-            For the second task, we are required to classify the type of breast cancer ('B' vs 'M') given the diagnosis. To do this, we employed the use of several Machine
+            For the second task, we are required to classify the type of breast cancer (&apos;B&apos; vs &apos;M&apos;) given the diagnosis. To do this, we employed the use of several Machine
             Learning algorithms, using 10-fold cross-validation and multiple metrics like Accuracy, F1 Score and ROC-AUC to assess the model.
           </h5>
           <h5 className="h5-text-gap">

@@ -1,4 +1,4 @@
-import { LEFT_SIDEBAR_LINKS, LinkEntry } from "./leftSidebar";
+import { LEFT_SIDEBAR_LINKS } from "./leftSidebar";
 
 
 export type SearchItem = {

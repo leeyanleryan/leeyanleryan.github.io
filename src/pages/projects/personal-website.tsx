@@ -1,4 +1,4 @@
-import ImageLoader from "@/tsx/ImageLoader";
+// import ImageLoader from "@/tsx/ImageLoader";
 import VideoLoader from "@/tsx/VideoLoader";
 
 
@@ -43,7 +43,7 @@ export default function PersonalWebsite() {
             word and English meaning. This gives the reader some understanding on how I translated the sentence.
           </h5>
           <h5 className="h5-text-gap">
-            Another unique feature I implemented is the "Test" section at the bottom of a song's lyrics. It pulls 
+            Another unique feature I implemented is the &quot;Test&quot; section at the bottom of a song&apos;s lyrics. It pulls 
             random sentences from the song, highlights a specific word or phrase from it, and asks the user
             to determine the English meaning or function of the highlighted word. This helps users in further
             understanding the words used in the song.
