@@ -1,10 +1,18 @@
+import Head from "next/head";
 // import ImageLoader from "@/tsx/ImageLoader";
 import VideoLoader from "@/tsx/VideoLoader";
 
 
-export default function Profile() {
+export default function DigitalProductionAssistant() {
   return (
     <>
+      <Head>
+        <title>Ryan Lee | Digital Production Assistant</title>
+        <meta
+          name="description"
+          content="Details about my experience as a Digital Production Assistant for Synapxe."
+        />
+      </Head>
       <div id="page-about-experiences" className="w3-main">
         <section id="digital-production-assistant" className="w3-container">
           <h2><b>Digital Production Assistant</b></h2>

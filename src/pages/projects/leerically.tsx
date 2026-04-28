@@ -1,3 +1,4 @@
+import Head from "next/head";
 import ImageLoader from "@/tsx/ImageLoader";
 // import VideoLoader from "@/tsx/VideoLoader"
 
@@ -5,16 +6,23 @@ import ImageLoader from "@/tsx/ImageLoader";
 export default function Leerically() {
   return (
     <>
+      <Head>
+        <title>Ryan Lee | Leerically</title>
+        <meta
+          name="description"
+          content="Details about my Leerically project."
+        />
+      </Head>
       <div id="page-about-projects" className="w3-main">
         <section id="leerically" className="w3-container">
-          <h2><b>Leerically (<a href="https://www.github.com/leeyanleryan/leerically">Link</a>)</b></h2>
+          <h2><b>Leerically (<a href="https://leerically.com" target="_blank">Website Link</a> | <a href="https://www.github.com/leeyanleryan/leerically" target="_blank">GitHub Link</a>)</b></h2>
           <div className="media-display">
             <ImageLoader file="leerically-home-page.png" fileWidth={800} fileHeight={450} cssWidth="80%" />
           </div>
           <h5 className="h5-text-gap">
             I frequently listen to music of varying languages. More often than not, it is difficult to find a
             website that includes original text, romanised text, and English translation. Thus, I decided to make
-            a dedicated website called <a href="https://leerically.com">Leerically</a> for lyrics translations, breakdowns and interpretations of songs.
+            a dedicated website called Leerically for lyrics translations, breakdowns and interpretations of songs.
           </h5>
           <h5 className="h5-text-gap">
             A feature my website provides unlike other websites is an explanation box that can be viewed when

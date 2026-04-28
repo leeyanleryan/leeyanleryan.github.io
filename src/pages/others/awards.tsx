@@ -1,10 +1,18 @@
+import Head from "next/head";
 // import ImageLoader from "@/tsx/ImageLoader";
 // import VideoLoader from "@/tsx/VideoLoader";
 
 
-export default function BoardGames() {
+export default function Awards() {
   return (
     <>
+      <Head>
+        <title>Ryan Lee | Awards</title>
+        <meta
+          name="description"
+          content="Details about my awards and certifications."
+        />
+      </Head>
       <div id="page-about-awards" className="w3-main">
         <section id="achievements" className="w3-container">
           <h2><b>Achievements</b></h2>

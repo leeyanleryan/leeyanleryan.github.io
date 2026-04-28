@@ -1,3 +1,4 @@
+import Head from "next/head";
 import ImageLoader from "@/tsx/ImageLoader";
 // import VideoLoader from "@/tsx/VideoLoader";
 
@@ -5,6 +6,13 @@ import ImageLoader from "@/tsx/ImageLoader";
 export default function DataAnalysis() {
   return (
     <>
+      <Head>
+        <title>Ryan Lee | Data Analysis</title>
+        <meta
+          name="description"
+          content="Details about my Data Analysis project."
+        />
+      </Head>
       <div id="page-about-projects" className="w3-main">
         <section id="data-analysis" className="w3-container">
           <h2><b>Data Analysis</b> (<a href="https://github.com/leeyanleryan/Data-Analysis" target="_blank">Link</a>)</h2>

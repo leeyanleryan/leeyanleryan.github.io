@@ -1,3 +1,4 @@
+import Head from "next/head";
 import ImageLoader from "@/tsx/ImageLoader";
 // import VideoLoader from "@/tsx/VideoLoader";
 
@@ -5,6 +6,13 @@ import ImageLoader from "@/tsx/ImageLoader";
 export default function Profile() {
   return (
     <>
+      <Head>
+        <title>Ryan Lee | Profile</title>
+        <meta
+          name="description"
+          content="My profile, resume, and contact information."
+        />
+      </Head>
       <div id="page-about" className="w3-main">
         <section id="profile" className="w3-container">
           <h2><b>Profile</b></h2>

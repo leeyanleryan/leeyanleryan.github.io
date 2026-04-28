@@ -1,3 +1,4 @@
+import Head from "next/head";
 // import ImageLoader from "@/tsx/ImageLoader";
 import VideoLoader from "@/tsx/VideoLoader";
 
@@ -5,6 +6,13 @@ import VideoLoader from "@/tsx/VideoLoader";
 export default function PuzzleSolvers() {
   return (
     <>
+      <Head>
+        <title>Ryan Lee | Puzzle Solvers</title>
+        <meta
+          name="description"
+          content="Details about my Puzzle Solvers project."
+        />
+      </Head>
       <div id="page-about-projects" className="w3-main">
         <section id="puzzle-solvers" className="w3-container">
           <h2><b>Puzzle Solvers</b> (<a href="https://github.com/leeyanleryan/Puzzle-Solvers" target="_blank">Link</a>)</h2>

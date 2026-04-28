@@ -1,10 +1,18 @@
+import Head from "next/head";
 import ImageLoader from "@/tsx/ImageLoader";
 // import VideoLoader from "@/tsx/VideoLoader";
 
 
-export default function BoardGames() {
+export default function Hobbies() {
   return (
     <>
+      <Head>
+        <title>Ryan Lee | Hobbies</title>
+        <meta
+          name="description"
+          content="Details about my hobbies."
+        />
+      </Head>
       <div id="page-about-hobbies" className="w3-main">
         <section id="reading" className="w3-container">
           <h2><b>Reading</b></h2>

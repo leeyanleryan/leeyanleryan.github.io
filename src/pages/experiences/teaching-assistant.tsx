@@ -1,10 +1,18 @@
+import Head from "next/head";
 import ImageLoader from "@/tsx/ImageLoader";
 import VideoLoader from "@/tsx/VideoLoader";
 
 
-export default function Profile() {
+export default function TeachingAssistant() {
   return (
     <>
+      <Head>
+        <title>Ryan Lee | Teaching Assistant</title>
+        <meta
+          name="description"
+          content="Details about my experience as a Teaching Assistant for National University of Singapore."
+        />
+      </Head>
       <div id="page-about-experiences" className="w3-main">
         <section id="teaching-assistant" className="w3-container">
           <h2><b>Teaching Assistant</b></h2>

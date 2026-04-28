@@ -1,3 +1,4 @@
+import Head from "next/head";
 // import ImageLoader from "@/tsx/ImageLoader";
 import VideoLoader from "@/tsx/VideoLoader";
 
@@ -5,6 +6,13 @@ import VideoLoader from "@/tsx/VideoLoader";
 export default function BoardGames() {
   return (
     <>
+      <Head>
+        <title>Ryan Lee | Board Games</title>
+        <meta
+          name="description"
+          content="Details about my Board Games project."
+        />
+      </Head>
       <div id="page-about-projects" className="w3-main">
         <section id="board-games" className="w3-container">
           <h2><b>Board Games</b> (<a href="https://github.com/leeyanleryan/Board-Games" target="_blank">Link</a>)</h2>
