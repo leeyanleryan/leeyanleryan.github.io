@@ -9,16 +9,19 @@ self.__BUILD_MANIFEST = {
     "./static/chunks/21852fb0cc9ea158.js"
   ],
   "/experiences": [
-    "./static/chunks/56d123202e725133.js"
+    "./static/chunks/ca2d2b02a1ff4f85.js"
+  ],
+  "/experiences/ai-ml-engineering-intern": [
+    "./static/chunks/6b4c628ebe7405d5.js"
   ],
   "/experiences/digital-production-assistant": [
-    "./static/chunks/44b10f3971791df2.js"
+    "./static/chunks/ce19f0511a05f4c6.js"
   ],
   "/experiences/teaching-assistant": [
-    "./static/chunks/1ab2d5cda47cc4ec.js"
+    "./static/chunks/c91a92eba61df2ce.js"
   ],
   "/others": [
-    "./static/chunks/2b2a4d15716a936b.js"
+    "./static/chunks/c8418165a17470d4.js"
   ],
   "/others/awards": [
     "./static/chunks/539e43751a439b93.js"
@@ -27,7 +30,7 @@ self.__BUILD_MANIFEST = {
     "./static/chunks/c06eb2afece08987.js"
   ],
   "/projects": [
-    "./static/chunks/9bdfec85fe1dfb52.js"
+    "./static/chunks/6336cdda2f7bb9fa.js"
   ],
   "/projects/board-games": [
     "./static/chunks/e16eeee018d681ea.js"
@@ -55,6 +58,7 @@ self.__BUILD_MANIFEST = {
     "/_app",
     "/_error",
     "/experiences",
+    "/experiences/ai-ml-engineering-intern",
     "/experiences/digital-production-assistant",
     "/experiences/teaching-assistant",
     "/others",
