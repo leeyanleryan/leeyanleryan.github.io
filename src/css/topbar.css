@@ -167,3 +167,27 @@ body.dark-mode .search-no-results {
 #topbar .moon-icon {
   margin-right: 10px;
 }
+
+.menu-btn {
+  background: var(--light-mode-background-color);
+  color: var(--light-mode-text-color);
+  cursor: pointer;
+}
+body.dark-mode .menu-btn {
+  background: var(--dark-mode-background-color);
+  color: var(--dark-mode-text-color);
+}
+
+.menu-btn:hover {
+  color: #757575;
+}
+body.dark-mode .menu-btn:hover {
+  color: #757575;
+}
+
+.menu-btn:active {
+  color: var(--light-mode-text-color);
+}
+body.dark-mode .menu-btn:active {
+  color: var(--dark-mode-text-color);
+}

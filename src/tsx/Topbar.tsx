@@ -171,7 +171,7 @@ export default function Topbar() {
     <>
       <div id="topbar" className="w3-bar w3-top w3-black w3-large">
         <button
-          className="w3-bar-item w3-button w3-hover-none w3-hover-text-grey no-double-tap-zoom"
+          className="w3-bar-item menu-btn no-double-tap-zoom"
           onClick={() => openSidebar()}
           type="button"
         >
