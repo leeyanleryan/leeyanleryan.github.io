@@ -18,7 +18,7 @@ export default function AIEngineerIntern() {
           <h2><b>AI Engineer Intern</b></h2>
 
           <div className="media-display">
-            <ImageLoader file="aimle-synapxe-building.jpg" fileWidth={1600} fileHeight={900} cssWidth="100%" />
+            <ImageLoader file="aie-synapxe-building.jpg" fileWidth={1600} fileHeight={900} cssWidth="100%" />
           </div>
 
           <div className="image-credit">
