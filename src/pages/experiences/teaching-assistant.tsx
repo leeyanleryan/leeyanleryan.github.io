@@ -10,7 +10,7 @@ export default function TeachingAssistant() {
         <title>Ryan Lee | Teaching Assistant</title>
         <meta
           name="description"
-          content="Details about my experience as a Teaching Assistant for National University of Singapore."
+          content="Details about my experience as a Teaching Assistant at National University of Singapore."
         />
       </Head>
       <div id="page-about-experiences" className="w3-main">
