@@ -79,3 +79,10 @@ h5.h5-text-gap {
 h5.h5-img-gap {
   margin-bottom: 30px;
 }
+
+.image-credit {
+  text-align: center;
+  font-size: 0.9em;
+  color: gray;
+  margin-top: 0.4em;
+}

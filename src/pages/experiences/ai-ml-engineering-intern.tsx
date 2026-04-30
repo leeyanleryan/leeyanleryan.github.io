@@ -1,5 +1,5 @@
 import Head from "next/head";
-// import ImageLoader from "@/tsx/ImageLoader";
+import ImageLoader from "@/tsx/ImageLoader";
 // import VideoLoader from "@/tsx/VideoLoader";
 
 
@@ -17,8 +17,16 @@ export default function AIMLEngineeringIntern() {
         <section id="ai-ml-engineering-intern" className="w3-container">
           <h2><b>AI/ML Engineering Intern</b></h2>
 
+          <div className="media-display">
+            <ImageLoader file="aimle-synapxe-building.jpg" fileWidth={1600} fileHeight={900} cssWidth="100%" />
+          </div>
+
+          <div className="image-credit">
+            Picture credit: <a href="https://www.som.com/projects/biopolis-phase-6-at-one-north/" target="_blank" rel="noopener noreferrer">SOM</a>
+          </div>
+
           <h5 className="h5-text-gap">
-            I worked on several AI/ML and data engineering projects in the healthcare domain, involving
+            During my internship at Synapxe, I worked on several AI/ML and data engineering projects in the healthcare domain, involving
             unauthorised data access detection, Retrieval-Augmented Generation, data loss prevention,
             and feature engineering optimisation. Most of my work involved building Python-based tools,
             testing different machine learning or NLP approaches, and improving existing systems so that

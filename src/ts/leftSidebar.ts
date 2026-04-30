@@ -45,7 +45,7 @@ export const LEFT_SIDEBAR_LINKS: Record<string, LinkEntry> = {
     sublinks: {
       "AI/ML Engineering Intern": {
         url: "/experiences/ai-ml-engineering-intern",
-        cover: "ares-sofa.png",
+        cover: "aimle-synapxe-building.jpg",
         excerpt: "Worked on a project to predict the likelihood of a customer subscribing to a term deposit using Machine Learning."
       },
       "Digital Production Assistant": {
