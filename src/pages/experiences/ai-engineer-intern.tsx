@@ -3,19 +3,19 @@ import ImageLoader from "@/tsx/ImageLoader";
 // import VideoLoader from "@/tsx/VideoLoader";
 
 
-export default function AIMLEngineeringIntern() {
+export default function AIEngineerIntern() {
   return (
     <>
       <Head>
-        <title>Ryan Lee | AI/ML Engineering Intern</title>
+        <title>Ryan Lee | AI Engineer Intern</title>
         <meta
           name="description"
-          content="Details about my experience as an AI/ML Engineering Intern at Synapxe."
+          content="Details about my experience as an AI Engineer Intern at Synapxe."
         />
       </Head>
       <div id="page-about-experiences" className="w3-main">
-        <section id="ai-ml-engineering-intern" className="w3-container">
-          <h2><b>AI/ML Engineering Intern</b></h2>
+        <section id="ai-engineer-intern" className="w3-container">
+          <h2><b>AI Engineer Intern</b></h2>
 
           <div className="media-display">
             <ImageLoader file="aimle-synapxe-building.jpg" fileWidth={1600} fileHeight={900} cssWidth="100%" />
