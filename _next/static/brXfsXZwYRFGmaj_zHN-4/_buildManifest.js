@@ -27,7 +27,7 @@ self.__BUILD_MANIFEST = {
     "./static/chunks/539e43751a439b93.js"
   ],
   "/others/hobbies": [
-    "./static/chunks/c06eb2afece08987.js"
+    "./static/chunks/de539a694a1b31e3.js"
   ],
   "/projects": [
     "./static/chunks/6336cdda2f7bb9fa.js"
@@ -39,13 +39,13 @@ self.__BUILD_MANIFEST = {
     "./static/chunks/12bba5f69c679816.js"
   ],
   "/projects/leerically": [
-    "./static/chunks/f26f0ad6260f6ec5.js"
+    "./static/chunks/4ab062710fe9f48b.js"
   ],
   "/projects/orbital-nuquest": [
     "./static/chunks/ef0aa0fef90b6003.js"
   ],
   "/projects/puzzle-solvers": [
-    "./static/chunks/e37d255460dee70c.js"
+    "./static/chunks/20a850dc6aa51bb4.js"
   ],
   "__rewrites": {
     "afterFiles": [],
