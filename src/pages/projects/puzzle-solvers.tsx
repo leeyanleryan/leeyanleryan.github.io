@@ -22,7 +22,7 @@ export default function PuzzleSolvers() {
           </h5>
           <h3><u>Sudoku (<a href="https://github.com/leeyanleryan/Puzzle-Solvers/tree/main/Sudoku%20(Classic)" target="_blank">Link</a>)</u></h3>
           <div className="media-display">
-            <VideoLoader file="puzzlesolvers-sudoku1" fileWidth={600} fileHeight={376} cssWidth="90%" />
+            <VideoLoader file="puzzlesolvers-sudoku1" fileWidth={600} fileHeight={376} cssWidth="100%" />
           </div>
           <h5 className="h5-text-gap">
             I developed the solver logic in Python. Currently, it is able to take a screenshot of a sudoku puzzle from <a href="https://sudoku.com" target="_blank">https://sudoku.com</a>,

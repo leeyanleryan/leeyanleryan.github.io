@@ -17,7 +17,7 @@ export default function Leerically() {
         <section id="leerically" className="w3-container">
           <h2><b>Leerically (<a href="https://leerically.com" target="_blank">Website Link</a> | <a href="https://www.github.com/leeyanleryan/leerically" target="_blank">GitHub Link</a>)</b></h2>
           <div className="media-display">
-            <ImageLoader file="leerically-home-page.png" fileWidth={800} fileHeight={450} cssWidth="80%" />
+            <ImageLoader file="leerically-home-page.png" fileWidth={800} fileHeight={450} cssWidth="100%" />
           </div>
           <h5 className="h5-text-gap">
             I frequently listen to music of varying languages. More often than not, it is difficult to find a

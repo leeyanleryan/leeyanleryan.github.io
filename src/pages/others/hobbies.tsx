@@ -58,7 +58,7 @@ export default function Hobbies() {
           </h5>
           <h3><u>Brawlhalla</u></h3>
           <div className="media-display">
-            <ImageLoader file="achievements-brawlhalla1.png" fileWidth={900} fileHeight={506} cssWidth="90%" />
+            <ImageLoader file="achievements-brawlhalla1.png" fileWidth={900} fileHeight={506} cssWidth="100%" />
           </div>
           <h5 className="h5-text-gap">
             <ul className="ul-margin-top-0">
@@ -85,7 +85,7 @@ export default function Hobbies() {
           </h5>
           <h3><u>Marvel Rivals</u></h3>
           <div className="media-display">
-            <ImageLoader file="achievements-marvelrivals1-900.jpg" fileWidth={900} fileHeight={507} cssWidth="90%" />
+            <ImageLoader file="achievements-marvelrivals1-900.jpg" fileWidth={900} fileHeight={507} cssWidth="100%" />
           </div>
           <h5 className="h5-text-gap">
             <ul className="ul-margin-top-0">
@@ -97,7 +97,7 @@ export default function Hobbies() {
           </h5>
           <h3><u>Valorant</u></h3>
           <div className="media-display">
-            <ImageLoader file="achievements-valorant1-900.jpg" fileWidth={900} fileHeight={506} cssWidth="90%" />
+            <ImageLoader file="achievements-valorant1-900.jpg" fileWidth={900} fileHeight={506} cssWidth="100%" />
           </div>
           <h5>
             <ul className="ul-margin-top-0">
