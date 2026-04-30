@@ -10,7 +10,7 @@ export default function DigitalProductionAssistant() {
         <title>Ryan Lee | Digital Production Assistant</title>
         <meta
           name="description"
-          content="Details about my experience as a Digital Production Assistant for Synapxe."
+          content="Details about my experience as a Digital Production Assistant at National University of Singapore."
         />
       </Head>
       <div id="page-about-experiences" className="w3-main">
