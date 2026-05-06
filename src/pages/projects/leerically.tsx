@@ -15,7 +15,7 @@ export default function Leerically() {
       </Head>
       <div id="page-about-projects" className="w3-main">
         <section id="leerically" className="w3-container">
-          <h2><b>Leerically (<a href="https://leerically.com" target="_blank">Website Link</a> | <a href="https://www.github.com/leeyanleryan/leerically" target="_blank">GitHub Link</a>)</b></h2>
+          <h2><b>Leerically (<a href="https://leerically.com" target="_blank">Link</a>)</b></h2>
           <div className="media-display">
             <ImageLoader file="leerically-home-page.png" fileWidth={800} fileHeight={450} cssWidth="100%" />
           </div>
