@@ -39,7 +39,7 @@ self.__BUILD_MANIFEST = {
     "./static/chunks/12bba5f69c679816.js"
   ],
   "/projects/leerically": [
-    "./static/chunks/4ab062710fe9f48b.js"
+    "./static/chunks/3b5e8a0029a76e01.js"
   ],
   "/projects/orbital-nuquest": [
     "./static/chunks/ef0aa0fef90b6003.js"
