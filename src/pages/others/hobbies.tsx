@@ -44,7 +44,7 @@ export default function Hobbies() {
           <h2><b>Gaming</b></h2>
           <h3><u>Rocket League</u></h3>
           <div className="media-display">
-            <ImageLoader file="achievements-rocketleague1-900.jpg" fileWidth={900} fileHeight={506} cssWidth="74%" />
+            <ImageLoader file="achievements-rocketleague3.jpg" fileWidth={900} fileHeight={506} cssWidth="74%" />
             <ImageLoader file="achievements-rocketleague2-900.jpg" fileWidth={900} fileHeight={1501} cssWidth="25%" />
           </div>
           <h5 className="h5-text-gap">
@@ -52,7 +52,7 @@ export default function Hobbies() {
               <li><a href="https://rocketleague.tracker.network/rocket-league/profile/steam/76561198148988256/overview" target="_blank">
                 Rocket League Stat Tracker
               </a></li>
-              <li>Peak Rating: Grand Champion III Division I (1723 Rating), 28/01/2023</li>
+              <li>Peak Rating: Grand Champion III Division III (1830 Rating), 01/06/2025</li>
               <li>Peak Ranking: Singapore Rank #1, 23/09/2018</li>
             </ul>
           </h5>
