@@ -43,7 +43,7 @@ export default function Awards() {
         <hr className="hr-main-body" />
 
         <section id="certifications" className="w3-container">
-          <h2><b>Certifications</b></h2>
+          <h2><b>Certifications (<a href="https://credentials.nus.edu.sg/profile/leeyanleryan/wallet" target="_blank" rel="noopener noreferrer">NUS Accredible Wallet</a>)</b></h2>
           <h5>
             <ul className="ul-margin-top-0">
               <li className="li-padding-bottom-10"><a href="https://credentials.nus.edu.sg/1fcad03a-4d76-43b8-9544-702f537b3d6e#acc.eo5gw2x1" target="_blank" rel="noopener noreferrer">
@@ -51,10 +51,14 @@ export default function Awards() {
                 self-directed software engineering project course at NUS. For more information on the SWE project I
                 completed, check the Orbital NUqueSt page under the &apos;Projects&apos; section in the menu.
               </li>
-              <li><a href="https://credentials.nus.edu.sg/eeac580c-7ad5-438a-8635-3a3b6d85bf65#acc.VOjqr1Xs" target="_blank" rel="noopener noreferrer">
+              <li className="li-padding-bottom-10"><a href="https://credentials.nus.edu.sg/eeac580c-7ad5-438a-8635-3a3b6d85bf65#acc.VOjqr1Xs" target="_blank" rel="noopener noreferrer">
                 Teach Singapore</a>: Awarded for the completion of GEN2050Y, an integrated service-learning course hosted
                 by NUS for the education sector to help uplift primary and secondary school students from less-privileged 
                 family circumstances.
+              </li>
+              <li className="li-padding-bottom-10"><a href="https://credentials.nus.edu.sg/279630d4-5145-43e5-96bf-1fafb345375d#acc.uqQ4PSzM" target="_blank" rel="noopener noreferrer">
+                Japanese (Elementary)</a>: Awarded for the completion of LAJ2201 Japanese 2, an introductory Japanese language 
+                course at NUS. Skills acquired include basic listening, speaking, reading, and writing.
               </li>
             </ul>
           </h5>
