@@ -24,10 +24,10 @@ self.__BUILD_MANIFEST = {
     "./static/chunks/cab05ea59f2047e3.js"
   ],
   "/others/awards": [
-    "./static/chunks/539e43751a439b93.js"
+    "./static/chunks/647a6858b2ef7389.js"
   ],
   "/others/hobbies": [
-    "./static/chunks/de539a694a1b31e3.js"
+    "./static/chunks/7fa57be9ffccdd1c.js"
   ],
   "/projects": [
     "./static/chunks/25120f92efd387e1.js"
