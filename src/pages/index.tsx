@@ -29,7 +29,7 @@ export default function Profile() {
             Machine Learning algorithms onto datasets for analysis and predictions.
           </h5>
           <h5 className="h5-text-gap">
-            My hobbies include reading, playing computer games, playing piano and walking. In the &apos;Hobbies&apos; section, I showcase rankings I have achieved 
+            My hobbies include reading, playing computer games, playing piano, and walking. In the &apos;Hobbies&apos; section, I showcase rankings I have achieved 
             across various competitive games.
           </h5>
           <h5>
