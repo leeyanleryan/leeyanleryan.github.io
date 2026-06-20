@@ -14,12 +14,40 @@ export default function Topbar() {
   const [selectedIndex, setSelectedIndex] = useState<number>(-1);
   const [showResults, setShowResults] = useState(false);
 
+  type Theme = "light" | "dark";
+
+  function getCssVariable(name: string): string {
+    return getComputedStyle(document.documentElement)
+      .getPropertyValue(name)
+      .trim();
+  }
+
+  function updateThemeColorMeta(theme: Theme): void {
+    const color =
+      theme === "dark"
+        ? getCssVariable("--dark-mode-background-color")
+        : getCssVariable("--light-mode-background-color");
+
+    let metaThemeColor = document.querySelector(
+      'meta[name="theme-color"]'
+    ) as HTMLMetaElement | null;
+
+    if (!metaThemeColor) {
+      metaThemeColor = document.createElement("meta");
+      metaThemeColor.name = "theme-color";
+      document.head.appendChild(metaThemeColor);
+    }
+
+    metaThemeColor.content = color;
+  }
+
   useEffect(() => {
     function applyStoredTheme(): void {
       const theme = (localStorage.getItem("theme") as Theme | null) || "dark";
       const toggleSwitch = document.getElementById("toggle-dark-mode") as HTMLInputElement | null;
 
       document.body.classList.toggle("dark-mode", theme === "dark");
+      updateThemeColorMeta(theme);
 
       if (toggleSwitch) {
         toggleSwitch.checked = theme === "dark";
@@ -63,6 +91,7 @@ export default function Topbar() {
 
       document.body.classList.toggle("dark-mode", theme === "dark");
       localStorage.setItem("theme", theme);
+      updateThemeColorMeta(theme);
     };
 
     const handleDocumentClick = (event: MouseEvent): void => {
