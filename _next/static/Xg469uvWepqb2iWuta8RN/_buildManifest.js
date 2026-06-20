@@ -1,6 +1,6 @@
 self.__BUILD_MANIFEST = {
   "/": [
-    "./static/chunks/d168beef64f8f4da.js"
+    "./static/chunks/c2c5267b674b9469.js"
   ],
   "/404": [
     "./static/chunks/dc6c2dc41937c3e2.js"
@@ -15,7 +15,7 @@ self.__BUILD_MANIFEST = {
     "./static/chunks/5eb69168e4ba0dd3.js"
   ],
   "/experiences/digital-production-assistant": [
-    "./static/chunks/ce19f0511a05f4c6.js"
+    "./static/chunks/789e93edacdc4837.js"
   ],
   "/experiences/teaching-assistant": [
     "./static/chunks/c91a92eba61df2ce.js"
@@ -36,13 +36,13 @@ self.__BUILD_MANIFEST = {
     "./static/chunks/e16eeee018d681ea.js"
   ],
   "/projects/data-analysis": [
-    "./static/chunks/12bba5f69c679816.js"
+    "./static/chunks/151957cbf8f5562c.js"
   ],
   "/projects/leerically": [
     "./static/chunks/3b5e8a0029a76e01.js"
   ],
   "/projects/orbital-nuquest": [
-    "./static/chunks/ef0aa0fef90b6003.js"
+    "./static/chunks/224c08b35dc01412.js"
   ],
   "/projects/puzzle-solvers": [
     "./static/chunks/20a850dc6aa51bb4.js"
