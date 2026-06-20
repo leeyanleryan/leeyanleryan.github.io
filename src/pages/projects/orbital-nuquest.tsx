@@ -48,8 +48,8 @@ export default function OrbitalNUqueSt() {
               poster and video to showcase the project. We then incorporated feedback in subsequent sprints, guiding us toward the right direction.
           </h5>
           <div className="media-display">
-            <ImageLoader file="nuquest-certificate1.png" fileWidth={900} fileHeight={1300} cssWidth="40%" />
-            <ImageLoader file="nuquest-certificate2.png" fileWidth={900} fileHeight={1300} cssWidth="40%" />
+            <ImageLoader file="nuquest-certificate1.png" fileWidth={900} fileHeight={1300} cssWidth="49%" />
+            <ImageLoader file="nuquest-certificate2.png" fileWidth={900} fileHeight={1300} cssWidth="49%" />
           </div>
           <h5>
             For our project, we were awarded Artemis (Extreme), the highest level of achievement, placing us roughly in the top 5% of the cohort. The link to the

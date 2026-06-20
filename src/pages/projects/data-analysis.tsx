@@ -63,17 +63,17 @@ export default function DataAnalysis() {
             </ul>
           </h5>
           <div className="media-display">
-            <ImageLoader file="dataanalysis-bca-rocauc1.png" fileWidth={567} fileHeight={455} cssWidth="25%" />
-            <ImageLoader file="dataanalysis-bca-rocauc2.png" fileWidth={567} fileHeight={455} cssWidth="25%" />
-            <ImageLoader file="dataanalysis-bca-rocauc3.png" fileWidth={567} fileHeight={455} cssWidth="25%" />
-            <ImageLoader file="dataanalysis-bca-rocauc4.png" fileWidth={567} fileHeight={455} cssWidth="25%" />
+            <ImageLoader file="dataanalysis-bca-rocauc1.png" fileWidth={567} fileHeight={455} cssWidth="24.5%" />
+            <ImageLoader file="dataanalysis-bca-rocauc2.png" fileWidth={567} fileHeight={455} cssWidth="24.5%" />
+            <ImageLoader file="dataanalysis-bca-rocauc3.png" fileWidth={567} fileHeight={455} cssWidth="24.5%" />
+            <ImageLoader file="dataanalysis-bca-rocauc4.png" fileWidth={567} fileHeight={455} cssWidth="24.5%" />
           </div>
           <h5 className="h5-text-gap">
             For the second task, we are required to classify the type of breast cancer (&apos;B&apos; vs &apos;M&apos;) given the diagnosis. To do this, we employed the use of several Machine
             Learning algorithms, using 10-fold cross-validation and multiple metrics like Accuracy, F1 Score and ROC-AUC to assess the model.
           </h5>
           <h5 className="h5-text-gap">
-            For the pictures, from left to right, the ROC-AUC curves are obtained from the Machine Learning approaches below respectively. If the image is too small, you
+            For the above pictures, from left to right, the ROC-AUC curves are obtained from the Machine Learning approaches below respectively. If the image is too small, you
             can zoom in or right click, then open image in new tab.
           </h5>
           <h5 className="h5-img-gap">
@@ -86,7 +86,7 @@ export default function DataAnalysis() {
             </ul>
           </h5>
           <div className="media-display">
-            <ImageLoader file="dataanalysis-bca-keyfindings1.png" fileWidth={977} fileHeight={374} cssWidth="80%" />
+            <ImageLoader file="dataanalysis-bca-keyfindings1.png" fileWidth={977} fileHeight={374} cssWidth="100%" />
           </div>
           <h5 className="h5-text-gap">
             Key Results:
@@ -110,7 +110,7 @@ export default function DataAnalysis() {
             satisfaction. Two models: Linear Optimization and Greedy Heuristic, are compared.
           </h5>
           <div className="media-display">
-            <ImageLoader file="dataanalysis-ege-models1.png" fileWidth={1266} fileHeight={1240} cssWidth="80%" />
+            <ImageLoader file="dataanalysis-ege-models1.png" fileWidth={1266} fileHeight={1240} cssWidth="100%" />
           </div>
           <h5 className="h5-text-gap">
             Model 1 - Linear Optimization:
@@ -146,7 +146,7 @@ export default function DataAnalysis() {
             </ul>
           </h5>
           <div className="media-display">
-            <ImageLoader file="dataanalysis-ege-comparison1.png" fileWidth={562} fileHeight={455} cssWidth="60%" />
+            <ImageLoader file="dataanalysis-ege-comparison1.png" fileWidth={562} fileHeight={455} cssWidth="100%" />
           </div>
           <h5 className="h5-img-gap">
             Comparing Both Models:
@@ -172,7 +172,7 @@ export default function DataAnalysis() {
             </ol>
           </h5>
           <div className="media-display">
-            <ImageLoader file="dataanalysis-ege-usage1.png" fileWidth={684} fileHeight={626} cssWidth="60%" />
+            <ImageLoader file="dataanalysis-ege-usage1.png" fileWidth={684} fileHeight={626} cssWidth="100%" />
           </div>
           <h5 className="h5-text-gap">
             Usage and Implementation:
@@ -202,7 +202,7 @@ export default function DataAnalysis() {
             </ol>
           </h5>
           <h5>
-            By comparing Linear Optimization and a Greedy Heuristic, this system provides two distinct allocations for staff assignment—one aligning more proportionally 
+            By comparing Linear Optimization and a Greedy Heuristic, this system provides two distinct allocations for staff assignment. One aligning more proportionally 
             with forecasted wait times, and another always feasible but potentially less proportional. Users can choose the final allocation that best fits their operational 
             goals and constraints.
           </h5>

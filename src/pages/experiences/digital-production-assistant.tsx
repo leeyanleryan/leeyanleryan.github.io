@@ -17,9 +17,9 @@ export default function DigitalProductionAssistant() {
         <section id="digital-production-assistant" className="w3-container">
           <h2><b>Digital Production Assistant</b></h2>
           <div className="media-display">
-            <VideoLoader file="dpa-intro1" fileWidth={800} fileHeight={450} cssWidth="32%" />
-            <VideoLoader file="dpa-intro2" fileWidth={800} fileHeight={450} cssWidth="32%" />
-            <VideoLoader file="dpa-intro3" fileWidth={800} fileHeight={450} cssWidth="32%" />
+            <VideoLoader file="dpa-intro1" fileWidth={800} fileHeight={450} cssWidth="32.5%" />
+            <VideoLoader file="dpa-intro2" fileWidth={800} fileHeight={450} cssWidth="32.5%" />
+            <VideoLoader file="dpa-intro3" fileWidth={800} fileHeight={450} cssWidth="32.5%" />
           </div>
           <h5 className="h5-text-gap">
             I collaborated with 3 professors and 2 other digital production assistants on producing engaging
