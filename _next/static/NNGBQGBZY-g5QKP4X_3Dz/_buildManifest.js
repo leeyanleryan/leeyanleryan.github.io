@@ -1,6 +1,6 @@
 self.__BUILD_MANIFEST = {
   "/": [
-    "./static/chunks/c2c5267b674b9469.js"
+    "./static/chunks/f0aa41a3696ba5bf.js"
   ],
   "/404": [
     "./static/chunks/dc6c2dc41937c3e2.js"
@@ -39,7 +39,7 @@ self.__BUILD_MANIFEST = {
     "./static/chunks/151957cbf8f5562c.js"
   ],
   "/projects/leerically": [
-    "./static/chunks/3b5e8a0029a76e01.js"
+    "./static/chunks/43c495195242b9ad.js"
   ],
   "/projects/orbital-nuquest": [
     "./static/chunks/224c08b35dc01412.js"
