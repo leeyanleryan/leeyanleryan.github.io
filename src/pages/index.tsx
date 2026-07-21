@@ -20,8 +20,9 @@ export default function Profile() {
             <ImageLoader file="mt-fuji-900.jpg" fileWidth={900} fileHeight={480} cssWidth="100%" />
           </div>
           <h5 className="h5-text-gap">
-            Hi! Welcome to my website. My name is Ryan Lee, and I am currently an undergraduate at National University of Singapore (NUS), studying
-            Data Science and Analytics. In the near future, I am hoping to undertake a Masters or PhD programme to dive deeper into my topics of interests.
+            Hi! Welcome to my website. My name is Ryan Lee. I am a graduate of National University of Singapore (NUS), where I majored in 
+            Data Science and Analytics with a minor in Computer Science. In the near future, I am hoping to undertake a Masters or PhD programme 
+            to dive deeper into my topics of interests.
           </h5>
           <h5 className="h5-text-gap">
             I have a deep passion for Artificial Intelligence and Machine Learning, which I explore in my projects. For my &apos;Board Games&apos; projects, I design the
@@ -29,7 +30,7 @@ export default function Profile() {
             Machine Learning algorithms onto datasets for analysis and predictions.
           </h5>
           <h5 className="h5-text-gap">
-            My hobbies include reading, playing computer games, playing piano, and walking. In the &apos;Hobbies&apos; section, I showcase rankings I have achieved 
+            My hobbies include working out, reading, playing computer games, playing piano, and walking. In the &apos;Hobbies&apos; section, I showcase rankings I have achieved 
             across various competitive games.
           </h5>
           <h5>
