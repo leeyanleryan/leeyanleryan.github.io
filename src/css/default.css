@@ -17,7 +17,7 @@ body {
 }
 
 /* Dark mode styles */
-body.dark-mode {
+html.dark-mode body {
   background-color: var(--dark-mode-background-color);
   color: #ffffff;
 }
@@ -37,7 +37,7 @@ img {
   .no-hover-background-after-click:hover {
     background: var(--light-mode-hover-background-color);
   }
-  body.dark-mode .no-hover-background-after-click:hover {
+  html.dark-mode .no-hover-background-after-click:hover {
     background: var(--dark-mode-hover-background-color);
   }
 }
@@ -48,7 +48,7 @@ img {
   background: var(--light-mode-hover-background-color);
   /* transition: background-color 0.2s ease-out; */
 }
-body.dark-mode .no-hover-background-after-click.touch-active {
+html.dark-mode .no-hover-background-after-click.touch-active {
   background: var(--dark-mode-hover-background-color);
   /* transition: background-color 0.2s ease-out; */
 }

@@ -17,7 +17,7 @@
   background-color: var(--light-mode-hover-background-color);
 }
 
-body.dark-mode .media-item:hover {
+html.dark-mode .media-item:hover {
   background-color: var(--dark-mode-hover-background-color);
 }
 

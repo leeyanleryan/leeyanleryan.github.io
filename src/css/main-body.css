@@ -22,7 +22,7 @@ hr.hr-main-body {
               color var(--theme-transition) ease; */
 }
 
-body.dark-mode hr.hr-main-body {
+html.dark-mode hr.hr-main-body {
   color: var(--dark-mode-border-color);
   background: var(--dark-mode-border-color);
 }

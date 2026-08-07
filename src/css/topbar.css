@@ -9,7 +9,7 @@
 }
 
 /* Dark mode top bar */
-body.dark-mode #topbar {
+html.dark-mode #topbar {
   background-color: var(--dark-mode-background-color) !important;
   color: var(--dark-mode-text-color) !important;
   border-bottom: var(--dark-mode-border);
@@ -61,7 +61,7 @@ body.dark-mode #topbar {
 }
 
 /* Dark-mode switch */
-body.dark-mode #topbar-search input {
+html.dark-mode #topbar-search input {
   background-color: var(--dark-mode-accent2-background-color);
   color: var(--dark-mode-text-color);    /* white text */
   border: var(--dark-mode-border);  /* matching your dark borders */
@@ -126,18 +126,18 @@ body.dark-mode #topbar-search input {
 }
 
 /* dark-mode overrides */
-body.dark-mode #search-results {
+html.dark-mode #search-results {
   background: #2D2D2D;
   border: none;
   border-left:  var(--dark-mode-border);
   border-right: var(--dark-mode-border);
   border-bottom: var(--dark-mode-border);
 }
-body.dark-mode #search-results li a {
+html.dark-mode #search-results li a {
   color: white;
 }
-body.dark-mode #search-results li a:hover,
-body.dark-mode #search-results li a:focus {
+html.dark-mode #search-results li a:hover,
+html.dark-mode #search-results li a:focus {
   background: var(--dark-mode-hover-background-color);
 }
 
@@ -150,7 +150,7 @@ body.dark-mode #search-results li a:focus {
   background: var(--light-mode-hover-background-color);
 }
 
-body.dark-mode #search-results li .search-result-active {
+html.dark-mode #search-results li .search-result-active {
   background: var(--dark-mode-hover-background-color);
 }
 
@@ -160,7 +160,7 @@ body.dark-mode #search-results li .search-result-active {
   color: var(--light-mode-text-color);
 }
 
-body.dark-mode .search-no-results {
+html.dark-mode .search-no-results {
   color: var(--dark-mode-text-color);
 }
 
@@ -173,7 +173,7 @@ body.dark-mode .search-no-results {
   color: var(--light-mode-text-color);
   cursor: pointer;
 }
-body.dark-mode .menu-btn {
+html.dark-mode .menu-btn {
   background: var(--dark-mode-background-color);
   color: var(--dark-mode-text-color);
 }
@@ -181,13 +181,13 @@ body.dark-mode .menu-btn {
 .menu-btn:hover {
   color: #757575;
 }
-body.dark-mode .menu-btn:hover {
+html.dark-mode .menu-btn:hover {
   color: #757575;
 }
 
 .menu-btn:active {
   color: var(--light-mode-text-color);
 }
-body.dark-mode .menu-btn:active {
+html.dark-mode .menu-btn:active {
   color: var(--dark-mode-text-color);
 }

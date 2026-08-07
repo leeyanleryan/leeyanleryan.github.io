@@ -18,7 +18,8 @@
   --pill-border-radius: 0.7rem;
 
   /* theme transition timings */
-  --theme-transition: 0.3s;
+  --transition-time: 0.3s;
+  --transition: background-color var(--transition-time) ease, color var(--transition-time) ease;
 
   /* border colors for different modes */
   --light-mode-border-color: rgba(0,0,0,0.1);

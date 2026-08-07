@@ -5,7 +5,7 @@
 }
 
 /* dark-mode border flips */
-body.dark-mode #left-sidebar {
+html.dark-mode #left-sidebar {
   border-right: var(--dark-mode-border);
 }
 

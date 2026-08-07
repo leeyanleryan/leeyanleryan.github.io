@@ -46,8 +46,8 @@ export default function Topbar() {
       const theme = (localStorage.getItem("theme") as Theme | null) || "dark";
       const toggleSwitch = document.getElementById("toggle-dark-mode") as HTMLInputElement | null;
 
-      document.body.classList.toggle("dark-mode", theme === "dark");
-      updateThemeColorMeta(theme);
+      // document.body.classList.toggle("dark-mode", theme === "dark");
+      // updateThemeColorMeta(theme);
 
       if (toggleSwitch) {
         toggleSwitch.checked = theme === "dark";
@@ -89,7 +89,7 @@ export default function Topbar() {
       const target = event.target as HTMLInputElement;
       const theme: Theme = target.checked ? "dark" : "light";
 
-      document.body.classList.toggle("dark-mode", theme === "dark");
+      document.documentElement.classList.toggle("dark-mode", theme === "dark");
       localStorage.setItem("theme", theme);
       updateThemeColorMeta(theme);
     };

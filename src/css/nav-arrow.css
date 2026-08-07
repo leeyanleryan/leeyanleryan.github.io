@@ -43,8 +43,8 @@
   color: var(--light-mode-text-color) !important;
 }
 
-body.dark-mode .nav-arrow:active .arrow-symbol,
-body.dark-mode .nav-arrow:active .nav-label {
+html.dark-mode .nav-arrow:active .arrow-symbol,
+html.dark-mode .nav-arrow:active .nav-label {
   color: var(--dark-mode-text-color) !important;
 }
 
@@ -91,7 +91,7 @@ a.nav-arrow:hover {
   margin: 0 auto 5px;         /* center & preserve your bottom gap */
 }
 
-body.dark-mode .nav-label {
+html.dark-mode .nav-label {
   color: var(--dark-mode-text-color);
 }
 
@@ -109,7 +109,7 @@ body.dark-mode .nav-label {
               color var(--theme-transition) ease; */
 }
 
-body.dark-mode .arrow-symbol {
+html.dark-mode .arrow-symbol {
   color: var(--dark-mode-text-color);
 }
 
@@ -147,16 +147,16 @@ body.dark-mode .arrow-symbol {
 }
 
 /* Dark Mode overrides for bottom nav */
-body.dark-mode .nav-bottom {
+html.dark-mode .nav-bottom {
   background-color: var(--dark-mode-background-color);
   color: var(--dark-mode-text-color);
   border-top: var(--dark-mode-border);
 }
 
-body.dark-mode .nav-bottom a {
+html.dark-mode .nav-bottom a {
   color: var(--dark-mode-text-color);
 }
 
-body.dark-mode .nav-bottom a:active {
+html.dark-mode .nav-bottom a:active {
   color: var(--dark-mode-text-color) !important;
 }
