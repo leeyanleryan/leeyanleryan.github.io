@@ -32,10 +32,10 @@ html.dark-mode hr.hr-main-body {
 }
 
 /* 
-Used for extra padding at the bottom.
-Hidden for screens bigger than or equal to 1181px.
-Shown for screens smaller than or equal to 1180px.
-Works in conjunction with .nav-bottom .
+Used for extra padding at the bottom
+Hidden for screens bigger than or equal to 1181px
+Shown for screens smaller than or equal to 1180px
+Works in conjunction with .nav-bottom
 */
 @media (min-width: 1181px) {
   .hr-hide-1180 {

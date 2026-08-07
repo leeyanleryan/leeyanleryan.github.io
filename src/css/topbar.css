@@ -1,4 +1,3 @@
-/* Default: light mode top bar */
 #topbar {
   background-color: #f1f1f1 !important;
   transition: var(--transition);
@@ -7,20 +6,17 @@
   z-index: 1004 !important;
 }
 
-/* Dark mode top bar */
 html.dark-mode #topbar {
   background-color: var(--dark-mode-background-color) !important;
   color: var(--dark-mode-text-color) !important;
   border-bottom: var(--dark-mode-border);
 }
 
-/* 1) Let the top bar show overflowed children */
 #topbar,
 #topbar .w3-bar {
   overflow: visible !important;
 }
 
-/* 2) Make the search form the positioning context */
 #topbar-search {
   position: absolute;
   left: 50%;
@@ -29,25 +25,19 @@ html.dark-mode #topbar {
   width: clamp(150px, 45vw, 600px);
 }
 
-/* Style the input itself */
 #topbar-search input {
-  /* fill the form’s full width */
   width: 100%;
   max-width: 100%;
 
-  /* shorter height: roughly ⅔ of a normal 2.25rem bar */
   height: 1.5rem;
   line-height: 1.5rem;
 
-  /* a little inner padding */
   padding: 0.9rem 0.75rem;
 
-  /* white background + light border in light mode */
   background-color: var(--light-mode-accent-background-color);
   border: var(--light-mode-border);
   border-radius: var(--pill-border-radius);
 
-  /* text uses the bar’s color (black in light) */
   color: var(--light-mode-text-color);
   font-size: 1rem;
 
@@ -89,12 +79,10 @@ html.dark-mode #topbar-search input {
   transition: var(--transition);
 }
 
-/* show each item */
 #search-results li {
   display: block;
 }
 
-/* link styling */
 #search-results li a {
   display: block;
   padding: 8px 12px;
@@ -109,13 +97,11 @@ html.dark-mode #topbar-search input {
   transition: var(--transition);
 }
 
-/* hover/focus */
 #search-results li a:hover,
 #search-results li a:focus {
   background: var(--light-mode-hover-background-color);
 }
 
-/* dark-mode overrides */
 html.dark-mode #search-results {
   background: #2D2D2D;
   border: none;
@@ -123,15 +109,16 @@ html.dark-mode #search-results {
   border-right: var(--dark-mode-border);
   border-bottom: var(--dark-mode-border);
 }
+
 html.dark-mode #search-results li a {
   color: white;
 }
+
 html.dark-mode #search-results li a:hover,
 html.dark-mode #search-results li a:focus {
   background: var(--dark-mode-hover-background-color);
 }
 
-/* collapse the dropdown when it has no children */
 #search-results:empty {
   display: none;
 }
@@ -163,6 +150,7 @@ html.dark-mode .search-no-results {
   color: var(--light-mode-text-color);
   cursor: pointer;
 }
+
 html.dark-mode .menu-btn {
   background: var(--dark-mode-background-color);
   color: var(--dark-mode-text-color);
@@ -171,6 +159,7 @@ html.dark-mode .menu-btn {
 .menu-btn:hover {
   color: #757575;
 }
+
 html.dark-mode .menu-btn:hover {
   color: #757575;
 }
@@ -178,6 +167,7 @@ html.dark-mode .menu-btn:hover {
 .menu-btn:active {
   color: var(--light-mode-text-color);
 }
+
 html.dark-mode .menu-btn:active {
   color: var(--dark-mode-text-color);
 }

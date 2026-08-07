@@ -34,17 +34,21 @@ img {
   .no-hover-background-after-click:hover {
     background: var(--light-mode-hover-background-color);
   }
+
   html.dark-mode .no-hover-background-after-click:hover {
     background: var(--dark-mode-hover-background-color);
   }
 }
+
 .no-hover-background-after-click:active {
   background: transparent !important;
 }
+
 .no-hover-background-after-click.touch-active {
   background: var(--light-mode-hover-background-color);
   /* transition: background-color 0.2s ease-out; */
 }
+
 html.dark-mode .no-hover-background-after-click.touch-active {
   background: var(--dark-mode-hover-background-color);
   /* transition: background-color 0.2s ease-out; */
@@ -57,6 +61,7 @@ li.li-padding-bottom-10 {
 ul.ul-margin-top-0 {
   margin-top: 0px;
 }
+
 ol.ol-margin-top-0 {
   margin-top: 0px;
 }

@@ -1,10 +1,8 @@
-/* default hidden & right-border in light-mode */
 #left-sidebar {
   display: none;
   border-right: var(--light-mode-border);
 }
 
-/* dark-mode border flips */
 html.dark-mode #left-sidebar {
   border-right: var(--dark-mode-border);
 }

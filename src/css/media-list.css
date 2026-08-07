@@ -1,7 +1,7 @@
 .media-list {
-  list-style: none;    /* no bullets */
-  margin: 0;           /* reset default ul margin */
-  padding: 0;          /* reset default ul padding */
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .media-list li {

@@ -16,11 +16,9 @@ body.left-sidebar-open .nav-arrow-right {
 }
 
 /* 3) clamp BOTH sides of the main content so it never crosses:
-      • left  = sidebar + arrow-sidebar-gap + body-gap-left
-      • right = arrow-window-gap + body-gap-right */
-/* ————————————————
-   ONLY CLAMP WHEN vw ≤ 1760px
-   ———————————————— */
+      -> left  = sidebar + arrow-sidebar-gap + body-gap-left
+      -> right = arrow-window-gap + body-gap-right */
+/* ONLY CLAMP WHEN vw ≤ 1760px */
 @media (max-width: 1760px) {
   body.left-sidebar-open .w3-main {
     margin: 43px auto 20px;
@@ -43,9 +41,7 @@ body.left-sidebar-open .nav-arrow-right {
     );
   }
 }
-/* ————————————————
-   OTHERWISE (vw > 1760px) ALWAYS CENTER
-   ———————————————— */
+/* OTHERWISE (vw > 1760px) ALWAYS CENTER */
 @media (min-width: 1761px) {
   body.left-sidebar-open .w3-main {
     margin-left: auto !important;

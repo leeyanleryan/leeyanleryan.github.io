@@ -1,11 +1,10 @@
-/* Common arrow container styles for large screens */
 .nav-arrow {
   position: fixed;
-  top: 50%;                /* Centers vertically */
+  top: 50%;
   transform: translateY(-50%);
-  z-index: 998;            /* On top of main content */
-  width: 80px;             /* Enough space for the label + arrow */
-  text-align: center;      /* Center the label + arrow horizontally */
+  z-index: 998;
+  width: 80px;
+  text-align: center;
   white-space: nowrap;
 
   height: 2.5rem;
@@ -21,16 +20,16 @@
 
 .nav-arrow .nav-label {
   position: absolute;
-  bottom: 100%;      /* sit directly on top of the arrow */
+  bottom: 100%;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
   white-space: normal;
   word-break: break-word;
   text-align: center;
-  padding-bottom: 0.25rem;  /* gap between last line and arrow */
+  padding-bottom: 0.25rem;
   margin-bottom: 0px;
-  line-height: 1.2;        /* tweak to taste */
+  line-height: 1.2;
 }
 
 .nav-arrow:hover .arrow-symbol,
@@ -48,57 +47,50 @@ html.dark-mode .nav-arrow:active .nav-label {
   color: var(--dark-mode-text-color) !important;
 }
 
-
-/* remove the default underline */
 a.nav-arrow {
   text-decoration: none;
 }
 
-/* make sure it stays off on hover, too */
 a.nav-arrow:hover {
   text-decoration: none;
 }
 
 /* Left arrow pinned to the left side */
 .nav-arrow-left {
-  /* Example: keep 50px from left edge for a gap */
   left: calc((100vw - 900px)/2 - 110px);
 }
 
 /* Right arrow pinned to the right side */
 .nav-arrow-right {
-  /* Example: keep 50px from right edge for a gap */
   right: calc((100vw - 900px)/2 - 110px);
 }
 
-/* Label above the arrow */
 .nav-label {
   color: var(--light-mode-text-color);
   font-size: 14px;
-  margin-bottom: 5px;      /* Spacing between label and arrow */
+  margin-bottom: 5px;
 
   /* display: block;
   text-align: center;
   white-space: nowrap; */
   transition: var(--transition);
 
-  display: block;             /* or inline-block */
-  width: 80px;                /* same as your .nav-arrow width */
-  white-space: nowrap;        /* no wrapping */
-  overflow: hidden;           /* clip the excess text */
-  text-overflow: ellipsis;    /* show “…” at the cut-off */
-  margin: 0 auto 5px;         /* center & preserve your bottom gap */
+  display: block;
+  width: 80px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0 auto 5px;
 }
 
 html.dark-mode .nav-label {
   color: var(--dark-mode-text-color);
 }
 
-/* Arrow symbol styling */
 .arrow-symbol {
-  font-size: 2rem;         /* Large arrow icon */
-  text-decoration: none;   /* Remove underline */
-  color: var(--light-mode-text-color);            /* Arrow color */
+  font-size: 2rem;
+  text-decoration: none;
+  color: var(--light-mode-text-color);
   /* display: inline-block; */
   cursor: pointer;
   
@@ -119,15 +111,14 @@ html.dark-mode .arrow-symbol {
   left: 0;
   right: 0;
   justify-content: space-between;
-  padding: 10px 20px;       /* Add some spacing */
+  padding: 10px 20px;
   font-size: 1.2rem;
-  z-index: 1004;            /* Ensure it's on top */
-  background-color: #f1f1f1; /* White backdrop to prevent overlap */
+  z-index: 1004;
+  background-color: #f1f1f1;
   border-top: var(--light-mode-border);
   transition: var(--transition);
 }
 
-/* Style the links in bottom nav */
 .nav-bottom a {
   text-decoration: none;
   color: var(--light-mode-text-color);
@@ -142,7 +133,6 @@ html.dark-mode .arrow-symbol {
   color: var(--light-mode-text-color) !important;
 }
 
-/* Dark Mode overrides for bottom nav */
 html.dark-mode .nav-bottom {
   background-color: var(--dark-mode-background-color);
   color: var(--dark-mode-text-color);
