@@ -1,4 +1,5 @@
 import { Html, Head, Main, NextScript } from "next/document";
+import { initUIScript } from "../ts/initUI";
 
 
 export default function Document() {
@@ -7,27 +8,7 @@ export default function Document() {
       <Head>
         <link rel="icon" href="/favicon/favicon.ico" />
         <link rel="manifest" href="/favicon/site.webmanifest" />
-        <script>{`
-          const theme = (localStorage.getItem("theme") || "dark"); 
-          if (theme === "dark") {
-            document.documentElement.classList.add("dark-mode");
-          } else {
-            document.documentElement.classList.remove("dark-mode");
-          }
-        `}
-        </script>
-        <script>{`
-          const sidebarOpen = localStorage.getItem("sidebarOpen") === "true";
-          if (window.innerWidth < 1181) {
-            document.documentElement.classList.remove("left-sidebar-open");
-            localStorage.setItem("sidebarOpen", "false");
-          } else if (sidebarOpen) {
-            document.documentElement.classList.add("left-sidebar-open");
-          } else {
-            document.documentElement.classList.remove("left-sidebar-open");
-          }
-        `}
-        </script>
+        <script dangerouslySetInnerHTML={{ __html: `(${initUIScript.toString()})()` }} />
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway&display=swap" />
         {/* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" /> */}
