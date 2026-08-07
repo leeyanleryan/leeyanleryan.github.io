@@ -37,11 +37,11 @@
   --dark-mode-background-color: #252525;
 
   /* hover/focus background colors for different modes */
-  --light-mode-hover-background-color: rgba(0,0,0,0.03);
-  --dark-mode-hover-background-color: rgba(255,255,255,0.04);
+  --light-mode-hover-background-color: rgba(0,0,0,0.15);
+  --dark-mode-hover-background-color: rgba(255,255,255,0.15);
 
   /* active background colors for different modes */
-  --light-mode-active-background-color: #b3ddff;
+  --light-mode-active-background-color: #a1d5ff;
   --dark-mode-active-background-color: #0076d6;
 
   /* accent background colors for different modes */
