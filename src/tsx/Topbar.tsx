@@ -64,19 +64,19 @@ export default function Topbar() {
       if (window.innerWidth < 1181) {
         mySidebar.style.display = "none";
         overlayBg.style.display = "none";
-        document.body.classList.remove("left-sidebar-open");
-        localStorage.setItem("sidebarOpen", "false");
+        // document.body.classList.remove("left-sidebar-open");
+        // localStorage.setItem("sidebarOpen", "false");
         return;
       }
 
       if (sidebarOpen) {
         mySidebar.style.display = "block";
         overlayBg.style.display = "none";
-        document.body.classList.add("left-sidebar-open");
+        // document.body.classList.add("left-sidebar-open");
       } else {
         mySidebar.style.display = "none";
         overlayBg.style.display = "none";
-        document.body.classList.remove("left-sidebar-open");
+        // document.body.classList.remove("left-sidebar-open");
       }
     }
 

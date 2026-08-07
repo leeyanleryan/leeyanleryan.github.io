@@ -7,7 +7,7 @@ export function openSidebar() {
   if (isOpen) {
     mySidebar.style.display = "none";
     overlayBg.style.display = "none";
-    document.body.classList.remove("left-sidebar-open");
+    document.documentElement.classList.remove("left-sidebar-open");
     localStorage.setItem("sidebarOpen", "false");
   } else {
     mySidebar.style.display = "block";
@@ -18,7 +18,7 @@ export function openSidebar() {
       overlayBg.style.display = "none";
     }
 
-    document.body.classList.add("left-sidebar-open");
+    document.documentElement.classList.add("left-sidebar-open");
     localStorage.setItem("sidebarOpen", "true");
   }
 }

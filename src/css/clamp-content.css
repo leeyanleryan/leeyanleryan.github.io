@@ -1,6 +1,6 @@
 /* CLAMPING!!! */
 /* 1) clamp LEFT arrow so it never goes under the sidebar + arrow-sidebar-gap */
-body.left-sidebar-open .nav-arrow-left {
+html.left-sidebar-open .nav-arrow-left {
   left: max(
     calc((100vw - var(--content-w)) / 2 - var(--arrow-off)),
     calc(var(--sidebar-w) + var(--arrow-sidebar-gap))
@@ -8,7 +8,7 @@ body.left-sidebar-open .nav-arrow-left {
 }
 
 /* 2) clamp RIGHT arrow so it never goes under the window edge + arrow-window-gap */
-body.left-sidebar-open .nav-arrow-right {
+html.left-sidebar-open .nav-arrow-right {
   right: max(
     calc((100vw - var(--content-w)) / 2 - var(--arrow-off)),
     var(--arrow-window-gap)
@@ -20,7 +20,7 @@ body.left-sidebar-open .nav-arrow-right {
       -> right = arrow-window-gap + body-gap-right */
 /* ONLY CLAMP WHEN vw ≤ 1760px */
 @media (max-width: 1760px) {
-  body.left-sidebar-open .w3-main {
+  html.left-sidebar-open .w3-main {
     margin: 43px auto 20px;
 
     margin-left: max(
@@ -43,7 +43,7 @@ body.left-sidebar-open .nav-arrow-right {
 }
 /* OTHERWISE (vw > 1760px) ALWAYS CENTER */
 @media (min-width: 1761px) {
-  body.left-sidebar-open .w3-main {
+  html.left-sidebar-open .w3-main {
     margin-left: auto !important;
     margin-right: auto !important;
   }
@@ -64,13 +64,13 @@ body.left-sidebar-open .nav-arrow-right {
     margin: 43px auto 20px !important;
   }
   /* 2) bottom‐nav + sidebar‐open → push content right */
-  body.left-sidebar-open .w3-main {
+  html.left-sidebar-open .w3-main {
     /* shorthand: top right bottom left */
     margin: 43px auto 20px 
       calc(var(--sidebar-w)) !important;
   }
 
-  body.left-sidebar-open .w3-main {
+  html.left-sidebar-open .w3-main {
     margin-left: auto !important;
     margin-right: auto !important;
   }
