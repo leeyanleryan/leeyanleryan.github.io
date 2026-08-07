@@ -56,18 +56,18 @@ export default function NavArrow() {
       {/* Desktop arrows */}
       <Link href={leftItem.url} className="nav-arrow nav-arrow-left w3-hide-small">
         <div className="nav-label">{leftItem.label}</div>
-        <i className="arrow-symbol fa fa-angle-double-left"></i>
+        <i className="arrow-symbol fa-solid fa-angles-left fa-lg"></i>
       </Link>
 
       <Link href={rightItem.url} className="nav-arrow nav-arrow-right w3-hide-small">
         <div className="nav-label">{rightItem.label}</div>
-        <i className="arrow-symbol fa fa-angle-double-right"></i>
+        <i className="arrow-symbol fa-solid fa-angles-right fa-lg"></i>
       </Link>
 
       {/* Bottom bar for small screens */}
       <div className="nav-bottom">
         <Link href={leftItem.url}>
-          <i className="fa fa-angle-double-left"></i>
+          <i className="fa-solid fa-angles-left fa-sm"></i>
           {"\u00A0"}
           {leftItem.label}
         </Link>
@@ -75,7 +75,7 @@ export default function NavArrow() {
         <Link href={rightItem.url}>
           {rightItem.label}
           {"\u00A0"}
-          <i className="fa fa-angle-double-right"></i>
+          <i className="fa-solid fa-angles-right fa-sm"></i>
         </Link>
       </div>
     </>

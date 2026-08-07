@@ -96,7 +96,7 @@ export default function LeftSidebar() {
               title="GitHub"
               target="_blank"
             >
-              <i className="fa fa-github"></i>
+              <i className="fa-brands fa-github"></i>
             </a>
             <a
               href="https://linkedin.com/in/leeyanleryan"
@@ -104,7 +104,7 @@ export default function LeftSidebar() {
               title="LinkedIn"
               target="_blank"
             >
-              <i className="fa fa-linkedin"></i>
+              <i className="fa-brands fa-linkedin"></i>
             </a>
             <a
               href="https://www.youtube.com/@Leehai"
@@ -112,7 +112,7 @@ export default function LeftSidebar() {
               title="YouTube"
               target="_blank"
             >
-              <i className="fa fa-youtube-play"></i>
+              <i className="fa-brands fa-youtube"></i>
             </a>
           </div>
         </div>

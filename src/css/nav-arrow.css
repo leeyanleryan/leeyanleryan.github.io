@@ -7,15 +7,17 @@
   text-align: center;
   white-space: nowrap;
 
-  height: 2.5rem;
+  height: 2rem;
   overflow: visible;
 }
 
 .nav-arrow .arrow-symbol {
   position: absolute;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
-  font-size: 2rem;
+  transform: translate(-50%, -50%);
+  line-height: 1;
+  font-size: 20px;
 }
 
 .nav-arrow .nav-label {
@@ -88,7 +90,7 @@ html.dark-mode .nav-label {
 }
 
 .arrow-symbol {
-  font-size: 2rem;
+  /* font-size: 2rem; */
   text-decoration: none;
   color: var(--light-mode-text-color);
   /* display: inline-block; */

@@ -252,7 +252,7 @@ export default function Topbar() {
         </form>
 
         <span className="w3-bar-item w3-right">
-          <i className="fa fa-moon-o moon-icon"></i>{"\u00A0"}
+          <i className="fa-solid fa-moon" style={{letterSpacing: "-0.3px"}}>{"\u00A0\u00A0\u00A0\u00A0"}</i>
           <label className="switch">
             <input id="toggle-dark-mode" type="checkbox" title="Toggle theme" />
             <span className="slider"></span>
