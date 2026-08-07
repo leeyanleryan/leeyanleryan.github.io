@@ -101,6 +101,7 @@ html.dark-mode .sidebar h4 {
   display: block;
   padding: 8px 12px;
   border-radius: var(--pill-border-radius);
+  transition: background-color 0s !important;
 }
 
 .sidebar-link-indent {
@@ -115,7 +116,7 @@ hr.hr-sidebar {
   background: var(--light-mode-border-color);
   font-size: 0;
   border: 0;
-  /* transition: var(--transition); */
+  transition: var(--transition);
 }
 
 html.dark-mode hr.hr-sidebar {
@@ -132,7 +133,7 @@ html.dark-mode hr.hr-sidebar {
 .sidebar .w3-bar-item.active {
   background-color: var(--light-mode-active-background-color) !important;
   color: var(--light-mode-text-color) !important;
-  /* transition: var(--transition); */
+  transition: var(--transition) !important;
 }
 
 html.dark-mode .sidebar .w3-bar-item:hover,

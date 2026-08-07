@@ -144,16 +144,18 @@ html.dark-mode .search-no-results {
 #topbar .moon-icon {
   letter-spacing: -0.3px;
   transform: rotate(-13deg) translateY(-2.2px);
+  
 }
 
 .menu-btn {
-  background: var(--light-mode-background-color);
+  background: transparent !important;
   color: var(--light-mode-text-color);
+  transition: var(--transition) !important;
   cursor: pointer;
 }
 
 html.dark-mode .menu-btn {
-  background: var(--dark-mode-background-color);
+  background: transparent !important;
   color: var(--dark-mode-text-color);
 }
 
