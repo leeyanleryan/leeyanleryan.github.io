@@ -90,14 +90,15 @@ html.dark-mode .nav-label {
 }
 
 .arrow-symbol {
-  /* font-size: 2rem; */
-  text-decoration: none;
-  color: var(--light-mode-text-color);
   /* display: inline-block; */
+  display: block;
   cursor: pointer;
   
-  display: block;
+  color: var(--light-mode-text-color);
+  text-decoration: none;
+  /* font-size: 2rem; */
   /* text-align: center; */
+  
   transition: var(--transition);
 }
 
