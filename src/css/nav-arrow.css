@@ -80,8 +80,7 @@ a.nav-arrow:hover {
   /* display: block;
   text-align: center;
   white-space: nowrap; */
-  /* transition: background-color var(--theme-transition) ease, 
-              color var(--theme-transition) ease; */
+  transition: var(--transition);
 
   display: block;             /* or inline-block */
   width: 80px;                /* same as your .nav-arrow width */
@@ -105,8 +104,7 @@ html.dark-mode .nav-label {
   
   display: block;
   /* text-align: center; */
-  /* transition: background-color var(--theme-transition) ease, 
-              color var(--theme-transition) ease; */
+  transition: var(--transition);
 }
 
 html.dark-mode .arrow-symbol {
@@ -126,16 +124,14 @@ html.dark-mode .arrow-symbol {
   z-index: 1004;            /* Ensure it's on top */
   background-color: #f1f1f1; /* White backdrop to prevent overlap */
   border-top: var(--light-mode-border);
-  /* transition: background-color var(--theme-transition) ease, 
-              color var(--theme-transition) ease; */
+  transition: var(--transition);
 }
 
 /* Style the links in bottom nav */
 .nav-bottom a {
   text-decoration: none;
   color: var(--light-mode-text-color);
-  /* transition: background-color var(--theme-transition) ease, 
-              color var(--theme-transition) ease; */
+  transition: var(--transition);
 }
 
 .nav-bottom a:hover {

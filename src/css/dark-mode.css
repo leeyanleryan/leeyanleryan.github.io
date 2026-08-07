@@ -19,7 +19,7 @@
   width: 30px;
   height: 17px;
   background-color: #ccc;
-  transition: var(--theme-transition);
+  transition: var(--transition);
   border-radius: 17px;
   cursor: pointer;
 }
@@ -31,7 +31,7 @@
   left: 2px;
   bottom: 2px;
   background-color: white;
-  transition: var(--theme-transition);
+  transition: var(--transition);
   border-radius: 50%;
 }
 input:checked + .slider {

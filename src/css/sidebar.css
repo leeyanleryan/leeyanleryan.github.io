@@ -1,7 +1,7 @@
 /* Base sidebar container (shared) */
 .sidebar {
   position: fixed;
-  top: 43px;                         /* beneath your top bar */
+  top: 43px;
   height: calc(100vh - 43px);        /* fill remaining viewport */
   width: var(--sidebar-w);
   overflow-y: scroll;                /* always reserve gutter */
@@ -11,8 +11,7 @@
   display: none;                     /* shown via ID + media query */
   background-color: var(--light-mode-background-color);
   color: var(--light-mode-text-color);
-  /* transition: background-color var(--theme-transition) ease, 
-              color var(--theme-transition) ease; */
+  transition: var(--transition);
 
   /* hide scrollbar by making it transparent */
   scrollbar-width: thin;
@@ -31,7 +30,6 @@
   background-color: var(--light-mode-background-color);
 }
 
-/* on hover, paint the reserved gutter */
 .sidebar:hover {
   scrollbar-color: #888 var(--light-mode-background-color);
 }
@@ -42,7 +40,6 @@
   background-color: var(--light-mode-background-color);
 }
 
-/* keep everything else the same… */
 html.dark-mode .sidebar {
   background-color: var(--dark-mode-background-color);
   color: var(--dark-mode-text-color);
@@ -75,9 +72,8 @@ html.dark-mode .sidebar:hover::-webkit-scrollbar-track {
   text-overflow: ellipsis;
 }
 
-/* section headers (<h4>) subtly fade in/out */
 .sidebar h4 {
-  /* transition: color var(--theme-transition) ease; */
+  /* transition: var(--transition); */
   color: var(--light-mode-text-color);
 }
 html.dark-mode .sidebar h4 {
@@ -117,8 +113,7 @@ hr.hr-sidebar {
   background: var(--light-mode-border-color);
   font-size: 0;
   border: 0;
-  /* transition: background-color var(--theme-transition) ease, 
-              color var(--theme-transition) ease; */
+  /* transition: var(--transition); */
 }
 
 html.dark-mode hr.hr-sidebar {
@@ -137,8 +132,7 @@ html.dark-mode hr.hr-sidebar {
 .sidebar .w3-bar-item.active {
   background-color: var(--light-mode-active-background-color) !important;
   color: var(--light-mode-text-color) !important;
-  /* transition: background-color var(--theme-transition) ease, 
-              color var(--theme-transition) ease; */
+  /* transition: var(--transition); */
 }
 
 /* dark-mode hover/focus */
@@ -164,7 +158,7 @@ html.dark-mode .sidebar .w3-bar-item.active {
 .submenu-header .main-link {
   flex: 1;
   border-radius: var(--pill-border-radius);
-  /* transition: background-color var(--theme-transition) ease; */
+  /* transition: var(--transition); */
 }
 
 /* the in-flow submenu */

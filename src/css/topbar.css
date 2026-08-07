@@ -1,8 +1,7 @@
 /* Default: light mode top bar */
 #topbar {
   background-color: #f1f1f1 !important;
-  /* transition: background-color var(--theme-transition) ease, 
-              color var(--theme-transition) ease; */
+  transition: var(--transition);
   border-bottom: var(--light-mode-border);
   color: var(--light-mode-text-color) !important;
   z-index: 1004 !important;
@@ -52,27 +51,22 @@ html.dark-mode #topbar {
   color: var(--light-mode-text-color);
   font-size: 1rem;
 
-  /* keep transitions in sync */
-  /* transition: background-color var(--theme-transition) ease,
-              color            var(--theme-transition) ease,
-              border-color     var(--theme-transition) ease; */
+  transition: var(--transition);
 
   box-sizing: border-box;
 }
 
-/* Dark-mode switch */
 html.dark-mode #topbar-search input {
   background-color: var(--dark-mode-accent2-background-color);
-  color: var(--dark-mode-text-color);    /* white text */
-  border: var(--dark-mode-border);  /* matching your dark borders */
+  color: var(--dark-mode-text-color);
+  border: var(--dark-mode-border);
 }
 
-/* 3) Style & position the results dropdown */
 #search-results {
   position: absolute;
   top: 109%;
-  left: 0;      /* align to the left edge of the form */
-  right: 0;     /* align to the right edge of the form */
+  left: 0;
+  right: 0;
   box-sizing: border-box;
 
   margin: 4px 0 0;
@@ -92,9 +86,7 @@ html.dark-mode #topbar-search input {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   z-index: 1005;
 
-  /* keep transitions in sync */
-  /* transition: background-color var(--theme-transition) ease,
-              color            var(--theme-transition) ease; */
+  transition: var(--transition);
 }
 
 /* show each item */
@@ -109,14 +101,12 @@ html.dark-mode #topbar-search input {
   text-decoration: none;
   color: var(--light-mode-text-color);
 
-  /* same rounding as your input */
   border-radius: var(--pill-border-radius);
-  /* keep it full-width but inset by the padding-amount */
   display: block;
   width: 100%;
   box-sizing: border-box;
 
-  /* transition: color var(--theme-transition) ease; */
+  transition: var(--transition);
 }
 
 /* hover/focus */

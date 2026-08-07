@@ -8,15 +8,12 @@ html {
   overflow-y: scroll;
 }
 
-/* Default light mode */
 body {
   background-color: #f1f1f1;
   color: #000000;
-  /* transition: background-color var(--theme-transition) ease, 
-              color var(--theme-transition) ease; */
+  transition: var(--transition);
 }
 
-/* Dark mode styles */
 html.dark-mode body {
   background-color: var(--dark-mode-background-color);
   color: #ffffff;
@@ -85,4 +82,8 @@ h5.h5-img-gap {
   font-size: 0.9em;
   color: gray;
   margin-top: 0.4em;
+}
+
+.w3-bar-item {
+  transition: background-color var(--transition-time) ease !important;
 }

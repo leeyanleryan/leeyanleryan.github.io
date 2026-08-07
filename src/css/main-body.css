@@ -18,8 +18,7 @@ hr.hr-main-body {
   background: var(--light-mode-border-color);
   font-size: 0;
   border: 0;
-  /* transition: background-color var(--theme-transition) ease, 
-              color var(--theme-transition) ease; */
+  transition: var(--transition);
 }
 
 html.dark-mode hr.hr-main-body {
