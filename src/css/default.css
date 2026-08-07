@@ -9,14 +9,14 @@ html {
 }
 
 body {
-  background-color: #f1f1f1;
-  color: #000000;
+  background-color: var(--light-mode-background-color);
+  color: var(--light-mode-text-color);
   transition: var(--transition);
 }
 
 html.dark-mode body {
   background-color: var(--dark-mode-background-color);
-  color: #ffffff;
+  color: var(--dark-mode-text-color);
 }
 
 img {

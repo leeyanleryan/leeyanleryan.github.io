@@ -1,8 +1,8 @@
 #topbar {
-  background-color: #f1f1f1 !important;
-  transition: var(--transition);
+  background-color: var(--light-mode-background-color) !important;
   border-bottom: var(--light-mode-border);
   color: var(--light-mode-text-color) !important;
+  transition: var(--transition);
   z-index: 1004 !important;
 }
 
