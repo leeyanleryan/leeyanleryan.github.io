@@ -22,7 +22,7 @@ html.dark-mode #topbar {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: clamp(150px, 45vw, 600px);
+  width: clamp(80px, 45vw, 600px);
 }
 
 #topbar-search input {
