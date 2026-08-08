@@ -142,9 +142,8 @@ html.dark-mode .search-no-results {
 }
 
 #topbar .moon-icon {
-  letter-spacing: -0.3px;
+  letter-spacing: -0.1px;
   transform: rotate(-13deg) translateY(-2.2px);
-  
 }
 
 .menu-btn {
