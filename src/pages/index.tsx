@@ -1,15 +1,9 @@
 import Head from "next/head";
 import ImageLoader from "@/tsx/ImageLoader";
 // import VideoLoader from "@/tsx/VideoLoader";
-import { useEffect } from "react";
-import { loadVisitCount } from "@/ts/visitCounter";
 
 
 export default function Profile() {
-  useEffect(() => {
-    loadVisitCount();
-  }, []);
-
   return (
     <>
       <Head>
@@ -65,12 +59,6 @@ export default function Profile() {
               <li>Discord: leeyanleryan</li>
             </ul>
           </h5>
-        </section>
-
-        <hr className="hr-main-body" />
-
-        <section id="counter" className="w3-container">
-          <h5>Total website visits: <span id="visit-count">Loading...</span></h5>
         </section>
       </div>
     </>

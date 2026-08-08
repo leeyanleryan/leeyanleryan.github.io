@@ -5,6 +5,7 @@ import Topbar from "../tsx/Topbar";
 import LeftSidebar from "../tsx/LeftSidebar";
 import RightSidebar from "../tsx/RightSidebar";
 import NavArrow from "../tsx/NavArrow";
+import VisitCounter from "../tsx/VisitCounter";
 
 const raleway = Raleway({
   subsets: ["latin"],
@@ -19,6 +20,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <LeftSidebar />
       <RightSidebar />
       <Component {...pageProps} />
+      <VisitCounter />
       <NavArrow />
       <hr className="hr-hide-1180" />
     </div>
