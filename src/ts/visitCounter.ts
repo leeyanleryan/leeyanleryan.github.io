@@ -1,10 +1,10 @@
 const VISITOR_API =
-  "https://leeyanleryan-github-io-counter.leeyanleryan.workers.dev/";
+  "https://leeyanleryan-github-io-counter.leeyanleryan.workers.dev";
 
-const visitCountElement =
-  document.getElementById("visit-count");
+export async function loadVisitCount() {
+  const visitCountElement =
+    document.getElementById("visit-count");
 
-async function loadVisitCount() {
   if (!visitCountElement) {
     return;
   }
@@ -15,7 +15,7 @@ async function loadVisitCount() {
      * from being counted as another visit.
      */
     const alreadyCounted =
-      sessionStorage.getItem("osu-visit-counted") === "true";
+      sessionStorage.getItem("leeyanleryan-visit-counted") === "true";
 
     const endpoint = alreadyCounted
       ? "/count"
@@ -43,7 +43,7 @@ async function loadVisitCount() {
 
     if (!alreadyCounted) {
       sessionStorage.setItem(
-        "osu-visit-counted",
+        "leeyanleryan-visit-counted",
         "true"
       );
     }
@@ -56,5 +56,3 @@ async function loadVisitCount() {
     visitCountElement.textContent = "Unavailable";
   }
 }
-
-loadVisitCount();
