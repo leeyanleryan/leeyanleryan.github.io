@@ -1,5 +1,6 @@
 import { Html, Head, Main, NextScript } from "next/document";
 import { initUIScript } from "../ts/initUI";
+import Script from 'next/script'
 
 
 export default function Document() {
@@ -21,6 +22,7 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
+        <Script src="/ts/visitCounter.js" strategy="afterInteractive" />
       </body>
     </Html>
   );

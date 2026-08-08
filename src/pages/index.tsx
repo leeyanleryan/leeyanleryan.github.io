@@ -60,6 +60,12 @@ export default function Profile() {
             </ul>
           </h5>
         </section>
+
+        <hr className="hr-main-body" />
+
+        <section id="counter" className="w3-container">
+          <h5>Total website visits: <span id="counter-value">Loading...</span></h5>
+        </section>
       </div>
     </>
   );
