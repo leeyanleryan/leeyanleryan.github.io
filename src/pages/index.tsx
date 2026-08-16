@@ -55,7 +55,7 @@ export default function Profile() {
           <h2><b>Contact</b></h2>
           <h5>
             <ul>
-              <li>Email: leeyanleryan.21@gmail.com</li>
+              <li>Email: leeyanleryan@gmail.com</li>
               <li>Discord: leeyanleryan</li>
             </ul>
           </h5>
