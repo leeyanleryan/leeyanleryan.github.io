@@ -42,3 +42,4 @@ next-env.d.ts
 
 /deprecated
 /src/data
+/public/pdf/jobs.xlsx
